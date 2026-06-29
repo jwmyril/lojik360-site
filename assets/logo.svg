@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Atmart — mache teknoloji ak done gratis">
+  <!-- Anneau extérieur -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#1d4fa8" stroke-width="9"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#e63946" stroke-width="2.5" stroke-dasharray="1 7" stroke-linecap="round"/>
+
+  <!-- Soleil -->
+  <circle cx="100" cy="58" r="16" fill="#ffb703"/>
+  <g stroke="#f4a261" stroke-width="4" stroke-linecap="round">
+    <line x1="100" y1="30" x2="100" y2="38"/>
+    <line x1="78" y1="38" x2="83" y2="44"/>
+    <line x1="122" y1="38" x2="117" y2="44"/>
+    <line x1="68" y1="58" x2="76" y2="58"/>
+    <line x1="124" y1="58" x2="132" y2="58"/>
+  </g>
+  <circle cx="100" cy="58" r="7" fill="#e63946"/>
+
+  <!-- Livre ouvert : ailes bleues, pages, coeur rouge -->
+  <path d="M30 120 Q60 96 96 112 L96 158 Q60 142 30 158 Z" fill="#1d4fa8"/>
+  <path d="M170 120 Q140 96 104 112 L104 158 Q140 142 170 158 Z" fill="#1d4fa8"/>
+  <path d="M44 122 Q68 104 96 118 L96 150 Q68 136 44 150 Z" fill="#ffffff"/>
+  <path d="M156 122 Q132 104 104 118 L104 150 Q132 136 156 150 Z" fill="#ffffff"/>
+  <path d="M58 124 Q76 112 96 122 L96 144 Q76 134 58 144 Z" fill="#e63946"/>
+  <path d="M142 124 Q124 112 104 122 L104 144 Q124 134 142 144 Z" fill="#e63946"/>
+
+  <!-- Tige / V central -->
+  <path d="M100 112 L100 158" stroke="#ffb703" stroke-width="5" stroke-linecap="round"/>
+  <path d="M88 96 Q100 108 112 96 L112 104 Q100 116 88 104 Z" fill="#e63946"/>
+
+  <!-- Points décoratifs (done) -->
+  <g>
+    <circle cx="48" cy="86" r="4" fill="#e63946"/>
+    <circle cx="152" cy="86" r="4" fill="#e63946"/>
+    <circle cx="38" cy="104" r="3" fill="#ffb703"/>
+    <circle cx="162" cy="104" r="3" fill="#ffb703"/>
+    <circle cx="58" cy="70" r="3" fill="#1d4fa8"/>
+    <circle cx="142" cy="70" r="3" fill="#1d4fa8"/>
+    <circle cx="76" cy="170" r="3.5" fill="#ffb703"/>
+    <circle cx="124" cy="170" r="3.5" fill="#ffb703"/>
+    <circle cx="100" cy="174" r="4" fill="#e63946"/>
+  </g>
+</svg>
