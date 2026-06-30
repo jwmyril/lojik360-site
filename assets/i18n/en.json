@@ -43,7 +43,7 @@
  "k.title": "Lojikkid — <em>learning made fun</em>.",
  "k.lead": "Free, fun activities for kids: make things with your hands, think for yourself, explore the digital world and understand money.",
  "k.free": "100% free · ages 7–14",
- "k.areas_title": "Four adventures to explore",
+ "k.areas_title": "Four subjects to explore",
  "k.do_label": "Try it at home:",
  "k.soon": "More lessons coming soon",
  "k.start": "Start the lesson",
@@ -63,7 +63,7 @@
  "k.c2_a2": "Find three reasons for and three against an idea.",
  "k.c2_a3": "Spot an advert and say what it wants you to do.",
  "k.c3_title": "💻 Digital & data",
- "k.c3_desc": "Use a computer safely, find good information, read a simple chart.",
+ "k.c3_desc": "Use a computer or tablet safely, find good information, read a simple chart.",
  "k.c3_a1": "Count how many friends like each ice-cream flavour, then make a little chart.",
  "k.c3_a2": "Find who wrote a web page before believing it.",
  "k.c3_a3": "Sort your toys into groups — that's organising data!",
@@ -89,5 +89,6 @@
  "tut.h_comm": "Effective communication",
  "tut.h_conf": "Confidence & negotiation",
  "tut.kids": "Lojikkid — for kids",
- "tut.kids_d": "Free, fun activities for children: create, think clearly, digital & data, money & life skills."
+ "tut.kids_d": "Free, fun activities for children: create, think clearly, digital & data, money & life skills.",
+ "k.areas_sub": "Pick a subject. Inside, the skills go from the simplest to the most advanced."
 }

@@ -558,3 +558,27 @@ figure.tuto-fig figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; color: va
 .acp-send:hover{background:var(--amber)}
 .acp-disc{padding:.4rem 1rem .7rem;color:var(--ink-dim);font-size:.7rem;text-align:center}
 @media (max-width:480px){.atmart-chat-panel{right:8px;bottom:80px;width:calc(100vw - 16px)}}
+
+/* ===== Lojikkid — structure type IXL ===== */
+.subj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.subj-tile{display:block;background:var(--card);border:1px solid var(--border);border-left:5px solid var(--teal);border-radius:16px;padding:1.3rem 1.4rem;transition:transform .15s,border-color .15s}
+.subj-tile:hover{transform:translateY(-3px)}
+.subj-tile .ico{font-size:1.9rem}
+.subj-tile h3{margin:.4rem 0 .3rem;color:var(--ink);font-size:1.1rem}
+.subj-tile p{color:var(--ink-dim);font-size:.9rem;margin:0}
+.subj-tile.c-amber{border-left-color:var(--amber)} .subj-tile.c-teal{border-left-color:var(--teal)} .subj-tile.c-navy{border-left-color:#3b82f6} .subj-tile.c-red{border-left-color:var(--red)}
+.kid-shell{display:flex;gap:1.6rem;align-items:flex-start;max-width:1100px;margin:0 auto;padding:0 1rem}
+.kid-side{flex:0 0 230px;position:sticky;top:78px}
+.kid-side .lbl{color:var(--ink-dim);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;margin:.4rem .6rem .5rem}
+.kid-side a{display:flex;gap:.5rem;align-items:center;padding:.55rem .7rem;border-radius:10px;color:var(--ink);font-weight:600;font-size:.95rem;border-left:4px solid transparent;margin-bottom:.25rem}
+.kid-side a:hover{background:var(--card)}
+.kid-side a.active{background:var(--card);border-left-color:var(--teal);color:var(--teal)}
+.kid-main{flex:1;min-width:0}
+.kid-level{margin:1.5rem 0 .4rem;color:var(--teal);font-family:var(--font-head);font-size:1.15rem}
+.kid-skill{display:flex;align-items:center;gap:.7rem;padding:.65rem .2rem;border-bottom:1px solid var(--border)}
+.kid-skill .code{flex:0 0 2.6rem;color:var(--ink-dim);font-size:.85rem;font-weight:700}
+.kid-skill a{font-weight:500;color:var(--ink)}.kid-skill a:hover{color:var(--teal)}
+.kid-skill span.t{color:var(--ink-dim)}
+.kid-skill .soon{margin-left:auto;font-size:.7rem;color:var(--ink-dim);border:1px solid var(--border);border-radius:999px;padding:.12rem .6rem;white-space:nowrap}
+.kid-skill .go{margin-left:auto;color:var(--navy);background:var(--teal);border-radius:999px;padding:.18rem .8rem;font-size:.78rem;font-weight:700;white-space:nowrap}
+@media(max-width:760px){.kid-shell{flex-direction:column}.kid-side{position:static;flex:auto;width:100%}}

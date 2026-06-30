@@ -43,7 +43,7 @@
  "k.title": "Lojikkid — <em>aprann nan plezi</em>.",
  "k.lead": "Aktivite gratis e amizan pou timoun : fè bagay ak men ou, panse pou tèt ou, dekouvri nimerik la epi konprann lajan.",
  "k.free": "100 % gratis · pou 7–14 an",
- "k.areas_title": "Kat avanti pou eksplore",
+ "k.areas_title": "Kat matyè pou eksplore",
  "k.do_label": "Eseye lakay ou :",
  "k.soon": "Plis leson ap vini byento",
  "k.start": "Kòmanse leson an",
@@ -63,7 +63,7 @@
  "k.c2_a2": "Jwenn twa rezon pou ak twa rezon kont yon lide.",
  "k.c2_a3": "Repere yon reklam epi di sa li vle fè w fè.",
  "k.c3_title": "💻 Nimerik & done",
- "k.c3_desc": "Sèvi ak yon òdinatè an sekirite, chèche bon enfòmasyon, li yon graf senp.",
+ "k.c3_desc": "Sèvi ak yon òdinatè oswa yon tablèt an sekirite, chèche bon enfòmasyon, li yon graf senp.",
  "k.c3_a1": "Konte konbyen zanmi renmen chak gou krèm, epi fè yon ti graf.",
  "k.c3_a2": "Jwenn ki moun ki ekri yon paj entènèt anvan ou kwè l.",
  "k.c3_a3": "Klase jwèt ou yo pa kategori : se triye done sa ye !",
@@ -89,5 +89,6 @@
  "tut.h_comm": "Kominikasyon efikas",
  "tut.h_conf": "Konfyans & negosyasyon",
  "tut.kids": "Lojikkid — pou timoun",
- "tut.kids_d": "Aktivite gratis e amizan pou timoun: kreye, panse klè, nimerik & done, lajan & lavi pratik."
+ "tut.kids_d": "Aktivite gratis e amizan pou timoun: kreye, panse klè, nimerik & done, lajan & lavi pratik.",
+ "k.areas_sub": "Chwazi yon matyè. Anndan, konpetans yo soti nan pi senp pou rive nan pi avanse."
 }

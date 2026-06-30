@@ -43,7 +43,7 @@
  "k.title": "Lojikkid — <em>aprender jugando</em>.",
  "k.lead": "Actividades gratis y divertidas para niños: crear con las manos, pensar por sí mismos, descubrir lo digital y entender el dinero.",
  "k.free": "100 % gratis · de 7 a 14 años",
- "k.areas_title": "Cuatro aventuras para explorar",
+ "k.areas_title": "Cuatro materias para explorar",
  "k.do_label": "Pruébalo en casa:",
  "k.soon": "Pronto más lecciones",
  "k.start": "Empezar la lección",
@@ -63,7 +63,7 @@
  "k.c2_a2": "Encuentra tres razones a favor y tres en contra de una idea.",
  "k.c2_a3": "Detecta un anuncio y di qué quiere que hagas.",
  "k.c3_title": "💻 Lo digital y los datos",
- "k.c3_desc": "Usar una computadora con seguridad, buscar buena información, leer un gráfico sencillo.",
+ "k.c3_desc": "Usar una computadora o tableta con seguridad, buscar buena información, leer un gráfico sencillo.",
  "k.c3_a1": "Cuenta cuántos amigos prefieren cada sabor de helado y haz un pequeño gráfico.",
  "k.c3_a2": "Averigua quién escribió una página web antes de creerla.",
  "k.c3_a3": "Ordena tus juguetes por grupos: ¡eso es organizar datos!",
@@ -89,5 +89,6 @@
  "tut.h_comm": "Comunicación eficaz",
  "tut.h_conf": "Confianza y negociación",
  "tut.kids": "Lojikkid — para niños",
- "tut.kids_d": "Actividades gratis y divertidas para niños: crear, pensar claro, lo digital y los datos, dinero y vida práctica."
+ "tut.kids_d": "Actividades gratis y divertidas para niños: crear, pensar claro, lo digital y los datos, dinero y vida práctica.",
+ "k.areas_sub": "Elige una materia. Dentro, las habilidades van de lo más simple a lo más avanzado."
 }
