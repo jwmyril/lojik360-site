@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panse klè — Leson 1 : Pa kwè tout bagay ! | Lojikkid</title>
+  <meta name="description" content="Yon leson panse kritik pou timoun : 3 kesyon majik pou konnen sa ki vre, ak yon ti quiz. Gratis — Lojikkid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css?v=10" />
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>pa Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Akèy</a></li>
+      <li><a href="../tutoriels.html">Leson</a></li>
+      <li><a href="../index.html#podcast">Podkas</a></li>
+      <li><a href="../lojikkid.html" class="active">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solisyon (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="lang-page-switch"><a href="enfants-penser.html">FR</a><a href="enfants-penser.ht.html" class="active">HT</a><a href="enfants-penser.en.html">EN</a><a href="enfants-penser.es.html">ES</a></div>
+    <p class="kreyol">🕵️ Vin yon detektif verite</p>
+    <h1>Panse klè — Leson 1 : <em>Pa kwè tout bagay !</em></h1>
+    <p class="lead">Nenpòt moun ka ekri nenpòt bagay sou entènèt. Kijan pou w konnen sa ki vre ? Swiv detektif la !</p>
+  </div>
+</section>
+
+<section style="padding-top:0.5rem">
+  <div class="container" style="max-width:760px">
+
+    <h2>📺 Istwa Lea</h2>
+    <p>Lea wè yon videyo : « <strong>Bwè bwason majik sa a epi w ap kouri pi vit pase tout moun !</strong> » Lea renmen kouri anpil… Èske li dwe kwè sa ?</p>
+
+    <h2>🪄 3 kesyon majik yo</h2>
+    <p>Anvan ou kwè yon bagay, yon detektif verite poze 3 kesyon :</p>
+    <div class="card"><h3>1. 🧐 Kiyès ki di l ?</h3><p>Yon moun ki konnen vre… oswa yon moun ki vle vann ou bwason an ?</p></div>
+    <div class="card"><h3>2. 🔎 Kijan li konnen sa ?</h3><p>Èske gen yon vrè prèv… oswa se sèlman yon bèl pwomès ?</p></div>
+    <div class="card"><h3>3. 🤔 Èske sa gen sans ?</h3><p>Èske yon bwason ka <em>vrèman</em> fè w kouri pi vit pase tout moun sou latè ?</p></div>
+
+    <div class="callout"><strong>🕵️ Atou w !</strong> Kilès ou ka kwè ?<br>
+      A) « Bwè dlo chak jou, li bon pou kò w. » — yon doktè ki di sa.<br>
+      B) « Jwèt sa a fè w vin envizib ! » — yo di sa nan yon reklam.<br>
+      C) « Lapli tonbe paske chosèt mwen te mouye. »<br>
+      <em>Reflechi… epi verifye ak 3 kesyon yo !</em></div>
+
+    <h2>🎯 Ti quiz</h2>
+    <p>Reponn 3 kesyon yo. Ou bezwen 2 bon repons pou w pase — epi ou ka rekòmanse !</p>
+    <div class="quiz" id="quiz-enf-penser" data-pass="60" data-passmsg="Bravo, detektif verite !" data-failmsg="Prèske ! Reli 3 kesyon majik yo epi eseye ankò." data-answerall="Reponn tout kesyon yo.">
+      <div class="q" data-correct="1">
+        <p><strong>1.</strong> Ou wè : « Manje 20 sirèt epi w ap gen super-pouvwa ! » Kisa w ap fè ?</p>
+        <label><input type="radio" name="q1" value="0"> Mwen manje 20 sirèt touswit</label>
+        <label><input type="radio" name="q1" value="1"> Mwen mande : èske sa gen sans ?</label>
+        <label><input type="radio" name="q1" value="2"> Mwen pataje l ak tout zanmi m yo</label>
+      </div>
+      <div class="q" data-correct="0">
+        <p><strong>2.</strong> Premye kesyon yon detektif, se…</p>
+        <label><input type="radio" name="q2" value="0"> Kiyès ki di l ?</label>
+        <label><input type="radio" name="q2" value="1"> Ki koulè ?</label>
+        <label><input type="radio" name="q2" value="2"> Konbyen « mwen renmen » ?</label>
+      </div>
+      <div class="q" data-correct="1">
+        <p><strong>3.</strong> Anpil moun pataje yon istwa. Donk…</p>
+        <label><input type="radio" name="q3" value="0"> Fòk se vre</label>
+        <label><input type="radio" name="q3" value="1"> Sa pa vle di se vre</label>
+        <label><input type="radio" name="q3" value="2"> Mwen dwe pataje l tou</label>
+      </div>
+      <button class="btn btn-primary quiz-check">Verifye</button>
+      <button class="btn btn-outline quiz-retry" style="display:none">Rekòmanse</button>
+      <p class="quiz-result" aria-live="polite"></p>
+    </div>
+
+    <div class="callout"><strong>🎉 Bravo !</strong> Ou konnen 3 kesyon majik yo. Ou se yon vrè detektif verite ! Poze yo chak fwa ou wè yon bagay ki sezi w.</div>
+
+    <p style="margin-top:1.5rem"><a href="../lojikkid.html" class="btn btn-outline">← Tounen nan Lojikkid</a></p>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-bottom">© 2026 Atmart LLC — Mache teknoloji ak done. Lojik360 se yon mak Atmart LLC.</div></div></footer>
+
+<script src="../assets/script.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

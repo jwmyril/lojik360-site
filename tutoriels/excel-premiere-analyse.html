@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel : votre première analyse de données — Tutoriel Atmart</title>
+  <meta name="description" content="Tutoriel gratuit pas-à-pas : analysez les transferts de la diaspora (données réelles de la Banque mondiale) avec Excel — import CSV, formules, tableau croisé dynamique et graphique." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css?v=5" />
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../tutoriels.html" class="active">Tutoriels</a></li>
+      <li><a href="../index.html#podcast">Podcast</a></li>
+      <li><a href="../lojikkid.html">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solutions (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="tuto-shell">
+
+  <aside class="tuto-sidebar">
+    <div class="tuto-sidebar-head">
+      <span class="ico">📊</span>
+      <h2>Excel : 1<sup>re</sup> analyse</h2>
+      <span class="lvl">Done &amp; teknik • Débutant</span>
+    </div>
+    <button class="tuto-toc-toggle">☰ Sections du tutoriel</button>
+    <ul class="tuto-toc">
+      <li class="toc-group">Préparation</li>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#comprendre">1. Comprendre le fichier</a></li>
+      <li><a href="#importer">2. Importer le CSV</a></li>
+      <li class="toc-group">Analyse</li>
+      <li><a href="#explorer">3. Trier et filtrer</a></li>
+      <li><a href="#formules">4. Premières formules</a></li>
+      <li><a href="#tcd">5. Tableau croisé dynamique</a></li>
+      <li><a href="#graphique">6. Le graphique</a></li>
+      <li><a href="#manquantes">7. Données manquantes</a></li>
+      <li class="toc-group">Pratique</li>
+      <li><a href="#exercices">8. Exercices</a></li>
+      <li><a href="#suite">9. Et maintenant ?</a></li>
+      <li class="toc-group">Communauté</li>
+      <li><a href="#discussion">💬 Discussion</a></li>
+    </ul>
+  </aside>
+
+  <main class="tuto-main">
+    <p class="breadcrumb"><a href="../tutoriels.html">Tutoriels</a> › Done &amp; teknik › Excel</p>
+    <h1>📊 Excel : votre première analyse de données</h1>
+    <p class="article-meta">
+      <span>⏱ 30–40 minutes</span>
+      <span>🟢 Débutant</span>
+      <span>🎙 Épisode : <a href="../podcast.html">#01</a></span>
+      <span>🗂 <a href="../data/transferts_diaspora_2000_2025.csv" download>Dataset gratuit</a></span>
+    </p>
+
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p><strong>Sa w pral aprann :</strong> à la fin de ce tutoriel, vous aurez ouvert un vrai fichier de données de la Banque mondiale, calculé vos premières statistiques, construit votre premier tableau croisé dynamique et produit un graphique qui raconte 25 ans d'histoire de la diaspora haïtienne. Pas un exemple jouet — de vraies données, celles utilisées dans l'épisode 1 du podcast Lojik360.</p>
+      <div class="callout">
+        <strong>Ce qu'il vous faut :</strong> Excel (2016 ou plus récent, ou Excel gratuit sur excel.cloud.microsoft) et le fichier
+        <a href="../data/transferts_diaspora_2000_2025.csv" download><code>transferts_diaspora_2000_2025.csv</code></a> (clic = téléchargement, 208 lignes).
+        LibreOffice Calc (gratuit) fonctionne aussi — les noms de menus changent légèrement.
+      </div>
+    </section>
+
+    <section id="comprendre">
+      <h2>1. Comprendre le fichier avant de l'ouvrir</h2>
+      <p>Règle n°1 d'un analyste : ne jamais analyser des données qu'on ne comprend pas. Notre fichier contient les <strong>transferts personnels reçus</strong> (« remittances ») pour 8 pays, de 2000 à 2025 :</p>
+      <table>
+        <tr><th>Colonne</th><th>Signification</th></tr>
+        <tr><td><code>pays</code></td><td>Nom du pays (Haïti, Jamaïque, Sénégal…)</td></tr>
+        <tr><td><code>code_iso3</code></td><td>Code à 3 lettres (HTI = Haïti, SEN = Sénégal)</td></tr>
+        <tr><td><code>annee</code></td><td>Année (2000 à 2025)</td></tr>
+        <tr><td><code>transferts_usd</code></td><td>Montant reçu, en dollars US</td></tr>
+        <tr><td><code>transferts_millions_usd</code></td><td>Le même montant, en millions (plus lisible)</td></tr>
+        <tr><td><code>part_pib_pct</code></td><td>Poids des transferts dans l'économie, en % du PIB</td></tr>
+      </table>
+      <p>Source : Banque mondiale, indicateurs <code>BX.TRF.PWKR.CD.DT</code> et <code>BX.TRF.PWKR.DT.GD.ZS</code>. Vous pouvez vérifier chaque chiffre — c'est le principe Lojik360 : <em>ki sous la ?</em></p>
+    </section>
+
+    <section id="importer">
+      <h2>2. Importer le CSV correctement (l'étape que 90 % des gens ratent)</h2>
+      <p>Ne double-cliquez PAS sur le fichier ! Un CSV utilise des virgules comme séparateurs et des points pour les décimales — mais Excel en français attend des points-virgules et des virgules décimales. Résultat du double-clic : tout dans une seule colonne. <em>C'est le piège classique.</em></p>
+      <ol>
+        <li>Ouvrez un classeur Excel vide.</li>
+        <li>Onglet <strong>Données</strong> → <strong>Obtenir des données</strong> → <strong>À partir d'un fichier texte/CSV</strong>.</li>
+        <li>Sélectionnez <code>transferts_diaspora_2000_2025.csv</code>.</li>
+        <li>Dans l'aperçu : Délimiteur = <strong>Virgule</strong>. Vérifiez que les colonnes sont bien séparées.</li>
+        <li>Cliquez sur la flèche à côté de <strong>Charger</strong> → <strong>Charger dans…</strong> → Tableau → Feuille existante → OK.</li>
+      </ol>
+      <div class="screenshot">Capture d'écran à insérer : la fenêtre d'aperçu de l'import avec « Délimiteur : Virgule » entouré en rouge et les 6 colonnes bien séparées.</div>
+      <div class="callout warn">
+        <strong>Si les décimales sont fausses</strong> (4111 devient 4 111 000) : dans la fenêtre d'import, cliquez sur <strong>Transformer les données</strong>, sélectionnez les colonnes numériques, puis « Type de données → Nombre décimal » avec les paramètres régionaux « Anglais (États-Unis) ». C'est une vraie compétence de préparation de données — vous venez de faire du Power Query sans le savoir.
+      </div>
+    </section>
+
+    <section id="explorer">
+      <h2>3. Explorer : trier et filtrer</h2>
+      <p>Votre tableau a 208 lignes. Premier réflexe : le parcourir avec les filtres (les petites flèches dans les en-têtes).</p>
+      <ol>
+        <li>Cliquez sur la flèche de <code>pays</code> → décochez tout → cochez <strong>Haiti</strong>.</li>
+        <li>Triez <code>annee</code> du plus petit au plus grand.</li>
+      </ol>
+      <p>Regardez la colonne <code>transferts_millions_usd</code> défiler : <strong>578 M$ en 2000… 1 474 M$ en 2010… 2 196 M$ en 2015… 4 111 M$ en 2024.</strong> En 25 ans, les transferts ont été multipliés par 7. Vous venez de faire votre première découverte.</p>
+      <div class="screenshot">Capture d'écran à insérer : le tableau filtré sur Haïti, trié par année, avec la ligne 2024 (4 111,0) surlignée.</div>
+    </section>
+
+    <section id="formules">
+      <h2>4. Vos premières formules : MOYENNE, MAX, NB.SI.ENS</h2>
+      <p>Placez-vous dans une cellule vide à droite du tableau (par exemple H2) et reproduisez ceci. Le tableau s'appelle par défaut <code>transferts_diaspora_2000_2025</code> — renommez-le <code>tDiaspora</code> (Création de tableau → Nom du tableau) pour des formules lisibles :</p>
+      <table>
+        <tr><th>Question</th><th>Formule</th><th>Résultat attendu</th></tr>
+        <tr>
+          <td>Moyenne des transferts vers Haïti, 2020–2024</td>
+          <td><code>=MOYENNE.SI.ENS(tDiaspora[transferts_millions_usd]; tDiaspora[code_iso3]; "HTI"; tDiaspora[annee]; "&gt;=2020"; tDiaspora[annee]; "&lt;=2024")</code></td>
+          <td><strong>3 782,8</strong></td>
+        </tr>
+        <tr>
+          <td>Record absolu d'Haïti</td>
+          <td><code>=MAX.SI.ENS(tDiaspora[transferts_millions_usd]; tDiaspora[code_iso3]; "HTI")</code></td>
+          <td><strong>4 111,0</strong> (2024)</td>
+        </tr>
+        <tr>
+          <td>Combien d'années Haïti a dépassé 15 % du PIB ?</td>
+          <td><code>=NB.SI.ENS(tDiaspora[code_iso3]; "HTI"; tDiaspora[part_pib_pct]; "&gt;15")</code></td>
+          <td>comptez… puis vérifiez en filtrant !</td>
+        </tr>
+      </table>
+      <div class="callout">
+        <strong>Astuce :</strong> sélectionnez simplement une plage de chiffres et regardez la barre d'état en bas d'Excel — Moyenne, Nb et Somme s'affichent automatiquement. C'est l'outil de vérification le plus rapide qui existe.
+      </div>
+      <div class="screenshot">Capture d'écran à insérer : les 3 formules saisies en H2:H4 avec leurs résultats, et la barre d'état visible en bas.</div>
+    </section>
+
+    <section id="tcd">
+      <h2>5. Le tableau croisé dynamique : comparer les 8 pays</h2>
+      <p>Le tableau croisé dynamique (TCD) est l'outil le plus puissant d'Excel — et il s'apprend en 2 minutes :</p>
+      <ol>
+        <li>Cliquez dans le tableau → <strong>Insertion</strong> → <strong>Tableau croisé dynamique</strong> → Nouvelle feuille.</li>
+        <li>Glissez <code>pays</code> dans <strong>Lignes</strong>.</li>
+        <li>Glissez <code>part_pib_pct</code> dans <strong>Valeurs</strong> → changez « Somme » en <strong>Moyenne</strong> (clic droit → Synthétiser les valeurs par → Moyenne).</li>
+        <li>Glissez <code>annee</code> dans <strong>Filtres</strong> → sélectionnez <strong>2024</strong>.</li>
+      </ol>
+      <p>Résultat : le classement 2024 de la dépendance aux transferts. Haïti en tête (16,3 %), la Jamaïque juste derrière (16,2 %), la République dominicaine loin derrière (9,1 %) malgré ses 11 milliards. C'est exactement le piège « dollars vs pourcentage » de l'épisode 1 : <strong>celui qui choisit l'unité choisit la conclusion.</strong></p>
+      <div class="screenshot">Capture d'écran à insérer : le TCD terminé, pays triés par % décroissant, avec le filtre Année = 2024 visible.</div>
+    </section>
+
+    <section id="graphique">
+      <h2>6. Le graphique : 25 ans d'histoire en une courbe</h2>
+      <ol>
+        <li>Revenez au tableau de données, filtré sur <strong>Haiti</strong>.</li>
+        <li>Sélectionnez les colonnes <code>annee</code> et <code>part_pib_pct</code> (Ctrl pour sélectionner deux colonnes non adjacentes).</li>
+        <li><strong>Insertion</strong> → <strong>Courbe 2D</strong>.</li>
+        <li>Titre du graphique : « Transferts de la diaspora, % du PIB d'Haïti (2000–2024) ». Source en dessous : « Banque mondiale / Atmart ».</li>
+      </ol>
+      <p>Maintenant, lisez votre courbe comme un analyste. Deux pics doivent attirer votre œil :</p>
+      <ul>
+        <li><strong>2010</strong> : le séisme. La diaspora répond massivement à la catastrophe.</li>
+        <li><strong>2020</strong> : le COVID — record absolu à <strong>22,4 % du PIB</strong>. Quand le pays tombe, la diaspora attrape.</li>
+      </ul>
+      <p>Un graphique n'est pas une décoration : c'est une histoire avec des preuves.</p>
+      <div class="screenshot">Capture d'écran à insérer : la courbe finale avec deux annotations (flèches) sur 2010 « Séisme » et 2020 « COVID — record 22,4 % ».</div>
+    </section>
+
+    <section id="manquantes">
+      <h2>7. La leçon bonus : les données manquantes</h2>
+      <p>Filtrez sur le <strong>Sénégal</strong>, année <strong>2024</strong> : la cellule est vide. Ce n'est pas une erreur de votre part — la Banque mondiale n'a simplement pas encore publié cette valeur. Dans la vraie vie, les données sont incomplètes, et un bon analyste :</p>
+      <ul>
+        <li>ne remplace jamais une valeur manquante par zéro (un vide ≠ 0 !) ;</li>
+        <li>le signale toujours : « données 2024 non disponibles pour le Sénégal » ;</li>
+        <li>se méfie de quiconque présente une série parfaite sans trous — <em>twò bèl pou vre</em>.</li>
+      </ul>
+    </section>
+
+    <section id="exercices">
+      <h2>8. Exercices — à vous de jouer</h2>
+      <p>Faites-les vraiment avant de regarder les solutions. C'est ce qui transforme la lecture en compétence.</p>
+      <h3>Exercice 1 — le devoir de l'épisode 1 🎙</h3>
+      <p>En quelle(s) année(s) la <strong>Jamaïque</strong> a-t-elle dépassé <strong>20 % du PIB</strong> en transferts reçus ?</p>
+      <details class="solution">
+        <summary>Voir la solution</summary>
+        <p>Filtrez <code>pays</code> = Jamaica, puis filtre numérique sur <code>part_pib_pct</code> → « Supérieur à… » → 20. Réponse : <strong>2020 (20,45 %) et 2021 (23,22 %)</strong> — les années COVID, comme pour Haïti.</p>
+      </details>
+      <h3>Exercice 2 — formule</h3>
+      <p>Calculez la moyenne de <code>part_pib_pct</code> du <strong>Togo</strong> sur toute la période disponible.</p>
+      <details class="solution">
+        <summary>Voir la solution</summary>
+        <p><code>=MOYENNE.SI.ENS(tDiaspora[part_pib_pct]; tDiaspora[code_iso3]; "TGO")</code> — les cellules vides sont automatiquement ignorées par la formule (encore les données manquantes !).</p>
+      </details>
+      <h3>Exercice 3 — esprit critique 🧠</h3>
+      <p>Un article titre : « La diaspora dominicaine envoie 3 fois plus que la diaspora haïtienne — les Haïtiens de l'étranger sont moins solidaires. » Avec votre TCD de l'étape 5, écrivez une réponse de 2 phrases qui corrige ce raisonnement.</p>
+      <details class="solution">
+        <summary>Voir un exemple de réponse</summary>
+        <p>« En dollars, la République dominicaine reçoit en effet 11,2 milliards contre 4,1 pour Haïti. Mais rapportés à la taille de l'économie, les transferts pèsent 16,3 % du PIB haïtien contre 9,1 % du PIB dominicain : proportionnellement, la diaspora haïtienne porte presque deux fois plus son pays. » — C'est la technique n°3 de l'épisode 1 : la confusion dollars / pourcentage.</p>
+      </details>
+    </section>
+
+    <section id="suite">
+      <h2>9. Et maintenant ?</h2>
+      <ul>
+        <li>🧠 Le socle de tout : <a href="pensee-critique.html">le tutoriel Pensée critique</a>.</li>
+        <li>🎙 Écoutez l'<a href="../podcast.html">épisode 1 de Lojik360</a> — vous reconnaîtrez chaque chiffre de ce tutoriel.</li>
+        <li>📈 Prochainement : <strong>Power BI — construire votre premier tableau de bord</strong> avec ce même dataset.</li>
+        <li>🎓 Pour un parcours complet avec projets et certificat : <a href="../formations.html">Analyste Débutant</a>.</li>
+        <li>🗂 Envie d'autres données ? <a href="https://atmart.ltd/datasets.html">La boutique Datasets</a>.</li>
+      </ul>
+      <div class="callout kreyol-note">
+        <strong>Version créole :</strong> une version complète de ce tutoriel en créole arrive bientôt.
+      </div>
+      <div class="tuto-pager">
+        <a href="pensee-critique.html" class="btn btn-outline">← Pensée critique</a>
+        <a href="../tutoriels.html" class="btn btn-primary">Tous les tutoriels →</a>
+      </div>
+    </section>
+
+    <section id="discussion" class="tuto-discussion">
+      <h2>💬 Discussion</h2>
+      <p class="disc-intro">Une question, un blocage sur une formule, une découverte dans les données ? Partagez-la ici et entraidez-vous avec respect.</p>
+      <div class="discussion-embed">
+        <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="excel-premiere-analyse" data-page-url="https://atmart.ltd/tutoriels/excel-premiere-analyse.html" data-page-title="Excel : première analyse"></div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+      </div>
+      <p class="disc-rules"><strong>Règle de la communauté :</strong> on s'entraide, on cite ses sources. <em>Panse pi byen, pale ak respè.</em></p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom">© 2026 Atmart LLC — Marché de la technologie et des données. Lojik360 est une marque d'Atmart LLC.</div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

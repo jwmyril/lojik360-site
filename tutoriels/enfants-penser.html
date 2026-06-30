@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penser clair — Leçon 1 : Ne crois pas tout ! | Lojikkid</title>
+  <meta name="description" content="Leçon de pensée critique pour enfants : les 3 questions magiques pour savoir ce qui est vrai, avec un petit quiz. Gratuit — Lojikkid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css?v=10" />
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../tutoriels.html">Tutoriels</a></li>
+      <li><a href="../index.html#podcast">Podcast</a></li>
+      <li><a href="../lojikkid.html" class="active">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solutions (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="lang-page-switch"><a href="enfants-penser.html" class="active">FR</a><a href="enfants-penser.ht.html">HT</a><a href="enfants-penser.en.html">EN</a><a href="enfants-penser.es.html">ES</a></div>
+    <p class="kreyol">🕵️ Deviens un détective de la vérité</p>
+    <h1>Penser clair — Leçon 1 : <em>Ne crois pas tout !</em></h1>
+    <p class="lead">Tout le monde peut écrire n'importe quoi sur internet. Comment savoir ce qui est vrai ? Suis le détective !</p>
+  </div>
+</section>
+
+<section style="padding-top:0.5rem">
+  <div class="container" style="max-width:760px">
+
+    <h2>📺 L'histoire de Léa</h2>
+    <p>Léa voit une vidéo : « <strong>Bois cette boisson magique et tu courras plus vite que tout le monde !</strong> » Léa adore courir… Doit-elle y croire&nbsp;?</p>
+
+    <h2>🪄 Les 3 questions magiques</h2>
+    <p>Avant de croire quelque chose, un détective de la vérité pose 3 questions&nbsp;:</p>
+    <div class="card"><h3>1. 🧐 Qui le dit&nbsp;?</h3><p>Quelqu'un qui s'y connaît… ou quelqu'un qui veut te vendre la boisson&nbsp;?</p></div>
+    <div class="card"><h3>2. 🔎 Comment le sait-il&nbsp;?</h3><p>Y a-t-il une vraie preuve… ou juste une belle promesse&nbsp;?</p></div>
+    <div class="card"><h3>3. 🤔 Est-ce que ça a du sens&nbsp;?</h3><p>Une boisson peut-elle <em>vraiment</em> te rendre plus rapide que tout le monde&nbsp;?</p></div>
+
+    <div class="callout"><strong>🕵️ À toi de jouer&nbsp;!</strong> Lesquelles peux-tu croire&nbsp;?<br>
+      A) « Bois de l'eau chaque jour, c'est bon pour ton corps. » — dit par un médecin.<br>
+      B) « Ce jouet te rend invisible&nbsp;! » — dit dans une publicité.<br>
+      C) « Il a plu parce que ma chaussette était mouillée. »<br>
+      <em>Réfléchis… puis vérifie avec les 3 questions&nbsp;!</em></div>
+
+    <h2>🎯 Petit quiz</h2>
+    <p>Réponds aux 3 questions. Il faut 2 bonnes réponses pour réussir — et tu peux recommencer&nbsp;!</p>
+    <div class="quiz" id="quiz-enf-penser" data-pass="60" data-passmsg="Bravo, détective de la vérité&nbsp;!" data-failmsg="Presque&nbsp;! Relis les 3 questions magiques et réessaie." data-answerall="Réponds à toutes les questions.">
+      <div class="q" data-correct="1">
+        <p><strong>1.</strong> Tu vois&nbsp;: « Mange 20 bonbons et tu auras des super-pouvoirs&nbsp;! » Que fais-tu&nbsp;?</p>
+        <label><input type="radio" name="q1" value="0"> Je mange 20 bonbons tout de suite</label>
+        <label><input type="radio" name="q1" value="1"> Je demande&nbsp;: est-ce que ça a du sens&nbsp;?</label>
+        <label><input type="radio" name="q1" value="2"> Je partage à tous mes amis</label>
+      </div>
+      <div class="q" data-correct="0">
+        <p><strong>2.</strong> La première question d'un détective, c'est…</p>
+        <label><input type="radio" name="q2" value="0"> Qui le dit&nbsp;?</label>
+        <label><input type="radio" name="q2" value="1"> Quelle couleur&nbsp;?</label>
+        <label><input type="radio" name="q2" value="2"> Combien de «&nbsp;j'aime&nbsp;»&nbsp;?</label>
+      </div>
+      <div class="q" data-correct="1">
+        <p><strong>3.</strong> Beaucoup de gens ont partagé une histoire. Donc…</p>
+        <label><input type="radio" name="q3" value="0"> C'est forcément vrai</label>
+        <label><input type="radio" name="q3" value="1"> Ça ne veut pas dire que c'est vrai</label>
+        <label><input type="radio" name="q3" value="2"> Je dois la partager aussi</label>
+      </div>
+      <button class="btn btn-primary quiz-check">Vérifier</button>
+      <button class="btn btn-outline quiz-retry" style="display:none">Recommencer</button>
+      <p class="quiz-result" aria-live="polite"></p>
+    </div>
+
+    <div class="callout"><strong>🎉 Bravo&nbsp;!</strong> Tu connais les 3 questions magiques. Tu es un vrai détective de la vérité&nbsp;! Pose-les chaque fois que tu vois quelque chose de surprenant.</div>
+
+    <p style="margin-top:1.5rem"><a href="../lojikkid.html" class="btn btn-outline">← Retour à Lojikkid</a></p>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-bottom">© 2026 Atmart LLC — Marché de la technologie et des données. Lojik360 est une marque d'Atmart LLC.</div></div></footer>
+
+<script src="../assets/script.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

@@ -52,28 +52,29 @@ document.querySelectorAll("input.page-search").forEach((input) => {
   });
 });
 
-// Tutorial reader: scrollspy (highlight current chapter in the sidebar) + mobile toggle
+// Tutorial reader: show ONE module at a time (click a sidebar entry to reveal it)
 const toc = document.querySelector(".tuto-toc");
-if (toc) {
-  const links = [...toc.querySelectorAll("a[href^='#']")];
-  const sections = links
-    .map((a) => document.querySelector(a.getAttribute("href")))
-    .filter(Boolean);
-  const spy = () => {
-    const y = window.scrollY + 130;
-    let current = sections[0];
-    for (const s of sections) { if (s.offsetTop <= y) current = s; }
-    if (!current) return;
-    links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + current.id));
-  };
-  window.addEventListener("scroll", spy, { passive: true });
-  spy();
-
-  // Smooth-scroll + close mobile panel on click
-  const toggle = document.querySelector(".tuto-toc-toggle");
-  links.forEach((a) => a.addEventListener("click", () => {
+const tmain = document.querySelector(".tuto-main");
+if (toc && tmain) {
+  const tocLinks = [...toc.querySelectorAll("a[href^='#']")];
+  const sections = [...tmain.querySelectorAll(":scope > section")];
+  const byId = (id) => sections.find((s) => s.id === id);
+  const reveal = (id, push) => {
+    const target = byId(id) || sections[0];
+    if (!target) return;
+    sections.forEach((s) => { s.hidden = s !== target; });
+    tocLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + target.id));
     if (window.innerWidth <= 860) toc.classList.remove("open");
+    if (tmain.scrollIntoView) tmain.scrollIntoView({ block: "start" });
+    if (push && target.id) history.replaceState(null, "", "#" + target.id);
+  };
+  tocLinks.forEach((a) => a.addEventListener("click", (e) => {
+    const id = a.getAttribute("href").slice(1);
+    if (byId(id)) { e.preventDefault(); reveal(id, true); }
   }));
+  const initial = (location.hash || "").slice(1);
+  reveal(byId(initial) ? initial : (sections[0] && sections[0].id), false);
+  const toggle = document.querySelector(".tuto-toc-toggle");
   if (toggle) toggle.addEventListener("click", () => toc.classList.toggle("open"));
 }
 
