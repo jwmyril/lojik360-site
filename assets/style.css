@@ -541,6 +541,8 @@ figure.tuto-fig figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; color: va
 .atmart-chat-btn:hover{background:var(--amber);transform:translateY(-2px)}
 .atmart-chat-btn.is-open{background:var(--amber)}
 .atmart-chat-panel{position:fixed;right:20px;bottom:88px;z-index:1000;width:360px;max-width:calc(100vw - 32px);height:520px;max-height:calc(100vh - 120px);display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.5);overflow:hidden}
+/* Ferme = vraiment invisible : sans cette regle, display:flex annule l'attribut hidden */
+.atmart-chat-panel[hidden]{display:none!important}
 .acp-head{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.8rem 1rem;background:var(--navy-2);border-bottom:1px solid var(--border)}
 .acp-head strong{display:block;color:var(--ink);font-family:var(--font-head);font-size:1rem}
 .acp-head span{display:block;color:var(--ink-dim);font-size:.78rem}

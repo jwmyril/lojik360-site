@@ -55,6 +55,7 @@
   panel.setAttribute("role", "dialog");
   panel.setAttribute("aria-label", T.title);
   panel.hidden = true;
+  panel.style.display = "none"; // le CSS du panneau (display:flex) annulerait l'attribut hidden seul
   panel.innerHTML =
     '<div class="acp-head"><div><strong>' + T.title + '</strong><span>' + T.sub + '</span></div>' +
     '<button class="acp-close" aria-label="X">×</button></div>' +
@@ -86,13 +87,13 @@
 
   var opened = false;
   function openPanel() {
-    panel.hidden = false; btn.classList.add("is-open");
+    panel.hidden = false; panel.style.display = "flex"; btn.classList.add("is-open");
     document.documentElement.classList.add("chat-open");
     if (!opened || !log.children.length) { opened = true; addBubble("bot", T.hello); }
     setTimeout(function () { input.focus(); }, 50);
   }
   function closePanel() {
-    panel.hidden = true; btn.classList.remove("is-open");
+    panel.hidden = true; panel.style.display = "none"; btn.classList.remove("is-open");
     document.documentElement.classList.remove("chat-open");
   }
 
