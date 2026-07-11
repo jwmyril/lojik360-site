@@ -221,7 +221,7 @@ def NAV(L):
 def FOOT(L):
     return '<footer><div class="container"><div class="footer-bottom">%s</div></div></footer>' % L["foot"]
 SCRIPTS = ('<script src="../assets/script.js"></script>\n'
- '<script src="../assets/chat.js?v=1" data-endpoint="https://atmart-chat.YOUR-SUBDOMAIN.workers.dev"></script>')
+ '<script src="../assets/chat.js?v=1" data-endpoint="https://atmart-chat.atmartllc.workers.dev"></script>')
 
 def ul(items): return "  <ul>\n" + "\n".join("    <li>%s</li>" % esc(x) for x in items) + "\n  </ul>"
 def ol(items): return "  <ol>\n" + "\n".join("    <li>%s</li>" % esc(x) for x in items) + "\n  </ol>"

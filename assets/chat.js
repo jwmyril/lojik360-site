@@ -95,6 +95,10 @@
   btn.addEventListener("click", function () { panel.hidden ? openPanel() : closePanel(); });
   panel.querySelector(".acp-close").addEventListener("click", closePanel);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) closePanel(); });
+  // Un clic/tap hors du panneau le ferme : il ne bloque jamais la lecture.
+  document.addEventListener("click", function (e) {
+    if (!panel.hidden && !panel.contains(e.target) && !btn.contains(e.target)) closePanel();
+  });
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
