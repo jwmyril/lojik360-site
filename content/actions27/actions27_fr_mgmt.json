@@ -1,0 +1,1020 @@
+{
+ "front": {
+  "purpose": "Ce contenu est écrit pour les apprenants qui utilisent les tutoriels directement. Il évite les notes de facilitateur et le langage magistral. Chaque session demande à l'apprenant d'agir, de remplir une feuille de travail, de faire un choix, d'utiliser des prompts avec prudence et de produire un petit projet.",
+  "format": "Chaque session comprend un scénario, les définitions des concepts du titre, un auto-contrôle rapide, des actions, une feuille de travail, un choix de voie, des prompts, un point de contrôle, un petit projet, des preuves à conserver, des erreurs à éviter et une ligne d'arrivée.",
+  "safety": "N'utilisez les prompts qu'avec des informations que vous avez le droit de partager. Pour les décisions juridiques, financières, médicales, psychologiques, de cybersécurité ou de conformité, consultez des professionnels qualifiés et les politiques approuvées de votre organisation."
+ },
+ "dom_intro": "Utilisez ces sessions pour conduire la transformation de l'ère IA avec gouvernance, participation, métriques équilibrées et un travail conçu de façon humaine.",
+ "sessions": [
+  {
+   "num": 10,
+   "title": "Publier une doctrine d'usage de l'IA en une page",
+   "meta": {
+    "domain": "Management",
+    "time": "60 minutes",
+    "build": "une doctrine d'usage de l'IA en une page pour une équipe ou un projet."
+   },
+   "start": [
+    "Les gens utilisent déjà l'IA, chacun à sa manière. Certains l'utilisent en sécurité, d'autres l'évitent, et d'autres collent peut-être des données sensibles ou font confiance aux réponses sans les vérifier.",
+    "À la fin, vous devez avoir une Doctrine d'usage de l'IA concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Publier",
+     "Publier, c'est rendre une règle, un guide ou une décision visible et utilisable par les personnes censées la suivre.",
+     "Une règle d'IA qui reste dans la tête de quelqu'un ne guide pas les comportements. Publier crée des attentes partagées et une base pour la revue.",
+     "Affichez les règles d'IA de l'équipe là où les gens travaillent vraiment. Incluez des exemples d'usages autorisés et interdits."
+    ],
+    [
+     "Usage de l'IA",
+     "L'usage de l'IA, ce sont les façons dont les gens appliquent des systèmes d'IA pour rédiger, résumer, analyser, recommander, classer, automatiser ou décider.",
+     "Des usages différents portent des risques différents. Rédiger un e-mail à faible risque n'est pas la même chose que recommander une prestation, un diagnostic, un prêt ou une sanction.",
+     "Listez tous les usages de l'IA que votre équipe pratique déjà. Séparez les usages de rédaction, de recommandation et de décision."
+    ],
+    [
+     "Doctrine",
+     "Une doctrine est un court ensemble de règles directrices qui explique ce qui est encouragé, restreint, interdit et à faire remonter.",
+     "Pour le comportement quotidien, une doctrine est plus pratique qu'une longue politique. Elle donne aux équipes assez de clarté pour agir pendant que la gouvernance formelle évolue.",
+     "Écrivez quatre zones : encouragé, revue exigée, interdit, à faire remonter. Ajoutez une date de revue pour que la doctrine évolue avec les outils et les règles."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Listez les usages de l'IA déjà présents ou probables dans votre équipe.",
+    "Classez-les en quatre zones : encouragé, autorisé avec revue, interdit, à faire remonter immédiatement.",
+    "Définissez des règles pour les données, la vérification, la transparence, la responsabilité et les incidents.",
+    "Écrivez des exemples pour que la doctrine soit concrète, pas une déclaration de principes vague.",
+    "Fixez une date de revue, car les outils, les risques et les règles vont changer."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Équipe ou projet",
+    "Usages encouragés",
+    "Autorisés avec revue",
+    "Usages interdits",
+    "Déclencheurs d'escalade",
+    "Règle sur les données",
+    "Règle de vérification",
+    "Date de revue"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Laisser chacun juger sans règles écrites",
+     "Fragile. Les gens peuvent avoir des tolérances au risque différentes et des hypothèses cachées."
+    ],
+    [
+     "Écrire une doctrine courte avec des exemples et des points de revue",
+     "Meilleur choix. Elle donne à la fois la permission et les limites."
+    ],
+    [
+     "Interdire toute IA jusqu'à ce que la direction décide de tout",
+     "Parfois nécessaire dans les contextes à haut risque, mais cela bloque souvent un apprentissage utile à faible risque."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à rédiger une doctrine d'usage de l'IA en une page pour [équipe]. Inclus les usages encouragés, les usages soumis à revue, les usages interdits, les déclencheurs d'escalade, les règles de données, les règles de vérification et une date de revue.",
+    "Mets cette doctrine à l'épreuve. Donne-moi dix situations réalistes où les gens pourraient la mal comprendre ou la contourner.",
+    "Réécris cette doctrine en langage simple pour le personnel de terrain tout en gardant des règles précises : [coller]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre doctrine d'usage de l'IA sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Soumettez un brouillon de doctrine à trois relecteurs : un utilisateur, une personne technique ou sécurité, et une partie prenante risque ou direction. Révisez selon leurs commentaires."
+   ],
+   "evidence": [
+    "Votre doctrine d'usage de l'IA complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Écrire des valeurs sans exemples.",
+    "Oublier de définir qui est responsable de chaque système d'IA.",
+    "Traiter l'assistance, la recommandation et la décision d'IA comme la même chose.",
+    "Ne jamais revoir la doctrine après un changement d'outils."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Doctrine d'usage de l'IA utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Partir du problème de travail pour transformer",
+   "meta": {
+    "domain": "Management",
+    "time": "55 minutes",
+    "build": "une note de transformation qui part du problème."
+   },
+   "start": [
+    "Un outil semble excitant, ou les concurrents semblent l'adopter. Avant de choisir la technologie, vous devez prouver que le problème est réel et vaut la peine d'être résolu.",
+    "À la fin, vous devez avoir une Note de problème de travail concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Transformation",
+     "Une transformation est un changement significatif dans la façon dont le travail crée de la valeur, pas seulement l'introduction d'un nouvel outil.",
+     "Une vraie transformation change les rôles, les flux de travail, les mesures, les compétences, les décisions ou l'expérience client.",
+     "Décrivez ce qui changerait pour l'utilisateur si un projet réussissait. Nommez quel flux, rôle ou décision sera différent après le changement."
+    ],
+    [
+     "Problème de travail",
+     "Un problème de travail est une douleur, un retard, un risque, une erreur, un coût ou un besoin non satisfait, précis, dans la façon dont le travail se fait.",
+     "Un problème de travail doit être observable et mesurable. Des objectifs vagues comme l'innovation ou la modernisation ne suffisent pas.",
+     "Écrivez le moment douloureux du flux de travail avant de nommer un outil. Mesurez la référence actuelle de retard, de reprise ou de frustration."
+    ],
+    [
+     "Référence de départ",
+     "Une référence de départ est l'état actuel mesuré avant de tester un changement.",
+     "Sans référence, vous ne pouvez pas savoir si le changement a amélioré quelque chose ou s'il a seulement fait « nouveau ».",
+     "Mesurez le délai de traitement actuel avant de piloter un assistant d'IA. Notez les types d'erreurs actuels avant de changer un processus."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Nommez la personne ou le groupe touché. Soyez précis : clients, personnel, managers, analystes, fournisseurs, stagiaires ou patients.",
+    "Décrivez le moment douloureux du flux de travail, pas la fonctionnalité de la technologie.",
+    "Mesurez la référence actuelle : retard, erreur, coût, reprise, frustration, risque ou occasion manquée.",
+    "Écrivez l'amélioration voulue en termes observables.",
+    "Seulement ensuite, listez les solutions possibles, y compris les changements sans IA."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Groupe touché",
+    "Moment douloureux",
+    "Référence actuelle",
+    "Hypothèse de cause racine",
+    "Amélioration souhaitée",
+    "Contraintes",
+    "Solutions possibles",
+    "Premier test"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Acheter ou copier l'outil parce que d'autres l'utilisent",
+     "Un changement qui part de l'outil peut créer des coûts sans résoudre le problème de travail."
+    ],
+    [
+     "Définir le problème, la référence et l'utilisateur avant de choisir les outils",
+     "Meilleur choix. La transformation devient un apprentissage mesurable."
+    ],
+    [
+     "Attendre que le problème soit parfaitement compris",
+     "Trop lent. Un premier énoncé de problème clair suffit pour lancer un test limité."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Convertis cette idée d'outil en note de problème de travail : [idée d'outil]. Demande qui est touché, quelle douleur survient, quelle référence le prouve et quelle amélioration compte.",
+    "Conteste cet énoncé de problème. Est-ce un vrai problème de travail, un symptôme, une préférence ou un désir de technologie ?",
+    "Propose des options sans IA, low-tech, assistées par l'IA et entièrement automatisées pour ce problème. Explique quelles preuves permettraient de choisir entre elles."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre note de problème de travail sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Écrivez une note d'une page pour une idée de transformation. Partagez-la avant toute discussion d'outil et demandez aux relecteurs si le problème est assez clair pour être testé."
+   ],
+   "evidence": [
+    "Votre note de problème de travail complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Partir des fonctionnalités au lieu de la douleur de l'utilisateur.",
+    "Utiliser des objectifs vagues comme « moderniser » ou « être efficace ».",
+    "Oublier de mesurer la référence actuelle.",
+    "Ignorer des corrections de processus plus simples."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Note de problème de travail utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Mener un pilote limité avec des métriques équilibrées",
+   "meta": {
+    "domain": "Management",
+    "time": "70 minutes",
+    "build": "un tableau de pilote limité avec métriques équilibrées et règles d'arrêt."
+   },
+   "start": [
+    "Un usage prometteur d'IA ou d'automatisation mérite d'être testé, mais un pilote sans métriques, sans soutien et sans règles d'arrêt devient un déploiement lent déguisé.",
+    "À la fin, vous devez avoir un Tableau de pilote concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Pilote limité",
+     "Un pilote limité est un petit test borné d'un changement avant une adoption plus large.",
+     "Le but d'un pilote est d'apprendre. Il doit avoir un périmètre, une durée, des utilisateurs, des données, des métriques, un soutien et des règles d'arrêt.",
+     "Testez un seul type de demande avec une seule équipe pendant deux semaines. Excluez les cas à haut risque jusqu'à ce que la méthode de contrôle soit prouvée."
+    ],
+    [
+     "Métriques équilibrées",
+     "Les métriques équilibrées mesurent plus que la vitesse : qualité, coût, reprises, satisfaction, charge mentale, incidents et confiance.",
+     "Un outil peut rendre le travail plus rapide et plus mauvais en même temps. Des mesures équilibrées révèlent les compromis.",
+     "Suivez ensemble le temps gagné et les rappels clients. Mesurez l'effort de revue et le stress des utilisateurs pendant le pilote."
+    ],
+    [
+     "Règles d'arrêt",
+     "Les règles d'arrêt définissent les conditions qui suspendent, redessinent ou terminent un pilote.",
+     "Les règles d'arrêt empêchent l'élan d'emporter un système faible ou nuisible vers un déploiement complet.",
+     "Arrêtez si la gravité des erreurs dépasse le seuil convenu. Suspendez si les utilisateurs ne peuvent pas vérifier les réponses dans le temps disponible."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez une hypothèse : si nous utilisons cet outil pour cette tâche, ce résultat mesurable devrait s'améliorer.",
+    "Définissez la frontière du pilote : utilisateurs, données, cas, durée, soutien et situations exclues.",
+    "Choisissez des métriques équilibrées : temps, qualité, reprises, satisfaction, charge mentale, coût, incidents et qualité de l'escalade.",
+    "Créez des canaux de soutien et de signalement pour que les utilisateurs remontent vite les problèmes.",
+    "Écrivez les critères d'arrêt, d'ajustement et de passage à l'échelle avant le début du pilote."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Hypothèse",
+    "Utilisateurs du pilote",
+    "Cas inclus",
+    "Cas exclus",
+    "Référence de départ",
+    "Métriques",
+    "Canal de soutien",
+    "Critères d'arrêt",
+    "Critères de passage à l'échelle"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Appeler ça un pilote mais déployer largement",
+     "C'est un déploiement sans la discipline de l'apprentissage."
+    ],
+    [
+     "Mener un pilote étroit avec des mesures équilibrées et des règles d'arrêt",
+     "Meilleur choix. Vous pouvez apprendre sans verrouiller un mauvais système."
+    ],
+    [
+     "Piloter seulement avec des enthousiastes",
+     "Risqué. Les enthousiastes peuvent masquer des problèmes d'utilisabilité, de confiance ou de charge que d'autres rencontreront."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Conçois un tableau de pilote pour cet usage d'IA : [cas d'usage]. Inclus l'hypothèse, le périmètre, les données, les utilisateurs, la durée, les métriques, les garde-fous, le soutien, les critères d'arrêt et de passage à l'échelle.",
+    "Relis ce plan de pilote et identifie où il pourrait devenir, par accident, un déploiement incontrôlé : [coller].",
+    "Crée un jeu de métriques équilibré pour ce pilote. Inclus au moins une mesure de vitesse, de qualité, d'expérience humaine, de risque et de résultat pour le client ou les parties prenantes."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre tableau de pilote sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez un tableau de pilote pour un cas d'usage réel ou prévu. Ne lancez pas le pilote avant d'avoir écrit une règle d'arrêt que la direction s'engage à respecter."
+   ],
+   "evidence": [
+    "Votre tableau de pilote complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Mesurer la vitesse mais pas la qualité.",
+    "Ignorer la charge de revue et de correction.",
+    "Ne pas donner aux utilisateurs un moyen sûr de signaler les problèmes.",
+    "Passer à l'échelle parce que la démo a impressionné, pas parce que le pilote a prouvé la valeur."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Tableau de pilote utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Repenser les rôles après l'automatisation",
+   "meta": {
+    "domain": "Management",
+    "time": "65 minutes",
+    "build": "une carte de rôle repensé qui préserve l'apprentissage, la responsabilité et un travail humain."
+   },
+   "start": [
+    "L'automatisation retire des tâches d'un rôle. Si rien d'autre ne change, il ne reste aux personnes que les exceptions, la surveillance et le stress.",
+    "À la fin, vous devez avoir une Carte de refonte de rôle concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Repenser",
+     "Repenser, c'est remodeler intentionnellement un rôle, un processus ou un système pour qu'il fonctionne mieux dans de nouvelles conditions.",
+     "Repenser n'est pas simplement retirer des tâches. C'est créer un rôle plus sain et plus complet autour des résultats, de l'apprentissage et des droits de décision.",
+     "Remplacez la saisie répétitive par la revue de qualité et l'analyse des exceptions. Ajoutez des missions d'accompagnement quand les tâches routinières des débutants sont automatisées."
+    ],
+    [
+     "Rôles",
+     "Les rôles sont des ensembles de responsabilités, de relations, de décisions, de compétences et de résultats attendus.",
+     "Un rôle est plus qu'une liste de tâches. Il inclut l'identité, l'apprentissage, la confiance, la charge de travail et la contribution.",
+     "Cartographiez un rôle par ses résultats, pas seulement ses tâches. Nommez quels droits de décision doivent changer si la responsabilité change."
+    ],
+    [
+     "Automatisation",
+     "L'automatisation est l'usage de systèmes pour réaliser le travail avec moins d'effort humain direct.",
+     "L'automatisation change ce que les humains font ensuite. Si le rôle n'est pas repensé, les gens héritent seulement des exceptions difficiles.",
+     "Après l'automatisation, ajoutez du travail d'amélioration au lieu de la seule surveillance. Vérifiez que le personnel junior garde un chemin pour apprendre les bases."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Cartographiez le rôle actuel : résultats, tâches, relations, décisions et moments d'apprentissage.",
+    "Marquez les tâches à automatiser, augmenter, préserver ou étendre.",
+    "Identifiez quel apprentissage disparaîtrait si toutes les tâches routinières s'évaporaient.",
+    "Concevez de nouvelles responsabilités qui créent une contribution complète : revue de qualité, amélioration, connaissance client, analyse des exceptions, formation ou coordination.",
+    "Vérifiez l'équité de la charge : la personne ne doit pas rester seule avec les cas limites sous pression."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Rôle",
+    "Résultats actuels",
+    "Tâches qui changent",
+    "Moments d'apprentissage à risque",
+    "Nouvelles responsabilités",
+    "Droits de décision",
+    "Soutien nécessaire",
+    "Risque de charge"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Retirer les tâches automatisées et laisser le reste inchangé",
+     "Incomplet. Le rôle peut devenir plus étroit, plus stressant et moins formateur."
+    ],
+    [
+     "Repenser le rôle autour des résultats, de l'apprentissage et des droits de décision",
+     "Meilleur choix. La technologie améliore le travail au lieu de le vider."
+    ],
+    [
+     "Garder les anciennes tâches pour tout le monde même si les outils aident",
+     "Peut protéger l'apprentissage un temps, mais gaspille la capacité si rien n'est repensé intentionnellement."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à repenser ce rôle après automatisation : [décrire le rôle]. Cartographie les résultats, les tâches, les relations, les droits de décision, les moments d'apprentissage et les risques si les tâches routinières disparaissent.",
+    "Quelles nouvelles responsabilités rendraient ce rôle plus précieux et plus humain une fois ces tâches automatisées : [tâches] ?",
+    "Joue le rôle d'un défenseur des employés. Relis cette refonte de rôle pour le stress, l'équité, l'apprentissage, l'autonomie et la reconnaissance."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre carte de refonte de rôle sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Interviewez une personne dont le rôle peut changer. Construisez une carte de rôle avant-après et identifiez un chemin d'apprentissage qui doit être préservé."
+   ],
+   "evidence": [
+    "Votre carte de refonte de rôle complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter les personnes comme des restes de tâches.",
+    "Oublier les chemins d'apprentissage des juniors.",
+    "Donner la responsabilité sans les droits de décision.",
+    "Mesurer seulement la production en ignorant le stress et le développement."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Carte de refonte de rôle utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Construire le contrôle humain dans la boucle",
+   "meta": {
+    "domain": "Management",
+    "time": "75 minutes",
+    "build": "une règle de contrôle humain dans la boucle pour un flux de travail appuyé par l'IA."
+   },
+   "start": [
+    "Un flux de travail inclut une aide d'IA. Quelqu'un dit qu'un humain le vérifiera, mais personne n'a défini ce que l'humain contrôle, quand, avec quelles preuves et avec quelle autorité.",
+    "À la fin, vous devez avoir une Règle de contrôle concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Humain dans la boucle",
+     "Humain dans la boucle signifie qu'une personne est placée intentionnellement dans un flux de travail pour réviser, décider, corriger ou arrêter une action appuyée par l'IA.",
+     "L'humain doit avoir des preuves, du temps, des critères, de l'autorité et une responsabilité. Une approbation finale symbolique ne suffit pas.",
+     "Exigez qu'un spécialiste révise les cas sensibles avant l'envoi de la réponse. Laissez le réviseur voir le document source, pas seulement le résumé de l'IA."
+    ],
+    [
+     "Système de contrôle",
+     "Un système de contrôle est l'ensemble des points de revue, critères, rôles, traces et chemins d'escalade qui maintient le travail dans des limites acceptables.",
+     "Les contrôles doivent attraper les erreurs pendant qu'elles sont encore réversibles. Ils rendent la responsabilité opérationnelle.",
+     "Écrivez une règle : si la confiance est faible, dirigez vers un humain avant d'agir. Documentez chaque dérogation et sa raison."
+    ],
+    [
+     "Escalade",
+     "L'escalade est le processus qui fait passer un cas à un niveau supérieur d'expertise, d'autorité ou de soin.",
+     "L'escalade protège les personnes quand le cas est sensible, incertain, à fort impact ou hors du périmètre sûr de l'outil.",
+     "Faites remonter les questions de santé, de conflit ou de droit à une personne formée. Faites remonter les plaintes clients impliquant perte, dommage ou détresse."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez un flux de travail où l'IA contribue à une production, une recommandation, un tri ou une aide à la décision.",
+    "Identifiez le point le plus précoce où une erreur nuisible pourrait apparaître.",
+    "Placez la revue là où l'erreur peut encore être détectée et corrigée.",
+    "Définissez le réviseur, les preuves, les critères, le temps accordé et l'autorité de suspendre ou d'annuler.",
+    "Écrivez les règles d'escalade pour l'incertitude, les sujets sensibles, les plaintes, les questions de sécurité ou les décisions touchant aux droits."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Flux de travail",
+    "Rôle de l'IA",
+    "Erreur possible",
+    "Point de revue",
+    "Réviseur",
+    "Preuves disponibles",
+    "Critères de revue",
+    "Autorité",
+    "Déclencheur d'escalade"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Ajouter une approbation humaine finale une fois que l'outil a tout terminé",
+     "Souvent symbolique. Une revue tardive peut manquer des erreurs cachées ou être trop précipitée."
+    ],
+    [
+     "Placer le contrôle humain au vrai point de risque",
+     "Meilleur choix. La revue devient une vraie protection, pas une cérémonie."
+    ],
+    [
+     "Laisser les humains réviser seulement les plaintes après coup",
+     "Trop tard pour beaucoup d'usages à fort impact."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Conçois un contrôle humain dans la boucle pour ce flux de travail : [flux]. Identifie les points d'erreur, les points de revue, les critères du réviseur, les preuves nécessaires, l'autorité et les déclencheurs d'escalade.",
+    "Réécris cette règle de contrôle floue en règle opérationnelle : « Un humain vérifie les réponses de l'IA avant usage. »",
+    "Crée cinq déclencheurs d'escalade pour ce flux appuyé par l'IA, incluant données sensibles, incertitude, plaintes, sécurité et décisions touchant aux droits."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre règle de contrôle sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Écrivez une règle de contrôle sous la forme : « Si X survient, Y révise Z selon les critères A avant que B se produise, et peut suspendre ou faire remonter à C. » Testez-la sur trois cas."
+   ],
+   "evidence": [
+    "Votre règle de contrôle complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Supposer que réviser égale être responsable.",
+    "Réviser seulement la réponse de l'IA sans le matériel source.",
+    "Ne donner aux réviseurs ni le temps ni le pouvoir d'arrêter le processus.",
+    "Ne pas documenter pourquoi les dérogations se produisent."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Règle de contrôle utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Gouverner les risques, l'éthique et la conformité",
+   "meta": {
+    "domain": "Management",
+    "time": "80 minutes",
+    "build": "une ligne de registre des risques IA avec contrôles, signaux d'incident et règles d'arrêt."
+   },
+   "start": [
+    "Une organisation a des usages d'IA éparpillés dans les équipes. Sans registre, les dirigeants ne peuvent pas savoir ce qui existe, qui en est responsable, quelles données sont touchées, ni quand il faut arrêter.",
+    "À la fin, vous devez avoir une Ligne de registre des risques IA concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Gouverner",
+     "Gouverner, c'est fixer les responsabilités, les règles, la surveillance, les contrôles et les processus de revue pour l'usage d'un système.",
+     "La gouvernance rend l'IA visible et responsable. Elle relie l'usage quotidien au risque, à l'éthique, à la conformité et aux décisions de direction.",
+     "Attribuez un responsable à chaque système d'IA. Revoyez le registre d'IA chaque trimestre."
+    ],
+    [
+     "Risque",
+     "Le risque est la possibilité qu'une action ou un système crée un dommage, une perte, une erreur, une injustice, une exposition ou une responsabilité manquée.",
+     "Un risque a une probabilité, une gravité, une détectabilité et une réversibilité. Tous les risques ne se valent pas.",
+     "Évaluez un usage d'IA par la probabilité et la gravité de l'erreur. Écrivez ce qui rendrait un risque détectable tôt."
+    ],
+    [
+     "Éthique",
+     "L'éthique est la pratique de se demander ce qui est juste, responsable, explicable, humain et digne de confiance.",
+     "L'éthique dépasse la légalité. Un usage peut être possible et rester injuste, opaque ou nuisible.",
+     "Demandez qui profite et qui porte le risque. Demandez si vous pourriez expliquer la décision publiquement."
+    ],
+    [
+     "Conformité",
+     "La conformité, c'est respecter les lois, politiques, normes, contrats et règles sectorielles applicables.",
+     "La conformité dépend du pays, du secteur, du type de données, de la finalité et du niveau d'impact. L'IA ne doit pas servir à contourner une revue qualifiée.",
+     "Dirigez les usages à fort impact vers les équipes juridique, confidentialité, sécurité ou conformité. Reliez chaque usage d'IA du registre à la règle ou politique qu'il doit suivre."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez un usage d'IA, officiel ou informel.",
+    "Notez la finalité, le responsable, les utilisateurs, les données, le fournisseur, le niveau d'autonomie, l'impact et la date de revue.",
+    "Nommez les risques principaux : confidentialité, sécurité, biais, explicabilité, erreur, dépendance, coût, conformité ou atteinte à la réputation.",
+    "Attachez au moins un contrôle et un signal d'incident à chaque risque sérieux.",
+    "Écrivez une règle d'arrêt pour l'erreur critique, le biais, la dérive de coût, le changement de fournisseur, l'impossibilité de vérifier ou le seuil de plaintes."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Cas d'usage",
+    "Responsable",
+    "Utilisateurs",
+    "Données",
+    "Fournisseur",
+    "Niveau d'autonomie",
+    "Impact",
+    "Contrôles",
+    "Signal d'incident",
+    "Règle d'arrêt"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Suivre seulement les systèmes officiels",
+     "Incomplet. Les outils informels peuvent créer un risque réel."
+    ],
+    [
+     "Enregistrer tous les usages d'IA significatifs, y compris pilotes et flux informels",
+     "Meilleur choix. On ne peut pas gouverner ce qu'on ne voit pas."
+    ],
+    [
+     "Attendre que le juridique crée le registre parfait",
+     "Trop passif. Commencez léger et améliorez-le avec le risque, le juridique, la sécurité et les utilisateurs."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Crée une ligne de registre des risques IA pour ce cas d'usage : [décrire]. Inclus le responsable, la finalité, les utilisateurs, les données, le fournisseur, l'autonomie, l'impact, les contrôles, les incidents, la date de revue et la règle d'arrêt.",
+    "Analyse cet usage d'IA pour les risques de confidentialité, sécurité, biais, explicabilité, erreur, fournisseur, coût, conformité et réputation : [décrire].",
+    "Génère des règles d'arrêt pour ce système d'IA. Inclus des seuils pour l'erreur, le biais, les plaintes, les changements de fournisseur, l'impossibilité de vérifier et le coût inattendu."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre ligne de registre des risques IA sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Démarrez un mini-registre avec trois usages d'IA que vous connaissez. Incluez au moins un usage informel. Partagez-le avec une personne responsable de la gouvernance."
+   ],
+   "evidence": [
+    "Votre ligne de registre des risques IA complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter les pilotes comme hors gouvernance.",
+    "Lister un risque sans contrôle.",
+    "Oublier la réponse aux incidents.",
+    "Tenir un registre que personne ne revoit."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Ligne de registre des risques IA utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Conduire le changement sans désengager l'équipe",
+   "meta": {
+    "domain": "Management",
+    "time": "70 minutes",
+    "build": "un message de changement honnête et une boucle de retour pour une transition de l'ère IA."
+   },
+   "start": [
+    "Les gens entendent que l'IA ou l'automatisation arrive. Certains sont enthousiastes, d'autres inquiets, et le silence des dirigeants crée des rumeurs.",
+    "À la fin, vous devez avoir un Script de conversation de changement concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Conduire le changement",
+     "Conduire le changement, c'est aider les gens à passer de la pratique actuelle à une nouvelle pratique avec direction, participation, apprentissage et confiance.",
+     "Conduire le changement, ce n'est pas annoncer des décisions. C'est écouter, expliquer l'incertitude, ajuster les plans et protéger les personnes pendant la transition.",
+     "Dites ce qui est décidé et ce qui reste ouvert. Tenez une revue de retours après un pilote et montrez ce qui a changé."
+    ],
+    [
+     "Désengagement",
+     "Se désengager, c'est retirer du travail son énergie, sa confiance, sa créativité, son honnêteté ou son effort.",
+     "Le désengagement apparaît souvent quand les gens sentent que le changement leur est imposé, quand les risques sont cachés, ou quand on exige l'apprentissage sans soutien.",
+     "Demandez ce qui pousserait les gens à cacher les erreurs de l'IA. Guettez le silence, la résistance, le cynisme et la baisse des signalements de problèmes."
+    ],
+    [
+     "Sécurité psychologique",
+     "La sécurité psychologique est la conviction partagée qu'on peut parler, poser des questions, admettre des erreurs et contester des idées sans humiliation ni punition.",
+     "Elle est essentielle à l'adoption de l'IA, car les erreurs cachées et la peur silencieuse rendent les systèmes dangereux.",
+     "Remerciez publiquement quelqu'un qui signale une erreur d'outil. Séparez l'apprentissage des incidents et le blâme."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez pourquoi le changement est envisagé maintenant, avec des raisons simples de service ou d'activité.",
+    "Séparez ce qui est décidé de ce qui reste ouvert.",
+    "Nommez les risques honnêtement : évolutions de postes, qualité, données, charge, confiance, impact client ou exigences d'apprentissage.",
+    "Nommez les protections et les points de participation : pilotes, consultation, formation, escalade, redéploiement ou dates de revue.",
+    "Créez une boucle de retour avec une date, un canal, un responsable des réponses et une action visible après les retours."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Pourquoi maintenant",
+    "Ce qui est décidé",
+    "Ce qui reste ouvert",
+    "Risques",
+    "Protections",
+    "Points de participation",
+    "Canal de retour",
+    "Date de la prochaine mise à jour"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Ne rien dire tant que chaque décision n'est pas finale",
+     "Cela crée la peur et retire du projet la connaissance du terrain."
+    ],
+    [
+     "Communiquer honnêtement et inviter la participation avant le déploiement",
+     "Meilleur choix. La confiance grandit quand les gens voient à la fois la franchise et l'action."
+    ],
+    [
+     "Promettre qu'aucun rôle ne changera",
+     "Promesse dangereuse. Elle rassure un temps mais détruit la crédibilité ensuite."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Rédige un message de changement honnête pour cette transition IA : [décrire]. Inclus pourquoi maintenant, ce qui est décidé, ce qui reste ouvert, les risques, les protections, la participation et la date de la prochaine mise à jour.",
+    "Réécris ce message de changement pour qu'il soit clair, humain et non défensif : [coller].",
+    "Joue le rôle d'un employé sceptique. Quelles questions, peurs ou objections ce message soulèverait-il ?"
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre script de conversation de changement sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Écrivez une mise à jour de changement de cinq minutes et testez-la avec un collègue. Demandez : qu'est-ce qui semble honnête ? Qu'est-ce qui semble vague ? Quelle question resterait sans réponse ?"
+   ],
+   "evidence": [
+    "Votre script de conversation de changement complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Utiliser le battage au lieu de la clarté.",
+    "Prétendre qu'il n'y a aucun risque.",
+    "Demander des retours sans y répondre.",
+    "Laisser les managers improviser des messages différents."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Script de conversation de changement utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Transformer les gains de productivité en capacité d'apprentissage",
+   "meta": {
+    "domain": "Management",
+    "time": "60 minutes",
+    "build": "une règle de partage des gains qui réinvestit la productivité dans l'apprentissage, la qualité et un travail plus sain."
+   },
+   "start": [
+    "Un outil fait gagner du temps. Si chaque minute gagnée devient plus de production, les gens peuvent cacher les problèmes, s'épuiser ou ne voir la technologie que comme une menace.",
+    "À la fin, vous devez avoir un Plan de réinvestissement de la productivité concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Gains de productivité",
+     "Les gains de productivité sont des améliorations de production, de vitesse, de qualité, de coût ou de capacité produites par un meilleur processus ou outil.",
+     "Un gain n'est réel qu'après avoir compté l'installation, la revue, la correction, la coordination et l'impact humain.",
+     "Mesurez le temps net gagné après vérification des sorties. Comparez la production plus rapide avec les reprises et la satisfaction client."
+    ],
+    [
+     "Capacité d'apprentissage",
+     "La capacité d'apprentissage, c'est le temps, l'énergie, le soutien et l'espace de pratique dont les gens disposent pour construire de nouvelles compétences.",
+     "Quand les gains de productivité sont réinvestis dans l'apprentissage, l'équipe devient plus capable au lieu d'être seulement plus chargée.",
+     "Utilisez une partie du temps gagné pour la revue entre pairs ou la documentation. Réservez un temps de pratique hebdomadaire après l'introduction d'un nouvel outil."
+    ],
+    [
+     "Réinvestissement",
+     "Réinvestir, c'est utiliser délibérément une partie des gains pour améliorer la capacité future, la qualité, la sécurité ou le bien-être.",
+     "Le réinvestissement empêche l'IA de devenir un simple multiplicateur de pression.",
+     "Allouez 25 % du temps gagné à la formation. Récompensez ceux qui documentent les leçons des tests ratés."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Mesurez le gain net de productivité après installation, revue, correction et coordination.",
+    "Décidez quelle part des gains va à la production, à l'apprentissage, à la qualité, à la documentation, à la récupération ou à l'amélioration client.",
+    "Rendez le réinvestissement visible pour que les gens sachent que l'adaptation n'est pas juste du travail invisible en plus.",
+    "Récompensez les comportements qui protègent le système : documenter, enseigner, signaler les risques et arrêter les mauvais pilotes.",
+    "Vérifiez si la charge de travail s'est agrandie en silence après l'introduction de l'outil."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Outil ou processus",
+    "Gain net mesuré",
+    "Réinvestissement en production",
+    "Réinvestissement en apprentissage",
+    "Réinvestissement en qualité",
+    "Temps de récupération ou de concentration",
+    "Comportement reconnu",
+    "Risque de charge"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Utiliser tout le temps gagné pour plus de tâches",
+     "La production peut monter à court terme, mais l'apprentissage, la qualité et la confiance peuvent baisser."
+    ],
+    [
+     "Partager les gains entre production, apprentissage, qualité et récupération",
+     "Meilleur choix. La productivité devient de la capacité, pas seulement de la pression."
+    ],
+    [
+     "Cacher les gains de productivité pour que la charge n'augmente pas",
+     "Compréhensible mais malsain. Mieux vaut négocier un réinvestissement explicite."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à créer un plan de réinvestissement de la productivité pour cet outil : [outil/processus]. Inclus le gain net, la production, l'apprentissage, la qualité, la documentation, la récupération et la reconnaissance.",
+    "Quels coûts cachés dois-je soustraire avant d'affirmer que cet outil fait gagner du temps ? Inclus l'installation, la revue, la correction, l'approbation et le soutien aux utilisateurs.",
+    "Crée un accord d'équipe sur la manière de partager équitablement et de mesurer honnêtement les gains de productivité de l'IA."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre plan de réinvestissement de la productivité sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Choisissez un gain de productivité et proposez une règle de réinvestissement. Exemple : 50 % production, 25 % revue qualité, 25 % apprentissage ou documentation."
+   ],
+   "evidence": [
+    "Votre plan de réinvestissement de la productivité complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Mesurer seulement la vitesse brute.",
+    "Traiter la formation comme du temps personnel.",
+    "Récompenser l'enthousiasme mais pas le signalement prudent des risques.",
+    "Laisser la charge de travail grossir de façon invisible."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Plan de réinvestissement de la productivité utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Exécuter un plan de résilience sur 90 jours",
+   "meta": {
+    "domain": "Management",
+    "time": "90 minutes",
+    "build": "un plan de résilience sur 90 jours avec référence de départ, pilote, preuves et revue."
+   },
+   "start": [
+    "Vous voyez à la fois le risque et l'opportunité dans le travail de l'ère IA, mais le sujet est trop vaste. Il vous faut un petit cycle qui transforme l'inquiétude en action.",
+    "À la fin, vous devez avoir un Plan d'action de 90 jours concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Exécuter",
+     "Exécuter, c'est transformer une intention en actions planifiées, en preuves, en décisions et en suivi.",
+     "L'exécution compte parce que l'anxiété de l'ère IA reste souvent abstraite. Un cycle de 90 jours rend l'action assez petite pour être terminée.",
+     "Mettez deux créneaux d'apprentissage dans votre agenda aujourd'hui. Choisissez la date de décision du jour 60 avant de lancer un pilote."
+    ],
+    [
+     "90 jours",
+     "Une période de 90 jours est un cycle de planification court, assez long pour apprendre mais assez court pour rester concret.",
+     "Quatre-vingt-dix jours laissent le temps d'une référence, d'une pratique, d'un pilote, d'une réflexion et d'un SWOT révisé, sans prétendre prédire l'avenir.",
+     "Menez un pilote de deux semaines à l'intérieur d'un plan d'apprentissage de huit semaines. Rafraîchissez votre SWOT à la fin du cycle."
+    ],
+    [
+     "Plan de résilience",
+     "Un plan de résilience est une séquence pratique d'actions qui augmente les options, réduit les risques et renforce la capacité dans l'incertitude.",
+     "La résilience se construit par l'action répétée fondée sur des preuves, pas par la seule motivation.",
+     "Associez une menace, une opportunité et une action mesurable. Ajoutez le résultat de votre pilote à votre portefeuille ou à la documentation de l'équipe."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez une menace réaliste et une opportunité atteignable pour les 12 prochains mois.",
+    "Mesurez votre point de départ : compétence, temps, erreurs, revenus, énergie, réseau ou preuves de portefeuille.",
+    "Sélectionnez une tâche représentative pour un pilote de deux semaines.",
+    "Bloquez un temps d'apprentissage hebdomadaire et nommez un partenaire de responsabilité.",
+    "Prenez une décision au jour 60 : déployer, modifier ou arrêter. Rafraîchissez votre SWOT au jour 90."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Menace prioritaire",
+    "Opportunité prioritaire",
+    "Référence de départ",
+    "Tâche du pilote",
+    "Test de deux semaines",
+    "Créneau d'apprentissage hebdomadaire",
+    "Partenaire de responsabilité",
+    "Décision du jour 60",
+    "Mise à jour SWOT du jour 90"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Tout étudier jusqu'à vous sentir prêt",
+     "Trop large. Apprendre sans agir peut devenir de l'évitement."
+    ],
+    [
+     "Mener un cycle de 90 jours ciblé avec des preuves",
+     "Meilleur choix. La petite action répétée construit la résilience."
+    ],
+    [
+     "Attendre que votre organisation vous dise quoi apprendre",
+     "Risqué. Vos options s'améliorent quand vous commencez avant que l'urgence n'impose l'action."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à construire un plan de résilience sur 90 jours. Ma menace : [menace]. Mon opportunité : [opportunité]. Mon rôle actuel : [rôle]. Inclus la référence, le pilote, les créneaux d'apprentissage, les preuves, la décision du jour 60 et le SWOT du jour 90.",
+    "Conteste mon plan de 90 jours. Le périmètre est-il trop large ? Les métriques sont-elles mesurables ? Que manque-t-il ?",
+    "Crée un plan de pilote de deux semaines pour cette tâche représentative : [tâche]. Inclus l'hypothèse, les cas, les métriques, les garde-fous et les critères de décision."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre plan d'action de 90 jours sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Commencez un cycle de 90 jours aujourd'hui. Mettez les deux premiers créneaux d'apprentissage dans votre agenda et écrivez les critères de décision du jour 60 avant de commencer."
+   ],
+   "evidence": [
+    "Votre plan d'action de 90 jours complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Essayer de régler tous les risques de carrière à la fois.",
+    "Sauter la référence de départ.",
+    "Mener un pilote sans date de décision.",
+    "Mettre à jour votre récit sans preuves."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Plan d'action de 90 jours utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  }
+ ]
+}

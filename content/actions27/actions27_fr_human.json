@@ -1,0 +1,1017 @@
+{
+ "front": {
+  "purpose": "Ce contenu est écrit pour les apprenants qui utilisent les tutoriels directement. Il évite les notes de facilitateur et le langage magistral. Chaque session demande à l'apprenant d'agir, de remplir une feuille de travail, de faire un choix, d'utiliser des prompts avec prudence et de produire un petit projet.",
+  "format": "Chaque session comprend un scénario, les définitions des concepts du titre, un auto-contrôle rapide, des actions, une feuille de travail, un choix de voie, des prompts, un point de contrôle, un petit projet, des preuves à conserver, des erreurs à éviter et une ligne d'arrivée.",
+  "safety": "N'utilisez les prompts qu'avec des informations que vous avez le droit de partager. Pour les décisions juridiques, financières, médicales, psychologiques, de cybersécurité ou de conformité, consultez des professionnels qualifiés et les politiques approuvées de votre organisation."
+ },
+ "dom_intro": "Utilisez ces sessions pour développer le jugement, la communication, la confiance, la créativité, l'attention, la santé et la résilience de carrière.",
+ "sessions": [
+  {
+   "num": 19,
+   "title": "Construire un SWOT personnel et une proposition de valeur",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "un SWOT personnel et une proposition de valeur en une phrase, appuyée par des preuves."
+   },
+   "start": [
+    "Votre travail change, et un intitulé de poste n'explique plus votre valeur. Vous devez nommer ce que vous résolvez, pour qui, avec quelles preuves.",
+    "À la fin, vous devez avoir un SWOT personnel et une Proposition de valeur concrets, utilisables dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "SWOT personnel",
+     "Un SWOT personnel est une réflexion structurée sur les forces, faiblesses, opportunités et menaces de votre situation professionnelle.",
+     "Il devient utile quand chaque élément repose sur une preuve et se relie à une action.",
+     "Listez une force avec une preuve des 12 derniers mois. Transformez une faiblesse en action d'apprentissage avec une échéance."
+    ],
+    [
+     "Proposition de valeur",
+     "Une proposition de valeur est un court énoncé du problème que vous résolvez, pour qui, et avec quelles preuves.",
+     "Elle rend votre valeur transportable au-delà d'un intitulé de poste et plus facile à comprendre pour les autres.",
+     "Écrivez : j'aide [public] à obtenir [résultat] grâce à [preuves]. Demandez à trois personnes si votre énoncé semble précis et crédible."
+    ],
+    [
+     "Preuves",
+     "Les preuves sont des éléments observables : résultats, exemples, décisions, retours, livrables ou leçons apprises.",
+     "Les preuves transforment l'auto-description en crédibilité. Elles vous aident aussi à voir les compétences transférables sous des tâches qui changent.",
+     "Rassemblez cinq exemples de problèmes que vous avez résolus. Notez une leçon tirée d'un échec et comment vous avez changé de pratique."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez votre première proposition de valeur : j'aide [public] à obtenir [résultat] grâce à [compétences/preuves].",
+    "Listez les preuves des 12 derniers mois : résultats, décisions, problèmes résolus, retours, livrables et leçons d'échecs.",
+    "Construisez un SWOT avec des faits, pas des étiquettes de personnalité.",
+    "Reliez une force à une opportunité et une faiblesse à une action.",
+    "Demandez à trois personnes un retour « continuer, arrêter, commencer » et mettez votre carte à jour."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Public que j'aide",
+    "Résultat que je crée",
+    "Preuves",
+    "Forces",
+    "Faiblesses",
+    "Opportunités",
+    "Menaces",
+    "Prochaine action"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Vous décrire seulement par votre intitulé de poste",
+     "Trop étroit. Les titres changent plus vite que la valeur transférable."
+    ],
+    [
+     "Décrire la valeur par le public, le résultat et la preuve",
+     "Meilleur choix. Vos forces deviennent visibles et transportables."
+    ],
+    [
+     "Lister seulement les forces parce que les faiblesses découragent",
+     "Incomplet. Les faiblesses deviennent utiles quand elles deviennent des actions."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à transformer ces réalisations en proposition de valeur : [liste]. Utilise la structure : j'aide [public] à obtenir [résultat] grâce à [compétences/preuves].",
+    "Crée un SWOT personnel à partir de ces faits. N'utilise pas de traits génériques ; utilise des preuves et des actions suggérées.",
+    "Pose-moi dix questions qui révéleraient mes compétences transférables sous des tâches qui pourraient être automatisées."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre SWOT personnel et votre proposition de valeur sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez un SWOT personnel et une proposition de valeur d'une page. Envoyez la proposition de valeur à trois personnes et demandez ce qui semble vrai, flou ou manquant."
+   ],
+   "evidence": [
+    "Votre SWOT personnel et votre proposition de valeur complétés.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Confondre les tâches avec l'identité.",
+    "Utiliser des adjectifs sans preuves.",
+    "Ignorer l'énergie et la durabilité.",
+    "Traiter le SWOT comme un exercice unique au lieu d'une carte vivante."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un SWOT personnel et une Proposition de valeur utilisables, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 20,
+   "title": "Pratiquer la pensée critique dans l'incertitude",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "75 minutes",
+    "build": "une entrée de journal de décision qui sépare faits, hypothèses, préférences, risques et déclencheurs de revue."
+   },
+   "start": [
+    "Vous faites face à une décision avec une information incomplète. L'IA peut produire des arguments rapides, mais vous devez savoir ce qui est connu, deviné, préféré et réversible.",
+    "À la fin, vous devez avoir un Journal de décision concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Pensée critique",
+     "La pensée critique est un raisonnement discipliné qui teste les affirmations, sépare les preuves des hypothèses et considère les alternatives.",
+     "Elle est particulièrement importante quand l'IA donne des réponses rapides, fluides et plausibles.",
+     "Demandez ce qui rendrait votre réponse préférée fausse. Séparez faits, hypothèses et préférences dans une note de décision."
+    ],
+    [
+     "Incertitude",
+     "L'incertitude est la condition de ne pas en savoir assez pour être pleinement confiant sur les résultats, les causes ou les conséquences.",
+     "L'incertitude doit être nommée, bornée et revue. Elle ne doit pas être cachée derrière une seule réponse confiante.",
+     "Donnez une estimation basse, centrale et haute avec des conditions. Écrivez quel signal vous ferait revoir une décision."
+    ],
+    [
+     "Journal de décision",
+     "Un journal de décision est un enregistrement écrit d'une décision, des options, des preuves, des hypothèses, des risques, du niveau de confiance et de la date de revue.",
+     "Il vous aide à juger plus tard la qualité de la réflexion, au lieu de réécrire l'histoire une fois le résultat connu.",
+     "Avant un choix, notez ce que vous savez et ce que vous devinez. Relisez l'entrée après un mois et améliorez vos habitudes de raisonnement."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez la décision en une phrase. Si vous ne pouvez pas, définissez d'abord le problème.",
+    "Séparez les faits, les hypothèses et les préférences en trois listes.",
+    "Pour chaque hypothèse, écrivez comment vous pourriez la tester ou quel signal vous ferait changer d'avis.",
+    "Classez la décision : réversible ou difficile à annuler.",
+    "Notez la décision, le décideur, le niveau de confiance, les risques et la date de revue."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Décision",
+    "Résultat souhaité",
+    "Faits",
+    "Hypothèses",
+    "Préférences",
+    "Risques",
+    "Réversibilité",
+    "Décideur",
+    "Date de revue"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Demander immédiatement à l'IA la meilleure réponse",
+     "Prématuré. Vous risquez d'obtenir une réponse rapide au mauvais problème."
+    ],
+    [
+     "Cadrer d'abord la décision et séparer les faits des hypothèses",
+     "Meilleur choix. Les outils deviennent un appui au jugement, pas un substitut."
+    ],
+    [
+     "Attendre que l'incertitude disparaisse",
+     "Impossible dans beaucoup de décisions réelles. Utilisez plutôt l'incertitude honnêtement."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à créer une entrée de journal de décision pour ce choix : [choix]. Sépare les faits, les hypothèses, les préférences, les risques, les options, la réversibilité et les déclencheurs de revue.",
+    "Joue le rôle d'un contradicteur compétent. Quelle explication alternative, quelle preuve manquante ou quel scénario d'échec devrais-je considérer ?",
+    "Convertis cette recommandation en note de décision avec niveau de confiance, hypothèses et signaux qui nous feraient la revoir : [coller]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre journal de décision sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Écrivez une entrée de journal de décision cette semaine. Relisez-la après deux semaines ou un mois et jugez la qualité de votre raisonnement, pas seulement le résultat."
+   ],
+   "evidence": [
+    "Votre journal de décision complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter les préférences comme des faits.",
+    "Laisser une réponse d'IA confiante fixer le cadre.",
+    "Utiliser un seul scénario au lieu de fourchettes.",
+    "Ne pas noter ce que vous saviez au moment du choix."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Journal de décision utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 21,
+   "title": "Communiquer avec empathie et précision",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "65 minutes",
+    "build": "un script de conversation difficile utilisant l'empathie, la confirmation et des prochaines étapes précises."
+   },
+   "start": [
+    "Quelqu'un est frustré, inquiet, en colère, déçu ou perdu. Une réponse rapide peut être techniquement correcte mais relationnellement fausse.",
+    "À la fin, vous devez avoir une Fiche de conversation empathique concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Communiquer",
+     "Communiquer, c'est créer une compréhension partagée par les mots, l'écoute, le ton, le moment choisi et le suivi.",
+     "Communiquer, ce n'est pas seulement transmettre de l'information. Le message doit toucher la personne en face de vous.",
+     "Demandez à l'autre de répéter la prochaine étape avec ses propres mots. Envoyez un suivi qui confirme les engagements et le calendrier."
+    ],
+    [
+     "Empathie",
+     "L'empathie est l'effort de comprendre le point de vue d'une autre personne et de vérifier cette compréhension avec elle.",
+     "L'empathie n'est ni de la télépathie ni un accord automatique. C'est une compréhension vérifiée qui améliore la réponse.",
+     "Dites : « Laissez-moi vérifier que j'ai compris ce qui compte le plus. » Posez une question ouverte avant d'offrir un conseil."
+    ],
+    [
+     "Précision",
+     "La précision, c'est être clair, spécifique, exact et concret sur les faits, les options, les engagements et les prochaines étapes.",
+     "L'empathie sans précision peut sembler floue. La précision sans empathie peut sembler froide. Le tutoriel demande les deux.",
+     "Remplacez « bientôt » par une date et un responsable. Séparez ce qui est connu, inconnu et promis."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez une conversation réelle dont vous avez besoin ou que vous évitez souvent.",
+    "Écrivez la préoccupation probable de l'autre personne, puis marquez-la comme une supposition, pas un fait.",
+    "Préparez une question ouverte et une phrase de reformulation.",
+    "Utilisez la boucle écouter-confirmer-répondre : demander, faire une pause, résumer, confirmer, répondre.",
+    "Terminez par une prochaine étape précise, réaliste et assumée."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Situation",
+    "Préoccupation probable de l'autre",
+    "Question ouverte",
+    "Phrase de reformulation",
+    "Fait à clarifier",
+    "Option à proposer",
+    "Engagement",
+    "Moment du suivi"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Expliquer vite pour que la personne voie la logique",
+     "Peut échouer si la personne a d'abord besoin de se sentir comprise."
+    ],
+    [
+     "Confirmer la préoccupation avant de proposer une réponse",
+     "Meilleur choix. L'empathie devient vérifiable, pas imaginée."
+    ],
+    [
+     "Être d'accord avec tout pour garder la paix",
+     "Ce n'est pas de l'empathie. On peut comprendre sans abandonner les faits ni les limites."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à préparer une conversation difficile. Situation : [décrire]. Crée des questions ouvertes, des phrases de reformulation, des faits à clarifier, des options possibles et une prochaine étape respectueuse.",
+    "Réécris cette réponse pour qu'elle soit empathique mais toujours précise et responsable : [coller].",
+    "Joue le rôle de l'autre personne dans cette situation. Résiste de façon réaliste pour que je m'entraîne à écouter et à répondre."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche de conversation empathique sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Utilisez la boucle écouter-confirmer-répondre dans une conversation réelle. Ensuite, écrivez ce qui a changé quand vous avez confirmé la préoccupation avant de conseiller."
+   ],
+   "evidence": [
+    "Votre fiche de conversation empathique complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Supposer que vous savez ce que la personne ressent.",
+    "Se précipiter vers le conseil.",
+    "Utiliser un langage d'empathie sans changer la réponse.",
+    "Finir par un réconfort vague au lieu d'une prochaine étape."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche de conversation empathique utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 22,
+   "title": "Construire la confiance et la sécurité psychologique",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "une micro-pratique de confiance et une réponse aux incidents sans blâme."
+   },
+   "start": [
+    "Les gens ne signaleront pas les erreurs d'outil, la confusion ou la surcharge si cela menace leur réputation. La confiance doit se pratiquer avant la crise.",
+    "À la fin, vous devez avoir un Plan de pratique de la confiance concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Confiance",
+     "La confiance est la conviction que les gens agiront avec fiabilité, honnêteté, compétence et soin.",
+     "La confiance grandit par de petites preuves répétées. Elle s'abîme quand les erreurs sont cachées, le mérite volé ou les engagements flous.",
+     "Tenez une petite promesse et rendez compte sans qu'on vous le demande. Admettez tôt une limite au lieu de la cacher."
+    ],
+    [
+     "Sécurité psychologique",
+     "La sécurité psychologique est la condition où les gens peuvent parler, poser des questions et signaler des erreurs sans peur d'humiliation ou de punition.",
+     "Le travail de l'ère IA a besoin de sécurité psychologique, car les erreurs d'outil, les biais et les mauvais usages doivent remonter vite.",
+     "Remerciez la première personne qui signale une erreur d'IA. Demandez : « Qu'est-ce qui pourrait mal tourner dans ce plan ? »"
+    ],
+    [
+     "Réponse aux incidents sans blâme",
+     "Une réponse sans blâme enquête sur ce qui s'est passé et sur comment améliorer le système, sans faire du rapporteur un bouc émissaire.",
+     "Sans blâme ne veut pas dire sans responsabilité. Cela veut dire apprendre avant de punir et corriger le processus qui a permis le problème.",
+     "Séparez les faits de la chronologie des jugements personnels. Terminez une revue d'incident par une correction du système."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez un comportement de confiance à pratiquer cette semaine : tenir une petite promesse, donner le mérite, signaler un problème tôt, expliquer une décision ou réparer une erreur.",
+    "Écrivez comment les erreurs d'IA ou d'automatisation doivent être signalées sans blâme.",
+    "Définissez ce qui se passe après un signalement : remercier, protéger, enquêter, corriger, communiquer.",
+    "Créez un exemple visible d'apprentissage à partir d'une erreur.",
+    "Demandez si les gens croient qu'il est sûr de signaler les problèmes ; ne le supposez pas."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Comportement de confiance",
+    "Petite promesse",
+    "Canal de signalement d'erreur",
+    "Réponse sans blâme",
+    "Action de correction",
+    "Communication après incident",
+    "Signal de sécurité",
+    "Prochaine pratique"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Dire aux gens qu'ils peuvent parler sans risque",
+     "Les mots aident, mais la preuve vient de ce qui se passe après le premier signalement inconfortable."
+    ],
+    [
+     "Récompenser le signalement précoce et montrer la correction apportée",
+     "Meilleur choix. La sécurité devient observable."
+    ],
+    [
+     "Compter seulement sur le courage individuel",
+     "Incomplet. Les systèmes et les dirigeants déterminent si le courage est puni ou protégé."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Crée une réponse aux incidents d'IA sans blâme pour cette équipe : [contexte]. Inclus la première réaction, l'établissement des faits, la correction, la communication et la capture des leçons.",
+    "Aide-moi à identifier des comportements de confiance que je peux pratiquer chaque semaine comme dirigeant ou collègue.",
+    "Réécris cette réponse d'incident pour qu'elle remercie le rapporteur, évite le blâme et protège quand même la responsabilité : [coller]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre plan de pratique de la confiance sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Menez une petite pratique de confiance pendant une semaine. Tenez une promesse publiquement, signalez un risque tôt, ou remerciez quelqu'un d'avoir nommé un problème. Notez la réaction."
+   ],
+   "evidence": [
+    "Votre plan de pratique de la confiance complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Récompenser seulement le succès et la vitesse.",
+    "Blâmer la personne qui a trouvé le problème.",
+    "Cacher les corrections après les incidents.",
+    "Attendre la confiance sans preuves répétées."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Plan de pratique de la confiance utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 23,
+   "title": "Créer sous contraintes utiles",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "60 minutes",
+    "build": "une solution créative générée sous contraintes utiles et testée contre un standard de qualité."
+   },
+   "start": [
+    "Vous avez besoin d'idées. L'IA peut en produire beaucoup, mais beaucoup seront génériques si vous ne fixez pas des contraintes qui reflètent les vrais utilisateurs, les ressources et les valeurs.",
+    "À la fin, vous devez avoir une Fiche de créativité sous contraintes concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Créer",
+     "Créer, c'est produire une idée, une option, un design, un message, un processus ou une solution utile et nouvelle.",
+     "Créer, ce n'est pas seulement la nouveauté. Dans ce tutoriel, la créativité doit servir un vrai utilisateur, une contrainte ou un problème.",
+     "Générez dix options, puis combinez les deux plus utiles. Testez une idée avec un vrai utilisateur avant de la peaufiner."
+    ],
+    [
+     "Contraintes utiles",
+     "Les contraintes utiles sont des limites qui rendent une solution plus réaliste, plus ciblée, plus inclusive ou plus originale.",
+     "Les contraintes peuvent inclure le temps, le budget, la langue, l'accessibilité, l'accès à la technologie, la capacité de l'équipe, la sécurité ou le contexte culturel.",
+     "Concevez la solution pour une connexion lente et 30 minutes. Demandez à l'IA des idées qui marchent sans logiciel payant."
+    ],
+    [
+     "Standard de qualité",
+     "Un standard de qualité est le test qu'une idée créative doit réussir pour être jugée assez bonne.",
+     "Sans standard, la créativité devient une affaire de goût. Avec un standard, les idées peuvent être améliorées et comparées.",
+     "Exigez qu'une idée de formation soit utilisable par des débutants sans facilitateur. Vérifiez si la solution réduit l'effort pour l'utilisateur visé."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez le défi créatif en une phrase.",
+    "Ajoutez trois contraintes : budget, temps, accessibilité, langue, niveau de compétence, accès à la technologie, sécurité, culture ou durabilité.",
+    "Générez dix options sous les contraintes, sans juger trop tôt.",
+    "Combinez les deux idées les plus fortes en un meilleur concept.",
+    "Testez le concept contre un besoin d'utilisateur et un standard de qualité."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Défi créatif",
+    "Contrainte 1",
+    "Contrainte 2",
+    "Contrainte 3",
+    "Dix idées",
+    "Deux idées à combiner",
+    "Standard de qualité",
+    "Test avec un utilisateur"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Demander beaucoup d'idées à l'IA sans contraintes",
+     "Vous obtiendrez probablement des suggestions larges, familières et superficielles."
+    ],
+    [
+     "Fixer les contraintes avant de générer les options",
+     "Meilleur choix. Les contraintes rendent la créativité utile et originale."
+    ],
+    [
+     "Appliquer les contraintes seulement après avoir choisi une idée",
+     "Des contraintes tardives peuvent révéler que l'idée n'a jamais été viable."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Génère dix idées pour ce défi : [défi]. Contraintes : [contraintes]. Chaque idée doit expliquer pourquoi elle respecte les contraintes et qui en profite.",
+    "Combine les idées [A] et [B] en un concept plus fort. Garde les contraintes et améliore la faisabilité.",
+    "Joue le rôle d'un utilisateur avec peu de temps, une connexion lente et une aisance numérique variable. Examine cette idée et dis-moi ce qui échouerait."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche de créativité sous contraintes sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez une solution sous contraintes pour un problème réel. Testez-la avec une personne représentative de l'utilisateur et révisez selon ses retours."
+   ],
+   "evidence": [
+    "Votre fiche de créativité sous contraintes complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Croire que plus d'idées égale une meilleure réflexion.",
+    "Choisir la nouveauté plutôt que l'utilité.",
+    "Ignorer les contraintes que vivent les vrais utilisateurs.",
+    "Laisser l'IA cadrer le problème avant vous."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche de créativité sous contraintes utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 24,
+   "title": "Faire grandir votre portfolio de carrière et votre réseau",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "75 minutes",
+    "build": "une histoire de portfolio et une carte d'actions réseau."
+   },
+   "start": [
+    "Vos capacités doivent être visibles avant que vous ayez besoin d'une transition. Un CV dit ce que vous avez fait ; un portfolio montre comment vous pensez et créez de la valeur.",
+    "À la fin, vous devez avoir une Carte de portfolio et de réseau concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Portfolio de carrière",
+     "Un portfolio de carrière est une collection de preuves qui montre ce que vous savez faire, comment vous pensez et quels résultats vous créez.",
+     "Un portfolio démontre la valeur plus concrètement qu'une liste de responsabilités. Il aide les autres à voir vos capacités transférables.",
+     "Écrivez une étude de cas avec contexte, action, résultat, preuve et leçon. Retirez les détails confidentiels tout en gardant la compétence transférable visible."
+    ],
+    [
+     "Réseau",
+     "Un réseau est l'ensemble des relations qui apportent information, apprentissage, soutien, collaboration et opportunités.",
+     "Un réseau sain s'entretient avant la crise. Les liens faibles révèlent souvent des opportunités que votre cercle proche ne voit pas.",
+     "Reprenez contact avec un ancien collègue avec une question utile. Cartographiez vos contacts par métier, secteur, clients, apprentissage et soutien."
+    ],
+    [
+     "Histoire transférable",
+     "Une histoire transférable explique comment une réalisation démontre des compétences applicables à un autre rôle, secteur ou problème.",
+     "Elle transforme le travail passé en options futures en rendant visible la compétence sous-jacente.",
+     "Réécrivez une réalisation administrative comme de la coordination, du contrôle de risque ou de l'amélioration de service. Demandez à un relecteur quel rôle votre histoire lui fait imaginer pour vous."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez une réalisation et écrivez-la comme un cas : contexte, rôle, contrainte, action, résultat, preuve et leçon.",
+    "Retirez ou généralisez les détails confidentiels.",
+    "Nommez les compétences transférables sous le travail.",
+    "Cartographiez votre réseau : métier, secteur, clients, apprentissage et soutien.",
+    "Contactez un lien faible avec une question ou une ressource utile, pas une demande désespérée."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Réalisation",
+    "Contexte",
+    "Rôle",
+    "Contrainte",
+    "Action",
+    "Résultat",
+    "Preuve",
+    "Leçon",
+    "Contact réseau"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Attendre de chercher un emploi pour construire des preuves",
+     "Les preuves tardives sont plus dures à rassembler et souvent bâclées."
+    ],
+    [
+     "Documenter les preuves pendant que le travail est frais",
+     "Meilleur choix. Vos options grandissent avant que l'urgence n'apparaisse."
+    ],
+    [
+     "Tout partager publiquement",
+     "Risqué. Les bons portfolios protègent la confidentialité tout en montrant la valeur transférable."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Transforme cette réalisation en histoire de portfolio avec contexte, rôle, contrainte, action, résultat, preuve et leçon : [décrire]. Retire les détails confidentiels.",
+    "Identifie les compétences transférables dans cette histoire de portfolio et suggère des rôles ou opportunités où elles comptent.",
+    "Rédige un court message pour reprendre contact avec un lien faible. Je veux demander [sujet] et offrir [ressource ou idée utile]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre carte de portfolio et de réseau sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Écrivez une histoire de portfolio et envoyez-la à un relecteur de confiance. Demandez si votre valeur est claire sans détail confidentiel."
+   ],
+   "evidence": [
+    "Votre carte de portfolio et de réseau complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Lister des tâches au lieu de montrer des résultats.",
+    "Partager des informations sensibles de clients ou d'employeurs.",
+    "Contacter les gens seulement quand vous avez besoin de quelque chose.",
+    "Confondre mentors et sponsors."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Carte de portfolio et de réseau utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 25,
+   "title": "Protéger l'attention et le travail profond",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "65 minutes",
+    "build": "un budget d'attention et deux créneaux de travail profond protégés."
+   },
+   "start": [
+    "L'IA peut accélérer les petites tâches, mais les suggestions, messages et réunions en continu peuvent fragmenter la réflexion que vous devez le plus protéger.",
+    "À la fin, vous devez avoir un Budget d'attention concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Attention",
+     "L'attention est le focus mental disponible pour penser, décider, créer, apprendre et être en relation.",
+     "L'attention est limitée. L'IA peut faire gagner du temps tout en abîmant l'attention si elle crée une réaction et une interruption constantes.",
+     "Protégez votre meilleure heure pour une décision difficile avant de consulter les messages. Notez ce qui casse votre concentration pendant un bloc de travail."
+    ],
+    [
+     "Travail profond",
+     "Le travail profond est un effort concentré, sans interruption, sur des tâches exigeantes cognitivement.",
+     "Le travail profond vous aide à former votre propre jugement avant de demander aux outils de générer, résumer ou contester.",
+     "Travaillez 60 minutes avec les notifications coupées. Écrivez votre propre hypothèse avant de demander à l'IA de la critiquer."
+    ],
+    [
+     "Budget d'attention",
+     "Un budget d'attention est une répartition délibérée du focus entre travail profond, communication, petites tâches, aide de l'IA, apprentissage et récupération.",
+     "Budgéter l'attention empêche le bruit urgent de consommer l'énergie nécessaire au travail de valeur.",
+     "Réservez deux créneaux au travail profond et un aux messages. Regroupez les tâches de rédaction avec l'IA au lieu de basculer toute la journée."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Identifiez vos meilleures heures de réflexion et le travail qui les mérite.",
+    "Auditez une semaine : réunions sans décision, périodes chargées de notifications et usage réactif des outils.",
+    "Bloquez deux sessions de travail profond d'au moins 60 minutes.",
+    "Commencez chaque session par votre propre analyse avant d'utiliser l'IA générative.",
+    "Regroupez les messages, petites tâches et rédactions avec l'IA dans des créneaux séparés."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Meilleur moment de réflexion",
+    "Travail à forte valeur",
+    "Interruptions",
+    "Réunions à supprimer ou raccourcir",
+    "Créneau de travail profond 1",
+    "Créneau de travail profond 2",
+    "Temps d'aide IA",
+    "Pratique de récupération"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Utiliser l'IA dès que vous vous sentez bloqué",
+     "Cela peut affaiblir votre propre cadrage si c'est utilisé trop tôt."
+    ],
+    [
+     "Penser d'abord, puis utiliser l'IA comme contradicteur ou assistant",
+     "Meilleur choix. Vous protégez l'originalité tout en profitant du soutien."
+    ],
+    [
+     "Éviter tous les outils pendant le travail profond, pour toujours",
+     "Pas toujours nécessaire. Utilisez les outils délibérément une fois que votre pensée a pris forme."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à auditer cet agenda hebdomadaire pour les fuites d'attention : [coller]. Identifie les réunions à supprimer, les tâches à regrouper et les créneaux de travail profond à protéger.",
+    "Joue le rôle d'un contradicteur après que j'ai écrit ma propre analyse. Demande ce que j'ai pu manquer, quelle hypothèse est faible et quelle preuve changerait la conclusion.",
+    "Crée un budget d'attention personnel pour mon rôle : [rôle]. Inclus le travail profond, la communication, les petites tâches, l'aide IA, l'apprentissage et la récupération."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre budget d'attention sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Menez une expérience d'attention d'une semaine. Protégez deux créneaux de travail profond, suivez les interruptions et écrivez ce qui s'est amélioré ou a résisté."
+   ],
+   "evidence": [
+    "Votre budget d'attention complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter chaque minute gagnée comme disponible pour plus d'entrées.",
+    "Laisser l'IA générer avant d'avoir compris le problème.",
+    "Garder des réunions récurrentes sans objectif de décision.",
+    "Ignorer la récupération comme partie de la qualité de la réflexion."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Budget d'attention utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 26,
+   "title": "Préserver la santé, les limites et les relations",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "un plan de limites et de récupération qui protège la santé, les relations et la résilience."
+   },
+   "start": [
+    "Les outils de travail sont toujours disponibles, et la pression de la transformation peut étirer la journée jusqu'à ce que la santé et les relations deviennent la variable d'ajustement.",
+    "À la fin, vous devez avoir un Contrat de limites concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Santé",
+     "La santé comprend la capacité physique, mentale, émotionnelle et relationnelle à fonctionner et à récupérer.",
+     "La santé soutient le jugement, l'apprentissage, la patience et la créativité. Ce n'est pas un luxe qui vient après la productivité.",
+     "Suivez le sommeil, l'énergie et l'irritabilité pendant une semaine. Planifiez du mouvement ou des pauses avant que l'épuisement n'apparaisse."
+    ],
+    [
+     "Limites",
+     "Les limites sont des bornes claires autour de la disponibilité, de la charge, du délai de réponse, du partage d'informations et de la récupération personnelle.",
+     "Les limites rendent la contribution durable possible. Elles marchent mieux quand elles s'accompagnent de chemins d'urgence clairs.",
+     "Annoncez vos plages de réponse et les règles d'urgence. Coupez les notifications non essentielles après une heure fixée."
+    ],
+    [
+     "Relations",
+     "Les relations sont les liens humains qui apportent soutien, responsabilité, sens, confiance et perspective.",
+     "Les relations ne sont pas que du réseautage. Le lien non transactionnel protège la résilience et l'identité au-delà de la production.",
+     "Planifiez une conversation sans agenda professionnel. Demandez à une personne de confiance quels signes montrent que vous êtes surchargé."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Nommez les premiers signes de surcharge : sommeil perturbé, irritabilité, évitement, erreurs, cynisme, retrait ou concentration faible.",
+    "Écrivez vos limites de disponibilité : plages de réponse, heures calmes, notifications et chemin d'urgence.",
+    "Choisissez une pratique de récupération : routine de sommeil, mouvement, pauses, soutien professionnel ou temps sans écran.",
+    "Choisissez une pratique relationnelle non transactionnelle chaque semaine.",
+    "Partagez une limite avec une personne concernée pour qu'elle devienne réelle."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Signes de surcharge",
+    "Plages de réponse",
+    "Heures calmes",
+    "Chemin d'urgence",
+    "Règle de notifications",
+    "Pratique de récupération",
+    "Pratique relationnelle",
+    "Personne de soutien"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Tenir bon jusqu'à ce que la transformation soit finie",
+     "Risqué. Le changement peut être continu ; l'épuisement abîme le jugement."
+    ],
+    [
+     "Traiter la récupération et les relations comme une infrastructure de fonctionnement",
+     "Meilleur choix. La résilience a besoin d'entretien, pas de restes."
+    ],
+    [
+     "Poser des limites en silence et espérer que les gens remarquent",
+     "Faible. Les limites marchent mieux quand elles sont communiquées et accompagnées de règles d'urgence."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à concevoir un contrat de limites pour mon contexte de travail : [contexte]. Inclus les plages de réponse, les heures calmes, les règles de notifications, le chemin d'urgence, la pratique de récupération et la pratique relationnelle.",
+    "Crée un script pour annoncer une limite avec respect tout en montrant mon engagement envers le travail.",
+    "Aide-moi à identifier les premiers signes de surcharge et les actions de soutien à prendre avant la crise."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre contrat de limites sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Annoncez une limite cette semaine et protégez un moment relationnel hors travail. Notez ce qui a été difficile et ce qui s'est amélioré."
+   ],
+   "evidence": [
+    "Votre contrat de limites complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Tout appeler urgent.",
+    "Attendre l'épuisement avant de changer de comportement.",
+    "Traiter les relations seulement comme du réseautage.",
+    "Utiliser les outils de productivité pour éviter les besoins de récupération."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Contrat de limites utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 27,
+   "title": "Se préparer financièrement et émotionnellement à la transition",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "80 minutes",
+    "build": "une carte de piste de transition avec des actions financières, de compétences, émotionnelles et relationnelles."
+   },
+   "start": [
+    "Un rôle, un secteur, une source de revenu ou une direction personnelle peut changer. Se préparer n'est pas paniquer : c'est construire des options avant que les décisions ne soient forcées.",
+    "À la fin, vous devez avoir une Carte de piste de transition concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Préparé financièrement",
+     "Être préparé financièrement, c'est comprendre les dépenses essentielles, les scénarios de revenu, les obligations, la piste disponible et les seuils de décision.",
+     "La préparation financière crée du temps et des options. Elle n'exige pas de certitude, mais elle exige des chiffres honnêtes.",
+     "Calculez les dépenses essentielles d'un mois. Estimez votre piste dans trois scénarios de revenu."
+    ],
+    [
+     "Préparé émotionnellement",
+     "Être préparé émotionnellement, c'est nommer les peurs, les espoirs, les besoins de soutien, les limites et les conversations avant que la pression de la transition n'atteigne son pic.",
+     "Les transitions touchent l'identité, les relations, la confiance et le stress. La préparation émotionnelle rend les décisions moins réactives.",
+     "Écrivez ce que vous craignez et quel soutien aiderait. Discutez d'une transition possible avec une personne concernée."
+    ],
+    [
+     "Transition",
+     "Une transition est un passage significatif d'un rôle, d'un modèle de revenu, d'un ensemble de compétences, d'une identité ou d'un mode de vie à un autre.",
+     "Une transition peut être choisie ou subie. La préparation vous aide à la façonner avant que la panique ou l'urgence ne réduise vos options.",
+     "Mettez à jour votre CV, votre portfolio et vos références avant d'en avoir besoin. Nommez le seuil qui déclencherait une recherche active ou une reconversion."
+    ],
+    [
+     "Piste",
+     "La piste est le temps et l'espace d'options dont vous disposez avant qu'une décision ne devienne forcée.",
+     "La piste comprend l'argent, les compétences, les relations, les documents, la santé et l'accès à des conseils qualifiés.",
+     "Listez trois actions qui allongent la piste sans nuire à la santé. Identifiez les questions qui exigent un professionnel financier, juridique, médical ou fiscal."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Estimez les dépenses mensuelles essentielles et la piste actuelle dans trois scénarios de revenu.",
+    "Listez les obligations qui comptent : contrats, prestations, impôts, assurances, responsabilités familiales, dettes ou frais d'études.",
+    "Nommez un investissement en compétence qui peut créer des options en six mois.",
+    "Préparez une conversation avec un proche concerné par une transition.",
+    "Définissez les seuils de décision : quand continuer, faire une pause, demander conseil, changer de direction ou arrêter."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Dépenses essentielles",
+    "Scénario de revenu 1",
+    "Scénario de revenu 2",
+    "Scénario de revenu 3",
+    "Obligations",
+    "Investissement en compétence",
+    "Conversation de soutien",
+    "Seuil de décision"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Éviter de planifier parce que ça semble pessimiste",
+     "L'évitement peut rendre les décisions futures plus pressées."
+    ],
+    [
+     "Construire des options calmement avant que l'urgence n'arrive",
+     "Meilleur choix. La piste crée de meilleurs choix."
+    ],
+    [
+     "Faire une grande transition seul pour ne pas inquiéter les autres",
+     "Risqué. Les transitions touchent les foyers et les systèmes de soutien."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à créer une carte de piste de transition. Interroge-moi sur les dépenses essentielles, les scénarios de revenu, les obligations, l'investissement en compétence, les conversations de soutien et les seuils de décision. Ne donne pas de conseil juridique, financier ou médical.",
+    "Crée un guide de conversation pour discuter d'une transition possible avec un proche. Inclus les faits, les incertitudes, les besoins, les limites et les prochaines étapes.",
+    "Aide-moi à identifier quelles questions professionnelles exigent un expert qualifié plutôt qu'une réponse d'IA : [décrire la transition]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre carte de piste de transition sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez une liste de transition privée avec la piste, les documents à mettre à jour, les personnes à consulter, les compétences à prouver et les seuils d'action."
+   ],
+   "evidence": [
+    "Votre carte de piste de transition complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter l'argent comme la seule forme de sécurité.",
+    "Sauter le conseil qualifié pour les questions juridiques, fiscales, de santé ou de prestations.",
+    "Laisser le train de vie grandir à chaque hausse de revenu.",
+    "Faire un plan de transition sans les personnes qu'il touche."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Carte de piste de transition utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  }
+ ]
+}

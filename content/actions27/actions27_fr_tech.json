@@ -1,0 +1,1014 @@
+{
+ "front": {
+  "purpose": "Ce contenu est écrit pour les apprenants qui utilisent les tutoriels directement. Il évite les notes de facilitateur et le langage magistral. Chaque session demande à l'apprenant d'agir, de remplir une feuille de travail, de faire un choix, d'utiliser des prompts avec prudence et de produire un petit projet.",
+  "format": "Chaque session comprend un scénario, les définitions des concepts du titre, un auto-contrôle rapide, des actions, une feuille de travail, un choix de voie, des prompts, un point de contrôle, un petit projet, des preuves à conserver, des erreurs à éviter et une ligne d'arrivée.",
+  "safety": "N'utilisez les prompts qu'avec des informations que vous avez le droit de partager. Pour les décisions juridiques, financières, médicales, psychologiques, de cybersécurité ou de conformité, consultez des professionnels qualifiés et les politiques approuvées de votre organisation."
+ },
+ "dom_intro": "Utilisez ces sessions pour déléguer avec prudence, superviser les résultats, protéger les données et transformer les outils en appui de travail discipliné.",
+ "sessions": [
+  {
+   "num": 1,
+   "title": "Cartographier le travail avant de choisir l'outil",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "55 minutes",
+    "build": "une carte du flux de travail qui montre où la technologie peut aider et où le contrôle humain doit rester."
+   },
+   "start": [
+    "Vous préparez une activité récurrente : rapport mensuel, suivi client, demande d'achat, visite de terrain ou séance de formation. Vous êtes tenté de demander à un outil d'IA de s'en charger, mais vous n'avez pas encore nommé les étapes, les données, les exceptions ni les risques.",
+    "À la fin, vous devez avoir une Carte du flux de travail concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Cartographier",
+     "Cartographier, c'est rendre visibles, dans un ordre clair, les étapes invisibles du travail.",
+     "Une carte vous aide à voir ce qui se passe avant de choisir un outil. Elle montre les entrées, les sorties, les passages de relais, les décisions, les exceptions et les risques habituellement cachés dans une routine.",
+     "Dessinez les cinq étapes que vous suivez avant d'envoyer un rapport hebdomadaire. Marquez l'étape où une erreur serait la plus facile à attraper."
+    ],
+    [
+     "Travail",
+     "Le travail, ce sont les tâches, décisions, conversations, fichiers, validations et responsabilités qui produisent réellement un résultat.",
+     "Ne confondez pas le travail avec un intitulé de poste. Deux personnes portant le même titre peuvent faire un travail très différent, et l'IA touche les tâches avant de toucher des métiers entiers.",
+     "Listez les vingt tâches que vous avez réalisées cette semaine et regroupez-les par routine, jugement, relation et vérification. Choisissez une tâche et écrivez le résultat qu'elle est censée produire."
+    ],
+    [
+     "Outil",
+     "Un outil est tout système, logiciel, assistant d'IA, automatisation, modèle ou méthode utilisé pour aider à produire le travail.",
+     "Un outil doit servir le problème de travail. Un outil n'est pas automatiquement une solution ; il devient utile seulement s'il améliore la qualité, la vitesse, l'accès, la sécurité ou l'apprentissage sans créer de risque inacceptable.",
+     "Nommez un outil que vous utilisez chaque jour et écrivez le problème qu'il résout réellement. Identifiez une tâche où une simple liste de contrôle serait un meilleur outil que l'IA."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Nommez un processus réel que vous répétez souvent. Écrivez le point de départ et le point d'arrivée exacts. Évitez un processus vague comme « la communication » ; choisissez quelque chose d'observable comme « transformer des notes client en e-mail de suivi ».",
+    "Découpez le processus en petites étapes. Chaque étape devrait prendre environ 15 à 60 minutes et produire un résultat visible.",
+    "Marquez les données utilisées à chaque étape. Classez-les : publiques, internes, confidentielles, personnelles ou hautement sensibles.",
+    "Choisissez le rôle de la technologie pour chaque étape : automatiser, augmenter, préserver ou repenser. Ajoutez une phrase pour expliquer le choix.",
+    "Placez le contrôle humain à l'endroit où une erreur peut encore être détectée et corrigée sans dommage grave."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Nom du processus et déclencheur",
+    "Carte étape par étape",
+    "Données utilisées à chaque étape",
+    "Risque si l'étape échoue",
+    "Meilleur rôle pour la technologie",
+    "Point de contrôle humain",
+    "Solution manuelle de repli"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Demander à l'IA d'automatiser tout le processus maintenant",
+     "Trop tôt. Vous risquez d'automatiser une confusion cachée, d'exposer des données ou de manquer le vrai point de risque."
+    ],
+    [
+     "Cartographier d'abord le processus, puis tester une étape à faible risque",
+     "Meilleur choix. Vous apprenez où l'outil a sa place avant de lui donner trop de contrôle."
+    ],
+    [
+     "Refuser toute IA parce que le processus est important",
+     "Trop large. Un travail important peut inclure une augmentation sûre si le contrôle est bien conçu."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Je vais décrire un flux de travail. Aide-moi à le découper en étapes observables. Pour chaque étape, demande-moi quelle entrée, sortie, responsable, donnée, exception et risque je dois noter. Ne recommande pas encore d'outils.",
+    "Voici ma carte de flux de travail : [coller]. Identifie les étapes candidates à l'automatisation, à l'augmentation, à la préservation ou à la refonte. Explique le risque derrière chaque suggestion.",
+    "Joue le rôle d'un réviseur qualité des processus. Conteste ma carte de flux de travail. Où est-ce que je cache du jugement, des données sensibles ou des exceptions qu'un outil pourrait mal gérer ?"
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre carte du flux de travail sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez une carte d'une page d'un flux de travail réel et sélectionnez une étape pour un test technologique de deux semaines. Enregistrez le temps de référence, le type d'erreurs et la méthode de revue avant de tester."
+   ],
+   "evidence": [
+    "Votre carte du flux de travail complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Choisir un outil avant de définir le problème de travail.",
+    "Traiter un intitulé de poste comme un seul processus au lieu de cartographier les vraies tâches.",
+    "Placer la revue humaine seulement à la fin, quand l'erreur est déjà difficile à corriger.",
+    "Ignorer la sensibilité des données parce que la tâche semble routinière."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Carte du flux de travail utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Prompter avec contexte, contraintes et vérifications",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "50 minutes",
+    "build": "trois prompts réutilisables qui produisent des brouillons, des synthèses et des questions critiques utiles."
+   },
+   "start": [
+    "Vous avez besoin d'aide pour rédiger, résumer ou tester une idée. Le premier prompt que vous écrivez est probablement trop vague : la réponse a l'air sûre d'elle, mais elle ne correspond pas à votre contexte.",
+    "À la fin, vous devez avoir un Pack de prompts concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Prompt",
+     "Un prompt est l'instruction, le contexte, le matériel et les critères de réussite que vous donnez à un système d'IA.",
+     "Un bon prompt est une délégation structurée. Il dit à l'outil quoi faire, pour qui, avec quelles limites, dans quel format, et comment la réponse doit être vérifiée.",
+     "Réécrivez « résume ceci » en un prompt qui nomme l'audience, le but, la longueur et les risques clés. Demandez à l'IA de lister ses hypothèses après avoir répondu à votre prompt."
+    ],
+    [
+     "Contexte",
+     "Le contexte est la situation qui entoure la tâche : audience, but, arrière-plan, contraintes, informations disponibles et décision visée.",
+     "Sans contexte, l'IA comble les vides avec des schémas génériques. Le contexte aide la réponse à correspondre au vrai lecteur, à l'organisation, au niveau de risque et à l'action attendue.",
+     "Avant de demander un brouillon, écrivez qui le lira et quelle décision cette personne doit prendre. Ajoutez deux contraintes de votre situation réelle, comme une connexion lente, une revue juridique ou un temps limité."
+    ],
+    [
+     "Contraintes",
+     "Les contraintes sont les limites que la réponse doit respecter : longueur, ton, règles de données, budget, audience, sources autorisées ou format.",
+     "Les contraintes transforment une demande large en travail utile. Elles empêchent aussi l'outil d'inventer une portée, un ton ou une autorité qu'il ne devrait pas avoir.",
+     "Dites à l'IA de n'utiliser que les faits que vous fournissez et de signaler l'information manquante au lieu de l'inventer. Demandez une version de 150 mots, une version en puces et une version pour débutant."
+    ],
+    [
+     "Vérifications",
+     "Les vérifications sont les étapes de contrôle utilisées pour inspecter une réponse d'IA avant de lui faire confiance ou de l'utiliser.",
+     "Les vérifications transforment l'IA d'un générateur sûr de lui en un assistant supervisé. Elles peuvent inclure la revue des sources, le recalcul, la revue d'expert, la validation sur le terrain ou le retour des parties prenantes.",
+     "Après une synthèse d'IA, comparez trois affirmations avec le document original. Demandez à un collègue de vérifier le contexte manquant avant l'envoi."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez une tâche réelle. Écrivez le prompt faible que vous utiliseriez normalement dans la précipitation.",
+    "Ajoutez le contexte manquant : audience, but, matériel source, contraintes, ton, longueur et décision visée.",
+    "Dites à l'outil ce qu'il ne doit pas faire. Nommez les sources interdites, les détails confidentiels, les affirmations à éviter et les hypothèses à signaler.",
+    "Demandez un format vérifiable. Exigez des titres, des puces, un tableau ou une note de décision seulement si ce format vous aide à inspecter la réponse.",
+    "Ajoutez une instruction de vérification : sources à ouvrir, chiffres à recalculer, risques à signaler ou revue d'expert nécessaire."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Tâche",
+    "Audience",
+    "Contexte",
+    "Matériel source",
+    "Contraintes",
+    "Format de sortie",
+    "Méthode de vérification",
+    "Ce que l'outil ne doit pas faire"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Allonger le prompt jusqu'à ce que le résultat s'améliore",
+     "La longueur seule n'est pas la qualité. Ajoutez la bonne information, pas tous les détails possibles."
+    ],
+    [
+     "Utiliser un cadre de prompt et définir les vérifications avant de faire confiance à la réponse",
+     "Meilleur choix. Bien prompter, c'est une délégation structurée plus une supervision."
+    ],
+    [
+     "Copier un prompt célèbre trouvé sur internet",
+     "Parfois utile, mais il peut ne pas correspondre à vos données, vos risques, votre audience ou vos normes de travail."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Utilise ce cadre pour m'aider à écrire un meilleur prompt : rôle, tâche, audience, contexte, contraintes, format de sortie, risques et vérification. Pose-moi une question à la fois jusqu'à ce que le prompt soit clair.",
+    "Réécris ce prompt pour que la réponse soit plus facile à vérifier : [coller le prompt faible]. Garde la tâche réaliste et inclus une section pour les hypothèses et les limites.",
+    "Après avoir répondu à mon prompt, crée une liste de vérification de la réponse. Sépare les faits à contrôler, les hypothèses à tester et les jugements que je dois trancher moi-même."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre pack de prompts sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Construisez un pack de prompts personnel avec un prompt de rédaction, un prompt de synthèse et un prompt de revue critique. Testez chaque prompt sur une tâche à faible risque et révisez-le une fois."
+   ],
+   "evidence": [
+    "Votre pack de prompts complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Demander une réponse finale quand vous avez besoin d'un brouillon.",
+    "Oublier de préciser l'audience et le contexte de décision.",
+    "Laisser l'outil inventer des sources ou des politiques.",
+    "Ne pas demander les limites, les hypothèses et les étapes de vérification."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Pack de prompts utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Déléguer la rédaction sans perdre votre voix",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "une communication soignée qui a commencé comme brouillon d'IA mais se termine dans votre propre voix."
+   },
+   "start": [
+    "Vous devez écrire un message, une mise à jour, un article, une section de rapport ou une annonce. L'IA peut vous aider à démarrer, mais le premier brouillon sonne générique, trop sûr de lui, ou ne vous ressemble pas.",
+    "À la fin, vous devez avoir un Journal de révision de brouillon concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Déléguer",
+     "Déléguer, c'est confier une tâche à une autre personne ou à un outil tout en gardant la responsabilité du résultat.",
+     "Déléguer à l'IA n'est pas abandonner. Vous décidez la tâche, définissez les limites, révisez le résultat, corrigez les erreurs et restez responsable.",
+     "Déléguez seulement le premier brouillon d'un message, puis révisez vous-même les faits et le ton. Demandez à l'IA trois options de structure, pas la décision finale."
+    ],
+    [
+     "Rédaction",
+     "Rédiger un brouillon, c'est créer une première version qui sera revue, corrigée et améliorée.",
+     "Un brouillon est une matière première. L'IA est souvent utile à ce stade parce qu'une structure brute réduit la peur de la page blanche, mais le brouillon a toujours besoin du jugement humain.",
+     "Demandez un premier brouillon à l'IA, puis marquez chaque phrase qui doit être vérifiée. Créez un journal avant-après montrant ce que vous avez changé."
+    ],
+    [
+     "Voix",
+     "La voix est le style reconnaissable, le ton, les valeurs et le niveau de soin de votre communication.",
+     "La voix protège la confiance. Un ton d'IA générique peut sembler fluide mais rater la relation, la culture, l'émotion ou la responsabilité du moment.",
+     "Remplacez trois formules génériques d'un brouillon d'IA par des mots que vous diriez vraiment. Ajoutez un exemple réel de votre contexte pour que le message devienne le vôtre."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Sélectionnez une communication à faible risque. Écrivez le but en une phrase et nommez la vraie préoccupation du lecteur.",
+    "Demandez un premier brouillon à l'IA seulement après avoir fourni l'audience, le ton, les faits, la longueur et ce qu'il faut éviter.",
+    "Surlignez chaque affirmation à vérifier : noms, chiffres, dates, promesses, énoncés de politique et liens de cause à effet.",
+    "Réécrivez le brouillon dans votre voix. Ajoutez un exemple précis, une limite honnête et une prochaine étape claire.",
+    "Comparez le brouillon brut de l'IA avec votre version finale. Notez ce que vous avez changé et pourquoi."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Lecteur",
+    "Préoccupation du lecteur",
+    "But du message",
+    "Faits qui doivent être exacts",
+    "Mots de ton",
+    "Phrases que j'ai changées",
+    "Mon exemple ajouté",
+    "Prochaine étape finale"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Envoyer le brouillon d'IA poli parce qu'il sonne professionnel",
+     "Risqué. Un langage poli peut cacher des erreurs, de l'exagération ou une voix qui affaiblit la confiance."
+    ],
+    [
+     "Utiliser le brouillon comme matière première et réviser les faits, le ton et les exemples",
+     "Meilleur choix. Vous gagnez en vitesse tout en gardant la responsabilité."
+    ],
+    [
+     "Éviter l'IA parce que l'écriture doit être entièrement humaine",
+     "Pas nécessaire. Vous pouvez déléguer les premiers brouillons tout en préservant le jugement et la voix."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Rédige un [type de message] pour [audience]. But : [but]. Utilise uniquement ces faits : [faits]. Ton : [ton]. Évite l'exagération, les détails inventés et les promesses que je n'ai pas faites.",
+    "Relis ce brouillon pour la voix, la clarté et la confiance. Marque les phrases qui sonnent génériques, gonflées, floues ou risquées. Ne réécris pas encore.",
+    "Aide-moi à créer un journal de révision. Compare mon brouillon brut et mon brouillon final, puis liste ce qui a changé dans les faits, le ton, la structure, la précision et la responsabilité."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre journal de révision de brouillon sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Produisez une communication réelle avec un cycle brouillon-révision-vérification. Gardez la sortie brute de l'IA, votre version finale et une courte note expliquant vos corrections humaines."
+   ],
+   "evidence": [
+    "Votre journal de révision de brouillon complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Laisser l'IA décider du poids moral du message.",
+    "Garder des formules génériques parce qu'elles sonnent bien.",
+    "Oublier d'ajouter du vécu, des exemples ou des contraintes.",
+    "Corriger seulement la grammaire en laissant intacte une pensée faible."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Journal de révision de brouillon utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Vérifier les réponses et les sources de l'IA",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "un plan de vérification pour une réponse ou une recommandation appuyée par l'IA."
+   },
+   "start": [
+    "Une réponse d'IA semble utile et sûre d'elle. Vous devez décider si elle est assez bonne pour un brouillon, une recommandation ou une décision qui touche des personnes, de l'argent, des droits, la sécurité ou la réputation.",
+    "À la fin, vous devez avoir un Plan de vérification concret, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Vérifier",
+     "Vérifier, c'est contrôler si une chose est exacte, étayée, à jour, pertinente et assez sûre pour être utilisée.",
+     "La vérification est proportionnelle au risque. Un brainstorming à faible risque peut se contenter d'un contrôle léger ; une décision qui touche l'argent, les droits, la sécurité ou la réputation exige des preuves plus solides.",
+     "Ouvrez la source originale derrière une citation d'IA et confirmez qu'elle soutient l'affirmation. Recalculez un chiffre d'une réponse d'IA avec un tableur ou une calculatrice."
+    ],
+    [
+     "Réponses de l'IA",
+     "Les réponses de l'IA sont les textes, synthèses, recommandations, classifications, images, codes, tableaux ou actions produits par un système d'IA.",
+     "Une réponse peut être utile sans être fiable. Elle peut contenir des erreurs, des biais, du contexte manquant, des informations périmées ou des détails inventés.",
+     "Découpez une réponse d'IA en faits, hypothèses, recommandations et incertitudes. Surlignez ce que vous pouvez vérifier et ce qui exige un jugement d'expert."
+    ],
+    [
+     "Sources",
+     "Les sources sont les documents, données, personnes, observations ou registres originaux qui soutiennent une affirmation.",
+     "Une source n'est pas juste un lien. Elle doit être pertinente, crédible, à jour et réellement reliée à l'affirmation en question.",
+     "Comparez une synthèse d'IA avec le texte original de la politique. Vérifiez l'auteur, la date, le périmètre et le passage cité avant d'utiliser une source."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Classez l'usage : impact faible, moyen ou élevé. Plus l'impact est élevé, plus la vérification doit être forte.",
+    "Séparez la réponse en affirmations, calculs, recommandations et hypothèses.",
+    "Choisissez la voie de vérification pour chaque partie : source primaire, outil de calcul, revue d'expert, contrôle terrain ou test utilisateur.",
+    "Ouvrez les sources originales au lieu de faire confiance aux citations ou aux résumés. Vérifiez l'auteur, la date, le périmètre et si la source soutient vraiment l'affirmation.",
+    "Écrivez une note de décision : ce que vous avez vérifié, ce qui reste incertain, et qui assume la responsabilité."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Réponse de l'IA",
+    "Niveau d'impact",
+    "Affirmations à vérifier",
+    "Chiffres à recalculer",
+    "Hypothèses à tester",
+    "Contexte manquant",
+    "Réviseur responsable",
+    "Décision après vérification"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Faire confiance à la réponse parce qu'elle contient des citations",
+     "Insuffisant. Les citations peuvent être fausses, hors sujet, inventées ou mal lues."
+    ],
+    [
+     "Vérifier seulement les parties qui influencent la décision",
+     "Meilleur choix. Adaptez l'effort de vérification au risque et à l'impact."
+    ],
+    [
+     "Rejeter toute réponse d'IA sauf si un expert humain l'a écrite",
+     "Trop rigide. L'IA peut appuyer le travail si la vérification est proportionnelle et explicite."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Découpe cette réponse en affirmations factuelles, calculs, recommandations et hypothèses. Pour chaque élément, suggère la méthode de vérification la plus appropriée.",
+    "Joue le rôle d'un réviseur sceptique. Qu'est-ce qui rendrait cette réponse fausse, trompeuse, incomplète, périmée ou dangereuse ?",
+    "Crée un journal de vérification pour cette réponse. Colonnes : élément vérifié, méthode, preuve, résultat, incertitude restante, réviseur."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre plan de vérification sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Prenez une réponse d'IA que vous comptiez utiliser. Vérifiez-la avec au moins deux méthodes et écrivez une courte note sur ce qui a changé après vérification."
+   ],
+   "evidence": [
+    "Votre plan de vérification complété.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Confondre une écriture fluide avec une preuve.",
+    "Vérifier seulement la réponse finale au lieu des hypothèses sous-jacentes.",
+    "Utiliser le même outil d'IA pour vérifier sa propre affirmation non étayée.",
+    "Sauter la vérification parce que la réponse correspond à ce que vous espériez."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez un Plan de vérification utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Construire un bac à sable d'apprentissage sûr",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "45 minutes",
+    "build": "une charte de bac à sable sûre pour expérimenter l'IA ou l'automatisation."
+   },
+   "start": [
+    "Vous voulez apprendre en essayant des outils, mais les vraies données clients, informations du personnel, fichiers financiers ou systèmes opérationnels rendraient une expérimentation négligente dangereuse.",
+    "À la fin, vous devez avoir une Charte de bac à sable concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Sûr",
+     "Sûr signifie que l'activité limite les dommages aux personnes, aux données, aux opérations, à la réputation et aux obligations légales ou éthiques.",
+     "La sécurité ne veut pas dire zéro risque. Elle veut dire des risques connus, bornés, surveillés et acceptables pour l'objectif d'apprentissage.",
+     "Utilisez des profils clients fictifs au lieu de vraies données clients. Fixez une règle d'arrêt avant de commencer une expérience."
+    ],
+    [
+     "Apprentissage",
+     "Apprendre, c'est transformer l'expérience en meilleure compétence, meilleur jugement et meilleure action future.",
+     "L'apprentissage est plus fort quand il produit des preuves. Un bac à sable doit répondre à une question précise, pas seulement créer des impressions.",
+     "Écrivez une question à laquelle votre expérience doit répondre. Après le test, notez ce qui a marché, ce qui a échoué et ce que vous changeriez."
+    ],
+    [
+     "Bac à sable",
+     "Un bac à sable est un espace contrôlé pour tester des idées, des outils et des flux de travail sans exposer les vrais systèmes à un risque inutile.",
+     "Le bac à sable donne de la liberté à l'intérieur de limites. Il protège les données et opérations sensibles tout en permettant la pratique.",
+     "Testez un outil avec dix cas fictifs avant d'utiliser de vrais cas approuvés. Limitez l'accès, le budget et le temps pour une expérience de deux semaines."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Écrivez une question d'apprentissage. Rendez-la étroite, comme « L'IA peut-elle résumer des notes de réunion publiques avec assez de précision pour un brouillon ? »",
+    "Choisissez des données sûres : fictives, publiques, anonymisées ou explicitement approuvées.",
+    "Délimitez le bac à sable. Définissez le temps, le budget, les utilisateurs, les permissions et les outils.",
+    "Choisissez les critères de réussite et les critères d'arrêt avant que le test commence.",
+    "Capturez les leçons dans un journal simple pour que l'apprentissage soit transférable, pas seulement une curiosité personnelle."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Question d'apprentissage",
+    "Données autorisées",
+    "Données interdites",
+    "Outils approuvés",
+    "Permissions",
+    "Critères de réussite",
+    "Critères d'arrêt",
+    "Journal des leçons"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Expérimenter librement avec les fichiers les plus faciles d'accès",
+     "Dangereux. La commodité n'est pas une règle de gouvernance des données."
+    ],
+    [
+     "Faire des tests bornés avec des données sûres et des points d'arrêt clairs",
+     "Meilleur choix. Vous créez un espace pour apprendre sans créer d'exposition inutile."
+    ],
+    [
+     "Attendre que chaque politique soit parfaite avant d'apprendre quoi que ce soit",
+     "Trop lent. Un bac à sable prudent peut produire de l'apprentissage pendant que les règles formelles évoluent."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à concevoir un bac à sable IA de deux semaines pour cette question d'apprentissage : [question]. Inclus les données autorisées, les données interdites, les permissions, les critères de réussite, les critères d'arrêt et la capture des leçons.",
+    "Relis ma charte de bac à sable pour les risques de confidentialité, de sécurité, de qualité et de périmètre. Suggère des limites plus strictes sans tuer l'apprentissage utile.",
+    "Crée cinq cas de test fictifs qui ressemblent à mon vrai travail sans utiliser de données confidentielles ou personnelles. Mon contexte : [contexte]."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre charte de bac à sable sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Menez un bac à sable de deux semaines sur des données fictives ou publiques. À la fin, écrivez une note d'une page : ce qui a marché, ce qui a échoué, quel risque est apparu et ce que vous testeriez ensuite."
+   ],
+   "evidence": [
+    "Votre charte de bac à sable complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Utiliser de vraies données sensibles parce que le test est informel.",
+    "Tester plusieurs questions à la fois et n'apprendre rien clairement.",
+    "Oublier de définir quand l'expérience doit s'arrêter.",
+    "Garder les leçons pour soi au lieu d'en faire une pratique partagée."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Charte de bac à sable utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Automatiser un flux de travail simple",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "70 minutes",
+    "build": "un petit plan de pilote d'automatisation avec référence de départ, cas de test et repli manuel."
+   },
+   "start": [
+    "Une tâche répétitive vous vole du temps. Vous voulez l'automatiser, mais la tâche peut contenir des exceptions cachées, des entrées de mauvaise qualité ou un effort de revue qui annule le bénéfice.",
+    "À la fin, vous devez avoir une Fiche de pilote d'automatisation concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Automatiser",
+     "Automatiser, c'est laisser un système exécuter une tâche ou une partie de tâche avec moins d'effort manuel.",
+     "L'automatisation convient au travail stable, répété et fondé sur des règles. Elle devient risquée quand la tâche contient du jugement caché, des entrées floues ou des exceptions à fort impact.",
+     "Automatisez le nommage des fichiers standard mais gardez une revue humaine pour les cas inhabituels. Mesurez le temps passé à corriger les erreurs d'automatisation avant de parler de succès."
+    ],
+    [
+     "Simple",
+     "Simple signifie que la tâche est étroite, comprise, répétée, mesurable et d'un risque assez faible pour être testée en sécurité.",
+     "Simple ne veut pas dire sans importance. Cela veut dire que le premier pilote est assez petit pour apprendre sans créer de perturbation majeure.",
+     "Choisissez un résumé de statut hebdomadaire avant d'automatiser un processus d'approbation complexe. Testez dix cas au lieu de changer le flux de travail pour tout le monde."
+    ],
+    [
+     "Flux de travail",
+     "Un flux de travail est une séquence d'étapes, de rôles, d'entrées, de sorties, de décisions et de passages de relais qui produit un résultat.",
+     "L'automatisation change des flux de travail, pas des boutons isolés. Pour améliorer un flux, vous devez comprendre ce qui se passe avant, pendant et après l'étape automatisée.",
+     "Écrivez le flux de travail actuel avant de le changer. Nommez le repli manuel si l'étape automatisée échoue."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Listez cinq tâches répétitives et notez chacune : fréquence, stabilité, risque, qualité des données et effort de revue.",
+    "Choisissez le candidat le plus sûr à forte valeur, pas le plus excitant.",
+    "Mesurez la référence actuelle : temps, erreurs, reprises, stress et passages de relais.",
+    "Concevez un petit test avec des exemples réels mais approuvés, et un repli manuel.",
+    "Mesurez le gain net après l'installation, la correction, l'approbation et la communication."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Tâches candidates",
+    "Score de fréquence",
+    "Score de stabilité",
+    "Score de risque",
+    "Qualité des données",
+    "Temps de référence",
+    "Méthode de repli",
+    "Résultat net"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Automatiser tout de suite la tâche la plus agaçante",
+     "Peut-être, mais l'agacement ne prouve ni la stabilité ni la sécurité."
+    ],
+    [
+     "Automatiser une tâche stable à faible risque et mesurer le cycle complet",
+     "Meilleur choix. Vous apprenez à partir d'un pilote contenu."
+    ],
+    [
+     "N'automatiser qu'après avoir repensé tout le processus",
+     "Parfois nécessaire, mais cela peut retarder un apprentissage sûr sur une sous-tâche simple."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Voici cinq tâches : [liste]. Note-les pour l'automatisation selon la fréquence, la stabilité, le risque, la qualité des données et l'effort de revue. Explique quel serait le premier pilote le plus sûr.",
+    "Aide-moi à créer un plan de mesure de référence pour cette tâche : [tâche]. Inclus le temps, les erreurs, les reprises, les passages de relais et l'expérience utilisateur.",
+    "Conçois un repli manuel pour ce pilote d'automatisation. Que doit-il se passer si l'outil échoue, produit de l'incertitude ou donne un résultat suspect ?"
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche de pilote d'automatisation sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Menez un petit pilote d'automatisation sur une tâche. Tenez un journal avant-après pour au moins dix cas et décidez de continuer, de modifier ou d'arrêter."
+   ],
+   "evidence": [
+    "Votre fiche de pilote d'automatisation complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Automatiser un processus instable.",
+    "Ignorer le temps d'installation, de revue et de correction.",
+    "Ne pas tester les exceptions.",
+    "Retirer le repli manuel trop tôt."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche de pilote d'automatisation utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Utiliser les données sans se tromper soi-même",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "65 minutes",
+    "build": "une liste de questions pour juger une métrique avant de l'utiliser dans une décision."
+   },
+   "start": [
+    "Un tableau de bord, un rapport ou une analyse d'IA vous donne un chiffre. Ce chiffre peut être utile, mais il peut aussi cacher des données manquantes, des échantillons biaisés, de mauvaises définitions ou un graphique trompeur.",
+    "À la fin, vous devez avoir une Fiche d'interrogation de métrique concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Données",
+     "Les données sont des informations enregistrées : chiffres, textes, catégories, dates, images, sons, transactions ou observations.",
+     "Les données sont façonnées par la manière dont elles sont collectées, étiquetées, nettoyées, exclues et interprétées. Elles ne sont jamais neutres simplement parce qu'elles sont numériques.",
+     "Demandez qui manque dans un jeu de données avant de l'utiliser. Définissez une métrique en langage simple et vérifiez si les autres la définissent pareil."
+    ],
+    [
+     "Se tromper soi-même",
+     "Se tromper soi-même, c'est tirer une conclusion confiante d'une preuve faible, incomplète, biaisée ou mal comprise.",
+     "L'IA et les tableaux de bord peuvent donner à un raisonnement faible une allure précise. On évite l'auto-illusion en vérifiant les définitions, les échantillons, le contexte manquant, la corrélation et les intérêts en jeu.",
+     "Écrivez trois explications alternatives d'une tendance avant de décider de sa cause. Ajoutez un signal qualitatif pour expliquer un chiffre de tableau de bord."
+    ],
+    [
+     "Métrique",
+     "Une métrique est une mesure utilisée pour décrire la performance, le comportement, la qualité, le coût, le risque ou le progrès.",
+     "Une métrique doit améliorer une décision. Si personne ne sait quelle décision la métrique appuie, elle crée du bruit plutôt que de la clarté.",
+     "Reliez une métrique à une décision qu'elle doit améliorer. Ajoutez une seconde métrique qui pourrait révéler un dommage caché par la première."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez une métrique que vous voyez ou utilisez souvent. Écrivez la décision qu'elle influence.",
+    "Définissez la métrique en langage simple. Si deux personnes la définissent différemment, arrêtez-vous et réglez d'abord ce point.",
+    "Demandez qui ou quoi manque dans les données. Cherchez les exclusions silencieuses.",
+    "Vérifiez si le graphique suggère une cause alors qu'il ne montre qu'un motif.",
+    "Ajoutez un second signal qui confirmerait, contesterait ou expliquerait la métrique."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Métrique",
+    "Décision influencée",
+    "Définition",
+    "Source des données",
+    "Qui manque",
+    "Biais possible",
+    "Second signal",
+    "Règle de décision"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Utiliser la métrique parce qu'elle est déjà sur le tableau de bord",
+     "Choix faible. La disponibilité n'est pas la validité."
+    ],
+    [
+     "Interroger la métrique avant de la relier à une action",
+     "Meilleur choix. Vous protégez les décisions de la fausse précision."
+    ],
+    [
+     "Rejeter les métriques parce qu'elles peuvent être biaisées",
+     "Trop loin. Les métriques sont utiles quand on les interprète avec contexte et humilité."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Interroge cette métrique : [métrique]. Pose des questions sur la définition, la source, l'échantillon, les données manquantes, le biais, la corrélation, la causalité et la pertinence pour la décision.",
+    "Ce graphique semble montrer [interprétation]. Donne-moi trois explications alternatives et une donnée supplémentaire qui aiderait à trancher.",
+    "Aide-moi à réécrire ce constat de tableau de bord pour séparer l'observation, l'interprétation, l'incertitude et l'action recommandée."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche d'interrogation de métrique sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Prenez une métrique de votre travail ou de vos études et créez une note de métrique d'une page. Incluez la définition, le risque de mauvaise lecture, le second signal et l'usage responsable que vous en ferez."
+   ],
+   "evidence": [
+    "Votre fiche d'interrogation de métrique complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Traiter un chiffre précis comme un chiffre vrai.",
+    "Ignorer qui manque dans l'échantillon.",
+    "Confondre corrélation et causalité.",
+    "Utiliser une métrique sans nommer la décision qu'elle doit améliorer."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche d'interrogation de métrique utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Travailler avec l'IA multimodale",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "un test d'IA en deux modes comparant des entrées texte, image, audio, vidéo ou document."
+   },
+   "start": [
+    "Le même problème peut arriver sous forme de texte, photo, note vocale, PDF, tableur, vidéo ou formulaire. Chaque format change la précision, la confidentialité, l'accessibilité et l'effort de revue.",
+    "À la fin, vous devez avoir une Fiche de test multimodal concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Multimodal",
+     "Multimodal signifie utiliser plus d'un type d'entrée ou de sortie : texte, image, audio, vidéo, tableaux ou documents.",
+     "Des modes différents révèlent des informations différentes et créent des risques différents. Une photo, une note vocale et un tableur n'exigent pas les mêmes contrôles.",
+     "Comparez une synthèse d'IA issue d'une note vocale avec une autre issue de notes écrites. Vérifiez si une réponse fondée sur une image a manqué des détails visibles par un humain."
+    ],
+    [
+     "IA",
+     "L'IA désigne des systèmes qui réalisent des tâches de prédiction, de génération, de classification, de reconnaissance de motifs ou d'aide à la décision.",
+     "L'IA peut aider pour la perception et le langage, mais elle ne comprend pas automatiquement la responsabilité, le contexte ni les conséquences.",
+     "Utilisez l'IA pour organiser des observations, puis décidez vous-même de l'action responsable. Demandez à l'outil d'indiquer son incertitude et le matériel original qu'un humain doit inspecter."
+    ],
+    [
+     "Mode",
+     "Un mode est la forme sous laquelle l'information entre ou sort d'un système : parole, image, texte ou données structurées.",
+     "Choisir le bon mode affecte l'accessibilité, la précision, la confidentialité et l'effort de revue.",
+     "Testez si un formulaire texte ou une note vocale donne l'information la plus claire pour les rapports de terrain. Utilisez une liste de contrôle pour décider si une photo contient des informations personnelles ou sensibles."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Choisissez un problème qui se présente sous plusieurs formats : demandes d'assistance, notes de maintenance, retours d'entretien ou questions de formation.",
+    "Sélectionnez deux modes d'entrée à comparer. Utilisez des données approuvées ou fictives.",
+    "Définissez ce qu'une bonne réponse doit contenir et ce qui la rendrait dangereuse.",
+    "Exécutez la même tâche dans les deux modes et comparez la précision, le contexte manquant, la confidentialité et le temps de revue.",
+    "Décidez quel mode est utile, lequel exige un contrôle, et lequel ne doit pas être utilisé pour cette tâche."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Problème",
+    "Mode 1",
+    "Mode 2",
+    "Réponse attendue",
+    "Résultat de précision",
+    "Souci de confidentialité",
+    "Effort de revue",
+    "Meilleur usage"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Utiliser le mode qui semble le plus impressionnant",
+     "Insuffisant. Une entrée impressionnante ne prouve pas une sortie fiable."
+    ],
+    [
+     "Comparer les modes avec la même tâche et des critères clairs",
+     "Meilleur choix. Vous apprenez quel mode soutient réellement le travail."
+    ],
+    [
+     "Éviter l'IA non textuelle parce que c'est trop risqué",
+     "Trop large. Certains usages multimodaux sont sûrs quand les données et la revue sont contrôlées."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à concevoir un test comparatif pour ce problème : [problème]. Je veux comparer [mode 1] et [mode 2]. Inclus des critères de précision, de confidentialité, d'accessibilité et d'effort de revue.",
+    "Crée une liste de contrôle pour vérifier une réponse d'IA fondée sur [photos/audio/documents/vidéo]. Inclus le matériel original qu'un humain doit inspecter avant d'agir.",
+    "Génère des exemples d'entrées fictifs pour un test d'IA multimodale dans ce contexte : [contexte]. Évite les données personnelles ou confidentielles."
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche de test multimodal sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Menez un test en deux modes et écrivez une courte recommandation : utiliser, utiliser avec contrôles, ou ne pas utiliser. Appuyez-vous sur au moins cinq cas d'exemple."
+   ],
+   "evidence": [
+    "Votre fiche de test multimodal complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Oublier que les images, les voix et les documents peuvent contenir des données sensibles.",
+    "Juger la qualité de la réponse sans vérifier l'entrée originale.",
+    "Utiliser les mêmes critères de revue pour tous les modes.",
+    "Laisser les gains d'accessibilité masquer les problèmes de confidentialité ou de précision."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche de test multimodal utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Protéger les données, la vie privée et la cybersécurité",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "75 minutes",
+    "build": "une fiche de frontières des données pour un cas d'usage de l'IA."
+   },
+   "start": [
+    "Vous voulez de la vitesse, mais les informations que vous manipulez peuvent inclure du matériel confidentiel, personnel, réglementé, contractuel ou sensible pour la sécurité.",
+    "À la fin, vous devez avoir une Fiche de frontières des données concrète, utilisable dans votre travail, vos études, votre équipe ou votre développement personnel. Ne vous contentez pas de lire cette page. Ouvrez une note, un document ou une feuille de travail vierge et réalisez chaque action avant de continuer."
+   ],
+   "concepts_intro": [
+    "Avant de commencer les actions, assurez-vous que les mots principaux du titre sont pratiques, pas abstraits. Utilisez les définitions, explications et exemples ci-dessous comme mini-échauffement."
+   ],
+   "concepts": [
+    [
+     "Protection des données",
+     "Protéger les données, c'est contrôler comment l'information est collectée, utilisée, partagée, stockée, conservée et supprimée.",
+     "La protection commence avant le prompt. Vous devez savoir quel type de données vous avez et quels systèmes sont approuvés pour les traiter.",
+     "Classez les données avant de coller un exemple dans un outil d'IA. Retirez les noms, numéros de compte et détails identifiants des cas de test."
+    ],
+    [
+     "Vie privée",
+     "La vie privée est le droit et l'attente que les informations personnelles soient traitées avec soin, finalité, limites et respect.",
+     "La vie privée n'est pas seulement le secret. Elle comprend aussi le consentement, la pertinence, la minimisation, le contrôle d'accès et l'usage loyal.",
+     "Demandez si l'information d'une personne est nécessaire pour la tâche d'IA. Remplacez les vrais profils par des profils fictifs pour l'expérimentation."
+    ],
+    [
+     "Cybersécurité",
+     "La cybersécurité est la pratique qui protège les systèmes, comptes, données et opérations contre l'accès non autorisé, l'abus, la perturbation ou l'attaque.",
+     "L'IA peut élargir la surface d'attaque à travers les outils connectés, fichiers, prompts, extensions, comptes et instructions cachées.",
+     "Limitez l'accès d'un assistant d'IA aux seuls fichiers nécessaires à la tâche. Traitez les documents externes comme des entrées non fiables tant qu'ils ne sont pas vérifiés."
+    ]
+   ],
+   "selfcheck": [
+    "Où ce sujet apparaît-il déjà dans votre travail ou votre vie ?",
+    "Quelle erreur coûterait cher si vous traitiez ce sujet à la légère ?",
+    "Quelle preuve montrerait que vous avez progressé à la fin de cette session ?"
+   ],
+   "actions": [
+    "Listez les types de données impliqués dans un cas d'usage de l'IA.",
+    "Classez chaque type : public, interne, confidentiel, personnel ou hautement sensible.",
+    "Nommez les outils approuvés pour chaque classe. Si vous ne savez pas, marquez « inconnu » au lieu de deviner.",
+    "Appliquez le moindre privilège : décidez le minimum d'accès, de conservation et de partage nécessaire.",
+    "Écrivez le chemin d'incident : que faire si des données sont collées dans le mauvais outil, exposées ou utilisées dans une réponse dangereuse."
+   ],
+   "ws_intro": [
+    "Créez un tableau ou un formulaire avec ces champs et remplissez-le en travaillant."
+   ],
+   "ws_fields": [
+    "Cas d'usage",
+    "Type de données",
+    "Classe de données",
+    "Outil approuvé",
+    "Action autorisée",
+    "Action interdite",
+    "Limite d'accès",
+    "Contact en cas d'incident"
+   ],
+   "path_intro": [
+    "Lisez les options. Choisissez celle que vous prendriez naturellement, puis vérifiez la conséquence."
+   ],
+   "paths": [
+    [
+     "Coller les données parce que la tâche est urgente",
+     "Dangereux. L'urgence n'efface pas les devoirs de confidentialité, de sécurité et de contrat."
+    ],
+    [
+     "Classer d'abord les données et n'utiliser que les chemins approuvés",
+     "Meilleur choix. Cela protège la confiance tout en permettant un travail utile."
+    ],
+    [
+     "Ne jamais utiliser l'IA pour aucun travail interne",
+     "Trop large. Beaucoup d'usages internes sont sûrs quand les frontières des données sont claires."
+    ]
+   ],
+   "prompts_intro": [
+    "N'utilisez ces prompts qu'avec des informations que vous avez le droit de partager. Remplacez les parties entre crochets par votre propre contexte."
+   ],
+   "prompts": [
+    "Aide-moi à classer les données de ce cas d'usage de l'IA : [décrire]. Interroge-moi sur les informations publiques, internes, confidentielles, personnelles et hautement sensibles. Ne me demande pas de coller de vraies données sensibles.",
+    "Crée une fiche de frontières des données pour ce cas d'usage. Inclus les outils autorisés, les données interdites, les limites d'accès, les questions de conservation et les étapes en cas d'incident.",
+    "Joue le rôle d'un réviseur cybersécurité. Que pourrait-il se passer de grave si un assistant d'IA est connecté à ces fichiers ou outils : [décrire la connexion] ?"
+   ],
+   "checkpoint": [
+    "Quelqu'un d'autre peut-il comprendre votre fiche de frontières des données sans explication supplémentaire ?",
+    "Avez-vous séparé les faits, les hypothèses, les préférences et les décisions là où c'était pertinent ?",
+    "Avez-vous nommé la responsabilité humaine, pas seulement l'outil ou la technique ?",
+    "Avez-vous protégé les informations confidentielles, personnelles ou sensibles ?",
+    "La prochaine action est-elle assez petite pour être faite dans les sept jours ?"
+   ],
+   "project": [
+    "Créez trois fiches de frontières des données pour des tâches que vous ou votre équipe réalisez. Partagez-les avec la personne responsable de la politique, de la sécurité ou des opérations."
+   ],
+   "evidence": [
+    "Votre fiche de frontières des données complétée.",
+    "Une note avant-après montrant ce qui a changé grâce au tutoriel.",
+    "Un risque, une limite ou une question ouverte que vous avez découvert.",
+    "Une prochaine action avec une date."
+   ],
+   "mistakes": [
+    "Supposer qu'un outil est sûr parce qu'il est populaire.",
+    "Utiliser de vraies données personnelles ou confidentielles dans des tests informels.",
+    "Donner à un assistant connecté plus d'accès que la tâche n'exige.",
+    "Ne pas savoir qui contacter quand quelque chose tourne mal."
+   ],
+   "finish": [
+    "Vous avez terminé quand vous avez une Fiche de frontières des données utilisable, une décision sur la suite, et une preuve que votre réflexion est devenue plus claire ou plus sûre."
+   ]
+  }
+ ]
+}

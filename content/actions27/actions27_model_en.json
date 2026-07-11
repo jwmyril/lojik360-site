@@ -1,0 +1,3035 @@
+{
+ "front": {
+  "purpose": "This content package is written for learners using the tutorials directly. It avoids facilitator notes and static lecture language. Every session asks the learner to take action, fill a worksheet, make a choice, use prompts carefully, and produce a small project.",
+  "format": "Each session includes a scenario, title concept definitions, quick self-check, action steps, worksheet, choice path, prompts, checkpoint, small project, evidence to save, mistakes to avoid, and finish line.",
+  "safety": "Learners should use prompts only with information they are allowed to share. For legal, financial, medical, psychological, cybersecurity, or compliance decisions, they should consult qualified professionals and approved organizational policies."
+ },
+ "dom_intro": {
+  "Technology usage": "Use these sessions to delegate carefully, supervise outputs, protect data, and turn tools into disciplined work support.",
+  "Management": "Use these sessions to lead AI-era transformation with governance, participation, balanced metrics, and humane work design.",
+  "Strengthen the human": "Use these sessions to grow judgment, communication, trust, creativity, attention, health, and career resilience."
+ },
+ "sessions": [
+  {
+   "num": 1,
+   "title": "Map the Work Before Choosing the Tool",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "55 minutes",
+    "build": "a workflow map that shows where technology can help and where human control must remain."
+   },
+   "start": [
+    "You are preparing a recurring activity such as a monthly report, client follow-up, purchase request, field visit, or training session. You feel tempted to ask an AI tool to handle it, but you have not yet named the steps, data, exceptions, or risks.",
+    "By the end, you should have a concrete Workflow Map that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Map",
+     "To map is to make the invisible steps of work visible in a clear order.",
+     "A map helps you see what happens before you choose a tool. It shows the inputs, outputs, handoffs, decisions, exceptions, and risks that are usually hidden inside a routine.",
+     "Draw the five steps you follow before sending a weekly report.Mark the step where a mistake would be easiest to catch."
+    ],
+    [
+     "Work",
+     "Work means the actual tasks, decisions, conversations, files, approvals, and responsibilities that create a result.",
+     "Do not confuse work with a job title. Two people with the same title may do very different work, and AI affects tasks before it affects whole professions.",
+     "List the twenty tasks you performed this week and group them by routine, judgment, relationship, and verification.Choose one task and write the result it is supposed to create."
+    ],
+    [
+     "Tool",
+     "A tool is any system, software, AI assistant, automation, template, or method used to help produce work.",
+     "A tool should serve the work problem. A tool is not automatically a solution; it becomes useful only when it improves quality, speed, access, safety, or learning without creating unacceptable risk.",
+     "Name one tool you use daily and write what problem it actually solves.Identify one task where a checklist may be a better tool than AI."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Name one real process you repeat often. Write the exact start and end point. Avoid a vague process like 'communication'; choose something observable such as 'turn client notes into a follow-up email.'",
+    "Break the process into small steps. Each step should take roughly 15 to 60 minutes and should produce a visible output.",
+    "Mark the data used at each step. Classify it as public, internal, confidential, personal, or highly sensitive.",
+    "Choose the technology role for each step: automate, augment, preserve, or redesign. Add one sentence explaining the choice.",
+    "Place human control at the point where a mistake can still be caught and corrected without serious harm."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Process name and trigger",
+    "Step-by-step map",
+    "Data used at each step",
+    "Risk if the step is wrong",
+    "Best role for technology",
+    "Human checkpoint",
+    "Manual fallback"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Ask AI to automate the whole process now",
+     "Too early. You may automate hidden confusion, expose data, or miss the true risk point."
+    ],
+    [
+     "Map the process first, then test one low-risk step",
+     "Best choice. You learn where the tool belongs before giving it too much control."
+    ],
+    [
+     "Refuse all AI use because the process matters",
+     "Too broad. Important work can still include safe augmentation if control is designed well."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "I will describe a workflow. Help me break it into observable steps. For each step, ask what input, output, owner, data, exception, and risk I should record. Do not recommend tools yet.",
+    "Here is my workflow map: [paste]. Identify which steps are candidates for automation, augmentation, preservation, or redesign. Explain the risk behind each suggestion.",
+    "Act as a process quality reviewer. Challenge my workflow map. Where am I hiding judgment, sensitive data, or exceptions that a tool may mishandle?"
+   ],
+   "checkpoint": [
+    "Can someone else understand your workflow map without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create a one-page map of a real workflow and select one step for a two-week technology test. Save the baseline time, error type, and review method before testing."
+   ],
+   "evidence": [
+    "Your completed workflow map.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Choosing a tool before defining the work problem.",
+    "Treating a job title as one process instead of mapping actual tasks.",
+    "Putting human review only at the end, when the error is already hard to reverse.",
+    "Ignoring data sensitivity because the task feels routine."
+   ],
+   "finish": [
+    "You are done when you have a usable Workflow Map, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Prompt With Context, Constraints, and Checks",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "50 minutes",
+    "build": "three reusable prompts that produce useful drafts, summaries, and challenge questions."
+   },
+   "start": [
+    "You need help drafting, summarizing, or checking an idea. The first prompt you write is probably too vague, so the answer sounds confident but does not fit your context.",
+    "By the end, you should have a concrete Prompt Pack that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Prompt",
+     "A prompt is the instruction, context, material, and success criteria you give to an AI system.",
+     "A good prompt is structured delegation. It tells the tool what to do, for whom, with what limits, in what format, and how the answer should be checked.",
+     "Rewrite 'summarize this' as a prompt that names audience, purpose, length, and key risks.Ask AI to list its assumptions after answering your prompt."
+    ],
+    [
+     "Context",
+     "Context is the situation surrounding the task: audience, purpose, background, constraints, available information, and decision use.",
+     "Without context, AI fills gaps with generic patterns. Context helps the output fit the real reader, organization, risk level, and action needed.",
+     "Before asking for a draft, write who will read it and what decision they must make.Add two constraints from your real setting, such as low bandwidth, legal review, or limited time."
+    ],
+    [
+     "Constraints",
+     "Constraints are limits the answer must respect, such as length, tone, data rules, budget, audience, source boundaries, or format.",
+     "Constraints turn a broad request into useful work. They also stop the tool from inventing scope, tone, or authority it should not have.",
+     "Tell AI to use only the facts you provide and to flag missing information instead of inventing it.Ask for a 150-word version, a bullet version, and a version for a beginner."
+    ],
+    [
+     "Checks",
+     "Checks are the verification steps used to inspect an AI output before trusting or using it.",
+     "Checks convert AI from a confident generator into a supervised assistant. They may include source review, recalculation, expert review, field validation, or stakeholder feedback.",
+     "After an AI summary, compare three claims against the original document.Ask a colleague to review the output for missing context before sending it."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one real task. Write the weak prompt you would normally use in a hurry.",
+    "Add the missing context: audience, purpose, source material, constraints, tone, length, and decision use.",
+    "Tell the tool what not to do. Name forbidden sources, confidential details, claims it must avoid, and assumptions it should flag.",
+    "Ask for a checkable format. Request headings, bullets, a table, or a decision note only if that format helps you inspect the answer.",
+    "Add a verification instruction: sources to open, numbers to recalculate, risks to flag, or expert review needed."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Task",
+    "Audience",
+    "Context",
+    "Source material",
+    "Constraints",
+    "Output format",
+    "Verification method",
+    "What the tool must not do"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Make the prompt longer until the result improves",
+     "Length alone is not quality. Add the right information, not every possible detail."
+    ],
+    [
+     "Use a prompt frame and define checks before trusting the output",
+     "Best choice. Good prompting is structured delegation plus supervision."
+    ],
+    [
+     "Copy a famous prompt from the internet",
+     "Sometimes useful, but it may not match your data, risk, audience, or work standards."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Use this frame to help me write a better prompt: role, task, audience, context, constraints, output format, risks, and verification. Ask me one question at a time until the prompt is clear.",
+    "Rewrite this prompt so the output is easier to verify: [paste weak prompt]. Keep the task realistic and include a section for assumptions and limits.",
+    "After answering my prompt, create a verification checklist for the answer. Separate facts to check, assumptions to test, and judgment calls I must make."
+   ],
+   "checkpoint": [
+    "Can someone else understand your prompt pack without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Build a personal prompt pack with one drafting prompt, one summarizing prompt, and one critical review prompt. Test each prompt on a low-risk task and revise it once."
+   ],
+   "evidence": [
+    "Your completed prompt pack.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Asking for a final answer when you need a draft.",
+    "Forgetting to state the audience and decision context.",
+    "Letting the tool invent sources or policies.",
+    "Not asking for limits, assumptions, and verification steps."
+   ],
+   "finish": [
+    "You are done when you have a usable Prompt Pack, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Delegate Drafting Without Losing Your Voice",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "a polished communication that started as an AI draft but ends in your own voice."
+   },
+   "start": [
+    "You need to write a message, update, article, report section, or announcement. AI can help you start, but the first draft sounds generic, overconfident, or unlike you.",
+    "By the end, you should have a concrete Draft Revision Log that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Delegate",
+     "To delegate is to give a task to another person or tool while keeping responsibility for the result.",
+     "Delegation to AI is not abandonment. You decide the task, define boundaries, review the output, correct errors, and remain accountable.",
+     "Delegate only the first draft of a message, then revise facts and tone yourself.Ask AI to create three structure options, not the final decision."
+    ],
+    [
+     "Drafting",
+     "Drafting is creating a first version that will be reviewed, corrected, and improved.",
+     "A draft is raw material. AI is often useful at this stage because a rough structure can reduce blank-page friction, but the draft still needs human judgment.",
+     "Ask AI for a first draft, then mark every sentence that needs verification.Create a before-after revision log showing what you changed."
+    ],
+    [
+     "Voice",
+     "Voice is the recognizable style, tone, values, and level of care in your communication.",
+     "Voice protects trust. A generic AI tone may sound smooth but fail to match the relationship, culture, emotion, or responsibility of the moment.",
+     "Replace three generic phrases in an AI draft with words you would actually say.Add one real example from your context to make the message yours."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Select a low-risk communication. Write the purpose in one sentence and name the reader's real concern.",
+    "Ask AI for a first draft only after you provide audience, tone, facts, length, and what must be avoided.",
+    "Highlight every claim that needs verification: names, numbers, dates, promises, policy statements, and cause-effect claims.",
+    "Rewrite the draft in your voice. Add one specific example, one honest limit, and one clear next step.",
+    "Compare the raw AI draft with your final version. Write down what you changed and why."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Reader",
+    "Reader concern",
+    "Message purpose",
+    "Facts that must be accurate",
+    "Tone words",
+    "Sentences I changed",
+    "My added example",
+    "Final next step"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Send the polished AI draft because it sounds professional",
+     "Risky. Polished language can hide errors, exaggeration, or a voice that weakens trust."
+    ],
+    [
+     "Use the draft as raw material and revise the facts, tone, and examples",
+     "Best choice. You gain speed while keeping responsibility."
+    ],
+    [
+     "Avoid AI because writing must be fully human",
+     "Not necessary. You can delegate first drafts while preserving judgment and voice."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Draft a [message type] for [audience]. Purpose: [purpose]. Use these facts only: [facts]. Tone: [tone]. Avoid exaggeration, invented details, and promises I did not make.",
+    "Review this draft for voice, clarity, and trust. Mark sentences that sound generic, inflated, unclear, or risky. Do not rewrite yet.",
+    "Help me create a revision log. Compare my raw draft and final draft, then list what changed in facts, tone, structure, specificity, and responsibility."
+   ],
+   "checkpoint": [
+    "Can someone else understand your draft revision log without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Produce one real communication using a draft-revise-verify cycle. Keep the raw AI output, your final version, and a short note explaining your human edits."
+   ],
+   "evidence": [
+    "Your completed draft revision log.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Letting AI decide the message's moral weight.",
+    "Keeping generic phrases because they sound smooth.",
+    "Failing to add lived context, examples, or constraints.",
+    "Editing only grammar while leaving weak thinking intact."
+   ],
+   "finish": [
+    "You are done when you have a usable Draft Revision Log, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Verify AI Outputs and Sources",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "a verification plan for one AI-supported answer or recommendation."
+   },
+   "start": [
+    "An AI answer looks useful and confident. You need to decide whether it is good enough for a draft, a recommendation, or a decision that affects people, money, rights, safety, or reputation.",
+    "By the end, you should have a concrete Verification Plan that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Verify",
+     "To verify is to check whether something is accurate, supported, current, relevant, and safe enough to use.",
+     "Verification is proportional to risk. A low-risk brainstorm may need a light check; a decision affecting money, rights, safety, or reputation needs stronger evidence.",
+     "Open the original source behind one AI citation and confirm it supports the claim.Recalculate a number from an AI output using a spreadsheet or calculator."
+    ],
+    [
+     "AI Outputs",
+     "AI outputs are the text, summaries, recommendations, classifications, images, code, tables, or actions produced by an AI system.",
+     "Outputs may be useful without being reliable. They can contain errors, bias, missing context, outdated information, or invented details.",
+     "Break one AI answer into facts, assumptions, recommendations, and uncertainties.Highlight which parts of the output you can verify and which parts require expert judgment."
+    ],
+    [
+     "Sources",
+     "Sources are the original documents, data, people, observations, or records that support a claim.",
+     "A source is not just a link. It must be relevant, credible, current, and actually connected to the claim being made.",
+     "Compare an AI summary with the original policy text.Check author, date, scope, and quoted passage before using a source."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Classify the use as low, medium, or high impact. The higher the impact, the stronger the verification must be.",
+    "Separate the output into claims, calculations, recommendations, and assumptions.",
+    "Choose the verification lane for each part: primary source, calculation tool, expert review, field check, or user testing.",
+    "Open original sources instead of trusting citations or summaries. Check author, date, scope, and whether the source actually supports the claim.",
+    "Write a decision note that says what you verified, what remains uncertain, and who accepts responsibility."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "AI output",
+    "Impact level",
+    "Claims to verify",
+    "Numbers to recalculate",
+    "Assumptions to test",
+    "Missing context",
+    "Responsible reviewer",
+    "Decision after verification"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Trust the answer because it includes citations",
+     "Not enough. Citations can be wrong, irrelevant, invented, or misread."
+    ],
+    [
+     "Verify only the parts that affect the decision",
+     "Best choice. Match verification effort to risk and impact."
+    ],
+    [
+     "Reject all AI answers unless a human expert wrote them",
+     "Too rigid. AI can support work if verification is proportional and explicit."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Break this answer into factual claims, calculations, recommendations, and assumptions. For each item, suggest the most appropriate verification method.",
+    "Act as a skeptical reviewer. What would make this answer false, misleading, incomplete, outdated, or unsafe?",
+    "Create a verification log for this output. Columns: item checked, method, evidence, result, remaining uncertainty, reviewer."
+   ],
+   "checkpoint": [
+    "Can someone else understand your verification plan without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Take one AI answer you planned to use. Verify it with at least two methods and write a short note on what changed after verification."
+   ],
+   "evidence": [
+    "Your completed verification plan.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Confusing fluent writing with evidence.",
+    "Checking only the final answer instead of the underlying assumptions.",
+    "Using the same AI tool to verify its own unsupported claim.",
+    "Skipping verification because the answer matches what you hoped was true."
+   ],
+   "finish": [
+    "You are done when you have a usable Verification Plan, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Build a Safe Learning Sandbox",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "45 minutes",
+    "build": "a safe sandbox charter for experimenting with AI or automation."
+   },
+   "start": [
+    "You want to learn by trying tools, but real customer data, staff information, financial files, or operational systems would make careless experimentation dangerous.",
+    "By the end, you should have a concrete Sandbox Charter that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Safe",
+     "Safe means the activity limits harm to people, data, operations, reputation, and legal or ethical obligations.",
+     "Safety does not mean zero risk. It means risks are known, bounded, monitored, and acceptable for the learning purpose.",
+     "Use fictional customer profiles instead of real customer data.Set a stop rule before starting an experiment."
+    ],
+    [
+     "Learning",
+     "Learning is the process of turning experience into better skill, judgment, and future action.",
+     "Learning is stronger when it produces evidence. A sandbox should answer a specific question, not simply create impressions.",
+     "Write one question your experiment must answer.After the test, record what worked, what failed, and what you would change."
+    ],
+    [
+     "Sandbox",
+     "A sandbox is a controlled space for testing ideas, tools, and workflows without exposing real systems to unnecessary risk.",
+     "The sandbox gives freedom inside boundaries. It protects sensitive data and operations while allowing hands-on practice.",
+     "Test a tool with ten fictional cases before using real approved cases.Limit access, budget, and time for a two-week experiment."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write one learning question. Make it narrow, such as 'Can AI summarize public meeting notes accurately enough for a draft?'",
+    "Select safe data: fictional, public, anonymized, or explicitly approved.",
+    "Limit the sandbox. Define time, budget, users, permissions, and tools.",
+    "Choose success criteria and stop criteria before the test starts.",
+    "Capture lessons in a simple log so learning becomes transferable, not just personal curiosity."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Learning question",
+    "Allowed data",
+    "Forbidden data",
+    "Approved tools",
+    "Permissions",
+    "Success criteria",
+    "Stop criteria",
+    "Lesson log"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Experiment freely with whatever files are easiest to access",
+     "Unsafe. Convenience is not a data governance rule."
+    ],
+    [
+     "Use bounded tests with safe data and clear stop points",
+     "Best choice. You create space to learn without creating unnecessary exposure."
+    ],
+    [
+     "Wait until every policy is perfect before learning anything",
+     "Too slow. A careful sandbox can produce learning while formal rules evolve."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me design a two-week AI sandbox for this learning question: [question]. Include allowed data, forbidden data, permissions, success criteria, stop criteria, and lesson capture.",
+    "Review my sandbox charter for privacy, security, quality, and scope risks. Suggest tighter boundaries without killing useful learning.",
+    "Create five fictional test cases that resemble my real work without using confidential or personal data. My context is: [context]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your sandbox charter without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Run a two-week sandbox on fictional or public data. At the end, write a one-page lesson note: what worked, what failed, what risk appeared, and what you would test next."
+   ],
+   "evidence": [
+    "Your completed sandbox charter.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Using real sensitive data because the test is informal.",
+    "Testing many questions at once and learning nothing clearly.",
+    "Forgetting to define when the experiment should stop.",
+    "Keeping lessons private instead of turning them into shared practice."
+   ],
+   "finish": [
+    "You are done when you have a usable Sandbox Charter, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Automate One Simple Workflow",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "70 minutes",
+    "build": "a small automation pilot plan with baseline, test cases, and manual fallback."
+   },
+   "start": [
+    "A repetitive task drains time. You want to automate it, but the task may contain hidden exceptions, bad inputs, or review effort that cancels the benefit.",
+    "By the end, you should have a concrete Automation Pilot Card that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Automate",
+     "To automate is to let a system perform a task or part of a task with reduced manual effort.",
+     "Automation is best for stable, repeated, rule-based work. It becomes risky when the task contains hidden judgment, unclear inputs, or high-impact exceptions.",
+     "Automate file naming for standard documents but keep human review for unusual cases.Measure the time spent correcting automation errors before calling it a success."
+    ],
+    [
+     "Simple",
+     "Simple means the task is narrow, understood, repeated, measurable, and low enough risk to test safely.",
+     "Simple does not mean unimportant. It means the first pilot is small enough to learn from without creating major disruption.",
+     "Choose a weekly status summary before automating a complex approval process.Test ten cases instead of changing the workflow for everyone."
+    ],
+    [
+     "Workflow",
+     "A workflow is a sequence of steps, roles, inputs, outputs, decisions, and handoffs that produces a result.",
+     "Automation changes workflows, not isolated buttons. To improve a workflow, you must understand what happens before, during, and after the automated step.",
+     "Write the current workflow before changing it.Name the manual fallback if the automated step fails."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "List five repetitive tasks and score each one for frequency, stability, risk, data readiness, and review effort.",
+    "Pick the safest high-value candidate, not the most exciting one.",
+    "Measure the current baseline: time, errors, rework, stress, and handoffs.",
+    "Design a small test with real but approved examples and a manual fallback.",
+    "Measure net gain after setup, correction, approval, and communication."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Candidate tasks",
+    "Frequency score",
+    "Stability score",
+    "Risk score",
+    "Data readiness",
+    "Baseline time",
+    "Fallback method",
+    "Net result"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Automate the most annoying task immediately",
+     "Maybe, but annoyance does not prove stability or safety."
+    ],
+    [
+     "Automate one stable, low-risk task and measure the full cycle",
+     "Best choice. You learn from a contained pilot."
+    ],
+    [
+     "Automate only after the entire process is redesigned",
+     "Sometimes needed, but it can delay safe learning on a simple subtask."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Here are five tasks: [list]. Score them for automation suitability using frequency, stability, risk, data readiness, and review effort. Explain the safest first pilot.",
+    "Help me create a baseline measurement plan for this task: [task]. Include time, errors, rework, handoffs, and user experience.",
+    "Design a manual fallback for this automation pilot. What should happen if the tool fails, produces uncertainty, or creates a suspicious result?"
+   ],
+   "checkpoint": [
+    "Can someone else understand your automation pilot card without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Run a small automation pilot on one task. Keep a before-after log for at least ten cases and decide whether to continue, change, or stop."
+   ],
+   "evidence": [
+    "Your completed automation pilot card.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Automating an unstable process.",
+    "Ignoring setup, review, and correction time.",
+    "Failing to test exceptions.",
+    "Removing the manual fallback too early."
+   ],
+   "finish": [
+    "You are done when you have a usable Automation Pilot Card, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Use Data Without Fooling Yourself",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "65 minutes",
+    "build": "a data-question checklist for judging one metric before using it in a decision."
+   },
+   "start": [
+    "A dashboard, report, or AI analysis gives you a number. The number may be useful, but it may also hide missing data, biased samples, bad definitions, or a misleading chart.",
+    "By the end, you should have a concrete Metric Interrogation Sheet that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Data",
+     "Data is recorded information, such as numbers, text, categories, dates, images, audio, transactions, or observations.",
+     "Data is shaped by how it is collected, labeled, cleaned, excluded, and interpreted. It is never neutral simply because it is numerical.",
+     "Ask who is missing from a dataset before using it.Define a metric in plain language and check if others define it the same way."
+    ],
+    [
+     "Fooling Yourself",
+     "Fooling yourself means drawing a confident conclusion from weak, incomplete, biased, or misunderstood evidence.",
+     "AI and dashboards can make weak reasoning look precise. You avoid self-deception by checking definitions, samples, missing context, correlation, and incentives.",
+     "Write three alternative explanations for a trend before deciding what caused it.Add one qualitative signal to explain a dashboard number."
+    ],
+    [
+     "Metric",
+     "A metric is a measurement used to describe performance, behavior, quality, cost, risk, or progress.",
+     "A metric should improve a decision. If nobody knows what decision the metric supports, it may create noise rather than clarity.",
+     "Connect one metric to one decision it should improve.Add a second metric that could reveal harm hidden by the first."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one metric you often see or use. Write the decision it influences.",
+    "Define the metric in plain language. If two people define it differently, stop and resolve that first.",
+    "Ask who or what is missing from the data. Look for silent exclusions.",
+    "Check whether the chart implies a cause when it only shows a pattern.",
+    "Add a second signal that would confirm, challenge, or explain the metric."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Metric",
+    "Decision influenced",
+    "Definition",
+    "Data source",
+    "Who is missing",
+    "Possible bias",
+    "Second signal",
+    "Decision rule"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Use the metric because it is already on the dashboard",
+     "Weak choice. Availability is not validity."
+    ],
+    [
+     "Question the metric before connecting it to action",
+     "Best choice. You protect decisions from false precision."
+    ],
+    [
+     "Reject metrics because they can be biased",
+     "Too far. Metrics are useful when interpreted with context and humility."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Interrogate this metric: [metric]. Ask questions about definition, source, sample, missing data, bias, correlation, causality, and decision relevance.",
+    "This chart seems to show [interpretation]. Give me three alternative explanations and one additional data point that would help decide between them.",
+    "Help me rewrite this dashboard insight so it separates observation, interpretation, uncertainty, and recommended action."
+   ],
+   "checkpoint": [
+    "Can someone else understand your metric interrogation sheet without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Take one metric from your work or studies and create a one-page metric note. Include definition, risk of misreading, second signal, and how you will use it responsibly."
+   ],
+   "evidence": [
+    "Your completed metric interrogation sheet.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating a precise number as a true number.",
+    "Ignoring who is missing from the sample.",
+    "Confusing correlation with causation.",
+    "Using a metric without naming the decision it should improve."
+   ],
+   "finish": [
+    "You are done when you have a usable Metric Interrogation Sheet, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Work With Multimodal AI",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "60 minutes",
+    "build": "a two-mode AI test comparing text, image, audio, video, or document inputs."
+   },
+   "start": [
+    "The same problem can arrive as text, photo, voice note, PDF, spreadsheet, video, or form. Each format changes accuracy, privacy, accessibility, and review effort.",
+    "By the end, you should have a concrete Multimodal Test Card that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Multimodal",
+     "Multimodal means using more than one type of input or output, such as text, image, audio, video, tables, or documents.",
+     "Different modes reveal different information and create different risks. A photo, voice note, and spreadsheet do not need the same checks.",
+     "Compare an AI summary from a voice note with one from written notes.Check whether an image-based answer missed details visible to a human."
+    ],
+    [
+     "AI",
+     "AI refers to systems that perform tasks associated with prediction, generation, classification, pattern recognition, or decision support.",
+     "AI can assist with perception and language, but it does not automatically understand responsibility, context, or consequences.",
+     "Use AI to organize observations, then decide yourself what action is responsible.Ask the tool to state uncertainty and what original material a human should inspect."
+    ],
+    [
+     "Mode",
+     "A mode is the form in which information enters or leaves a system, such as speech, image, text, or structured data.",
+     "Choosing the right mode affects accessibility, accuracy, privacy, and review effort.",
+     "Test whether a text form or voice note gives clearer information for field reports.Use a checklist to decide whether a photo contains personal or sensitive information."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one problem that appears in more than one format, such as support requests, maintenance notes, interview feedback, or training questions.",
+    "Select two input modes to compare. Use approved or fictional data.",
+    "Define what a good output must include and what would make it unsafe.",
+    "Run the same task in both modes and compare accuracy, missing context, privacy, and review time.",
+    "Decide which mode is useful, which needs control, and which should not be used for this task."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Problem",
+    "Mode 1",
+    "Mode 2",
+    "Expected output",
+    "Accuracy result",
+    "Privacy concern",
+    "Review effort",
+    "Best use"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Use the mode that feels most impressive",
+     "Not enough. Impressive input handling does not prove reliable output."
+    ],
+    [
+     "Compare modes using the same task and clear criteria",
+     "Best choice. You learn which mode actually supports the work."
+    ],
+    [
+     "Avoid non-text AI because it is too risky",
+     "Too broad. Some multimodal uses are safe when data and review are controlled."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me design a comparison test for this problem: [problem]. I want to compare [mode 1] and [mode 2]. Include criteria for accuracy, privacy, accessibility, and review effort.",
+    "Create a review checklist for AI output based on [photos/audio/documents/video]. Include what original material a human must inspect before acting.",
+    "Generate fictional sample inputs for a multimodal AI test in this context: [context]. Avoid personal or confidential data."
+   ],
+   "checkpoint": [
+    "Can someone else understand your multimodal test card without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Run a two-mode test and write a short recommendation: use, use with controls, or do not use. Include evidence from at least five sample cases."
+   ],
+   "evidence": [
+    "Your completed multimodal test card.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Forgetting that images, voices, and documents can contain sensitive data.",
+    "Judging output quality without checking the original input.",
+    "Using the same review criteria for every mode.",
+    "Letting accessibility benefits hide privacy or accuracy problems."
+   ],
+   "finish": [
+    "You are done when you have a usable Multimodal Test Card, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Protect Data, Privacy, and Cybersecurity",
+   "meta": {
+    "domain": "Technology usage",
+    "time": "75 minutes",
+    "build": "a data boundary card for one AI use case."
+   },
+   "start": [
+    "You want speed, but the information you handle may include confidential, personal, regulated, contractual, or security-sensitive material.",
+    "By the end, you should have a concrete Data Boundary Card that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Data Protection",
+     "Data protection means controlling how information is collected, used, shared, stored, retained, and deleted.",
+     "Protection starts before the prompt. You must know what kind of data you have and which systems are approved to process it.",
+     "Classify data before pasting any example into an AI tool.Remove names, account numbers, and identifying details from test cases."
+    ],
+    [
+     "Privacy",
+     "Privacy is the right and expectation that personal information is handled with care, purpose, limits, and respect.",
+     "Privacy is not only secrecy. It also includes consent, relevance, minimization, access control, and fair use.",
+     "Ask whether a person's information is necessary for the AI task.Replace real profiles with fictional profiles for experimentation."
+    ],
+    [
+     "Cybersecurity",
+     "Cybersecurity is the practice of protecting systems, accounts, data, and operations from unauthorized access, misuse, disruption, or attack.",
+     "AI can expand the attack surface through connected tools, files, prompts, plugins, accounts, and hidden instructions.",
+     "Limit an AI assistant's access to only the files needed for the task.Treat external documents as untrusted inputs until checked."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "List the data types involved in one AI use case.",
+    "Classify each data type: public, internal, confidential, personal, or highly sensitive.",
+    "Name which tools are approved for each class. If you do not know, mark it as unknown instead of guessing.",
+    "Apply least privilege: decide the minimum access, retention, and sharing needed.",
+    "Write the incident path: what to do if data is pasted into the wrong tool, exposed, or used in an unsafe output."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Use case",
+    "Data type",
+    "Data class",
+    "Approved tool",
+    "Allowed action",
+    "Forbidden action",
+    "Access limit",
+    "Incident contact"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Paste the data because the task is urgent",
+     "Dangerous. Urgency does not erase privacy, security, or contractual duties."
+    ],
+    [
+     "Classify the data first and use only approved paths",
+     "Best choice. It protects trust while still allowing useful work."
+    ],
+    [
+     "Never use AI for any internal work",
+     "Too broad. Many internal uses are safe when data boundaries are clear."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me classify the data in this AI use case: [describe]. Ask me about public, internal, confidential, personal, and highly sensitive information. Do not ask me to paste real sensitive data.",
+    "Create a data boundary card for this use case. Include allowed tools, forbidden data, access limits, retention concerns, and incident steps.",
+    "Act as a cybersecurity reviewer. What could go wrong if an AI assistant is connected to these files or tools: [describe connection]?"
+   ],
+   "checkpoint": [
+    "Can someone else understand your data boundary card without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create three data boundary cards for tasks you or your team perform. Share them with the person responsible for policy, security, or operations."
+   ],
+   "evidence": [
+    "Your completed data boundary card.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Assuming a tool is safe because it is popular.",
+    "Using real personal or confidential data in informal tests.",
+    "Giving a connected assistant more access than the task requires.",
+    "Not knowing who to contact when something goes wrong."
+   ],
+   "finish": [
+    "You are done when you have a usable Data Boundary Card, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Publish a One-Page AI Usage Doctrine",
+   "meta": {
+    "domain": "Management",
+    "time": "60 minutes",
+    "build": "a one-page AI usage doctrine for a team or project."
+   },
+   "start": [
+    "People are already using AI differently. Some use it safely, some avoid it, and some may be pasting sensitive data or trusting outputs without review.",
+    "By the end, you should have a concrete AI Usage Doctrine that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Publish",
+     "To publish is to make a rule, guide, or decision visible and usable by the people expected to follow it.",
+     "An AI rule that stays in someone's head does not guide behavior. Publishing creates shared expectations and a basis for review.",
+     "Post the team AI rules where people actually work.Include examples of allowed and forbidden uses."
+    ],
+    [
+     "AI Usage",
+     "AI usage means the ways people apply AI systems to draft, summarize, analyze, recommend, classify, automate, or decide.",
+     "Different uses carry different risk. Drafting a low-risk email is not the same as recommending a benefit, diagnosis, loan, or disciplinary action.",
+     "List every AI use your team already performs.Separate drafting, recommendation, and decision uses."
+    ],
+    [
+     "Doctrine",
+     "A doctrine is a short set of guiding rules that explains what is encouraged, restricted, forbidden, and escalated.",
+     "A doctrine is more practical than a long policy for daily behavior. It gives teams enough clarity to act while formal governance evolves.",
+     "Write four zones: encouraged, review required, forbidden, and escalate.Add a review date so the doctrine evolves with tools and rules."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "List the AI uses already happening or likely to happen in your team.",
+    "Sort them into four zones: encouraged, allowed with review, forbidden, and escalate immediately.",
+    "Define rules for data, verification, transparency, ownership, and incidents.",
+    "Write examples so the doctrine is concrete, not a vague principle statement.",
+    "Set a review date because tools, risks, and rules will change."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Team or project",
+    "Encouraged uses",
+    "Allowed with review",
+    "Forbidden uses",
+    "Escalation triggers",
+    "Data rule",
+    "Verification rule",
+    "Review date"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Let everyone use judgment without written rules",
+     "Fragile. People may have different risk tolerance and hidden assumptions."
+    ],
+    [
+     "Write a short doctrine with examples and review points",
+     "Best choice. It gives permission and boundaries at the same time."
+    ],
+    [
+     "Ban all AI until leadership decides everything",
+     "Sometimes necessary for high-risk contexts, but often blocks useful low-risk learning."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me draft a one-page AI usage doctrine for [team]. Include encouraged uses, review-required uses, forbidden uses, escalation triggers, data rules, verification rules, and a review date.",
+    "Stress-test this doctrine. Give me ten realistic situations where people may misunderstand or bypass it.",
+    "Rewrite this doctrine in plain language for frontline staff while keeping the rules precise: [paste]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your ai usage doctrine without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Publish a draft doctrine to three reviewers: one user, one technical or security person, and one risk or management stakeholder. Revise based on their comments."
+   ],
+   "evidence": [
+    "Your completed ai usage doctrine.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Writing values without examples.",
+    "Forgetting to define who owns each AI system.",
+    "Treating AI assistance, recommendation, and decision as the same thing.",
+    "Never revisiting the doctrine after tools change."
+   ],
+   "finish": [
+    "You are done when you have a usable AI Usage Doctrine, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Start Transformation From the Work Problem",
+   "meta": {
+    "domain": "Management",
+    "time": "55 minutes",
+    "build": "a problem-first transformation brief."
+   },
+   "start": [
+    "A tool sounds exciting, or competitors seem to be adopting it. Before choosing technology, you need to prove that the problem is real and worth solving.",
+    "By the end, you should have a concrete Work Problem Brief that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Transformation",
+     "Transformation is a meaningful change in how work creates value, not just the introduction of a new tool.",
+     "Real transformation changes roles, workflows, measures, skills, decisions, or customer experience.",
+     "Describe what would change for the user if a project succeeded.Name which workflow, role, or decision will be different after the change."
+    ],
+    [
+     "Work Problem",
+     "A work problem is a specific pain, delay, risk, error, cost, or unmet need in the way work is done.",
+     "A work problem should be observable and measurable. Vague goals like innovation or modernization are not enough.",
+     "Write the painful moment in the workflow before naming a tool.Measure the current baseline for delay, rework, or frustration."
+    ],
+    [
+     "Baseline",
+     "A baseline is the current measured state before a change is tested.",
+     "Without a baseline, you cannot tell whether the change improved anything or only felt new.",
+     "Measure current turnaround time before piloting an AI assistant.Record current error types before changing a process."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Name the affected person or group. Be specific: customers, staff, managers, analysts, suppliers, trainees, or patients.",
+    "Describe the painful moment in the workflow, not the technology feature.",
+    "Measure the current baseline: delay, error, cost, rework, frustration, risk, or missed opportunity.",
+    "Write the improvement you want in observable terms.",
+    "Only then list possible solutions, including non-AI changes."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Affected group",
+    "Painful moment",
+    "Current baseline",
+    "Root cause hypothesis",
+    "Desired improvement",
+    "Constraints",
+    "Possible solutions",
+    "First test"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Buy or copy the tool because others are using it",
+     "Tool-first change can create cost without solving the work problem."
+    ],
+    [
+     "Define the problem, baseline, and user before selecting tools",
+     "Best choice. It turns transformation into measurable learning."
+    ],
+    [
+     "Wait until the problem is perfectly understood",
+     "Too slow. A clear first problem statement is enough to start a limited test."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Convert this tool idea into a work problem brief: [tool idea]. Ask who is affected, what pain occurs, what baseline proves it, and what improvement matters.",
+    "Challenge this problem statement. Is it a real work problem, a symptom, a preference, or a technology wish?",
+    "Suggest non-AI, low-tech, AI-assisted, and fully automated options for this problem. Explain what evidence would select between them."
+   ],
+   "checkpoint": [
+    "Can someone else understand your work problem brief without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Write a one-page brief for one transformation idea. Share it before any tool discussion and ask reviewers whether the problem is clear enough to test."
+   ],
+   "evidence": [
+    "Your completed work problem brief.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Starting with features instead of user pain.",
+    "Using vague goals like 'modernize' or 'be efficient.'",
+    "Forgetting to measure the current baseline.",
+    "Ignoring simpler process fixes."
+   ],
+   "finish": [
+    "You are done when you have a usable Work Problem Brief, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Run a Limited Pilot With Balanced Metrics",
+   "meta": {
+    "domain": "Management",
+    "time": "70 minutes",
+    "build": "a limited pilot board with balanced metrics and stop rules."
+   },
+   "start": [
+    "A promising AI or automation use should be tested, but a pilot without metrics, support, or stop rules becomes a slow rollout in disguise.",
+    "By the end, you should have a concrete Pilot Board that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Limited Pilot",
+     "A limited pilot is a small, bounded test of a change before broader adoption.",
+     "The purpose of a pilot is learning. It should have scope, duration, users, data, metrics, support, and stop rules.",
+     "Test one request type with one team for two weeks.Exclude high-risk cases until the control method is proven."
+    ],
+    [
+     "Balanced Metrics",
+     "Balanced metrics measure more than speed, including quality, cost, rework, satisfaction, mental load, incidents, and trust.",
+     "A tool can make work faster and worse at the same time. Balanced measures reveal tradeoffs.",
+     "Track time saved and customer callbacks together.Measure review effort and user stress during the pilot."
+    ],
+    [
+     "Stop Rules",
+     "Stop rules define conditions that pause, redesign, or end a pilot.",
+     "Stop rules prevent momentum from carrying a weak or harmful system into full deployment.",
+     "Stop if error severity exceeds the agreed threshold.Pause if users cannot verify outputs within the available time."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write one hypothesis: if we use this tool for this task, this measurable result should improve.",
+    "Define the pilot boundary: users, data, cases, duration, support, and excluded situations.",
+    "Choose balanced metrics: time, quality, rework, satisfaction, mental load, cost, incidents, and escalation quality.",
+    "Create support and reporting channels so users can raise problems quickly.",
+    "Write stop, adjust, and scale criteria before the pilot starts."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Hypothesis",
+    "Pilot users",
+    "Included cases",
+    "Excluded cases",
+    "Baseline",
+    "Metrics",
+    "Support path",
+    "Stop criteria",
+    "Scale criteria"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Call it a pilot but deploy broadly",
+     "That is a rollout without the discipline of learning."
+    ],
+    [
+     "Run a narrow pilot with balanced measures and stop rules",
+     "Best choice. You can learn without locking in a bad system."
+    ],
+    [
+     "Pilot only with enthusiasts",
+     "Risky. Enthusiasts may hide usability, trust, or workload problems that others will face."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Design a pilot board for this AI use: [use case]. Include hypothesis, scope, data, users, duration, metrics, guardrails, support, stop criteria, and scale criteria.",
+    "Review this pilot plan and identify where it could accidentally become an uncontrolled rollout: [paste].",
+    "Create a balanced metric set for this pilot. Include at least one measure for speed, quality, human experience, risk, and customer or stakeholder outcome."
+   ],
+   "checkpoint": [
+    "Can someone else understand your pilot board without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create a pilot board for a real or planned use case. Do not start the pilot until you have written one stop rule that leadership agrees to honor."
+   ],
+   "evidence": [
+    "Your completed pilot board.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Measuring speed but not quality.",
+    "Ignoring the workload of review and correction.",
+    "Not giving users a safe way to report problems.",
+    "Scaling because the demo impressed people, not because the pilot proved value."
+   ],
+   "finish": [
+    "You are done when you have a usable Pilot Board, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Redesign Roles After Automation",
+   "meta": {
+    "domain": "Management",
+    "time": "65 minutes",
+    "build": "a redesigned role map that preserves learning, ownership, and humane work."
+   },
+   "start": [
+    "Automation removes tasks from a role. If nothing else changes, people may be left with only exceptions, monitoring, and stress.",
+    "By the end, you should have a concrete Role Redesign Map that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Redesign",
+     "To redesign is to intentionally reshape a role, process, or system so it works better under new conditions.",
+     "Redesign is not simply removing tasks. It creates a healthier, more complete role around outcomes, learning, and decision rights.",
+     "Replace repetitive data entry with quality review and exception analysis.Add coaching duties when routine beginner tasks are automated."
+    ],
+    [
+     "Roles",
+     "Roles are bundles of responsibilities, relationships, decisions, skills, and expected outcomes.",
+     "A role is more than a task list. It includes identity, learning, trust, workload, and contribution.",
+     "Map a role by outcomes, not just tasks.Name which decision rights must change if responsibility changes."
+    ],
+    [
+     "Automation",
+     "Automation is the use of systems to perform work with less direct human effort.",
+     "Automation changes what humans do next. If the role is not redesigned, people may inherit only difficult exceptions.",
+     "After automation, add improvement work instead of only monitoring.Check whether junior staff still have a path to learn the basics."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Map the current role by outcomes, tasks, relationships, decisions, and learning moments.",
+    "Mark which tasks may be automated, augmented, preserved, or expanded.",
+    "Identify what learning would disappear if all routine tasks vanished.",
+    "Design new responsibilities that create full contribution: quality review, improvement, client insight, exception analysis, training, or coordination.",
+    "Check workload fairness so the person is not left only with high-pressure edge cases."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Role",
+    "Current outcomes",
+    "Tasks changing",
+    "Learning moments at risk",
+    "New responsibilities",
+    "Decision rights",
+    "Support needed",
+    "Workload risk"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Remove automated tasks and leave the rest unchanged",
+     "Incomplete. The role may become narrower, more stressful, and less developmental."
+    ],
+    [
+     "Redesign the role around outcomes, learning, and decision rights",
+     "Best choice. Technology improves the work rather than hollowing it out."
+    ],
+    [
+     "Keep old tasks for everyone even if tools help",
+     "May protect learning briefly but can waste capacity if not redesigned intentionally."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me redesign this role after automation: [describe role]. Map outcomes, tasks, relationships, decision rights, learning moments, and risks if routine tasks disappear.",
+    "What new responsibilities could make this role more valuable and humane after these tasks are automated: [tasks]?",
+    "Act as an employee advocate. Review this role redesign for stress, fairness, learning, autonomy, and recognition."
+   ],
+   "checkpoint": [
+    "Can someone else understand your role redesign map without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Interview one person whose role may change. Build a before-after role map and identify one learning pathway that must be preserved."
+   ],
+   "evidence": [
+    "Your completed role redesign map.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating people as task leftovers.",
+    "Forgetting junior learning pathways.",
+    "Giving responsibility without decision rights.",
+    "Measuring only output while ignoring stress and development."
+   ],
+   "finish": [
+    "You are done when you have a usable Role Redesign Map, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Build the Human-in-the-Loop Control System",
+   "meta": {
+    "domain": "Management",
+    "time": "75 minutes",
+    "build": "a human-in-the-loop control rule for one AI-supported workflow."
+   },
+   "start": [
+    "A workflow includes AI assistance. Someone says a human will review it, but nobody has defined what the human checks, when, with what evidence, or with what authority.",
+    "By the end, you should have a concrete Control Rule that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Human-in-the-Loop",
+     "Human-in-the-loop means a person is intentionally placed in a workflow to review, decide, correct, or stop an AI-supported action.",
+     "The human must have evidence, time, criteria, authority, and accountability. A symbolic final approval is not enough.",
+     "Require a specialist to review sensitive cases before response is sent.Let the reviewer see the source document, not only the AI summary."
+    ],
+    [
+     "Control System",
+     "A control system is the set of review points, criteria, roles, records, and escalation paths that keeps work within acceptable limits.",
+     "Controls should catch errors while they are still reversible. They make responsibility operational.",
+     "Write a rule: if confidence is low, route to a human before action.Document every override and why it happened."
+    ],
+    [
+     "Escalation",
+     "Escalation is the process of moving a case to a higher level of expertise, authority, or care.",
+     "Escalation protects people when the case is sensitive, uncertain, high impact, or outside the tool's safe scope.",
+     "Escalate employee health, conflict, or legal questions to a trained person.Escalate customer complaints involving loss, harm, or distress."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one workflow where AI contributes to output, recommendation, triage, or decision support.",
+    "Identify the earliest point where a harmful error could appear.",
+    "Place review where the error can still be detected and corrected.",
+    "Define the reviewer, evidence, criteria, time allowed, and authority to pause or override.",
+    "Write escalation rules for uncertainty, sensitive topics, complaints, safety issues, or rights-impacting decisions."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Workflow",
+    "AI role",
+    "Possible error",
+    "Review point",
+    "Reviewer",
+    "Evidence available",
+    "Review criteria",
+    "Authority",
+    "Escalation trigger"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Add final human approval after the tool completes everything",
+     "Often symbolic. Late review may not catch hidden errors or may be too rushed."
+    ],
+    [
+     "Place human control at the meaningful risk point",
+     "Best choice. Review becomes real protection, not ceremony."
+    ],
+    [
+     "Let humans review only complaints after the fact",
+     "Too late for many high-impact uses."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Design human-in-the-loop control for this workflow: [workflow]. Identify error points, review points, reviewer criteria, evidence needed, authority, and escalation triggers.",
+    "Rewrite this vague control rule into an operational one: 'A human reviews AI outputs before use.'",
+    "Create five escalation triggers for this AI-supported workflow, including sensitive data, uncertainty, complaints, safety, and rights-impacting outcomes."
+   ],
+   "checkpoint": [
+    "Can someone else understand your control rule without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Write one control rule in the form: 'If X occurs, Y reviews Z using criteria A before B happens, and can pause or escalate to C.' Test it against three cases."
+   ],
+   "evidence": [
+    "Your completed control rule.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Assuming review equals responsibility.",
+    "Reviewing only the AI answer without source material.",
+    "Giving reviewers no time or power to stop the process.",
+    "Failing to document why overrides happen."
+   ],
+   "finish": [
+    "You are done when you have a usable Control Rule, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Govern Risk, Ethics, and Compliance",
+   "meta": {
+    "domain": "Management",
+    "time": "80 minutes",
+    "build": "an AI risk register row with controls, incident signals, and stop rules."
+   },
+   "start": [
+    "An organization has AI uses scattered across teams. Without a register, leaders cannot know what exists, who owns it, what data it touches, or when it should stop.",
+    "By the end, you should have a concrete AI Risk Register Row that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Govern",
+     "To govern is to set responsibilities, rules, oversight, controls, and review processes for how a system is used.",
+     "Governance makes AI visible and accountable. It connects daily use to risk, ethics, compliance, and leadership decisions.",
+     "Assign an owner for each AI system.Review the AI register every quarter."
+    ],
+    [
+     "Risk",
+     "Risk is the possibility that an action or system creates harm, loss, error, unfairness, exposure, or missed responsibility.",
+     "Risk has probability, severity, detectability, and reversibility. Not all risks are equal.",
+     "Rate one AI use by likelihood and severity of error.Write what would make a risk detectable early."
+    ],
+    [
+     "Ethics",
+     "Ethics is the practice of asking what is fair, responsible, explainable, humane, and worthy of trust.",
+     "Ethics goes beyond legality. A use can be possible and still be unfair, opaque, or damaging.",
+     "Ask who benefits and who carries the risk.Ask whether you could explain the decision publicly."
+    ],
+    [
+     "Compliance",
+     "Compliance means meeting applicable laws, policies, standards, contracts, and sector rules.",
+     "Compliance depends on country, sector, data type, purpose, and level of impact. AI should not be used to bypass qualified review.",
+     "Route high-impact uses to legal, privacy, security, or compliance teams.Link each AI use in the register to the rule or policy it must follow."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one AI use, official or informal.",
+    "Record purpose, owner, users, data, supplier, autonomy level, impact, and review date.",
+    "Name the main risks: privacy, security, bias, explainability, error, dependence, cost, compliance, or reputational harm.",
+    "Attach at least one control and one incident signal to each serious risk.",
+    "Write a stop rule for critical error, bias, cost drift, vendor change, inability to verify, or complaint threshold."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Use case",
+    "Owner",
+    "Users",
+    "Data",
+    "Supplier",
+    "Autonomy level",
+    "Impact",
+    "Controls",
+    "Incident signal",
+    "Stop rule"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Track only official systems",
+     "Incomplete. Informal tools can create real risk."
+    ],
+    [
+     "Register all meaningful AI uses, including pilots and informal workflows",
+     "Best choice. You cannot govern what you cannot see."
+    ],
+    [
+     "Wait for legal to create the perfect register",
+     "Too passive. Start lightweight and improve it with risk, legal, security, and users."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Create an AI risk register row for this use case: [describe]. Include owner, purpose, users, data, supplier, autonomy, impact, controls, incidents, review date, and stop rule.",
+    "Review this AI use for privacy, security, bias, explainability, error, vendor, cost, compliance, and reputation risks: [describe].",
+    "Generate stop rules for this AI system. Include thresholds for error, bias, complaints, vendor changes, inability to verify, and unexpected cost."
+   ],
+   "checkpoint": [
+    "Can someone else understand your ai risk register row without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Start a mini-register with three AI uses you know. Include at least one informal use. Share it with someone responsible for governance."
+   ],
+   "evidence": [
+    "Your completed ai risk register row.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating pilots as outside governance.",
+    "Listing a risk without a control.",
+    "Forgetting incident response.",
+    "Keeping a register that nobody reviews."
+   ],
+   "finish": [
+    "You are done when you have a usable AI Risk Register Row, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Lead Change Without Disengaging the Team",
+   "meta": {
+    "domain": "Management",
+    "time": "70 minutes",
+    "build": "an honest change message and feedback loop for an AI-era transition."
+   },
+   "start": [
+    "People hear that AI or automation is coming. Some are excited, some are worried, and silence from leaders creates rumors.",
+    "By the end, you should have a concrete Change Conversation Script that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Lead Change",
+     "To lead change is to help people move from current practice to new practice with direction, participation, learning, and trust.",
+     "Change leadership is not announcing decisions. It includes listening, explaining uncertainty, adjusting plans, and protecting people through transition.",
+     "State what is decided and what is still open.Hold a feedback review after a pilot and show what changed."
+    ],
+    [
+     "Disengaging",
+     "Disengaging means people withdraw energy, trust, creativity, honesty, or effort from the work.",
+     "Disengagement often appears when people feel change is done to them, when risks are hidden, or when learning is demanded without support.",
+     "Ask what would make people hide AI errors.Watch for silence, resistance, cynicism, and reduced problem reporting."
+    ],
+    [
+     "Psychological Safety",
+     "Psychological safety is the shared belief that people can speak up, ask questions, admit errors, and challenge ideas without humiliation or punishment.",
+     "It is essential for AI adoption because hidden errors and silent fear make systems dangerous.",
+     "Thank someone publicly for reporting a tool mistake.Separate incident learning from blame."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write why change is being considered now, using plain business or service reasons.",
+    "Separate what is decided from what is still open.",
+    "Name risks honestly: job changes, quality, data, workload, trust, customer impact, or learning demands.",
+    "Name protections and participation points: pilots, consultation, training, escalation, redeployment, or review dates.",
+    "Create a feedback loop with a date, channel, response owner, and visible action after feedback."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Why now",
+    "What is decided",
+    "What is open",
+    "Risks",
+    "Protections",
+    "Participation points",
+    "Feedback channel",
+    "Next update date"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Tell people nothing until every decision is final",
+     "This creates fear and removes local knowledge from the design."
+    ],
+    [
+     "Communicate honestly and invite participation before rollout",
+     "Best choice. Trust grows when people see both candor and action."
+    ],
+    [
+     "Promise no roles will change",
+     "Unsafe promise. It may comfort briefly but damages credibility later."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Draft an honest change message for this AI transition: [describe]. Include why now, what is decided, what is open, risks, protections, participation, and next update date.",
+    "Rewrite this change message so it is clear, human, and not defensive: [paste].",
+    "Act as a skeptical employee. What questions, fears, or objections would this message raise?"
+   ],
+   "checkpoint": [
+    "Can someone else understand your change conversation script without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Write a five-minute change update and test it with one colleague. Ask: What feels honest? What feels vague? What question would people still ask?"
+   ],
+   "evidence": [
+    "Your completed change conversation script.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Using hype instead of clarity.",
+    "Pretending there is no risk.",
+    "Asking for feedback without responding to it.",
+    "Letting managers improvise different messages."
+   ],
+   "finish": [
+    "You are done when you have a usable Change Conversation Script, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Turn Productivity Gains Into Learning Capacity",
+   "meta": {
+    "domain": "Management",
+    "time": "60 minutes",
+    "build": "a gain-sharing rule that reinvests productivity into learning, quality, and healthier work."
+   },
+   "start": [
+    "A tool saves time. If every saved minute becomes more output, people may hide problems, burn out, or see technology only as a threat.",
+    "By the end, you should have a concrete Productivity Reinvestment Plan that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Productivity Gains",
+     "Productivity gains are improvements in output, speed, quality, cost, or capacity produced by a better process or tool.",
+     "A gain is real only after setup, review, correction, coordination, and human impact are counted.",
+     "Measure net time saved after checking outputs.Compare faster production with rework and customer satisfaction."
+    ],
+    [
+     "Learning Capacity",
+     "Learning capacity is the time, energy, support, and practice space people have to build new skills.",
+     "When productivity gains are reinvested into learning, the team becomes more capable instead of just more loaded.",
+     "Use part of saved time for peer review or documentation.Reserve weekly practice time after introducing a new tool."
+    ],
+    [
+     "Reinvestment",
+     "Reinvestment means deliberately using some gains to improve future capability, quality, safety, or well-being.",
+     "Reinvestment prevents AI from becoming only a pressure multiplier.",
+     "Allocate 25 percent of saved time to training.Reward people who document lessons from failed tests."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Measure net productivity gain after setup, review, correction, and coordination.",
+    "Decide what portion of gains goes to output, learning, quality, documentation, recovery, or customer improvement.",
+    "Make the reinvestment visible so people know adaptation is not just extra unpaid work.",
+    "Reward behaviors that protect the system: documenting, teaching, reporting risks, and stopping bad pilots.",
+    "Review whether workload silently expanded after the tool was introduced."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Tool or process",
+    "Net gain measured",
+    "Output reinvestment",
+    "Learning reinvestment",
+    "Quality reinvestment",
+    "Recovery or focus time",
+    "Recognition behavior",
+    "Workload risk"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Use all saved time for more tasks",
+     "Short-term output may rise, but learning, quality, and trust can decline."
+    ],
+    [
+     "Share gains between output, learning, quality, and recovery",
+     "Best choice. Productivity becomes capability, not just pressure."
+    ],
+    [
+     "Hide productivity gains so workload does not increase",
+     "Understandable but unhealthy. Better to negotiate explicit reinvestment."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me create a productivity reinvestment plan for this tool: [tool/process]. Include net gain, output, learning, quality, documentation, recovery, and recognition.",
+    "What hidden costs should I subtract before claiming this tool saves time? Include setup, review, correction, approval, and user support.",
+    "Create a team agreement for how productivity gains from AI will be shared fairly and measured honestly."
+   ],
+   "checkpoint": [
+    "Can someone else understand your productivity reinvestment plan without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Choose one productivity gain and propose a reinvestment rule. Example: 50 percent output, 25 percent quality review, 25 percent learning or documentation."
+   ],
+   "evidence": [
+    "Your completed productivity reinvestment plan.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Measuring only raw speed.",
+    "Treating training as personal time.",
+    "Rewarding enthusiasm but not careful risk reporting.",
+    "Letting the workload expand invisibly."
+   ],
+   "finish": [
+    "You are done when you have a usable Productivity Reinvestment Plan, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Execute a 90-Day Resilience Plan",
+   "meta": {
+    "domain": "Management",
+    "time": "90 minutes",
+    "build": "a 90-day resilience plan with baseline, pilot, evidence, and review."
+   },
+   "start": [
+    "You see both risk and opportunity in AI-era work, but the topic is too large. You need a small cycle that turns worry into action.",
+    "By the end, you should have a concrete 90-Day Action Plan that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Execute",
+     "To execute is to turn an intention into scheduled action, evidence, decisions, and follow-through.",
+     "Execution matters because AI-era anxiety often stays abstract. A 90-day cycle makes action small enough to complete.",
+     "Put two learning blocks on your calendar today.Choose a day-60 decision date before starting a pilot."
+    ],
+    [
+     "90-Day",
+     "A 90-day period is a short planning cycle long enough to learn but short enough to stay concrete.",
+     "Ninety days gives time for baseline, practice, pilot, reflection, and a revised SWOT without pretending to predict the future.",
+     "Run a two-week pilot inside an eight-week learning plan.Refresh your SWOT at the end of the cycle."
+    ],
+    [
+     "Resilience Plan",
+     "A resilience plan is a practical sequence of actions that increases options, reduces risk, and strengthens capacity under uncertainty.",
+     "Resilience is built through repeated evidence-based action, not motivation alone.",
+     "Pair one threat with one opportunity and one measurable action.Add your pilot result to your portfolio or team documentation."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one realistic threat and one reachable opportunity for the next 12 months.",
+    "Measure your starting point: skill, time, errors, revenue, energy, network, or portfolio evidence.",
+    "Select one representative task for a two-week pilot.",
+    "Block weekly learning time and name a responsibility partner.",
+    "Make a day-60 decision: deploy, modify, or stop. Refresh your SWOT on day 90."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Priority threat",
+    "Priority opportunity",
+    "Baseline",
+    "Pilot task",
+    "Two-week test",
+    "Weekly learning block",
+    "Responsibility partner",
+    "Day-60 decision",
+    "Day-90 SWOT update"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Study everything until you feel ready",
+     "Too broad. Learning without action may become avoidance."
+    ],
+    [
+     "Run a focused 90-day cycle with evidence",
+     "Best choice. Small repeated action builds resilience."
+    ],
+    [
+     "Wait until your organization tells you what to learn",
+     "Risky. Your options improve when you start before urgency forces action."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me build a 90-day resilience plan. My threat is [threat], my opportunity is [opportunity], and my current role is [role]. Include baseline, pilot, learning blocks, evidence, day-60 decision, and day-90 SWOT.",
+    "Challenge my 90-day plan. Is the scope too large? Are the metrics measurable? What is missing?",
+    "Create a two-week pilot plan for this representative task: [task]. Include hypothesis, cases, metrics, guardrails, and decision criteria."
+   ],
+   "checkpoint": [
+    "Can someone else understand your 90-day action plan without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Start a 90-day cycle today. Put the first two learning blocks on your calendar and write the day-60 decision criteria before you begin."
+   ],
+   "evidence": [
+    "Your completed 90-day action plan.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Trying to solve every career risk at once.",
+    "Skipping the baseline.",
+    "Running a pilot with no decision date.",
+    "Updating your story without evidence."
+   ],
+   "finish": [
+    "You are done when you have a usable 90-Day Action Plan, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 19,
+   "title": "Build a Personal SWOT and Value Proposition",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "a personal SWOT and one-sentence value proposition backed by evidence."
+   },
+   "start": [
+    "Your work is changing, and a job title no longer explains your value. You need to name what you solve, for whom, with what proof.",
+    "By the end, you should have a concrete Personal SWOT and Value Proposition that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Personal SWOT",
+     "A personal SWOT is a structured reflection on strengths, weaknesses, opportunities, and threats in your professional situation.",
+     "It becomes useful when each item is based on evidence and connected to an action.",
+     "List one strength with proof from the last 12 months.Turn one weakness into a learning action with a deadline."
+    ],
+    [
+     "Value Proposition",
+     "A value proposition is a short statement of the problem you solve, for whom, and with what proof.",
+     "It makes your value portable beyond a job title and easier for others to understand.",
+     "Write: I help [audience] achieve [result] through [proof].Ask three people whether your statement sounds specific and credible."
+    ],
+    [
+     "Evidence",
+     "Evidence is observable proof, such as results, examples, decisions, feedback, deliverables, or lessons learned.",
+     "Evidence turns self-description into credibility. It also helps you see transferable skills under changing tasks.",
+     "Collect five examples of problems you solved.Record a lesson from a failure and how you changed practice."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write your first value proposition: I help [audience] achieve [result] through [skills/proof].",
+    "List evidence from the last 12 months: results, decisions, problems solved, feedback, deliverables, and lessons from failure.",
+    "Build a SWOT using facts, not personality labels.",
+    "Connect one strength to one opportunity and one weakness to one action.",
+    "Ask three people for continue, stop, start feedback and update your map."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Audience I help",
+    "Result I create",
+    "Proof",
+    "Strengths",
+    "Weaknesses",
+    "Opportunities",
+    "Threats",
+    "Next action"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Describe yourself by job title only",
+     "Too narrow. Titles change faster than transferable value."
+    ],
+    [
+     "Describe value through audience, result, and proof",
+     "Best choice. It makes your strengths visible and portable."
+    ],
+    [
+     "List only strengths because weaknesses are discouraging",
+     "Incomplete. Weaknesses become useful when they become actions."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me turn these achievements into a value proposition: [list]. Use the structure: I help [audience] achieve [result] through [skills/proof].",
+    "Create a personal SWOT from these facts. Do not use generic traits; use evidence and suggested actions.",
+    "Ask me ten questions that would reveal my transferable skills beneath tasks that may be automated."
+   ],
+   "checkpoint": [
+    "Can someone else understand your personal swot and value proposition without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create a one-page personal SWOT and value proposition. Send the value proposition to three people and ask what feels true, unclear, or missing."
+   ],
+   "evidence": [
+    "Your completed personal swot and value proposition.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Mistaking tasks for identity.",
+    "Using adjectives without evidence.",
+    "Ignoring energy and sustainability.",
+    "Treating SWOT as a one-time exercise instead of a living map."
+   ],
+   "finish": [
+    "You are done when you have a usable Personal SWOT and Value Proposition, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 20,
+   "title": "Practice Critical Thinking Under Uncertainty",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "75 minutes",
+    "build": "a decision journal entry that separates facts, assumptions, preferences, risks, and review triggers."
+   },
+   "start": [
+    "You face a decision with incomplete information. AI can produce fast arguments, but you need to know what is known, guessed, preferred, and reversible.",
+    "By the end, you should have a concrete Decision Journal that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Critical Thinking",
+     "Critical thinking is disciplined reasoning that tests claims, separates evidence from assumptions, and considers alternatives.",
+     "It is especially important when AI gives fast, fluent, and plausible answers.",
+     "Ask what would make your preferred answer wrong.Separate facts, assumptions, and preferences in a decision note."
+    ],
+    [
+     "Uncertainty",
+     "Uncertainty is the condition of not knowing enough to be fully confident about outcomes, causes, or consequences.",
+     "Uncertainty should be named, bounded, and reviewed. It should not be hidden behind a single confident answer.",
+     "Give a low, central, and high estimate with conditions.Write what signal would make you revisit a decision."
+    ],
+    [
+     "Decision Journal",
+     "A decision journal is a written record of a decision, options, evidence, assumptions, risks, confidence, and review date.",
+     "It helps you judge the quality of thinking later instead of rewriting history after the outcome is known.",
+     "Before a choice, record what you know and what you are guessing.Review the entry after one month and update your reasoning habits."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write the decision in one sentence. If you cannot, define the problem first.",
+    "Separate facts, assumptions, and preferences into three lists.",
+    "For each assumption, write how you could test it or what signal would change your mind.",
+    "Classify the decision as reversible or hard to reverse.",
+    "Record the decision, owner, confidence level, risks, and review date."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Decision",
+    "Desired result",
+    "Facts",
+    "Assumptions",
+    "Preferences",
+    "Risks",
+    "Reversibility",
+    "Decision owner",
+    "Review date"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Ask AI for the best answer immediately",
+     "Premature. You may get a fast answer to the wrong problem."
+    ],
+    [
+     "Frame the decision and separate facts from assumptions first",
+     "Best choice. Tools become support for judgment, not a substitute for it."
+    ],
+    [
+     "Delay until uncertainty disappears",
+     "Impossible in many real decisions. Use uncertainty honestly instead."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me create a decision journal entry for this choice: [choice]. Separate facts, assumptions, preferences, risks, options, reversibility, and review triggers.",
+    "Act as a competent challenger. What alternative explanation, missing evidence, or failure scenario should I consider?",
+    "Convert this recommendation into a decision note with confidence level, assumptions, and signals that would make us revisit it: [paste]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your decision journal without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Write one decision journal entry this week. Revisit it after two weeks or one month and judge the quality of your reasoning, not only the outcome."
+   ],
+   "evidence": [
+    "Your completed decision journal.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating preferences as facts.",
+    "Letting a confident AI answer set the frame.",
+    "Using one scenario instead of ranges.",
+    "Failing to record what you knew at the time."
+   ],
+   "finish": [
+    "You are done when you have a usable Decision Journal, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 21,
+   "title": "Communicate With Empathy and Precision",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "65 minutes",
+    "build": "a difficult conversation script using empathy, confirmation, and precise next steps."
+   },
+   "start": [
+    "Someone is frustrated, worried, angry, disappointed, or confused. A fast answer may be technically correct but relationally wrong.",
+    "By the end, you should have a concrete Empathy Conversation Card that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Communicate",
+     "To communicate is to create shared understanding through words, listening, tone, timing, and follow-through.",
+     "Communication is not just transmitting information. It must land with the person in front of you.",
+     "Ask the other person to repeat the next step in their own words.Send a follow-up that confirms commitments and timing."
+    ],
+    [
+     "Empathy",
+     "Empathy is the effort to understand another person's perspective and verify that understanding with them.",
+     "Empathy is not mind reading or automatic agreement. It is checked understanding that improves the response.",
+     "Say: Let me check that I understood what matters most.Ask one open question before offering advice."
+    ],
+    [
+     "Precision",
+     "Precision means being clear, specific, accurate, and concrete about facts, options, commitments, and next steps.",
+     "Empathy without precision can feel vague. Precision without empathy can feel cold. The tutorial asks for both.",
+     "Replace 'soon' with a date and owner.Separate what is known, unknown, and promised."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one real conversation you need or often avoid.",
+    "Write the other person's likely concern, then mark it as a guess, not a fact.",
+    "Prepare one open question and one reflection sentence.",
+    "Use the listen-confirm-respond loop: ask, pause, summarize, confirm, respond.",
+    "End with a next step that is specific, realistic, and owned."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Situation",
+    "Other person's likely concern",
+    "Open question",
+    "Reflection sentence",
+    "Fact to clarify",
+    "Option to offer",
+    "Commitment",
+    "Follow-up time"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Explain quickly so the person sees the logic",
+     "May fail if the person first needs to feel understood."
+    ],
+    [
+     "Confirm the concern before offering a response",
+     "Best choice. Empathy becomes verifiable, not imagined."
+    ],
+    [
+     "Agree with everything to keep peace",
+     "Not empathy. You can understand without surrendering facts or boundaries."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me prepare for a difficult conversation. Situation: [describe]. Create open questions, reflection statements, facts to clarify, possible options, and a respectful next step.",
+    "Rewrite this response so it is empathetic but still precise and accountable: [paste].",
+    "Role-play as the other person in this situation. Push back realistically so I can practice listening and responding."
+   ],
+   "checkpoint": [
+    "Can someone else understand your empathy conversation card without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Use the listen-confirm-respond loop in one real conversation. Afterward, write what changed when you confirmed the concern before advising."
+   ],
+   "evidence": [
+    "Your completed empathy conversation card.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Assuming you know what the person feels.",
+    "Rushing to advice.",
+    "Using empathy language without changing the response.",
+    "Ending with vague reassurance instead of a next step."
+   ],
+   "finish": [
+    "You are done when you have a usable Empathy Conversation Card, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 22,
+   "title": "Build Trust and Psychological Safety",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "a trust-building micro-practice and no-blame incident response."
+   },
+   "start": [
+    "People will not report tool errors, confusion, or overload if doing so threatens their reputation. Trust has to be practiced before the crisis.",
+    "By the end, you should have a concrete Trust Practice Plan that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Trust",
+     "Trust is confidence that people will act with reliability, honesty, competence, and care.",
+     "Trust grows through repeated small proof. It is damaged when errors are hidden, credit is stolen, or commitments are vague.",
+     "Keep one small promise and report back without being asked.Admit one limitation early instead of hiding it."
+    ],
+    [
+     "Psychological Safety",
+     "Psychological safety is the condition where people can speak up, ask questions, and report errors without fear of humiliation or punishment.",
+     "AI-era work needs psychological safety because tool errors, bias, and misuse must be surfaced quickly.",
+     "Thank the first person who reports an AI error.Ask: What could go wrong with this plan?"
+    ],
+    [
+     "No-Blame Incident Response",
+     "A no-blame incident response investigates what happened and how to improve the system without scapegoating the reporter.",
+     "No-blame does not mean no accountability. It means learning before punishment and correcting the process that allowed the problem.",
+     "Separate timeline facts from personal judgments.End an incident review with one system correction."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one trust behavior you can practice this week: keep a small promise, give credit, report a problem early, explain a decision, or repair a mistake.",
+    "Write how AI or automation errors should be reported without blame.",
+    "Define what happens after a report: thank, protect, investigate, correct, communicate.",
+    "Create one visible example of learning from an error.",
+    "Ask whether people believe reporting problems is safe; do not assume it."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Trust behavior",
+    "Small promise",
+    "Error reporting channel",
+    "No-blame response",
+    "Correction action",
+    "Communication after issue",
+    "Signal of safety",
+    "Next practice"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Tell people they are safe to speak up",
+     "Words help, but proof comes from what happens after the first uncomfortable report."
+    ],
+    [
+     "Reward early reporting and show the correction made",
+     "Best choice. Safety becomes observable."
+    ],
+    [
+     "Focus only on individual courage",
+     "Incomplete. Systems and leaders shape whether courage is punished or protected."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Create a no-blame AI incident response for this team: [context]. Include first response, fact finding, correction, communication, and learning capture.",
+    "Help me identify trust behaviors I can practice weekly as a leader or colleague.",
+    "Rewrite this incident response so it thanks the reporter, avoids blame, and still protects accountability: [paste]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your trust practice plan without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Run a small trust practice for one week. Keep one promise publicly, report one risk early, or thank someone for naming a problem. Note the response."
+   ],
+   "evidence": [
+    "Your completed trust practice plan.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Rewarding only success and speed.",
+    "Blaming the person who found the problem.",
+    "Hiding corrections after incidents.",
+    "Expecting trust without repeated proof."
+   ],
+   "finish": [
+    "You are done when you have a usable Trust Practice Plan, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 23,
+   "title": "Create Under Useful Constraints",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "60 minutes",
+    "build": "a creative solution generated under useful constraints and tested against a quality standard."
+   },
+   "start": [
+    "You need ideas. AI can produce many, but many will be generic unless you set constraints that reflect real users, resources, and values.",
+    "By the end, you should have a concrete Constraint Creativity Sheet that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Create",
+     "To create is to produce a useful new idea, option, design, message, process, or solution.",
+     "Creation is not just novelty. In this tutorial, creativity must serve a real user, constraint, or problem.",
+     "Generate ten options, then combine the two most useful.Test one idea with a real user before polishing it."
+    ],
+    [
+     "Useful Constraints",
+     "Useful constraints are limits that make a solution more realistic, focused, inclusive, or original.",
+     "Constraints can include time, budget, language, accessibility, technology access, staff capacity, safety, or cultural context.",
+     "Design the solution for low bandwidth and 30 minutes.Ask AI for ideas that work with no paid software."
+    ],
+    [
+     "Quality Standard",
+     "A quality standard is the test a creative idea must pass to be considered good enough.",
+     "Without a standard, creativity becomes taste. With a standard, ideas can be improved and compared.",
+     "Require that a training idea be usable by beginners without a facilitator.Check whether the solution reduces effort for the intended user."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Write the creative challenge in one sentence.",
+    "Add three constraints: budget, time, accessibility, language, skill level, technology access, safety, culture, or sustainability.",
+    "Generate ten options under the constraints without judging too early.",
+    "Combine the two strongest ideas into one better concept.",
+    "Test the concept against a user need and a quality standard."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Creative challenge",
+    "Constraint 1",
+    "Constraint 2",
+    "Constraint 3",
+    "Ten ideas",
+    "Two ideas to combine",
+    "Quality standard",
+    "Test with user"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Ask AI for many ideas with no constraints",
+     "You will likely get broad, familiar, and shallow suggestions."
+    ],
+    [
+     "Set constraints before generating options",
+     "Best choice. Constraints make creativity useful and original."
+    ],
+    [
+     "Use constraints only after choosing an idea",
+     "Late constraints may reveal the idea was never viable."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Generate ten ideas for this challenge: [challenge]. Constraints: [constraints]. Each idea must explain why it fits the constraints and who benefits.",
+    "Combine ideas [A] and [B] into one stronger concept. Keep the constraints and improve practicality.",
+    "Act as a user with limited time, low bandwidth, and mixed digital confidence. Review this idea and tell me what would fail."
+   ],
+   "checkpoint": [
+    "Can someone else understand your constraint creativity sheet without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create one constrained solution for a real problem. Test it with one person who represents the user and revise based on their feedback."
+   ],
+   "evidence": [
+    "Your completed constraint creativity sheet.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Equating more ideas with better thinking.",
+    "Choosing novelty over usefulness.",
+    "Ignoring constraints that real users face.",
+    "Letting AI frame the problem before you do."
+   ],
+   "finish": [
+    "You are done when you have a usable Constraint Creativity Sheet, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 24,
+   "title": "Grow Your Career Portfolio and Network",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "75 minutes",
+    "build": "a portfolio story and network action map."
+   },
+   "start": [
+    "Your abilities need to be visible before you need a transition. A CV says what you did; a portfolio shows how you think and create value.",
+    "By the end, you should have a concrete Portfolio and Network Map that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Career Portfolio",
+     "A career portfolio is a collection of proof that shows what you can do, how you think, and what results you create.",
+     "A portfolio demonstrates value more concretely than a list of job duties. It helps others see transferable capability.",
+     "Write one case story with context, action, result, proof, and lesson.Remove confidential details while keeping the transferable skill visible."
+    ],
+    [
+     "Network",
+     "A network is the set of relationships that provide information, learning, support, collaboration, and opportunities.",
+     "A healthy network is maintained before crisis. Weak ties often reveal opportunities your close circle does not see.",
+     "Reconnect with one former colleague using a useful question.Map contacts by craft, sector, clients, learning, and support."
+    ],
+    [
+     "Transferable Story",
+     "A transferable story explains how an achievement shows skills that can apply in another role, sector, or problem.",
+     "It turns past work into future options by making the underlying skill visible.",
+     "Rewrite an administrative achievement as coordination, risk control, or service improvement.Ask a reviewer what role your story makes them imagine for you."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Choose one achievement and write it as a case: context, role, constraint, action, result, proof, and lesson.",
+    "Remove or generalize confidential details.",
+    "Name the transferable skills beneath the work.",
+    "Map your network across craft, sector, clients, learning, and support.",
+    "Reach out to one weak tie with a useful question or resource, not a desperate request."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Achievement",
+    "Context",
+    "Role",
+    "Constraint",
+    "Action",
+    "Result",
+    "Proof",
+    "Lesson",
+    "Network contact"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Wait until you are job hunting to build proof",
+     "Late proof is harder to gather and often rushed."
+    ],
+    [
+     "Document evidence while work is fresh",
+     "Best choice. Your options grow before urgency appears."
+    ],
+    [
+     "Share everything publicly",
+     "Risky. Good portfolios protect confidentiality and still show transferable value."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Turn this achievement into a portfolio story using context, role, constraint, action, result, proof, and lesson: [describe]. Remove confidential details.",
+    "Identify transferable skills in this portfolio story and suggest roles or opportunities where they matter.",
+    "Draft a short message to reconnect with a weak tie. I want to ask about [topic] and offer [useful resource or insight]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your portfolio and network map without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Write one portfolio story and send it to a trusted reviewer. Ask whether your value is clear without confidential detail."
+   ],
+   "evidence": [
+    "Your completed portfolio and network map.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Listing tasks instead of showing outcomes.",
+    "Sharing sensitive client or employer information.",
+    "Contacting people only when you need something.",
+    "Confusing mentors with sponsors."
+   ],
+   "finish": [
+    "You are done when you have a usable Portfolio and Network Map, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 25,
+   "title": "Protect Attention and Deep Work",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "65 minutes",
+    "build": "an attention budget and two protected deep-work blocks."
+   },
+   "start": [
+    "AI can speed small tasks, but constant suggestions, messages, and meetings can fragment the thinking you most need to protect.",
+    "By the end, you should have a concrete Attention Budget that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Attention",
+     "Attention is the mental focus available for thinking, deciding, creating, learning, and relating.",
+     "Attention is limited. AI can save time while still damaging attention if it creates constant reaction and interruption.",
+     "Protect your best hour for a hard decision before checking messages.Track what breaks your focus during one work block."
+    ],
+    [
+     "Deep Work",
+     "Deep work is focused, interruption-free effort on cognitively demanding tasks.",
+     "Deep work helps you form your own judgment before asking tools to generate, summarize, or challenge.",
+     "Work for 60 minutes with notifications off.Write your own hypothesis before asking AI to critique it."
+    ],
+    [
+     "Attention Budget",
+     "An attention budget is a deliberate allocation of focus across deep work, communication, small tasks, AI support, learning, and recovery.",
+     "Budgeting attention helps prevent urgent noise from consuming the energy needed for valuable work.",
+     "Assign two time blocks for deep work and one for messages.Batch AI drafting tasks instead of switching all day."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Identify your best thinking hours and the work that deserves them.",
+    "Audit one week for meetings without decisions, notification-heavy periods, and reactive tool use.",
+    "Block two deep-work sessions of at least 60 minutes.",
+    "Begin each session with your own analysis before using generative AI.",
+    "Batch messages, small tasks, and AI drafting into separate time blocks."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Best thinking time",
+    "High-value work",
+    "Interruptions",
+    "Meetings to remove or shorten",
+    "Deep-work block 1",
+    "Deep-work block 2",
+    "AI support time",
+    "Recovery practice"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Use AI whenever you feel stuck",
+     "This may weaken your own framing if used too early."
+    ],
+    [
+     "Think first, then use AI as challenger or assistant",
+     "Best choice. You protect originality and still benefit from support."
+    ],
+    [
+     "Avoid all tools during deep work forever",
+     "Not always necessary. Use tools deliberately after your thinking has a shape."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me audit this weekly schedule for attention leaks: [paste]. Identify meetings to remove, tasks to batch, and deep-work blocks to protect.",
+    "Act as a challenger after I write my own analysis. Ask what I may have missed, what assumption is weak, and what evidence would change the conclusion.",
+    "Create a personal attention budget for my role: [role]. Include deep work, communication, small tasks, AI support, learning, and recovery."
+   ],
+   "checkpoint": [
+    "Can someone else understand your attention budget without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Run a one-week attention experiment. Protect two deep-work blocks, track interruptions, and write what improved or resisted change."
+   ],
+   "evidence": [
+    "Your completed attention budget.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating every saved minute as available for more input.",
+    "Letting AI generate before you understand the problem.",
+    "Keeping recurring meetings with no decision purpose.",
+    "Ignoring recovery as part of thinking quality."
+   ],
+   "finish": [
+    "You are done when you have a usable Attention Budget, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 26,
+   "title": "Maintain Health, Boundaries, and Relationships",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "70 minutes",
+    "build": "a boundary and recovery plan that protects health, relationships, and resilience."
+   },
+   "start": [
+    "Work tools are always available, and transformation pressure can stretch the workday until health and relationships become the adjustment variable.",
+    "By the end, you should have a concrete Boundary Contract that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Health",
+     "Health includes physical, mental, emotional, and relational capacity to function and recover.",
+     "Health supports judgment, learning, patience, and creativity. It is not a luxury after productivity.",
+     "Track sleep, energy, and irritability for one week.Schedule movement or breaks before exhaustion appears."
+    ],
+    [
+     "Boundaries",
+     "Boundaries are clear limits around availability, workload, response time, information sharing, and personal recovery.",
+     "Boundaries make sustainable contribution possible. They work best when paired with clear emergency paths.",
+     "Announce response windows and urgent escalation rules.Turn off nonessential notifications after a set time."
+    ],
+    [
+     "Relationships",
+     "Relationships are the human connections that provide support, accountability, meaning, trust, and perspective.",
+     "Relationships are not only networking. Non-transactional connection protects resilience and identity beyond work output.",
+     "Schedule one conversation with no professional agenda.Ask a trusted person what signs show you are overloaded."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Name the early signs that you are overloaded: sleep changes, irritability, avoidance, mistakes, cynicism, withdrawal, or poor concentration.",
+    "Write your availability boundaries: response windows, quiet hours, notifications, and emergency path.",
+    "Choose one recovery practice: sleep routine, movement, breaks, professional support, or device-free time.",
+    "Choose one non-transactional relationship practice each week.",
+    "Share one boundary with someone affected by it so it becomes real."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Overload signs",
+    "Response windows",
+    "Quiet hours",
+    "Emergency path",
+    "Notification rule",
+    "Recovery practice",
+    "Relationship practice",
+    "Support person"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Push through until the transformation is over",
+     "Risky. Change may be continuous; depletion damages judgment."
+    ],
+    [
+     "Treat recovery and relationships as operating infrastructure",
+     "Best choice. Resilience needs maintenance, not leftovers."
+    ],
+    [
+     "Set boundaries silently and hope people notice",
+     "Weak. Boundaries work better when communicated and paired with emergency rules."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me design a boundary contract for my work context: [context]. Include response windows, quiet hours, notification rules, emergency path, recovery practice, and relationship practice.",
+    "Create a script for announcing a boundary respectfully while still showing commitment to the work.",
+    "Help me identify early signs of overload and the support actions I should take before crisis."
+   ],
+   "checkpoint": [
+    "Can someone else understand your boundary contract without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Announce one boundary this week and protect one non-work relationship moment. Track what felt difficult and what improved."
+   ],
+   "evidence": [
+    "Your completed boundary contract.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Calling everything urgent.",
+    "Waiting for exhaustion before changing behavior.",
+    "Treating relationships only as networking.",
+    "Using productivity tools to avoid recovery needs."
+   ],
+   "finish": [
+    "You are done when you have a usable Boundary Contract, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  },
+  {
+   "num": 27,
+   "title": "Prepare Financially and Emotionally for Transition",
+   "meta": {
+    "domain": "Strengthen the human",
+    "time": "80 minutes",
+    "build": "a transition runway map with financial, skill, emotional, and relationship actions."
+   },
+   "start": [
+    "A role, industry, income source, or personal direction may change. Preparation is not panic; it is building options before decisions become forced.",
+    "By the end, you should have a concrete Transition Runway Map that you can use in your work, studies, team, or personal development. Do not only read this page. Open a blank note, document, or worksheet and complete each action before moving on."
+   ],
+   "concepts_intro": [
+    "Before you start the actions, make sure the main words in the title are practical, not abstract. Use the definitions, explanations, and examples below as a mini-warm-up."
+   ],
+   "concepts": [
+    [
+     "Financially Prepared",
+     "Being financially prepared means understanding essential expenses, income scenarios, obligations, runway, and decision thresholds.",
+     "Financial preparation creates time and options. It does not require certainty, but it does require honest numbers.",
+     "Calculate essential expenses for one month.Estimate runway under three income scenarios."
+    ],
+    [
+     "Emotionally Prepared",
+     "Being emotionally prepared means naming fears, hopes, support needs, limits, and conversations before transition pressure peaks.",
+     "Transitions affect identity, relationships, confidence, and stress. Emotional preparation makes decisions less reactive.",
+     "Write what you are afraid might happen and what support would help.Discuss a possible transition with someone it would affect."
+    ],
+    [
+     "Transition",
+     "A transition is a meaningful movement from one role, income pattern, skill set, identity, or life arrangement to another.",
+     "A transition can be chosen or forced. Preparation helps you shape it before panic or urgency narrows your options.",
+     "Update your CV, portfolio, and references before you need them.Name the threshold that would trigger active job search or reskilling."
+    ],
+    [
+     "Runway",
+     "Runway is the amount of time and option space you have before a decision becomes forced.",
+     "Runway includes money, skills, relationships, documents, health, and access to qualified advice.",
+     "List three actions that extend runway without harming health.Identify which questions require a financial, legal, medical, or tax professional."
+    ]
+   ],
+   "selfcheck": [
+    "Where does this topic already appear in your work or life?",
+    "What mistake would be costly if you handled this topic casually?",
+    "What proof would show that you improved by the end of this session?"
+   ],
+   "actions": [
+    "Estimate essential monthly expenses and current runway under three income scenarios.",
+    "List obligations that matter: contracts, benefits, taxes, insurance, family responsibilities, debt, or study costs.",
+    "Name one skill investment that can create options in six months.",
+    "Prepare one conversation with a close person affected by a transition.",
+    "Define decision thresholds: when to continue, pause, seek advice, change direction, or stop."
+   ],
+   "ws_intro": [
+    "Create a table or form with these fields and fill it as you work."
+   ],
+   "ws_fields": [
+    "Essential expenses",
+    "Income scenario 1",
+    "Income scenario 2",
+    "Income scenario 3",
+    "Obligations",
+    "Skill investment",
+    "Support conversation",
+    "Decision threshold"
+   ],
+   "path_intro": [
+    "Read the options. Pick the one you would naturally choose, then check the consequence."
+   ],
+   "paths": [
+    [
+     "Avoid planning because it feels pessimistic",
+     "Avoidance can make future decisions more pressured."
+    ],
+    [
+     "Build options calmly before urgency arrives",
+     "Best choice. Runway creates better choices."
+    ],
+    [
+     "Make a big transition alone to avoid worrying others",
+     "Risky. Transitions affect households and support systems."
+    ]
+   ],
+   "prompts_intro": [
+    "Use these prompts only with information you are allowed to share. Replace the bracketed parts with your own context."
+   ],
+   "prompts": [
+    "Help me create a transition runway map. Ask about essential expenses, income scenarios, obligations, skill investment, support conversations, and decision thresholds. Do not give legal, financial, or medical advice.",
+    "Create a conversation guide for discussing a possible transition with someone close to me. Include facts, uncertainties, needs, limits, and next steps.",
+    "Help me identify which professional questions require a qualified expert instead of an AI answer: [describe transition]."
+   ],
+   "checkpoint": [
+    "Can someone else understand your transition runway map without extra explanation?",
+    "Did you separate facts, assumptions, preferences, and decisions where relevant?",
+    "Did you name the human responsibility, not only the tool or technique?",
+    "Did you protect confidential, personal, or sensitive information?",
+    "Is the next action small enough to do within seven days?"
+   ],
+   "project": [
+    "Create a private transition checklist with runway, documents to update, people to consult, skills to prove, and thresholds for action."
+   ],
+   "evidence": [
+    "Your completed transition runway map.",
+    "One before-and-after note showing what changed because of the tutorial.",
+    "One risk, limit, or open question you discovered.",
+    "One next action with a date."
+   ],
+   "mistakes": [
+    "Treating money as the only form of security.",
+    "Skipping qualified advice for legal, tax, health, or benefits questions.",
+    "Letting lifestyle expand with every income increase.",
+    "Making a transition plan without the people it affects."
+   ],
+   "finish": [
+    "You are done when you have a usable Transition Runway Map, one decision about what to do next, and one piece of evidence that shows your thinking became clearer or safer."
+   ]
+  }
+ ]
+}
