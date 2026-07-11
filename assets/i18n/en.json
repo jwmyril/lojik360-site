@@ -80,7 +80,7 @@
  "tut.soon": "Coming soon",
  "tut.open": "Start",
  "tut.d_excel": "Excel: your first analysis",
- "tut.d_prompt": "Prompting & AI assistants",
+ "tut.d_prompt": "Prompting & AI assistant — 10 action sessions",
  "tut.d_auto": "Automate a repetitive task",
  "tut.s_ct": "Critical thinking",
  "tut.s_sources": "Check before you trust",
@@ -100,5 +100,8 @@
  "tut.a_hum_d": "Judgment, communication, trust, creativity under constraints, attention, health and career resilience. Every session produces a real artifact.",
  "tut.facil_t": "👩‍🏫 Facilitating a group? The facilitator guide",
  "tut.facil_d": "The 27 action sessions, facilitator edition: opening moves, guided action support, debrief questions and artifact review criteria — aligned to the 3 axes.",
- "tut.facil_btn": "Open the guide (English)"
+ "tut.facil_btn": "Open the guide (English)",
+ "tut.d_prompt_d": "Write good prompts, iterate, verify answers, protect your data and build your own templates. Every session produces a real deliverable.",
+ "tut.d_excelia": "Excel in the AI era — 12 action sessions",
+ "tut.d_excelia_d": "Tables, formulas, charts, pivot tables, Power Query, scenarios and finance — with AI prompts and human verification at every step."
 }

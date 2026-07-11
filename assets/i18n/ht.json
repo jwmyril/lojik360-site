@@ -80,7 +80,7 @@
  "tut.soon": "Byento",
  "tut.open": "Kòmanse",
  "tut.d_excel": "Excel: premye analiz ou",
- "tut.d_prompt": "Prompting & asistan IA",
+ "tut.d_prompt": "Prompting & asistan IA — 10 sesyon aksyon",
  "tut.d_auto": "Otomatize yon travay repete",
  "tut.s_ct": "Panse kritik",
  "tut.s_sources": "Verifye anvan ou kwè",
@@ -100,5 +100,8 @@
  "tut.a_hum_d": "Jijman, kominikasyon, konfyans, kreyativite ak limit, atansyon, sante ak rezistans karyè. Chak seyans pwodui yon travay reyèl.",
  "tut.facil_t": "👩‍🏫 W ap anime yon gwoup ? Gid fasilitatè a",
  "tut.facil_d": "27 seyans aksyon yo, vèsyon fasilitatè : ouvèti, akonpayman aksyon, kesyon debrief ak kritè pou revize travay yo — aliyen ak 3 axes yo.",
- "tut.facil_btn": "Ouvri gid la (anglè)"
+ "tut.facil_btn": "Ouvri gid la (anglè)",
+ "tut.d_prompt_d": "Ekri bon prompt, amelyore yo pazapa, verifye repons yo, pwoteje done ou epi bati pwop template ou. Chak sesyon pwodui yon rezilta reyel.",
+ "tut.d_excelia": "Excel nan epok IA a — 12 sesyon aksyon",
+ "tut.d_excelia_d": "Tablo, fomil, grafik, tablo kwaze, Power Query, senaryo ak finans — ak prompt IA epi verifikasyon moun nan chak etap."
 }

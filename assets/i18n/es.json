@@ -80,7 +80,7 @@
  "tut.soon": "Pronto",
  "tut.open": "Empezar",
  "tut.d_excel": "Excel: tu primer análisis",
- "tut.d_prompt": "Prompting y asistentes de IA",
+ "tut.d_prompt": "Prompting y asistente de IA — 10 sesiones de acción",
  "tut.d_auto": "Automatizar una tarea repetitiva",
  "tut.s_ct": "Pensamiento crítico",
  "tut.s_sources": "Verificar antes de confiar",
@@ -100,5 +100,8 @@
  "tut.a_hum_d": "Juicio, comunicación, confianza, creatividad con límites, atención, salud y resiliencia de carrera. Cada sesión produce un entregable real.",
  "tut.facil_t": "👩‍🏫 ¿Facilitas un grupo? La guía del facilitador",
  "tut.facil_d": "Las 27 sesiones de acción, edición facilitador: apertura, acompañamiento de las acciones, preguntas de cierre y criterios de revisión de entregables — alineada con los 3 ejes.",
- "tut.facil_btn": "Abrir la guía (inglés)"
+ "tut.facil_btn": "Abrir la guía (inglés)",
+ "tut.d_prompt_d": "Escribir buenos prompts, iterar, verificar respuestas, proteger tus datos y crear tus propias plantillas. Cada sesión produce un entregable real.",
+ "tut.d_excelia": "Excel en la era de la IA — 12 sesiones de acción",
+ "tut.d_excelia_d": "Tablas, fórmulas, gráficos, tablas dinámicas, Power Query, escenarios y finanzas — con prompts de IA y verificación humana en cada paso."
 }
