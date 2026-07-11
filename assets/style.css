@@ -585,3 +585,10 @@ figure.tuto-fig figcaption { padding: 0.7rem 1rem; font-size: 0.85rem; color: va
 .kid-domain{margin:1rem 0 .1rem;color:var(--ink);font-weight:700;font-size:.95rem}
 /* Chat: sur mobile, panneau plus court pour ne pas couvrir la lecture */
 @media (max-width:480px){.atmart-chat-panel{height:min(440px,62vh)}}
+/* Chat ouvert : sur grand écran, le contenu se décale au lieu d'être recouvert */
+.tuto-shell,.container{transition:margin .2s ease,max-width .2s ease}
+@media (min-width: 900px){
+  html.chat-open .tuto-shell,
+  html.chat-open .container{margin-right:412px;max-width:calc(100vw - 448px)}
+  html.chat-open .atmart-chat-panel{top:78px;bottom:20px;height:auto;max-height:none}
+}

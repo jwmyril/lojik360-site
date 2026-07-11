@@ -87,10 +87,14 @@
   var opened = false;
   function openPanel() {
     panel.hidden = false; btn.classList.add("is-open");
-    if (!opened) { opened = true; addBubble("bot", T.hello); }
+    document.documentElement.classList.add("chat-open");
+    if (!opened || !log.children.length) { opened = true; addBubble("bot", T.hello); }
     setTimeout(function () { input.focus(); }, 50);
   }
-  function closePanel() { panel.hidden = true; btn.classList.remove("is-open"); }
+  function closePanel() {
+    panel.hidden = true; btn.classList.remove("is-open");
+    document.documentElement.classList.remove("chat-open");
+  }
 
   btn.addEventListener("click", function () { panel.hidden ? openPanel() : closePanel(); });
   panel.querySelector(".acp-close").addEventListener("click", closePanel);
