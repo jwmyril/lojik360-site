@@ -90,5 +90,15 @@
  "tut.h_conf": "Confidence & negotiation",
  "tut.kids": "Lojikkid — for kids",
  "tut.kids_d": "Free, fun activities for children: create, think clearly, digital & data, money & life skills.",
- "k.areas_sub": "Pick a subject. Inside, the skills go from the simplest to the most advanced."
+ "k.areas_sub": "Pick a subject. Inside, the skills go from the simplest to the most advanced.",
+ "tut.freeEN": "Free · English",
+ "tut.a_del": "Technology with discipline — 9 action sessions",
+ "tut.a_del_d": "Map the work, prompt well, verify AI outputs, protect data, automate safely. Every session produces a real artifact.",
+ "tut.a_sup": "Managing the AI transformation — 9 action sessions",
+ "tut.a_sup_d": "Usage doctrine, limited pilots, human-in-the-loop control, risk and ethics, leading change. Every session produces a real artifact.",
+ "tut.a_hum": "Strengthen the human — 9 action sessions",
+ "tut.a_hum_d": "Judgment, communication, trust, creativity under constraints, attention, health and career resilience. Every session produces a real artifact.",
+ "tut.facil_t": "👩‍🏫 Facilitating a group? The facilitator guide",
+ "tut.facil_d": "The 27 action sessions, facilitator edition: opening moves, guided action support, debrief questions and artifact review criteria — aligned to the 3 axes.",
+ "tut.facil_btn": "Open the guide (English)"
 }

@@ -90,5 +90,15 @@
  "tut.h_conf": "Konfyans & negosyasyon",
  "tut.kids": "Lojikkid — pou timoun",
  "tut.kids_d": "Aktivite gratis e amizan pou timoun: kreye, panse klè, nimerik & done, lajan & lavi pratik.",
- "k.areas_sub": "Chwazi yon matyè. Anndan, konpetans yo soti nan pi senp pou rive nan pi avanse."
+ "k.areas_sub": "Chwazi yon matyè. Anndan, konpetans yo soti nan pi senp pou rive nan pi avanse.",
+ "tut.freeEN": "Gratis · anglè",
+ "tut.a_del": "Teknoloji ak disiplin — 9 seyans aksyon",
+ "tut.a_del_d": "Trase kat travay la, ekri bon prompt, verifye rezilta IA, pwoteje done, otomatize san danje. Chak seyans pwodui yon travay reyèl.",
+ "tut.a_sup": "Jere transfòmasyon IA a — 9 seyans aksyon",
+ "tut.a_sup_d": "Doktrin itilizasyon, pilòt limite, kontwòl moun nan pwosesis la, risk ak etik, dirije chanjman. Chak seyans pwodui yon travay reyèl.",
+ "tut.a_hum": "Ranfòse moun nan — 9 seyans aksyon",
+ "tut.a_hum_d": "Jijman, kominikasyon, konfyans, kreyativite ak limit, atansyon, sante ak rezistans karyè. Chak seyans pwodui yon travay reyèl.",
+ "tut.facil_t": "👩‍🏫 W ap anime yon gwoup ? Gid fasilitatè a",
+ "tut.facil_d": "27 seyans aksyon yo, vèsyon fasilitatè : ouvèti, akonpayman aksyon, kesyon debrief ak kritè pou revize travay yo — aliyen ak 3 axes yo.",
+ "tut.facil_btn": "Ouvri gid la (anglè)"
 }
