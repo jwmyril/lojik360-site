@@ -103,5 +103,8 @@
  "tut.facil_btn": "Open the guide (English)",
  "tut.d_prompt_d": "Write good prompts, iterate, verify answers, protect your data and build your own templates. Every session produces a real deliverable.",
  "tut.d_excelia": "Excel in the AI era — 12 action sessions",
- "tut.d_excelia_d": "Tables, formulas, charts, pivot tables, Power Query, scenarios and finance — with AI prompts and human verification at every step."
+ "tut.d_excelia_d": "Tables, formulas, charts, pivot tables, Power Query, scenarios and finance — with AI prompts and human verification at every step.",
+ "tut.h_rech": "Qualitative research methods — 14 action sessions",
+ "tut.h_rech_d": "For field researchers: in-depth interviews, open questions, focus groups, observation, coding and QuIP synthesis — skills AI does not replace.",
+ "tut.free_ht": "Free · Kreyol"
 }

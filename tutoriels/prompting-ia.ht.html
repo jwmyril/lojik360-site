@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prompting & asistan IA — 10 sesyon aksyon | Lojik360</title>
+<meta name="description" content="Prompting ak asistan IA an kreyòl : 10 sesyon aksyon pou delege, sipèvize epi ranfòse moun. Wòl, travay, kontèks, fòma, iterasyon, verifikasyon, konfidansyalite, template." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/style.css?v=6" />
+<style>html{scroll-behavior:smooth}.tuto-main h4{color:var(--ink)}.prompt-box{background:var(--navy-2);border:1px solid var(--border);border-radius:10px;padding:.7rem .9rem;margin:.5rem 0;font-size:.9rem;color:var(--ink)}</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>pa Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Akèy</a></li>
+      <li><a href="../tutoriels.html" class="active">Leson</a></li>
+      <li><a href="../index.html#podcast">Podkas</a></li>
+      <li><a href="../lojikkid.html">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solisyon (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="tuto-shell">
+  <aside class="tuto-sidebar">
+    <div class="tuto-sidebar-head"><span class="ico">✍️</span><h2>Prompting & asistan IA</h2><span class="lvl">🤖 Delege</span><div class="lang-page-switch"><a href='prompting-ia.html'>FR</a><a href='prompting-ia.ht.html' class='active'>HT</a><span class='lang-soon' title='byento'>EN</span><span class='lang-soon' title='byento'>ES</span></div></div>
+    <button class="tuto-toc-toggle">☰ Sesyon yo</button>
+    <ul class="tuto-toc">
+      <li><a href="#intro">Sou sesyon sa yo</a></li>
+      <li class="toc-group">Sesyon yo</li>
+      <li><a href='#s1'>1. Antre nan pouse ak konprann asistan IA a</a></li>
+      <li><a href='#s2'>2. Anatomi yon bon èd memwa: wòl, travay, kontèks, fòma</a></li>
+      <li><a href='#s3'>3. Pwosede pa iterasyon: mande, kritike, amelyore</a></li>
+      <li><a href='#s4'>4. Envit pou aprann pi vit: eksplike, kesyone, pratike</a></li>
+      <li><a href='#s5'>5. Envit pou kreye: lide, plan, mesaj, kontni</a></li>
+      <li><a href='#s6'>6. Sipèvize IA: erè, alisinasyon, patipri ak verifikasyon</a></li>
+      <li><a href='#s7'>7. Konfidansyalite ak etik: rapid done sekirite, pwoteje</a></li>
+      <li><a href='#s8'>8. Kreye modèl rapid ki kapab itilize ankò</a></li>
+      <li><a href='#s9'>9. Konsepsyon mini asistan IA pèsonèl ou</a></li>
+      <li><a href='#s10'>10. Pwojè final la: ranpli workflow IA soti nan lide rive nan prèv</a></li>
+    </ul>
+  </aside>
+  <main class="tuto-main">
+    <p class="breadcrumb"><a href="../tutoriels.html">Leson</a> › 🤖 Delege</p>
+    <h1>Prompting & asistan IA — 10 sesyon aksyon</h1>
+    <p class="lead">Aprann sèvi ak yon asistan IA san ou pa pèdi jijman imen ou : delege yon pwodiksyon, sipèvize kalite a, epi ranfòse entansyon ou. Chak sesyon pwodui yon rezilta reyèl.</p>
+<section id='intro'>
+<h2>Sou sesyon sa yo</h2>
+<p><strong>Pozisyon.</strong> Tutorial sa a anseye kijan pou itilize yon asistan IA san pèdi jijman moun. Elèv la pratike twa jès Lojik360: delege travay repetitif, sipèvize repons, ak ranfòse eleman imen an nan pran desizyon, kreyativite, kominikasyon ak responsablite.</p>
+<div class='callout warn'><strong>⚠️ Regle de konfidansyalite.</strong> Ne mettez jamais dans un outil IA des noms, nombres, adresses, donnees de sante, donnees financieres, information confidentielles, citations sensibles or details permettant d'identifier one person without autorisation claire.</div>
+<p><strong>Enstriksyon pou itilize.</strong> Chak sesyon kòmanse ak yon kontèks devlope nan 3 paragraf 10 liy, answit li tankou yon aksyon: kòmanse, teste, konpare, korije, epi sove yon prèv.</p>
+<p style='color:var(--ink-dim)'>Chwazi yon sesyon nan meni an — yon sèl sesyon parèt chak fwa.</p>
+</section>
+<section id='s1'>
+<h2>Sesyon 1 — Antre nan pouse ak konprann asistan IA a</h2>
+<p style='color:var(--ink-dim)'>⏱ 60 minit · 🎯 Ou pral bati : <strong>premye èd memwa itil ak log obsèvasyon</strong></p>
+<p><em>Ou konprann ki sa yon èd memwa ye, ki sa yon asistan IA ka fè, ak sa ou ta dwe toujou kenbe anba kontwòl moun.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: antre pouse ak konprann asistan IA a. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se: Ou konprann ki sa yon èd memwa ye, ki sa yon asistan IA ka fè, ak sa ou ta dwe toujou kenbe anba kontwòl moun. Pwodwi pou konstwi a se konkrè: premye itil èd memwa ak obsèvasyon boutèy demi lit. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: Èd memwa, IA Asistan, rezilta itil. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon bay asistan an: Mande yon premye vèsyon, yon lis lide, yon plan, yon reformulasyon oswa yon bouyon. Sipèvize vle di tcheke kalite, risk ak konsistans: Tcheke si repons lan koresponn ak bezwen an, kontèks la, reyalite yo ak nivo risk la. Otorize moun nan vle di kenbe entansyon, jijman, ak responsablite: Klarifye entansyon ou anvan ou mande IA travay.</p>
+<p>Prèv aprantisaj ou a dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande yon premye vèsyon, yon lis lide, yon plan, yon reformulasyon oswa yon bouyon.<br><strong>🔍 Sipèvize.</strong> Tcheke si repons lan koresponn ak bezwen an, kontèks la, reyalite yo ak nivo risk la.<br><strong>🌱 Ranfòse moun.</strong> Klarifye entansyon ou anvan ou mande IA a travay.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Èd memwa</strong> — Enstriksyon oswa demann ou bay yon asistan IA.<br>Yon èd memwa se pa sèlman yon kesyon. Se yon ansèyman travay ki kapab genyen yon objektif, yon kontèks, yon fòma, limit ak kritè kalite.<br><em>🏋 Eseye : Fèb èd: 'Ede m ak rapò mwen an.'Plis itil èd: 'Ede m fè yon deskripsyon rapò 2 paj pou yon odyans ki pa teknik, ak 5 seksyon ak tit klè.'</em></div>
+<div class='callout'><strong>Asistan IA</strong> — Zouti konvèsasyon ki kapab jenere, transfòme, òganize oswa eksplike kontni ki baze sou enstriksyon ou yo.<br>Asistan an ka akselere travay la, men li ka tou envante, senplifye twò vit oswa manke kontèks la. Ou rete responsab pou itilizasyon rezilta a.<br><em>🏋 Eseye : Mande sòsye an bay twa opsyon, apresa chwazi pou tèt ou. Mande l pou l montre ensètitid li olye pou l prezante tout bagay kòm sèten.</em></div>
+<div class='callout'><strong>Rezilta itil</strong> — Repons ke ou ka vrèman itilize parce qu'elle est claire, adaptee, verifiable and actionnable.<br>Yon rezilta itil se pa nesesèman yon repons pafè. Li se yon baz ke ou ka revize, teste, valide oswa transfòme nan aksyon.<br><em>🏋 Eseye : Remake byen ki sa ki ka itilize dirèkteman, sa ki ta dwe tcheke ak sa ki ta dwe rejte. Mande yon vèsyon ki pi kout, ki pi pratik oswa ki pi byen adapte ak odyans ou a.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi yon ti travay reyèl ke ou genyen jodi a: ekri yon mesaj, prepare pou yon reyinyon, konprann yon tèks, kreye yon lis aksyon oswa òganize nòt.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Ekri yon rapid rapid jan ou natirèlman ta.</li><li>Voye li bay asistan IA a epi li repons lan san yo pa korije li touswit.</li><li>Mete aksan sou twa eleman: itil, ensèten, initil.</li><li>Reformula èd memwa a ak yon objektif, kontèks ak fòma pwodiksyon an.</li><li>Konpare de repons yo epi note sa ki amelyore.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Tache choisie</li><li>Premye èd mwen an</li><li>Ki sa ki te itil sou repons lan</li><li>Ki sa ki te ensèten oswa fo</li><li>èd memwa mwen an amelyore</li><li>Diferans obsève ant de repons yo</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen vagman mande èd.</strong><br>IA a pral souvan reponn nan yon fason jeneral, pafwa bèl men pa trè itil.</div>
+<div class='callout'>⚠️ <strong>Mwen presize objektif, kontèks ak fòma.</strong><br>Repons lan vin pi pre bezwen reyèl ou.</div>
+<div class='callout'>⚠️ <strong>Mwen kopye repons lan san mwen pa tcheke.</strong><br>Ou riske gaye yon erè, yon ton ki pa apwopriye oswa enfòmasyon envante.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Premye dyagnostik.</strong> Voici mon prompt : [coller le prompt]. Analize-le. Dis-moi ce qui est clair, ce qui manque, et propose une version amelioree en gardant mon intention.</div>
+<div class='prompt-box'><strong>Kesyon anvan repons.</strong> Anvan w reponn, poze m jiska 5 kesyon pou pi byen konprann objektif mwen, odyans mwen an, fòma mwen espere ak kontrent yo.</div>
+<div class='prompt-box'><strong>Rezilta ajib.</strong> Ede m 'transfòme travay sa a nan yon rezilta aksyonab: [dekri travay la]. Ban m 'yon priz mwen ka itilize jodi a.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Premye dyagnostik</td><td>Egzanp rezilta : 'Votre prompt donne le sujet, mais pas le public, la longueur, le format ni le ton. Version amelioree : Redige un message de 120 mots pour inviter des collegues a une reunion de suivi, ton professionnel et chaleureux, avec objet d'email et trois points a preparer.'</td></tr><tr><td>Kesyon anvan repons</td><td>Egzanp rezilta: 'Ki moun ki odyans lan? Ki rezilta ou vle reyalize? Ki longè? Ki ton? Èske gen enfòmasyon pou evite?'</td></tr><tr><td>Rezilta ajib</td><td>Egzanp rezilta : yon lis 5 aksyon, chak moun avèk yon vèb, yon responsab posib, yon echeance ak yon livrable attendu.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen te bay yon objektif klè?</li><li>Èske mwen te presize odyans lan oswa kontèks la?</li><li>Èske mwen te mande yon fòma pwodiksyon?</li><li>Èske mwen tcheke repons lan anvan mwen itilize li?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon fèy 'anvan/apre' ak èd inisyal ou, amelyore èd ou, ak twa leson ou aprann.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Premier rapid konsève.</li><li>Konsèvasyon ameliore rapid.</li><li>Nòt konparezon ant de rezilta yo.</li></ul>
+</section>
+<section id='s2'>
+<h2>Sesyon 2 — Anatomi yon bon èd memwa: wòl, travay, kontèks, fòma</h2>
+<p style='color:var(--ink-dim)'>⏱ 75 minit · 🎯 Ou pral bati : <strong>modèl pèsonèl rapid nan 6 blòk</strong></p>
+<p><em>Ou konstwi envit konplè lè w sèvi ak yon estrikti ki senp, ki kapab itilize ankò.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete w devan yon konpetans santral: anatomi yon bon èd: wòl, travay, kontèks, fòma. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se sa ki annapre yo: Ou bati envit konplè lè l sèvi avèk yon estrikti ki senp epi ki kapab itilize ankò. Pwodwi pou konstwi a se konkrè: modèl pèsonèl rapid nan 6 blòk. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo ou dwe gade deyò pou yo se: Wòl, Travay, Fòma. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon bay asistan an: Konfye IA a ak yon pwodiksyon inisyal ki byen estriktire. Siveyans vle di tcheke kalite, risk ak konsistans: Tcheke ke chak blòk nan èd memwa a sèvi rezilta yo espere. Otorize moun vle di kenbe entansyon, jijman ak responsablite: Aprann panse aklè anvan mande IA aji. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Konfye IA a ak pwodiksyon inisyal ki byen estriktire.<br><strong>🔍 Sipèvize.</strong> Verifye ke chak blòk èd memwa a sèvi rezilta espere a.<br><strong>🌱 Ranfòse moun.</strong> Aprann panse aklè anvan mande IA a aji.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Wòl</strong> — Pèspektiv oswa ekspètiz ke ou mande asistan an adopte.<br>Wòl la ede IA a chwazi nivo langaj ki enpòtan ak kritè, men li pa transfòme IA a nan yon ekspè verifye.<br><em>🏋 Eseye : Aji kòm yon antrenè ekriti pou débutan. Aji kòm yon asistan planifikasyon fòmasyon.</em></div>
+<div class='callout'><strong>Tache</strong> — Aksyon espesifik ou vle sòsye an fè.<br>Yon travay klè souvan kòmanse ak yon vèb: analize, rezime, refòmile, konpare, klasifye, pwopoze, verifye.<br><em>🏋 Eseye : Rezime tèks sa a an 5 pwen. Konpare de opsyon sa yo ak avantaj, limit ak risk.</em></div>
+<div class='callout'><strong>Fòma</strong> — Fòm repons lan espere: tab, lis, imèl, plan, lis verifikasyon, script, matris.<br>Fòma a evite repons long ak difisil pou itilize. Li transfòme repons lan nan yon zouti.<br><em>🏋 Eseye : Bay repons lan nan yon tablo 3 kolòn. Ekri yon lis verifikasyon 10 pwen.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Prenez une demande vague que vous avez deja faite a une IA. Vous allez la reconstruire en six blocs : role, tache, context, public, contraintes, format.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Ekri demann vag ou a nan yon fraz.</li><li>Ranpli sis blòk modèl la.</li><li>Transfòme blòk an rapid rapid.</li><li>Mande IA a pou pwodwi yon repons.</li><li>Tcheke ki blòk ki pi amelyore kalite rezilta a.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Wòl IA a mande</li><li>Tache exacte</li><li>Kontèks</li><li>Cible piblik</li><li>Kontrent oswa limit</li><li>Fòma attendu</li><li>Final rapid</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen bay yon sijè sèlman.</strong><br>Repons lan riske jenerik.</div>
+<div class='callout'>⚠️ <strong>Mwen bay yon estrikti blòk.</strong><br>Repons lan vin pi kontwole ak pi fasil pou evalye.</div>
+<div class='callout'>⚠️ <strong>Mwen mande twòp bagay an menm tan.</strong><br>Repons lan ka vin konfizyon oswa enkonplè.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Bati ak blòk.</strong> Aide-moi a transformer cette demande en prompt structure avec 6 blocs : role, tache, context, public, contraintes, format. Demande : [coller la demande].</div>
+<div class='prompt-box'><strong>Tcheke klè.</strong> Evalue ce prompt sur 10 selon clarte, context, format and risk. Propose une version plus claire sans l'allonger inutilement.</div>
+<div class='prompt-box'><strong>Diminye konpleksite.</strong> Èd memwa sa a mande twòp: [paste prompt]. Separe li an 3 envit ki pi senp epi endike lòd pou itilize.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Bati ak blòk</td><td>Egzanp rezilta: Wòl: antrenè edikasyon. Objektif Travay la: kreye yon aktivite. Kontèks: Atelye 45 minit. Odyans: granmoun débutan. Kontrent: pa gen jagon. Fòma: objektif/aksyon/tablo prèv.</td></tr><tr><td>Tcheke klè</td><td>Egzanp rezilta: Nòt 7/10. Pwen fò: fòma klè. Manke: odyans sib. Risk: demann twò laj. Vèsyon amelyore: 'Pou elèv k ap aprann débutan, kreye yon lis verifikasyon 8 pwen...'</td></tr><tr><td>Diminye konpleksite</td><td>Egzanp rezilta: Èd 1 pou klarifye bezwen an, èd memwa 2 pou pwodwi yon premye vèsyon, èd memwa 3 pou kritike ak amelyore.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske èd memwa mwen an genyen yon vèb aksyon?</li><li>Èske kontèks la ase?</li><li>Èske fòma a klè?</li><li>Èske mwen te evite mande senk liv diferan nan yon sèl èd memwa?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye modèl rapid pèsonèl ou nan 6 blòk epi teste li sou de travay diferan.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Modèl nan 6 blòk plen.</li><li>De envit final.</li><li>Yon nòt sou blòk la ki pi amelyore rezilta ou yo.</li></ul>
+</section>
+<section id='s3'>
+<h2>Sesyon 3 — Pwosede pa iterasyon: mande, kritike, amelyore</h2>
+<p style='color:var(--ink-dim)'>⏱ 75 minit · 🎯 Ou pral bati : <strong>sik iterasyon nan 3 vèsyon</strong></p>
+<p><em>Ou aprann jwenn yon pi bon repons pandan plizyè seri olye pou w atann pèfeksyon imedya.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: pouse pa iterasyon: mande, kritike, amelyore. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se: Ou aprann jwenn yon pi bon repons sou plizyè jij olye pou w atann pèfeksyon imedya. Pwodwi pou konstwi a se konkrè: sik iterasyon nan 3 vèsyon. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: Iterasyon, Kritè, vèsyon final la. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Mande yon premye vèsyon rapid. Sipèvize vle di tcheke kalite, risk ak konsistans: Kritike repons lan ak kritè vizib. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Devlope kapasite w pou jije bon jan kalite ak amelyorasyon dirèk. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande yon premye vèsyon rapid.<br><strong>🔍 Sipèvize.</strong> Kritike repons lan ak kritè vizib.<br><strong>🌱 Ranfòse moun.</strong> Devlope kapasite w pou jije bon jan kalite ak amelyorasyon dirèk.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Iterasyon</strong> — Amelyorasyon pwogresif yon rezilta atravè plizyè tès.<br>Enspirasyon efikas souvan sanble ak yon dyalòg k ap travay: pwodui, egzamine, korije, rafine.<br><em>🏋 Eseye : Mande yon premye vèsyon, answit yon vèsyon ki pi kout. Mande yon kritik anvan ou mande vèsyon final la.</em></div>
+<div class='callout'><strong>Kritè</strong> — Estanda yo itilize pou jije si yon repons bon.<br>San kritè, ou jije pa santiman. Avèk kritè, ou ka mande IA a amelyore presizyon, klè, ton, oswa itilite.<br><em>🏋 Eseye : Kritè: egzak, senp, aksyon, adapte a piblik la. Kritè: kout, senpati, jagon-gratis, ak apèl nan aksyon.</em></div>
+<div class='callout'><strong>Final vèsyon</strong> — Retravay pwodiksyon ke ou pare pou itilize apre verifikasyon imen.<br>Vèsyon final la se pa sèlman repons final IA a. Sa a se vèsyon an ke ou reli, korije ak valide.<br><em>🏋 Eseye : Ajoute enfòmasyon lokal ou apre jenerasyon. Retire fraz ki twò jeneral oswa ki pa verifye.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi kontni kout pou pwodwi: imèl, anons, eksplikasyon, plan reyinyon oswa mini-gid. Ou pral fè twa vèsyon.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Mande yon premye vèsyon.</li><li>Evalye li ak kat kritè.</li><li>Mande yon kritik nan repons lan.</li><li>Mande yon dezyèm vèsyon amelyore.</li><li>Fè dènye koreksyon imen ou.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Tache choisie</li><li>Vèsyon 1</li><li>Kalite kritè</li><li>Kritik recue</li><li>Vèsyon 2</li><li>Final koreksyon imen</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kenbe premye repons lan.</strong><br>Ou ekonomize tan men souvan pèdi bon jan kalite.</div>
+<div class='callout'>⚠️ <strong>Mwen mande yon kritik estriktire.</strong><br>Ou jwenn zòn ki pi presi pou amelyore.</div>
+<div class='callout'>⚠️ <strong>Mwen kite IA a deside sou vèsyon final la pou kont li.</strong><br>Ou febli responsablite w ak jijman w.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Premye vèsyon.</strong> Pwodui yon premye vèsyon [deliverable] pou [piblik]. Objektif: [objektif]. Ton: [ton]. Longè: [longè].</div>
+<div class='prompt-box'><strong>Kritik estriktire.</strong> Kritike repons ou selon kritè sa yo: klète, itilite, presizyon, ton. Di sa pou kenbe, retire ak amelyore.</div>
+<div class='prompt-box'><strong>Amelyore vèsyon.</strong> Reekri vèsyon an aplike kritik la. Kenbe mesaj la santral, fè li pi konkrè, epi evite fraz vag.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Premye vèsyon</td><td>Egzanp rezilta: yon anons klè men toujou twò jeneral, ak yon entwodiksyon, twa pwen ak yon konklizyon.</td></tr><tr><td>Kritik estriktire</td><td>Egzanp rezilta: 'Klè: bon. Itil: mwayèn, aksyon konkrè ki manke. Ton: twò fòmèl. Pou efase: fraz repetitif.'</td></tr><tr><td>Amelyore vèsyon</td><td>Egzanp rezilta: yon vèsyon ki pi kout ak yon aksyon klè, yon dat, yon odyans sib ak yon fraz final ki pi dirèk.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen bay kritè kalite?</li><li>Èske mwen te mande IA pou kritike pwòp travay li?</li><li>Èske mwen te fè yon dènye koreksyon imen?</li><li>Èske vèsyon final la pi itil pase premye a?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Pwodui twa vèsyon menm livrable a epi anote sa ki chanje ak chak iterasyon.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Vèsyon 1.</li><li>Kritik estriktire.</li><li>Vèsyon anote final la.</li></ul>
+</section>
+<section id='s4'>
+<h2>Sesyon 4 — Envit pou aprann pi vit: eksplike, kesyone, pratike</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>plan aprantisaj IA-asistans</strong></p>
+<p><em>Ou itilize asistan IA a kòm yon titè aktif pou konprann, pratike ak verifye aprantisaj ou a.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: envit pou aprann pi vit: eksplike, kesyone, pratike. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se: Ou itilize asistan IA a kòm yon titè aktif pou konprann, pratike ak verifye aprantisaj ou. Pwodui yo dwe bati a se konkrè: plan aprantisaj IA-asistans. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: IA Tutor, Socratic Question, Feedback. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Mande eksplikasyon, egzèsis, egzamen ak egzanp. Sipèvize vle di tcheke kalite, risk ak konsistans: Tcheke si eksplikasyon an pa senplifye twòp epi mande sous lè sa nesesè. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Transfòme repons lan nan pratik pèsonèl ak prèv aprantisaj. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande eksplikasyon, egzèsis, egzamen ak egzanp.<br><strong>🔍 Sipèvize.</strong> Tcheke eksplikasyon an pa senplifye twòp epi mande sous yo lè sa nesesè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme repons lan an pratik pèsonèl ak prèv aprantisaj.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Tuteur IA</strong> — Itilize asistan an kòm patnè pou eksplikasyon, pratik ak fidbak.<br>Yon titè IA ka adapte yon eksplikasyon, men ou dwe rete aktif: poze kesyon, fè egzèsis yo, korije erè ou yo.<br><em>🏋 Eseye : Mande yon eksplikasyon nan twa nivo: debutan, entèmedyè, ekspè. Mande yon egzamen epi eksplike repons ou yo.</em></div>
+<div class='callout'><strong>Kesyon sokratik</strong> — Kesyon ki ede w reflechi olye w ba w repons imedyatman.<br>Kalite enspirasyon sa a ranfòse rezònman ou epi evite vin pasif devan IA a.<br><em>🏋 Eseye : Pa banm repons lan touswit; poze m yon kesyon alafwa. Ede m jwenn erè a nan rezònman mwen an.</em></div>
+<div class='callout'><strong>Feedback</strong> — Feedback presi sou sa ki kòrèk, ki pa konplè oswa ki pou amelyore.<br>Bon fidbak di ou sa pou w chanje ak poukisa, pa sèlman si li bon oswa move.<br><em>🏋 Eseye : Evalye repons mwen an dapre kadriyaj sa a. Ban m yon koreksyon ak yon egzèsis repete.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi yon konsèp ou vle aprann oswa eksplike yon lòt moun. Objektif ou se pa resevwa yon tèks, men konprann ak pratike.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Mande yon eksplikasyon senp sou konsèp la.</li><li>Mande twa egzanp ak yon kontreegzanp.</li><li>Mande yon egzèsis pratik.</li><li>Reponn egzèsis la tèt ou.</li><li>Mande fidbak ak koreksyon.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Nosyon choisie</li><li>Yo te resevwa eksplikasyon</li><li>Egzanp ki pi klè</li><li>Kontre-egzanp</li><li>Repons mwen pou fè egzèsis la</li><li>Feedback recu</li><li>Sa mwen bezwen retravay</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen mande sèlman yon rezime.</strong><br>Mwen ka konprann sou sifas la san mwen pa konnen kijan pou aplike.</div>
+<div class='callout'>⚠️ <strong>Mwen mande yon egzèsis ak fidbak.</strong><br>Mwen transfòme repons lan nan yon konpetans.</div>
+<div class='callout'>⚠️ <strong>Mwen mande IA pou fè egzèsis la pou mwen.</strong><br>Mwen jwenn yon repons men mwen pèdi aprantisaj la.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Eksplikasyon aktif.</strong> Esplike m [nosyon] tou senpleman. Bay yon definisyon, yon analoji, twa egzanp, yon kont-egzanp, apresa mande m 'refraze.</div>
+<div class='prompt-box'><strong>Antrenè sokratik.</strong> Ede m konprann [nosyon] san m pa ban m tout repons yo. Poze m yon kesyon alafwa epi tann repons mwen an.</div>
+<div class='prompt-box'><strong>Feedback sou repons mwen an.</strong> Men repons mwen an: [kole]. Evalye li pou presizyon, klète ak aplikasyon. Korije erè mwen yo epi sijere yon egzèsis repete.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Eksplikasyon aktif</td><td>Egzanp rezilta: definisyon kout, analoji konkrè, divès egzanp, kont-egzanp, answit kesyon: 'Èske ou ka eksplike nosyon sa a nan pwòp mo ou a?'</td></tr><tr><td>Antrenè sokratik</td><td>Egzanp rezilta : l'IA poze yon kesyon senp, asiste repons ou, puis ajiste pwochen kesyon selon nivo ou.</td></tr><tr><td>Feedback sou repons mwen an</td><td>Egzanp rezilta: 'Prezisyon: pasyèl. Ou eksplike X byen, men w ap konfonn Y ak Z. Rekòmanse: aplike nosyon an nan mini-ka sa a.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen te refòmile nosyon an nan mo mwen yo?</li><li>Èske mwen te fè yon egzèsis tèt mwen?</li><li>Èske mwen te resevwa fidbak egzat?</li><li>Èske mwen ka eksplike konsèp la bay yon lòt moun?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Bati yon plan mini-aprantisaj 30 minit ak eksplikasyon, egzèsis, koreksyon ak tras pwogrè.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Konsèp refòmile nan mo ou yo.</li><li>Konplete egzèsis.</li><li>Feedback ak koreksyon konsève.</li></ul>
+</section>
+<section id='s5'>
+<h2>Sesyon 5 — Envit pou kreye: lide, plan, mesaj, kontni</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>pwototip kontni amelyore pa IA</strong></p>
+<p><em>Ou itilize IA pou jenere lide ak bouyon san pèdi vwa ou, entansyon ou ak odyans ou.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: envit pou kreye: lide, plan, mesaj, kontni. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a se: Ou sèvi ak IA pou pwodwi lide ak bouyon san pèdi vwa ou, entansyon ou ak odyans ou. Pwodwi pou konstwi a se konkrè: pwototip kontni amelyore pa IA. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle pou veye yo se: Draft, Vwa, Odyans. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Mande lide, tit, plan, varyant oswa proje. Sipèvize vle di tcheke kalite, risk ak konsistans: Tcheke ton, presizyon, orijinalite ak adaptasyon nan odyans lan. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Ajoute eksperyans ou, egzanp ou ak vwa pèsonèl ou. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande lide, tit, plan, varyasyon oswa bouyon.<br><strong>🔍 Sipèvize.</strong> Tcheke ton, presizyon, orijinalite ak adaptasyon nan odyans lan.<br><strong>🌱 Ranfòse moun.</strong> Ajoute eksperyans ou, egzanp ou yo ak vwa pèsonèl ou.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Brouillon</strong> — Premye vèsyon enpafè ki sèvi kòm yon baz k ap travay.<br>IA souvan itil pou déblotché yon premye vèsyon. Lè sa a, travay imen bay presizyon, style ak responsablite.<br><em>🏋 Eseye : Mande twa bouyon ak diferan ton. Kenbe estrikti a, men reekri egzanp yo ak eksperyans ou.</em></div>
+<div class='callout'><strong>Voix</strong> — Fason rekonèt ou eksprime tèt ou: ton, ritm, mo, pwèstans.<br>Si ou pa bay siyal vwa, IA a souvan pwodui yon style net, jenerik.<br><em>🏋 Eseye : Ton: klè, dirèk, cho, ki pa akademik. Evite fraz maketing ak pwomès ekzajere.</em></div>
+<div class='callout'><strong>Odyans lan</strong> — Moun ki kreye kontni an.<br>Bon kontni chanje depann de odyans lan: débutan, manadjè, jèn moun, ekip teren, kliyan, k ap aprann.<br><em>🏋 Eseye : Eksplike pou yon odyans debutan nan mwens pase 150 mo. Adapte mesaj sa a pou patisipan adilt ki pa teknik yo.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi kontni itil pou travay ou: piblikasyon, imèl, anons, script videyo, aktivite aprantisaj oswa paj leson patikilye.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Dekri odyans lan ak rezilta yo espere.</li><li>Mande twa ide oswa ang posib.</li><li>Chwazi yon ang epi mande pou yon plan.</li><li>Mande yon ti bouyon.</li><li>Reekri bouyon an pou ajoute vwa ou ak egzanp.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Kalite kontni</li><li>Piblik</li><li>Objektif</li><li>Angle choisi</li><li>Plan genere</li><li>Eleman pou kenbe</li><li>Eleman pou reekri ak vwa mwen</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen mande tout kontni san kontèks.</strong><br>Rezilta a riske pwòp men ordinèr.</div>
+<div class='callout'>⚠️ <strong>Mwen mande plizyè ang anvan bouyon an.</strong><br>Mwen kenbe plis kontwòl kreyatif.</div>
+<div class='callout'>⚠️ <strong>Mwen pibliye san reekri.</strong><br>Kontni yo ka parèt enpèsonèl oswa twò jenerik.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Idees d'angles.</strong> Ofri 10 ang pou kontni sou [sijè] ki fèt pou [odyans lan]. Chak ang ta dwe gen yon pwomès klè ak yon egzanp konkrè.</div>
+<div class='prompt-box'><strong>Plan kontni.</strong> Soti nan ang sa a: [ang], kreye yon plan an 5 pati ak objektif, mesaj kle ak aksyon espere pou chak pati.</div>
+<div class='prompt-box'><strong>Reekri ak vwa.</strong> Reekri bouyon sa a ak yon vwa [dekri vwa a]. Kenbe siyifikasyon an, fè li pi imen, plis konkrè ak mwens jenerik.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Idees d'angles</td><td>Egzanp rezilta : 10 angles classes par utilite, chacun avec titre, public vise et exemple d'ouverture.</td></tr><tr><td>Plan kontni</td><td>Exemple de resultat : tableau en 5 lignes : partie, objectif, message cle, example, action attendue.</td></tr><tr><td>Reekri ak vwa</td><td>Egzanp rezilta: yon tèks ki pi dirèk, ak fraz ki pi kout, yon egzanp lokal ak yon konklizyon oryante aksyon.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske kontni an pale ak yon odyans espesifik?</li><li>Èske mwen te chwazi ang lan tèt mwen?</li><li>Èske mwen te ajoute yon egzanp ki soti nan kontèks mwen an?</li><li>Èske ton an son tankou mwen?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye kontni kout nan twa etap: lide, plan, bouyon revize imen.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Lis ang yo.</li><li>Plan chwazi.</li><li>IA bouyon ak vèsyon final imen.</li></ul>
+</section>
+<section id='s6'>
+<h2>Sesyon 6 — Sipèvize IA: erè, alisinasyon, patipri ak verifikasyon</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>lis verifikasyon sipèvizyon IA</strong></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: sipèvize IA: erè, alisinasyon, patipri ak verifikasyon. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se sa ki annapre yo: Ou aprann kontwole repons IA a anvan ou itilize yo oswa pataje yo. Pwodwi yo dwe bati a se konkrè: lis verifikasyon sipèvizyon IA. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: alisinasyon, patipri, verifikasyon. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Kite IA a pwodui yon premye repons oswa yon analiz preliminè. Sipèvize vle di tcheke kalite, risk ak konsistans: Tcheke reyalite, lojik, sous, prejije, limit ak konvnab nan kontèks. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Devlope panse kritik ak responsablite dijital. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Kite IA a pwodui yon premye repons oswa yon analiz preliminè.<br><strong>🔍 Sipèvize.</strong> Tcheke reyalite, lojik, sous, prejije, limit ak konvnab pou kontèks.<br><strong>🌱 Ranfòse moun.</strong> Devlope panse kritik ak responsablite dijital.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Alisinasyon</strong> — Fo enfòmasyon oswa envante enfòmasyon prezante kòm vre pa yon IA.<br>Yon alisinasyon ka pran fòm yon fo sous, yon figi envante, yon sitasyon reyèl oswa yon konklizyon twò sèten.<br><em>🏋 Eseye : Mande: 'Ki pati nan repons ou bezwen tcheke?'Pa fè sous konfyans san ou pa louvri ak konfime yo.</em></div>
+<div class='callout'><strong>Biais</strong> — Yon tandans ki favorize yon pèspektiv, gwoup, entèpretasyon, oswa solisyon sou lòt moun.<br>Patipri ka soti nan done yo, èd memwa a, kontèks la inyore oswa sipozisyon itilizatè a.<br><em>🏋 Eseye : Mande ki pèspektiv ki manke. Mande yon kritik nan repons lan nan pèspektiv nan yon odyans ki afekte yo.</em></div>
+<div class='callout'><strong>Verifikasyon</strong> — Pwosesis kontwòl anvan ou sèvi ak yon repons.<br>Verifikasyon vle di konpare ak sous serye, done ou, eksperyans ou, règ konfidansyalite ak objektif reyèl.<br><em>🏋 Eseye : Make chak deklarasyon kòm verifye, yo dwe verifye, oswa opinyon. Mande IA a separe reyalite, sipozisyon, ak rekòmandasyon.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Prenez une repons IA ke ou trouvez convaincante. Votre mission est de la traiter comme un brouillon a auditer, pas comme une verite.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kopye yon repons IA nan fèy sipèvizyon ou.</li><li>Idantifye deklarasyon reyalite.</li><li>Idantifye konklizyon ki twò fò oswa ki san prèv.</li><li>Mande IA a lis ensètitid li yo.</li><li>Deside kisa yo ka itilize, verifye oswa efase.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Repons pou odit</li><li>Reyalite pou verifye</li><li>Sous ki nesesè yo</li><li>Ipotèz oswa sipozisyon</li><li>Patipri posib</li><li>Eleman ki ka itilize</li><li>Eleman pou efase</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kwè yon repons paske li byen ekri.</strong><br>Style la ka kache yon erè.</div>
+<div class='callout'>⚠️ <strong>Mwen separe reyalite, ipotèz ak rekòmandasyon.</strong><br>Mwen ka tcheke pi vit ak pi byen.</div>
+<div class='callout'>⚠️ <strong>Mwen mande yon kritik repons lan.</strong><br>Mwen fòse IA a ekspoze limit posib yo.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Odit repons.</strong> Odit repons sa a. Separe faits, hypotheses, recommendations and points a verifier. Repons : [koller].</div>
+<div class='prompt-box'><strong>Chèche patipri.</strong> Ki prejije, tach avèg oswa pèspektiv ki manke ou ta ka idantifye nan repons sa a? Bay kesyon verifikasyon.</div>
+<div class='prompt-box'><strong>Nivo konfyans.</strong> Pou chak deklarasyon enpòtan, endike yon nivo konfyans ki ba, mwayen oswa wo, epi eksplike sa ki ta dwe verifye.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Odit repons</td><td>Egzanp rezilta : tableau avec colonnes affirmation, type, niveau de verification, action recommandee.</td></tr><tr><td>Chèche patipri</td><td>Egzanp rezilta: 'Manke pèspektiv: itilizatè yo mal konekte. Kesyon pou verifikasyon: Èske solisyon sa a travay offline?'</td></tr><tr><td>Nivo konfyans</td><td>Egzanp rezilta: 'Mwayen konfyans: deklarasyon an plauzib men san yon sous. Pou verifye ak dokiman ofisyèl oswa done entèn yo.'</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen fè distenksyon ant reyalite ak opinyon?</li><li>Èske mwen te wè reklamasyon yo san prèv?</li><li>Èske mwen te chèche pèspektiv ki manke?</li><li>Èske mwen deside kisa pou m efase oswa tcheke?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye lis verifikasyon sipèvizyon IA 8-12 pwen ou epi aplike li nan yon repons reyèl.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Reply to annotee.</li><li>Lis sipèvizyon.</li><li>Desizyon final la: itilize, verifye oswa rejte.</li></ul>
+</section>
+<section id='s7'>
+<h2>Sesyon 7 — Konfidansyalite ak etik: rapid done sekirite, pwoteje</h2>
+<p style='color:var(--ink-dim)'>⏱ 75 minit · 🎯 Ou pral bati : <strong>pwotokòl san danje pèsonèl rapid</strong></p>
+<p><em>Ou aprann kijan pou itilize IA san yo pa ekspoze moun, òganizasyon, oswa enfòmasyon sansib.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: konfidansyalite ak etik: rapid sekirite, done pwoteje. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a se: Ou aprann kijan pou itilize IA san yo pa ekspoze moun, òganizasyon, oswa enfòmasyon sansib. Pwodwi pou konstwi a se konkrè: pwotokòl san danje pèsonèl rapid. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: Done sansib, anonimizasyon, etik IA. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon bay asistan an: Sèvi ak IA sou egzanp fiktif, anonim oswa piblik. Sipèvize vle di tcheke kalite, risk ak konsistans: Kontwole sa yo pataje, kenbe ak reitilize. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Devlope abitid responsab anvan chak èd memwa. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Sèvi ak IA sou egzanp fiktif, anonim oswa piblik.<br><strong>🔍 Sipèvize.</strong> Kontwole sa yo pataje, kenbe ak reitilize.<br><strong>🌱 Ranfòse moun.</strong> Devlope abitid responsab anvan chak èd memwa.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Done sansib</strong> — Enfòmasyon ki kapab mal, idantifye, ekspoze oswa rann yon moun oswa yon òganizasyon vilnerab.<br>Done sansib yo enkli non, kontak, sante, finans, kote egzak, konfli, sitiyasyon fanmi oswa enfòmasyon konfidansyèl.<br><em>🏋 Eseye : Chanje non yo pou Wòl A, Patisipan B oswa Òganizasyon X. Jeneralize kote ak dat si detay pa nesesè.</em></div>
+<div class='callout'><strong>Anonimizasyon</strong> — Efase oswa transfòmasyon nan eleman ki pèmèt yo idantifye yon moun.<br>Anonymize pa sèlman vle di retire non an. Detay konbine ka toujou idantifye yon moun.<br><em>🏋 Eseye : Ranplase 'Marie, 17 an, distri X' ak 'yon patisipan adolesan'. Retire quotes sansib si yo pa esansyèl.</em></div>
+<div class='callout'><strong>Ethique IA</strong> — Itilizasyon IA ak respè, responsablite, sekirite ak transparans.<br>Etik kòmanse anvan èd memwa a: èske nou ta dwe itilize IA pou travay sa a? Ki sa ki pa ta dwe pataje? Ki moun ki ka afekte?<br><em>🏋 Eseye : Mande tèt ou: èske enfòmasyon sa a se pou mwen?Mande tèt ou: ta ka rekonèt yon moun?</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Anvan w ankouraje w, pran yon egzanp yon tèks oswa yon sitiyasyon. Travay ou se fè li ka itilize san yo pa ekspoze pèsonn.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Idantifye tout enfòmasyon sansib.</li><li>Ranplase yo ak varyab oswa deskripsyon jeneral.</li><li>Efase detay ki pa nesesè pou travay la.</li><li>Ajoute yon enstriksyon konfidansyalite nan èd memwa a.</li><li>Tcheke ke rezilta a pa re-entwodwi detay sansib.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Tèks oswa sitiyasyon inisyal</li><li>Enfòmasyon sansib</li><li>Vèsyon anonim</li><li>Detay yo efase</li><li>Final san danje rapid</li><li>Risk ki rete yo</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kole yon tèks klè ak non ak detay.</strong><br>Mwen ka ekspoze moun oswa òganizasyon an.</div>
+<div class='callout'>⚠️ <strong>Mwen anonimize anvan mwen mande.</strong><br>Mwen diminye risk epi kenbe sèvis piblik la.</div>
+<div class='callout'>⚠️ <strong>M ap itilize yon egzanp fiktif.</strong><br>Sa a se souvan pi bon chwa pou aprann oswa tès.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Anonymize anvan ou itilize.</strong> Ede m 'anonimize tèks sa a anvan nenpòt ki IA itilize. Lis eleman sansib, Lè sa a, ofri yon vèsyon ki an sekirite. Tèks: [kole sèlman si ou gen dwa pou trete li].</div>
+<div class='prompt-box'><strong>Tcheke risk la.</strong> Men yon vèsyon anonim: [paste]. Èske yo ka toujou idantifye yon moun oswa yon òganizasyon? Kisa mwen ta dwe retire oswa jeneralize?</div>
+<div class='prompt-box'><strong>Èd memwa ak guardrails.</strong> Soti nan vèsyon anonim sa a, ede m 'ak [travay]. Pa envante done pèsonèl epi rapòte nenpòt enfòmasyon ki ta dwe rete konfidansyèl.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Anonymize anvan ou itilize</td><td>Egzanp rezilta: lis eleman pou retire: non, laj egzak, katye, dat egzak, quote ki ka idantifye. Vèsyon an sekirite ak wòl jenerik.</td></tr><tr><td>Tcheke risk la</td><td>Egzanp rezilta: 'Kote ak dat konbine ka idantifye ka a. Ranplase ak yon peryòd jeneral ak yon zòn pi laj.'</td></tr><tr><td>Èd memwa ak guardrails</td><td>Egzanp rezilta: repons ki itilize sèlman wòl anonim epi ki raple limit konfidansyalite.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen retire idantifyan dirèk yo?</li><li>Èske mwen retire konbinezon detay idantifye yo?</li><li>Èske mwen gen dwa sèvi ak enfòmasyon sa a?</li><li>Èske mwen ajoute yon avi konfidansyalite?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye pwotokòl pèsonèl ou 'Anvan Ou Pwompt' ak 7 kontwòl sou vi prive.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Vèsyon anonim nan yon egzanp.</li><li>San danje final rapid.</li><li>Lis verifikasyon konfidansyèl.</li></ul>
+</section>
+<section id='s8'>
+<h2>Sesyon 8 — Kreye modèl rapid ki kapab itilize ankò</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>bibliyotèk 5 modèl rapid</strong></p>
+<p><em>Ou transfòme pi bon envit ou yo an modèl ki kapab itilize ankò pou ekonomize tan san pèdi bon jan kalite.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: kreye modèl rapid ki kapab itilize ankò. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se sa ki annapre yo: Ou transfòme pi bon envit ou yo an modèl ki kapab itilize ankò pou ekonomize tan san yo pa pèdi bon jan kalite. Pwodwi pou konstwi a se konkrè: bibliyotèk 5 modèl rapid. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle ou dwe gade yo se: Modèl, Varyab, Bibliyotèk rapid. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Otomatize demann renouvlab ak modèl. Sipèvize vle di tcheke kalite, risk ak konsistans: Mete ajou modèl selon erè ak bezwen reyèl. Otorize moun nan vle di kenbe entansyon, jijman ak responsablite: Bati yon fason pèsonèl pou travay ak IA. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Otomatize demann renouvlab ak modèl.<br><strong>🔍 Sipèvize.</strong> Mizajou modèl selon erè ak bezwen aktyèl yo.<br><strong>🌱 Ranfòse moun.</strong> Bati yon metòd pèsonèl pou travay ak IA.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Modèl</strong> — Modèl rapid ak espas pou ranpli.<br>Yon modèl evite kòmanse nan grafouyen. Li kenbe blòk kòrèk yo ak fòse ou presize varyab enpòtan.<br><em>🏋 Eseye : Modèl: 'Aji tankou [wòl]. Ede m 'ak [travay] pou [piblik]...'Ranplase kwòk yo anvan chak itilizasyon.</em></div>
+<div class='callout'><strong>Varyab</strong> — Eleman modèl ou chanje selon sitiyasyon an.<br>Varyab fè rapid la adaptab: piblik, ton, longè, kontèks, fòma, kontrent.<br><em>🏋 Eseye : [odyans sib][fòma espere][kontrent pou respekte]</em></div>
+<div class='callout'><strong>Bibliyotèk rapid</strong> — Òganize koleksyon envit serye, klase dapre itilizasyon.<br>Yon bibliyotèk pèmèt ou kapitalize sou sa ki mache epi pataje pratik ak yon ekip.<br><em>🏋 Eseye : Kategori: ekriti, analiz, aprantisaj, verifikasyon. Ajoute yon nòt: lè pou itilize / lè pou evite.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Idantifye twa travay ou fè souvan: ekri, rezime, planifye, tcheke, eksplike, analize. Ou pral kreye modèl.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Chwazi yon tach renouvlab.</li><li>Ekri yon èd memwa konplè pou travay sa a.</li><li>Transfòme eleman varyab nan parantèz.</li><li>Ajoute yon seksyon 'kritè kalite'.</li><li>Teste modèl la ak de sitiyasyon diferan.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Tach ki repete</li><li>Pwompt ranpli</li><li>Varyab pou ranplase</li><li>Modèl final la</li><li>Kalite kritè</li><li>Tès 1</li><li>Egzamen 2</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kenbe envit mwen nan tèt mwen.</strong><br>Mwen souvan kòmanse menm travay la ankò.</div>
+<div class='callout'>⚠️ <strong>Mwen kreye modèl ak varyab.</strong><br>Mwen ekonomize tan ak estabilize bon jan kalite.</div>
+<div class='callout'>⚠️ <strong>Mwen pataje yon modèl san avètisman.</strong><br>Gen lòt ki ka sèvi ak li nan move kontèks la.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Transfòme an modèl.</strong> Transfòme èd memwa sa a nan yon modèl ki kapab itilize ankò. Idantifye varyab, ajoute parantèz epi li bay yon nòt 'lè pou itilize li'. Pwompt: [kole].</div>
+<div class='prompt-box'><strong>Teste yon modèl.</strong> Teste ce template sur deux cas differents and dis si les variables sont suffisantes. Modèl : [koller]. Cas : [cas 1], [cas 2].</div>
+<div class='prompt-box'><strong>Kreye yon bibliyotèk.</strong> Ede m òganize envit sa yo nan bibliyotèk la avèk kategori, itilizasyon, risk, varyab ak rezilta egzanp.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Transfòme an modèl</td><td>Egzanp rezilta : modèl avèk varyab [wòl], [tache], [piblik], [tòn], [fòma], [kontrè], plis yon nòt itilizasyon.</td></tr><tr><td>Teste yon modèl</td><td>Egzanp rezilta: 'Modèl la ap travay pou yon imèl, men se pa pou yon analiz konplèks. Ajoute varyab [kritè evalyasyon].'</td></tr><tr><td>Kreye yon bibliyotèk</td><td>Egzanp rezilta: tablo ak kategori, èd memwa, ki lè pou itilize, risk, prèv pou tcheke.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske modèl mwen an gen varyab klè?</li><li>Èske mwen te ajoute kritè bon jan kalite?</li><li>Èske mwen teste modèl la nan de ka?</li><li>Èske mwen te note lè yo pa sèvi ak li?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Bati yon bibliyotèk 5 modèl rapid: ekri, rezime, analize, verifye, aprann.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>5 modèl reutilisables.</li><li>De tès modèl.</li><li>Nòt itilizasyon ak risk.</li></ul>
+</section>
+<section id='s9'>
+<h2>Sesyon 9 — Konsepsyon mini asistan IA pèsonèl ou</h2>
+<p style='color:var(--ink-dim)'>⏱ 105 minit · 🎯 Ou pral bati : <strong>fèy konsepsyon pou yon mini-asistan</strong></p>
+<p><em>Ou konsepsyon yon asistan IA senp ak yon misyon, limit, woutin ak kritè kalite.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: konsepsyon asistan mini-pèsonèl IA ou. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se sa ki annapre yo: Ou konsepsyon yon asistan IA senp ak yon misyon, limit, woutin ak kritè kalite. Pwodwi pou konstwi a se konkrè: fèy konsepsyon pou yon mini-asistan. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle pou veye yo se: Misyon, Limit, Woutin. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Konfye asistan an ak yon fanmi nan travay repetitif. Sipèvize vle di tcheke kalite, risk ak konsistans: Defini sa asistan an pa ta dwe fè ak kijan pou tcheke pwodiksyon li. Ranfòse imen an vle di kenbe entansyon, jijman ak responsablite: Kreye yon zouti ki ogmante kapasite travay ou san ranplase jijman ou. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Konfye asistan an ak yon fanmi nan travay repetitif.<br><strong>🔍 Sipèvize.</strong> Defini sa sòsye an pa ta dwe fè ak kijan pou tcheke pwodiksyon li.<br><strong>🌱 Ranfòse moun.</strong> Kreye yon zouti ki ogmante kapasite travay ou san ou pa ranplase jijman ou.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Misyon</strong> — Wòl prensipal mini-asistan ou a.<br>Yon misyon klè evite asistan trape-tout la. Li pi bon pou gen yon asistan ekselan nan itilizasyon egzak pase yon asistan vag.<br><em>🏋 Eseye : Asistan preparasyon reyinyon. Asistan pou revize dokiman fòmasyon.</em></div>
+<div class='callout'><strong>Limit</strong> — Ki sa asistan an pa ta dwe fè.<br>Limit pwoteje kalite, konfidansyalite ak responsablite moun.<br><em>🏋 Eseye : Pa envante sous. Pa trete done pèsonèl ki pa anonim.</em></div>
+<div class='callout'><strong>Woutin</strong> — Sekans aksyon ki estab ke sòsye an swiv chak fwa yo itilize li.<br>Yon woutin transfòme asistan an nan yon pwosesis serye: klarifye, pwodwi, verifye, amelyore.<br><em>🏋 Eseye : Etap 1: poze kesyon. Etap 2: pwodwi. Etap 3: kritike. Etap 4: pwopoze yon vèsyon final. Toujou fini ak yon lis verifikasyon.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi yon travay ou fè chak semèn. Mini-asistan ou ta dwe ede w ak travay sa a, pa fè tout bagay pou ou.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Non misyon mini-èd la.</li><li>Lis travay li kapab fè.</li><li>Lis travay yo entèdi.</li><li>Ekri woutin travay li.</li><li>Teste li sou yon ka senp.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Non mini-sòsye an</li><li>Misyon</li><li>Tach otorize</li><li>Tach entèdi</li><li>Travay woutin</li><li>Kalite kritè</li><li>Tès reyalize</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kreye yon sòsye ki twò jeneral.</strong><br>Li pral difisil pou kontwole.</div>
+<div class='callout'>⚠️ <strong>Mwen kreye yon asistan ki gen misyon ak limit.</strong><br>Li vin pi itil ak plis serye.</div>
+<div class='callout'>⚠️ <strong>Mwen pa defini verifikasyon.</strong><br>Mwen riske aksepte rezilta ki fèb oswa fo.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Designer sòsye.</strong> Ede m desine yon mini asistan IA pou [travay renouvlab]. Pwopoze misyon, travay otorize, limit, woutin ak kritè kalite.</div>
+<div class='prompt-box'><strong>Sistèm rapid.</strong> Transfòme fèy konsepsyon sa a nan yon premye enstriksyon pou mini-asistan mwen an. Li dwe poze kesyon si kontèks la manke epi montre limit li yo.</div>
+<div class='prompt-box'><strong>Tès solidite.</strong> Teste mini-asistan sa a ak 3 ka: fasil, Limit, risk. Di ki jan li ta dwe reponn nan chak ka.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Designer sòsye</td><td>Egzanp rezilta: misyon klè, 5 travay otorize, 5 limit, woutin 4 etap, kritè kalite.</td></tr><tr><td>Sistèm rapid</td><td>Egzanp rezilta: premye enstriksyon ki kòmanse ak 'Ou se asistan preparasyon reyinyon mwen an...' ak kesyon klarifye ak guardrails.</td></tr><tr><td>Tès solidite</td><td>Egzanp rezilta: ka fasil = pwodwi dirèkteman; ka ambigu = poze kesyon; ka risk = refize oswa mande anonimizasyon.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske misyon an espesifik?</li><li>Èske limit yo klè?</li><li>Èske woutin nan gen ladan yon chèk?</li><li>Èske mini-asistan an konnen ki lè pou l poze kesyon?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye fèy konplè pou mini-asistan ou a epi teste li sou twa ka.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Fèy konsepsyon.</li><li>Premye enstriksyon nan mini-sòsye an.</li><li>Rezilta twa tès yo.</li></ul>
+</section>
+<section id='s10'>
+<h2>Sesyon 10 — Pwojè final la: ranpli workflow IA soti nan lide rive nan prèv</h2>
+<p style='color:var(--ink-dim)'>⏱ 120 minit · 🎯 Ou pral bati : <strong>dokimante pèsonèl IA workflow</strong></p>
+<p><em>Ou rasanble tout leson patikilye a nan yon workflow konplè: objektif, rapid, iterasyon, verifikasyon, vèsyon final la ak prèv.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Sesyon sa a mete ou devan yon konpetans santral: pwojè final la: ranpli workflow IA soti nan lide rive nan prèv. Li kòmanse nan yon sitiyasyon senp: yon elèv k ap aprann vle sèvi ak yon asistan IA san yo pa vin pasif. Objektif la se pa memorize definisyon, men transfòme yon entansyon an aksyon klè. Rezilta a vle se sa ki annapre yo: Ou rasanble tout leson patikilye a nan yon workflow konplè: objektif, rapid, iterasyon, verifikasyon, vèsyon final la ak prèv. Pwodwi yo dwe bati a se konkrè: dokimante pèsonèl IA workflow. Pwodui sa a sèvi kòm prèv paske yon konpetans IA dwe wè nan pwodiksyon obsèvab. Mo kle yo dwe gade deyò pou yo se: IA Workflow, prèv, amelyorasyon kontinyèl. Mo sa yo pa vokabilè dekoratif; yo gide desizyon ou pandan aktivite a. Nan sesyon sa a, chak èd memwa vin yon ipotèz k ap travay pou teste, konpare ak amelyore. Responsablite w se transfòme repons IA an nan aprantisaj itil, verifye ak adapte kontèks la.</p>
+<p>Kòmanse ak yon travay reyèl, menm yon ti kras, paske enspirasyon yo aprann nan aksyon. Si w sèlman travay sou egzanp abstrè, ou riske pwodwi envit pwòp men initil. Asistan IA a dwe resevwa yon demann klè, men li dwe tou satisfè kontrent reyèl ou yo. Kontrent sa yo ka odyans lan, tan ki disponib, nivo langaj la, konfidansyalite oswa fòma yo espere. Nan sesyon sa a, ou ta dwe konpare plizyè vèsyon olye pou w rete soude ak premye repons lan. Konparezon sa a montre w sa IA a konprann, sa li devine, ak sa li inyore. Lè yon repons sanble briyan, mande tèt ou sa li poko konnen. Lè yon repons sanble fèb, mande tèt ou ki blòk èd memwa ki manke oswa ki bezwen klarifye. Donk travay la se pa sèlman pou mande; li se gide, obsève, korije ak relanse. Pwèstans sa a fè ou yon itilizatè aktif epi li pa yon senp konsomatè nan repons.</p>
+<p>Nan fen sesyon an, ou ta dwe kapab eksplike sa ou delege, sipèvize ak ranfòse. Delege isit la vle di konfye yon premye pwodiksyon oswa transfòmasyon nan asistan an: Pou pwodwi lide, plan, proje oswa matris. Sipèvize vle di tcheke kalite, risk ak konsistans: Odit repons yo ak tcheke risk yo. Otorize moun vle di kenbe entansyon, jijman ak responsablite: Konstwi pwòp fason responsab ou pou travay ak IA. Prèv aprantisaj ou a ta dwe montre chemen ki genyen ant rapid, repons, revizyon ak rezilta final la. Si prèv la sèlman montre repons IA a, li pa konplè. Toujou ajoute desizyon ou: kenbe, modifye, verifye, efase oswa teste. Desizyon sa a se yon siy ke w ap itilize IA kòm yon patnè k ap travay, pa kòm yon otorite. Plis ou pratike bouk sa a, se plis envit ou yo vin egzak epi jijman ou vin pi vizib. Kenbe sesyon sa a kòm yon blòk bilding nan metòd pèsonèl ou nan travay ak yon asistan IA.</p>
+<h3>Konpa Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Pwodui lide, plan, bouyon oswa matris.<br><strong>🔍 Sipèvize.</strong> Odit repons yo epi tcheke risk yo.<br><strong>🌱 Ranfòse moun.</strong> Bati pwòp metòd travay responsab ou ak IA.</div>
+<h3>Mo kle nan tit la</h3>
+<div class='callout'><strong>Workflow IA</strong> — Yon sekans etap ki òganize fason ou itilize IA pou pwodui yon rezilta.<br>Yon workflow evite enpwovizasyon. Li montre ki sa IA a fè, sa imen an tcheke, ak ki prèv yo kenbe.<br><em>🏋 Eseye : Klarifye -&gt; rapid -&gt; pwodwi -&gt; kritike -&gt; verifye -&gt; finalize. Ajoute yon etap konfidansyalite anvan nenpòt èd memwa.</em></div>
+<div class='callout'><strong>Preuve</strong> — Tras ki montre sa ou te fè, verifye oswa aprann.<br>Prèv pèmèt nou pwogrese, pataje yon metòd ak jistifye yon desizyon.<br><em>🏋 Eseye : Kenbe èd memwa final la ak vèsyon final la. Kenbe lis verifikasyon an ranpli.</em></div>
+<div class='callout'><strong>Amelyorasyon kontinyèl</strong> — Abitid revize envit ou ak workflows selon rezilta yo jwenn.<br>Envit ou yo vin pi bon lè w sonje sa ki fonksyone, sa ki echwe, ak sa ki bezwen klarifye.<br><em>🏋 Eseye : Ajoute yon nòt apre chak itilizasyon enpòtan. Mete ajou modèl ou yo yon fwa pa mwa.</em></div>
+<h3>Kòmanse isit la</h3>
+<p>Chwazi yon liv reyèl ke ou vle pwodwi: plan fòmasyon, dokiman rezime, imèl enpòtan, gid kout, analiz oswa kontni entènèt.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Defini rezilta final la ak odyans lan.</li><li>Ekri yon estrikti rapid.</li><li>Pwodui yon premye vèsyon.</li><li>Mande yon revizyon ak yon vèsyon amelyore.</li><li>Odit repons lan ak lis verifikasyon ou a.</li><li>Finalize ak prezève prèv san mank.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Livrable final la</li><li>Piblik</li><li>Estrikti rapid</li><li>Vèsyon 1</li><li>Kritik</li><li>Amelyore vèsyon</li><li>Verifikasyon</li><li>Final vèsyon</li><li>Prèv konsève</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen fè yon sèl èd memwa epi mwen sispann.</strong><br>Rezilta a ka rete supèrfisyèl.</div>
+<div class='callout'>⚠️ <strong>Mwen swiv workflow konplè a.</strong><br>Mwen pwodwi yon rezilta ki pi itil, kontwole ak defann.</div>
+<div class='callout'>⚠️ <strong>Mwen kenbe prèv mwen.</strong><br>Mwen ka aprann, pataje ak amelyore metòd mwen an.</div>
+<h3>Envit (prompts) ou ka itilize</h3>
+<p style='color:var(--ink-dim)'>Enstriksyon: Ranplase eleman yo nan parantèz kare. Itilize sèlman enfòmasyon piblik, fiktif oswa anonim.</p>
+<div class='prompt-box'><strong>Ranpli workflow.</strong> Ede m pwodwi [deliverable] pou [piblik]. Kòmanse pa poze tèt mwen kesyon ki nesesè yo, apresa pwopoze yon plan travay 6-etap.</div>
+<div class='prompt-box'><strong>Odit final la.</strong> Odit vèsyon final sa a selon: presizyon, klète, itilite, konfidansyalite, patipri, aksyon espere. Bay yon desizyon: pare, tcheke, revize.</div>
+<div class='prompt-box'><strong>Leson yo aprann.</strong> Soti nan workflow sa a, ede m retire 5 leson pou amelyore envit mwen yo epi kreye yon modèl ki kapab itilize ankò.</div>
+<h3>Egzanp rezilta</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Ranpli workflow</td><td>Egzanp rezilta: plan travay ak klarifikasyon, bouyon, kritik, revizyon, verifikasyon ak finalizasyon.</td></tr><tr><td>Odit final la</td><td>Egzanp rezilta: desizyon 'yo dwe revize' ak de pwoblèm: yon deklarasyon ki pa verifye ak yon ton ki twò teknik pou piblik la.</td></tr><tr><td>Leson yo aprann</td><td>Egzanp rezilta: 5 leson, ki gen ladan 'espesize odyans lan pi bonè', 'mande limit', 'pwodiksyon separe ak verifikasyon'.</td></tr></table></div>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske liv final la satisfè bezwen inisyal la?</li><li>Èske mwen sipèvize reyalite, ton ak risk yo?</li><li>Èske mwen ajoute kontribisyon imen mwen an?</li><li>Èske mwen te kenbe prèv pwosesis mwen an?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Pwodui yon workflow IA konplè sou yon rezilta reyèl epi prepare yon demonstrasyon kout sou pwosesis ou a.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Estrikti rapid.</li><li>Vèsyon siksesif.</li><li>Lis verifikasyon odit ranpli.</li><li>Final vèsyon an.</li><li>Modèl ki kapab itilize ankò ki te kreye nan pwojè a.</li></ul>
+</section>
+    <div class="tuto-pager"><a href="../tutoriels.html" class="btn btn-outline">← Tout leson yo</a></div>
+  </main>
+</div>
+<footer><div class="container"><div class="footer-bottom">© 2026 Atmart LLC — Lojik360 se yon mak Atmart LLC.</div></div></footer>
+<script src="../assets/script.js"></script>
+<script src="../assets/chat.js?v=4" data-endpoint="https://atmart-chat.atmartllc.workers.dev"></script>
+</body>
+</html>

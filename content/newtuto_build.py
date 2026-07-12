@@ -384,7 +384,7 @@ PAGE = """<!DOCTYPE html>
 </header>
 <div class="tuto-shell">
   <aside class="tuto-sidebar">
-    <div class="tuto-sidebar-head"><span class="ico">{ico}</span><h2>{short}</h2><span class="lvl">🤖 Déléguer</span><div class="lang-page-switch"><a href="{fn}" class="active">FR</a><span class="lang-soon" title="bientôt">HT</span><span class="lang-soon" title="bientôt">EN</span><span class="lang-soon" title="bientôt">ES</span></div></div>
+    <div class="tuto-sidebar-head"><span class="ico">{ico}</span><h2>{short}</h2><span class="lvl">🤖 Déléguer</span><div class="lang-page-switch"><a href="{fn}" class="active">FR</a><a href="{fnht}">HT</a><span class="lang-soon" title="bientôt">EN</span><span class="lang-soon" title="bientôt">ES</span></div></div>
     <button class="tuto-toc-toggle">☰ Sessions</button>
     <ul class="tuto-toc">
       <li><a href="#intro">À propos de ces sessions</a></li>
@@ -462,7 +462,7 @@ def build(path, fn, title, short, ico, lead, desc, drop_source_refs=False):
     if doc["extra"]:
         sessions += "\n" + render_extra(doc)
     pg = PAGE.format(title=title, short=short, ico=ico, lead=lead, desc=desc,
-                     fn=fn, toc=toc, intro=render_intro(doc, hint), sessions=sessions)
+                     fn=fn, fnht=fn.replace(".html", ".ht.html"), toc=toc, intro=render_intro(doc, hint), sessions=sessions)
     out = SITE + "\\tutoriels\\" + fn
     io.open(out, "w", encoding="utf-8", newline="\n").write(pg)
     # validation

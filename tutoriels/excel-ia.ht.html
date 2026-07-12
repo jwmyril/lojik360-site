@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Excel nan epòk IA a — 12 sesyon aksyon | Lojik360</title>
+<meta name="description" content="Excel nan epòk IA a an kreyòl : 12 sesyon aksyon — tab, fòmil, grafik, tablo kwaze, Power Query, senaryo, finans — ak envit IA epi verifikasyon imen." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/style.css?v=6" />
+<style>html{scroll-behavior:smooth}.tuto-main h4{color:var(--ink)}.prompt-box{background:var(--navy-2);border:1px solid var(--border);border-radius:10px;padding:.7rem .9rem;margin:.5rem 0;font-size:.9rem;color:var(--ink)}</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>pa Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Akèy</a></li>
+      <li><a href="../tutoriels.html" class="active">Leson</a></li>
+      <li><a href="../index.html#podcast">Podkas</a></li>
+      <li><a href="../lojikkid.html">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solisyon (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="tuto-shell">
+  <aside class="tuto-sidebar">
+    <div class="tuto-sidebar-head"><span class="ico">📊</span><h2>Excel nan epòk IA a</h2><span class="lvl">🤖 Delege</span><div class="lang-page-switch"><a href='excel-ia.html'>FR</a><a href='excel-ia.ht.html' class='active'>HT</a><span class='lang-soon' title='byento'>EN</span><span class='lang-soon' title='byento'>ES</span></div></div>
+    <button class="tuto-toc-toggle">☰ Sesyon yo</button>
+    <ul class="tuto-toc">
+      <li><a href="#intro">Sou sesyon sa yo</a></li>
+      <li class="toc-group">Sesyon yo</li>
+      <li><a href='#s1'>1. Panse a Excel kòm yon sistèm done IA-ogmante</a></li>
+      <li><a href='#s2'>2. Fòma pou wè byen vit: fòma, estil ak siyal vizyèl</a></li>
+      <li><a href='#s3'>3. Fòmil ak fonksyon ak IA: kalkile, eksplike, odit</a></li>
+      <li><a href='#s4'>4. Grafik ak istwa done ak Copilot</a></li>
+      <li><a href='#s5'>5. Modèl plizyè fèy: konsolide, lyen, dokimante</a></li>
+      <li><a href='#s6'>6. Netwaye ak jere done: soti nan tab la nan mini-dach la</a></li>
+      <li><a href='#s7'>7. Tablo pivote ak kesyon langaj natirèl</a></li>
+      <li><a href='#s8'>8. E-si, senaryo ak Solveur: tès desizyon anvan aji</a></li>
+      <li><a href='#s9'>9. Fonksyon finansye ak desizyon responsab</a></li>
+      <li><a href='#s10'>10. Power Query, modèl done ak IA-asistans BI</a></li>
+      <li><a href='#s11'>11. Tabulasyon kwa avanse, mezi ak naratif analitik</a></li>
+      <li><a href='#s12'>12. Excel mini-aplikasyon: validation, pwoteksyon, makro ak asistan IA</a></li>
+      <li><a href='#sources'>Sous ak limit</a></li>
+    </ul>
+  </aside>
+  <main class="tuto-main">
+    <p class="breadcrumb"><a href="../tutoriels.html">Leson</a> › 🤖 Delege</p>
+    <h1>Excel nan epòk IA a — 12 sesyon aksyon</h1>
+    <p class="lead">Excel pa yon senp grid kalkil ankò : estriktire done ou yo, delege bay IA sa ki ka delege, verifye chak rezilta epi kenbe desizyon an nan men moun. 12 sesyon, yon rezilta pa sesyon.</p>
+<section id='intro'>
+<h2>Sou sesyon sa yo</h2>
+<p>Metòd pou itilize dokiman sous la: Nan chak sesyon, ouvri paj ki endike yo, obsève Apèsi vizyèl la, epi fè egzèsis orijinal Lojik360 te pwopoze a.</p>
+<p><strong>Angle IA.</strong> A l'ere de l'IA, Excel n'est plus seulement une grille de calcul. Il devient un espace de decision : l'apprenant doit savoir structurer les donnees, demander des analyses, verifier les rezilta, eksplike les limites and transformer une feuille de calcul en action.</p>
+<div class='callout warn'><strong>⚠️ Konfidansyalite.</strong> Avant d'utiliser assistant IA ak Excel, anonymisez les donnees sensibles. Ne partagez pas de noms, salaires, adresses, donnees de sante, donnees financieres confidentielles ou information permettant d'identifier une personne.</div>
+<p style='color:var(--ink-dim)'>Chwazi yon sesyon nan meni an — yon sèl sesyon parèt chak fwa.</p>
+</section>
+<section id='s1'>
+<h2>Sesyon 1 — Panse a Excel kòm yon sistèm done IA-ogmante</h2>
+<p style='color:var(--ink-dim)'>⏱ 75 minit · 🎯 Ou pral bati : <strong>klas pwòp ak sous tab la, dictionnaire de donnees et premier prompt d'analyse.</strong></p>
+<p><em>Ou bati yon liv travay ki ka itilize pa yon moun ak yon asistan IA.</em></p>
+<p><em>Ale soti nan yon fèy anvan tout koreksyon nan yon tab serye ke IA a ka analize san yo pa devine.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon analis pwogram ki dwe fè yon fèy serye anvan nenpòt analiz. Pwen an kòmanse se senp: done aktivite yo rive nan men plizyè moun, ak kolòn itil men mal dokimante. Tèm klasik k ap travay isit la se: liv travay, fèy papye, selil, antre, planifikasyon yon liv travay. Pwoblèm nan vizib se ke IA a ka pwodwi yon analiz rapid, men li riske devine siyifikasyon an nan kolòn yo. Pwoblèm nan kache se ke yon tab mal konstwi bay enpresyon nan presizyon pandan y ap baz la se frajil. Done tipik sanble sa a: dat aktivite, rejyon, depans, benefisyè ak satisfaksyon. Kòmanse ak: Kreye yon liv travay ki rele Impact_Data_Practice.xlsx.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande yo fè dyagnostik estrikti a, pwopoze kesyon analiz epi montre enkonsistans. Èd memwa ki pi itil pou kòmanse avèk yo gen rapò ak: Diagnostik tab la. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Workbook, Tablo Sous, diksyonè Done. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: pwòp liv travay ak tab sous, diksyonè done ak èd memwa premye analiz. Rezilta sa a ta dwe sèvi yon manadjè ki vle konprann rezilta yo san yo pa louvri dis fèy diferan. Desizyon moun ou an se deside kisa yon ranje reprezante, ki kolòn ki obligatwa, ak ki limit yo eksplike. Enpak rechèch la se deplase soti nan yon fèy anvan tout koreksyon nan yon tab serye ke IA a ka analize san yo pa devine. Erè pou evite se yon rapò konvenk men ki baze sou done Limit. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Poze IA a twa kesyon analiz posib sou tablo sa a. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Classeur</strong> — Fichye Excel òganize an fèy, tab, fòmil, graf ak nòt kontwòl.</div>
+<div class='callout'><strong>Sous tab la</strong> — Zòn done estriktire ak tèt klè, yon ranje pou chak obsèvasyon ak yon kolòn pou chak varyab.</div>
+<div class='callout'><strong>Diksyonè done</strong> — Ti dokimantasyon ki eksplike chak kolòn, kalite li yo, inite li yo ak règ li yo.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon liv travay ki rele Impact_Data_Practice.xlsx.</li><li>Ajoute yon fèy Done_Source ak 20 ranje fiktif: Dat, Rejyon, Aktivite, Pri, Benefisyè, Satisfaksyon.</li><li>Transfòme seri a nan yon tablo Excel epi non li tbl_impact.</li><li>Ajoute yon fèy Diksyonè ak yon ranje pou chak kolòn.</li><li>Poze IA ​​twa kesyon analiz posib sou tablo sa a.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Non liv travay</li><li>Non tab la</li><li>Kolòn kreye</li><li>Kolòn nimerik</li><li>Colones texte</li><li>Kesyon analiz priyorite</li><li>Risk pou move entèpretasyon</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kòmanse pa antre done yo san estrikti.</strong><br>Analiz la pral frajil epi IA a ka mal konprann kolòn yo.</div>
+<div class='callout'>⚠️ <strong>Mwen transfòme done mwen an nan yon tablo ak yon diksyonè.</strong><br>Mwen fè liv travay la lizib, odit ak plis zanmitay IA.</div>
+<div class='callout'>⚠️ <strong>Mwen mande IA pou analize san tcheke tablo a.</strong><br>Mwen ka jwenn yon repons rapid men ki baze sou yon estrikti fèb.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Dyagnostik tab la.</strong> Analize estrikti sa a tab Excel. Dis quelles colonnes sont claires, ambiguës ou manquantes. Pwopoze yon dictionnaire de donnees.</div>
+<div class='prompt-box'><strong>Kesyon analiz.</strong> A partir des colonnes Dat, Rejyon, Aktivite, Kout, Benefisyè ak Satisfaksyon, pwopoze 10 kesyon d'analyse utiles pou yon responsab pwogram.</div>
+<div class='prompt-box'><strong>Kontwòl kalite.</strong> Ki pwoblèm kalite mwen ta dwe tcheke anvan ou analize tablo sa a: kopi, valè ki manke, fòma, inite, enkonsistans?</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Dyagnostik tab la</td><td>Pwodiksyon espere: Rejyon an se yon kategori, Pri se nimerik epi li dwe gen yon lajan, Satisfaksyon dwe presize echèl la, Dat dwe nan fòma dat.</td></tr><tr><td>Kesyon analiz</td><td>Pwodiksyon espere: Ki pri mwayèn pou chak benefisyè? Ki rejyon ki gen pi ba satisfaksyon? Ki aktivite ki koute plis men ki sèvi mwens moun?</td></tr><tr><td>Kontwòl kalite</td><td>Sortie attendue : verifier dates vides, couts negatives, satisfaksyon hors echelle, regions orthographiees differemment, lignes doubles.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Fòma kòm Tablo.</li><li>Chanje non tab la nan Table Design.</li><li>Ajoute filtè epi teste chak kolòn.</li><li>Ajoute yon nòt dokimantasyon nan fèy Diksyonè a.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske yon liy reprezante yon sèl obsèvasyon?</li><li>Èske chak kolòn gen yon non klè?</li><li>Èske diksyonè a eksplike inite ak echèl?</li><li>Èske èd memwa analiz la bay non kolòn pou itilize yo?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Bati yon mini liv travay pou swiv aktivite pare pou analiz IA.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Kaptire oswa deskripsyon tab sous la.</li><li>Diksyonè done konplè.</li><li>Premye analiz rapid ak repons kritik.</li></ul>
+</section>
+<section id='s2'>
+<h2>Sesyon 2 — Fòma pou wè byen vit: fòma, estil ak siyal vizyèl</h2>
+<p style='color:var(--ink-dim)'>⏱ 75 minit · 🎯 Ou pral bati : <strong>yon sèl-paj rapò vizyèl ak siyal pèfòmans</strong></p>
+<p><em>Ou itilize fòma kòm yon zouti lekti, pa kòm dekorasyon.</em></p>
+<p><em>Transfòme yon tab plat an yon rapò ke moun k ap pran desizyon ka konprann nan mwens pase de minit.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon kreyatè rapò ki dwe fè figi yo lizib nan kèk minit. Pwen an kòmanse se senp: yon tab gen bon done, men pèsonn pa wè priyorite yo byen vit. Tèm klasik yo te travay isit la se: fòma, estil, fòma dijital, enprime, fòma kondisyonèl. Pwoblèm vizib la se ke dekorasyon ka fènwa enfòmasyon olye pou yo gide desizyon an. Pwoblèm nan kache se ke yon koulè mal chwazi ka fè yon rezilta parèt bon, move oswa ijan. Done tipik sanble sa a: depans, volim, satisfaksyon, divèjans ak rejyon yo kontwole. Kòmanse ak: Kopi tab ou a nan yon fèy Visual_Report.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande yo kritike lizibilite, sijere endikatè, epi rekòmande siyal vizyèl. Èd memwa ki pi itil pou kòmanse avèk yo gen rapò ak: Revizyon lizibilite. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Fòma nimerik, fòma kondisyonèl, siyal vizyèl. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: rapò vizyèl nan yon paj ak siyal pèfòmans. Rezilta sa a ta dwe sèvi yon moun k ap pran desizyon ki li rapò a ant de reyinyon yo. Desizyon imen ou se chwazi ki nimewo ki merite yon alèt ak ki koulè ki pral gen yon siyifikasyon klè. Enpak vle a se transfòme yon tab plat nan yon rapò ke moun k ap pran desizyon ka konprann nan mwens pase de minit. Erè pou evite se yon bèl tablo ki pa di ou sa pou chèche pou ou sa pou yo fè. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Mande IA a kritike lizibilite rapò a. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Fòma dijital</strong> — Prezantasyon yon valè selon siyifikasyon li: lajan, pousantaj, dat, nonb antye relatif oswa desimal.</div>
+<div class='callout'><strong>Fòma kondisyonèl</strong> — Règ vizyèl ki mete aksan sou yon valè dapre yon kondisyon.</div>
+<div class='callout'><strong>Siyal vizyèl</strong> — Siy grafik ki atire atansyon sou sa ki mande yon desizyon.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kopi tab ou a nan yon fèy Visual_Report.</li><li>Aplike fòma nimerik ki konsistan: lajan pou Pri, nimewo antye pou Benefisyè, evalyasyon pou Satisfaksyon.</li><li>Ajoute fòma kondisyonèl sou Satisfaksyon ak Pri pou chak benefisyè.</li><li>Kreye yon zòn 5 endikatè: pri total, benefisyè total, pri mwayèn, satisfaksyon mwayèn, rejyon pou kontwole.</li><li>Mande IA pou kritike lizibilite rapò a.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Endikatè prensipal</li><li>Fòma nimerik chwazi</li><li>Règ fòma kondisyonèl</li><li>Koulè yo itilize ak siyifikasyon</li><li>Siyal vizyèl pou kontwole</li><li>Desizyon ke rapò a ta dwe fasilite</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen koloran anpil pou fè rapò a bèl.</strong><br>Lektè a ka distrè oswa konfonn.</div>
+<div class='callout'>⚠️ <strong>Mwen sèvi ak kèk koulè ak yon siyifikasyon presi.</strong><br>Rapò a vin pi pwofesyonèl ak plis pran desizyon.</div>
+<div class='callout'>⚠️ <strong>Mwen kite tout nimewo yo nan fòma jeneral.</strong><br>Valè yo pèdi siyifikasyon yo epi erè a vin pi fasil.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Kritik lizibilite.</strong> Men endikatè ki nan rapò mwen an: [lis]. Ki fòma ki ta ede yon manadjè konprann byen vit san yo pa twò chaje paj la?</div>
+<div class='prompt-box'><strong>Règ vizyèl.</strong> Bay règ fòma kondisyonèl pou idantifye gwo depans, ti satisfaksyon ak aktivite gwo enpak.</div>
+<div class='prompt-box'><strong>Egzekitif vèsyon.</strong> Aide-moi a transformer ce tableau en rapport d'une page ak 5 indicateurs, 3 alertes and 2 recommendations.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Kritik lizibilite</td><td>Pwodiksyon espere: sèvi ak lajan, separe dè milye, koulè sèlman pou alèt, tit kout, aliyman ki konsistan.</td></tr><tr><td>Règ vizyèl</td><td>Pwodiksyon espere: wouj si satisfaksyon &lt;3, zoranj si pri pou chak benefisyè&gt; ​​papòt, vèt si satisfaksyon&gt;= 4 ak pri rezonab.</td></tr><tr><td>Egzekitif vèsyon</td><td>Pwodiksyon espere: yon paj ak endikatè, entèpretasyon kout ak rekòmandasyon ki gen rapò ak siyal yo.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Fòma Nimewo.</li><li>Sèvi ak fòma kondisyonèl &gt; Mete aksan sou Règ selil yo.</li><li>Enpresyon tès oswa ekspòtasyon PDF.</li><li>Retire fòma ki pa ede desizyon an.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske chak fòma nimerik koresponn ak siyifikasyon done yo?</li><li>Èske chak koulè gen yon siyifikasyon?</li><li>Èske yo ka li rapò a san eksplikasyon oral?</li><li>Èske IA a te ofri yon bagay ke ou te refize? Pou kisa?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Pwodui yon rapò vizyèl yon paj sou tab aktivite ou.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Rapò vizyèl.</li><li>Lis règ kondisyonèl.</li><li>Kritik IA ak moun pran desizyon.</li></ul>
+</section>
+<section id='s3'>
+<h2>Sesyon 3 — Fòmil ak fonksyon ak IA: kalkile, eksplike, odit</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>fèy kalkil odit ak fòmil eksplike</strong></p>
+<p><em>Ou ekri ak verifye fòmil avèk èd IA san yo pa bay kontwòl sou li.</em></p>
+<p><em>Redwi erè kalkil epi aprann pi vit kisa chak fòmil fè.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon fòmil builder ki dwe transfòme yon kesyon an yon kalkil verifyab. Pwen an kòmanse se senp: rezilta espere depann sou fòmil egzak, kondisyon ak referans. Tèm klasik k ap travay isit la se: fòmil, fonksyon, referans, IF, XLOOKUP, erè. Pwoblèm vizib la se ke IA a ka vini ak yon fòmil plauzib ki pa koresponn ak kontèks reyèl la. Pwoblèm nan kache se ke yon sèl referans kòrèk ka defòme yon sentèz antye. Done tipik sanble sa a: total, mwayèn, pri inite, kondisyon, ak valè ki manke. Kòmanse ak: Ajoute yon kolòn Cost_per_beneficiary = Pri / Benefisyè.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li pou sijere fòmil, eksplike lojik yo, epi ofri tès kontwòl. Èd memwa ki pi itil pou kòmanse gen rapò ak: Jenere yon fòmil. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Fòmil, Referans, Odit Fòmil. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: fèy kalkil odit ak fòmil eksplike. Rezilta sa a ta dwe sèvi yon itilizatè ki bezwen fè kalkil yo konfyans san li pa li tout fòmil la. Desizyon imen ou se tcheke sipozisyon, chenn, eksepsyon ak entèpretasyon rezilta a. Enpak rechèch la se diminye erè kalkil epi aprann pi vit kisa chak fòmil fè. Erè pou evite se yon rezilta nimerik ki egzak nan aparans men fo nan lojik li yo. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Entansyonèlman prezante yon erè epi mande IA a ede w fè dyagnostik li. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Fòmil</strong> — Ekspresyon ki kalkile yon valè nan selil, konstan, operatè oswa fonksyon.</div>
+<div class='callout'><strong>Referans</strong> — Adrès yon selil oswa yon seri itilize nan yon fòmil.</div>
+<div class='callout'><strong>Odit fòmil</strong> — Verifikasyon lojik, referans, erè ak siyifikasyon rezilta a.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Ajoute yon kolòn Cost_per_beneficiary = Pri / Benefisyè.</li><li>Ajoute yon kolòn Status_Satisfaction ak IF: ba, mwayen oswa segondè.</li><li>Kreye yon ti tablo papòt epi sèvi ak XLOOKUP oswa yon altènatif pou klasifye aktivite yo.</li><li>Mande IA pou eksplike chak fòmil nan lang senp.</li><li>Entwodui yon erè volontèman epi mande IA pou ede w fè dyagnostik li.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Kalkil pou pwodwi</li><li>Fòmil pwopoze</li><li>Eksplikasyon nan lang klè</li><li>Risk erè</li><li>Tès verifikasyon</li><li>Final koreksyon</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kopye yon fòmil IA san mwen pa konprann li.</strong><br>Mwen ekonomize tan men mwen pa ka detekte yon erè.</div>
+<div class='callout'>⚠️ <strong>Mwen mande yon eksplikasyon liy pa liy.</strong><br>Mwen transfòme IA a nan yon titè Excel.</div>
+<div class='callout'>⚠️ <strong>Mwen teste fòmil la ak ka senp.</strong><br>Mwen tcheke kalkil la anvan mwen itilize li lajman.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Jenere yon fòmil.</strong> Nan Excel, mwen gen kolòn Pri ak Benefisyè yo. Pwopoze yon fòmil pou kalkile pri pou chak benefisyè epi eksplike ka yo dwe verifye.</div>
+<div class='prompt-box'><strong>Esplike yon fòmil.</strong> Eksplike fòmil sa a pou yon debutan Excel: [kole fòmil]. Epitou bay yon egzanp valè opinyon ak pwodiksyon.</div>
+<div class='prompt-box'><strong>Odit yon erè.</strong> Fòmil mwen an retounen [erè oswa rezilta inatandi]. Men fòmil la: [formil]. Ki sa ki lakòz yo tcheke nan lòd?</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Jenere yon fòmil</td><td>Pwodiksyon espere: =[@Cout]/[@Benefisyè], ak alèt si Benefisyè yo 0 oswa vid.</td></tr><tr><td>Esplike yon fòmil</td><td>Pwodiksyon espere: fòmil la divize pri liy lan pa kantite benefisyè menm liy lan.</td></tr><tr><td>Odit yon erè</td><td>Pwodiksyon espere: tcheke divizyon pa zewo, fòma nimewo mal, referans kolòn mal eple, selil vid.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak referans estriktire nan tablo yo.</li><li>Sèvi ak IF oswa IFS pou klasifye rezilta yo.</li><li>Sèvi ak Evalye Fòmil oswa Montre Fòmil si sa disponib.</li><li>Ajoute yon selil tès ki gen valè li te ye.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen ka eksplike fòmil la san IA?</li><li>Èske mwen teste yon ka nòmal, yon ka limit ak yon ka enposib?</li><li>Èske fòmil la okipe selil vid oswa zewo?</li><li>Èske mwen te kenbe eksplikasyon fòmil la?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Konstwi yon fèy Calculations_Impact ak twa kolòn kalkile ak yon nòt odit.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Fòmil final yo.</li><li>Fiks IA eksplikasyon.</li><li>Tès verifikasyon.</li></ul>
+</section>
+<section id='s4'>
+<h2>Sesyon 4 — Grafik ak istwa done ak Copilot</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>paj tablodbò ak 3 vizyèl ak yon istwa done</strong></p>
+<p><em>Deplase analiz soti nan vizyalizasyon nan aksyon.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon analis vizyèl ki dwe transfòme figi finansye nan yon istwa desizyon. Pwen an kòmanse se senp: done yo montre varyasyon, men tandans yo pa vizib nan tablo a. Tèm klasik k ap travay isit la se: tablo, eleman tablo, koub, kolòn, sektè, sparklines. Pwoblèm vizib la se ke yon grafik mal chwazi ka egzajere, kache oswa defòme yon mesaj. Pwoblèm kache a se ke IA a ka chwazi yon bèl vizyalizasyon san yo pa respekte kesyon desizyon an. Done tipik sanble sa a: bidjè, depans, revni, divèjans, depans mwayèn ak tandans chak mwa. Kòmanse ak: Kreye yon tablo kolòn: Pri pa rejyon an.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande l pou l sijere ki kalite graf la, mesaj prensipal la ak pwen yo pou anote. Èd memwa ki pi itil pou kòmanse se: Chwazi yon tablo. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Grafik, Done Storytelling, Insight. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: paj tablodbò ak 3 vizyèl ak yon istwa done. Rezilta sa a dwe sèvi yon ekip ki dwe konprann oswa envesti, korije oswa diminye depans yo. Desizyon imen ou a konsiste de chwazi konparezon an itil, echèl la dwa ak tit la ki gide san yo pa manipile. Enpak vle a se deplase analiz soti nan vizyalizasyon nan aksyon. Erè pou evite se yon graf enpresyonan men li pa kapab sipòte yon desizyon responsab. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Ajoute yon tit ki ka pran aksyon nan chak tablo. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Graphique</strong> — Reprezantasyon vizyèl done pou konpare, swiv yon evolisyon oswa montre yon relasyon.</div>
+<div class='callout'><strong>Rakont done yo</strong> — Fason pou òganize vizyèl pou kominike yon mesaj, prèv ak yon desizyon.</div>
+<div class='callout'><strong>Insight</strong> — Obsèvasyon itil ki revele yon tandans, diferans, risk oswa opòtinite.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon tablo kolòn: Pri pa rejyon.</li><li>Kreye yon graf sou entènèt: Benefisyè pa dat oswa mwa.</li><li>Kreye yon graf gaye: Pri pou chak benefisyè vs Satisfaksyon.</li><li>Mande IA a ki graf ki pi itil pou yon desizyon.</li><li>Ajoute yon tit pou chak graf.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Kesyon desizyon</li><li>Grafik chwazi</li><li>Poukisa graf sa a</li><li>Prensipal Insight</li><li>Tit pou aksyon</li><li>Desizyon posib</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen chwazi pi bèl grafik la.</strong><br>Vizyèl la ka pa reponn kesyon an.</div>
+<div class='callout'>⚠️ <strong>Mwen chwazi graf la selon kesyon an.</strong><br>Vizyèl la vin prèv desizyon an.</div>
+<div class='callout'>⚠️ <strong>Mwen kite IA a kreye yon graf san tcheke aks yo.</strong><br>Vizyèl yo ka rakonte yon move istwa.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Chwazi yon graf.</strong> Pou kolòn sa yo [lis], ki graf ou rekòmande pou konpare pèfòmans, pri ak satisfaksyon? Eksplike poukisa.</div>
+<div class='prompt-box'><strong>Tit pou aksyon.</strong> Ofri 5 tit tablo oryante desizyon pou yon montre vizyèl [dekri insight].</div>
+<div class='prompt-box'><strong>Revizyon tablodbò.</strong> Kritike tablodbò sa a: [dekri vizyèl yo]. Ki sa ki manke pou ede yon moun k ap pran desizyon?</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Chwazi yon graf</td><td>Pwodiksyon espere: kolòn pou konpare rejyon yo, liy pou tandans tan, dispèsyon pou relasyon pri-satisfaksyon.</td></tr><tr><td>Tit pou aksyon</td><td>Pwodiksyon espere: 'Rejyon Nò a sèvi plis benefisyè ak yon pri mwayèn ki pi ba'.</td></tr><tr><td>Revizyon tablodbò</td><td>Pwodiksyon espere: ajoute peryòd, sous, definisyon satisfaksyon, papòt alèt ak pwochen aksyon.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Tablo Rekòmande oswa Mete Tablo.</li><li>Ajoute tit lizib, rach, etikèt ak lejand.</li><li>Evite sektè si gen twòp kategori.</li><li>Ajoute sparklines pou tandans rapid si itil.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske chak vizyèl reponn yon kesyon?</li><li>Èske aks yo ak inite yo kòrèk?</li><li>Èske tit la kominike insight la?</li><li>Èske mwen tcheke graf ki te kreye pa IA a?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon paj tablodbò ak twa vizyèl ak yon fraz desizyon anba chak.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Dachboard.</li><li>Chwa grafik rapid.</li><li>Lis koreksyon moun.</li></ul>
+</section>
+<section id='s5'>
+<h2>Sesyon 5 — Modèl plizyè fèy: konsolide, lyen, dokimante</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>dokimante modèl milti-fèy ak rezime otomatik</strong></p>
+<p><em>Ou òganize yon liv travay ki gen plizyè fèy san ou pa pèdi sous ak kalkil yo.</em></p>
+<p><em>Bati rapò konsolide san yo pa kraze lyen oswa sous konfizyon.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm manadjè konsolidasyon ki dwe konekte plizyè fèy san pèdi tras. Pwen an kòmanse se senp: done yo gaye sou plizyè onglè oswa dosye ki gen estrikti menm jan an. Tèm klasik yo te travay isit la se: gwoup dra, referans 3D, lyen ekstèn, chenn nonmen, modèl. Pwoblèm vizib la se ke repete kopye ak kole kreye kopi, erè ak vèsyon konpetisyon. Pwoblèm kache a se ke yon rezime ka sanble konplè menm si yon fèy ki manke oswa yon lyen kase. Done tipik sanble sa a: onglet pa rejyon, dosye chak mwa, depans pa pwojè ak endikatè amonize. Kòmanse ak: Kreye twa fèy Rejyon_North, Rejyon_Sid, Rejyon_West ak menm estrikti a.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande l 'pwopoze lojik konsolidasyon, tcheke jaden komen epi eksplike dezakò. Èd memwa ki pi itil pou kòmanse gen rapò ak: Modèl Plan. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Konsolidasyon, Referans 3D, Ranje nonmen. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: dokimante modèl milti-fèy ak rezime otomatik. Rezilta sa a ta dwe sèvi yon manadjè ki vle yon sèl rapò san pèdi detay pa sous. Desizyon imen ou se defini sous ofisyèl la, pousantaj aktyalizasyon ak chèk konsistans. Enpak rechèch la se bati rapò konsolide san yo pa kraze lyen oswa sous konfizyon. Erè pou evite se yon tablodbò ki ajoute eleman enkonpatib. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Mande IA ​​a tcheke risk ki genyen nan yon modèl milti-fèy. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Konsolidasyon</strong> — Gwoupman done ki sòti nan plizyè fèy oswa dosye.</div>
+<div class='callout'><strong>Referans 3D</strong> — Fòmil ki refere a menm selil oswa ranje nan plizyè fèy.</div>
+<div class='callout'><strong>Plage nommee</strong> — Non yo bay yon selil oswa yon seri pou fè fòmil yo plis lizib.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye twa fèy Rejyon_Nò, Rejyon_Sid, Rejyon_West ak menm estrikti.</li><li>Ajoute yon fèy rezime ki konsolide depans, benefisyè yo ak satisfaksyon mwayèn.</li><li>Kreye omwen de seri non.</li><li>Ajoute yon fèy Dokimantasyon ak sous, dat ak ipotèz.</li><li>Mande IA ​​a tcheke risk ki genyen nan yon modèl milti-fèy.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Sous fèy</li><li>Estrikti komen</li><li>Selil konsolide</li><li>Plages nommees</li><li>Risk pou lyen kase</li><li>Tcheke konsistans</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kopye epi kole rezilta yo san yon lyen.</strong><br>Mwen redwi risk pou yon lyen kase men mwen pèdi aktyalizasyon a.</div>
+<div class='callout'>⚠️ <strong>Mwen mare fèy yo ak dokiman.</strong><br>Mwen ka mete ajou ak odit modèl la.</div>
+<div class='callout'>⚠️ <strong>Mwen kreye lyen ekstèn san yo pa evalye yo.</strong><br>Liv travay la vin difisil pou kenbe.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Plan de modele.</strong> Ofri yon achitekti liv travay plizyè fèy pou konsolide 3 rejyon ak yon fèy Rezime ak yon fèy Dokimantasyon.</div>
+<div class='prompt-box'><strong>Audit de liens.</strong> Ki risk mwen ta dwe tcheke nan yon liv travay ak referans kwa-fèy ak lyen ekstèn?</div>
+<div class='prompt-box'><strong>Eksplikasyon egzekitif.</strong> Eksplike nan 120 mo ki jan modèl sa a konsolide done ak ki sipozisyon yo ta dwe kontwole.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Plan de modele</td><td>Pwodiksyon espere: fèy sous estanda, rezime, kontwòl, dokimantasyon, tablodbò.</td></tr><tr><td>Audit de liens</td><td>Pwodiksyon espere: non fèy yo chanje, chenn yo chanje, dosye yo deplase, estrikti yo pa idantik, valè yo kole.</td></tr><tr><td>Eksplikasyon egzekitif</td><td>Pwodiksyon espere: rezime klè nan lojik konsolidasyon an ak limit.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak fòmil ant fèy yo.</li><li>Kreye non atravè Manadjè Non.</li><li>Ajoute total chèk pou chak fèy.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske fèy sous yo gen menm estrikti?</li><li>Èske fòmil sentèz yo montre bon fèy yo?</li><li>Èske ranje non yo konprann?</li><li>Èske dokimantasyon an pèmèt yon lòt moun pran dosye a?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon modèl milti-rejyon ak sentèz ak dokimantasyon.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Multi-fèy lyan.</li><li>Fèy dokimantasyon.</li><li>IA risk odit ak koreksyon.</li></ul>
+</section>
+<section id='s6'>
+<h2>Sesyon 6 — Netwaye ak jere done: soti nan tab la nan mini-dach la</h2>
+<p style='color:var(--ink-dim)'>⏱ 90 minit · 🎯 Ou pral bati : <strong>netwaye tab ak filtè, segman ak bon jan kalite alèt</strong></p>
+<p><em>Ou netwaye yon tab epi kreye opinyon itil pou analiz.</em></p>
+<p><em>Anpeche IA ​​analize done sal oswa mal filtre.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon netwayaj done ki dwe fè yon baz done ka itilize anvan analiz. Pwen an kòmanse se senp: tab la gen erè antre, kopi, fòma melanje ak valè ki manke. Tèm klasik k ap travay isit la se: kalite, filtè, tab, subtotal, segman, tablodbò. Pwoblèm vizib la se ke IA a ka analize twò vit yon baz done ki poko tcheke. Pwoblèm nan kache se ke erè silans vin rekòmandasyon vizib. Done tipik sanble sa a: non rejyon yo, dat, kategori, valè vid, kopi, ak kantite lajan atipik. Kòmanse ak: Duplike tab sous la nan yon fèy Clean_Data.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande l pou l trase yon lis bon jan kalite, sijere transfòmasyon epi idantifye anomali. Èd memwa ki pi itil pou kòmanse gen rapò ak: Lis verifikasyon netwayaj. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Done Netwayaj, Filtre, Segman. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: netwaye tab ak filtè, segman ak bon jan kalite alèt. Rezilta sa a dwe sèvi yon ekip ki dwe aji sou figi pwòp ak defann. Desizyon imen ou se aksepte, korije, eskli oswa dokimante chak pwoblèm done. Enpak vle a se anpeche IA ​​a analize done sal oswa mal filtre. Erè pou evite se yon analiz rapid ki resikle erè opinyon. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Mande IA a vini ak yon lis verifikasyon netwayaj. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Done netwaye</strong> — Fiks erè, doublons, fòma enkonsistan ak valè ki manke.</div>
+<div class='callout'><strong>Filtre</strong> — Zouti ki montre sèlman liy ki koresponn ak yon kritè.</div>
+<div class='callout'><strong>Segman</strong> — Bouton vizyèl ki byen vit filtre yon tab oswa kwaze.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kopi tab sous la nan yon fèy Clean_Data.</li><li>Tach doub, espas vid, depans negatif, dat envalid ak kategori enkonsistan.</li><li>Ajoute filtè pa rejyon, aktivite ak mwa.</li><li>Kreye yon ti zòn Quality_Alerts.</li><li>Mande IA ​​a vini ak yon lis verifikasyon netwayaj.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Pwoblèm detekte</li><li>Kantite liy ki afekte yo</li><li>Koreksyon aplike</li><li>Desizyon pou kenbe/efase</li><li>Risque restant</li><li>Kontwòl final la</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen netwaye dirèkteman san kopye.</strong><br>Mwen ka pèdi tras done orijinal yo.</div>
+<div class='callout'>⚠️ <strong>Mwen kenbe yon fèy kri ak yon fèy netwaye.</strong><br>Mwen kenbe yon tras odit.</div>
+<div class='callout'>⚠️ <strong>Mwen mande IA pou konkli anvan netwaye.</strong><br>Analiz ka anplifye erè.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Lis verifikasyon netwayaj.</strong> Kreye yon lis verifikasyon netwayaj pou yon tablo Excel ki gen dat, rejyon, aktivite, depans, benefisyè ak satisfaksyon.</div>
+<div class='prompt-box'><strong>Dyagnostik anomali.</strong> Men yon rezime anomali yo: [lis]. Klasifye yo pa gravite epi sijere lòd koreksyon an.</div>
+<div class='prompt-box'><strong>Dokiman netwayaj.</strong> Ede m ekri yon nòt netwayaj ki eksplike koreksyon yo te fè, liy eskli yo ak limit ki rete yo.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Lis verifikasyon netwayaj</td><td>Pwodiksyon espere: tcheke kopi, kalite done, espas vid, valè enposib, kategori enkonsistan, inite.</td></tr><tr><td>Dyagnostik anomali</td><td>Pwodiksyon espere: depans negatif ak dat envalid an premye, Lè sa a, kategori enkonsistan.</td></tr><tr><td>Dokiman netwayaj</td><td>Pwodiksyon espere: nòt kout ak desizyon koreksyon ak limit.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Retire Duplicates ak prekosyon.</li><li>Sèvi ak filtè ak klasman.</li><li>Ajoute yon kolòn Kontwòl.</li><li>Sèvi ak slicers si tab la oswa TCD sipòte yo.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske mwen te kenbe yon vèsyon anvan tout koreksyon?</li><li>Èske chak koreksyon dokimante?</li><li>Èske filtè yo pa kache yon pati enpòtan nan done yo?</li><li>Èske IA a te travay sou yon tab ase pwòp?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Pwodui yon tab pwòp ak bon jan kalite done mini-dach.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Tablo kri ak tab netwaye.</li><li>Log netwayaj.</li><li>Lis verifikasyon IA adaptee.</li></ul>
+</section>
+<section id='s7'>
+<h2>Sesyon 7 — Tablo pivote ak kesyon langaj natirèl</h2>
+<p style='color:var(--ink-dim)'>⏱ 105 minit · 🎯 Ou pral bati : <strong>tab kwa dinamik akonpaye pa IA ak kesyon entèpretasyon</strong></p>
+<p><em>Ou rezime done ak PivotTable epi sèvi ak IA pou fòmile pi bon kesyon.</em></p>
+<p><em>Ale soti nan 'Mwen gen done' a 'Mwen ka reponn yon kesyon jesyon'.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon eksploratè done ki dwe rezime anpil liy san pèdi nuans. Pwen an kòmanse se senp: tab la twò gwo pou li liy pa liy, men li gen modèl enpòtan. Tèm klasik k ap travay isit la se: fonksyon sentèz, VLOOKUP/XLOOKUP, PivotTables, PivotCharts, slicers. Pwoblèm vizib la se ke yon rezime otomatik ka kache gwoup, filtè ak eksepsyon. Pwoblèm kache a se ke yon total mondyal ka maske yon rejyon nan detrès oswa yon aktivite trè chè. Done tipik sanble sa a: rejyon, aktivite, depans, benefisyè, dat ak nivo satisfaksyon. Kòmanse ak: Kreye yon TCD ki rezime pri total ak benefisyè pa rejyon an.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li pou sijere jaden kwaze, gwoupman ak ang lekti. Èd memwa ki pi itil pou kòmanse gen rapò ak: Kesyon pou TCD. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: Tablo pivotan, Mezi rezime, Kesyon analyse. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: dinamik kwa tab akonpaye pa IA ak kesyon entèpretasyon. Rezilta sa a ta dwe itil pou yon manadjè ki vle byen vit konpare pèfòmans pa gwoup. Desizyon imen ou se chwazi dimansyon ki enpòtan yo, tcheke total yo epi entèprete divèjans yo. Enpak ou vle a se pou w deplase soti nan 'Mwen gen done' a 'Mwen ka reponn yon kesyon jesyon'. Erè a pou evite se yon kwaze pwòp men li pa kapab reponn kesyon an dwa. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Ekri yon entèpretasyon moun 100 mo. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Tablo pivote</strong> — Zouti ki rezime yon gwo tablo pa kategori, kalkil ak filtè.</div>
+<div class='callout'><strong>Mezi rezime</strong> — Kalkil total kòm sòm, mwayèn, nimewo, minimòm oswa maksimòm.</div>
+<div class='callout'><strong>Kesyon analyse</strong> — Kesyon egzak ki konekte done, konparezon ak desizyon.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon TCD ki rezime pri total ak benefisyè pa rejyon an.</li><li>Ajoute Aktivite kòm yon filtè oswa segman.</li><li>M ap kreye yon Tablo Pivot senp.</li><li>Poze IA twa kesyon TCD ka ede reponn.</li><li>Ekri yon entèpretasyon moun 100 mo.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Kesyon analyse</li><li>Jaden an liy</li><li>Jaden an kolòn</li><li>Valeur agreee</li><li>Filtre oswa segman</li><li>Entèpretasyon</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kreye yon TCD san kesyon.</strong><br>Mwen riske pwodwi yon tablo rezime san desizyon.</div>
+<div class='callout'>⚠️ <strong>Mwen kòmanse ak yon kesyon analyse.</strong><br>TCD a vin tounen yon zouti repons.</div>
+<div class='callout'>⚠️ <strong>Mwen kite IA a entèprete san tcheke jaden yo.</strong><br>Yon entèpretasyon ka elegant men fo.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Kesyon pou TCD.</strong> Soti nan jaden sa yo [lis], pwopoze 10 kesyon ke yon tablo kwa dinamik ta ka reponn.</div>
+<div class='prompt-box'><strong>TCD konfigirasyon.</strong> Pou kesyon sa a: [kesyon], ki jaden yo mete nan ranje, kolòn, valè ak filtè nan yon PivotTable?</div>
+<div class='prompt-box'><strong>Entèpretasyon.</strong> Men rezilta rezime a: [dekri]. Pwopoze yon entèpretasyon pridan nan distenge obsèvasyon, ipotèz ak desizyon posib.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Kesyon pou TCD</td><td>Pwodiksyon espere: ki rejyon ki koute pi plis, ki aktivite ki sèvi plis benefisyè yo, satisfaksyon mwayèn pa rejyon an.</td></tr><tr><td>TCD konfigirasyon</td><td>Sortie attendue : Region en lignes, Somme de Cout and Somme de Beneficiaires en valeurs, Aktivite nan filtè.</td></tr><tr><td>Entèpretasyon</td><td>Pwodiksyon espere: obsèvasyon reyalite, ipotèz yo dwe verifye ak aksyon posib.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Mete &gt; PivotTable.</li><li>Sèvi ak Sòm, Mwayèn ak Konte entansyonèlman.</li><li>Ajoute yon tranche.</li><li>Mete ajou TCD a apre modifye done yo.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske TCD reponn yon kesyon klè?</li><li>Èske valè yo totalman kòrèkteman?</li><li>Èske filtè aktif yo vizib?</li><li>Èske entèpretasyon an separe reyalite ak ipotèz?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon TCD pou pran desizyon ak yon entèpretasyon jesyon.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>TCD.</li><li>Kesyon analyse.</li><li>Entèpretasyon verifye.</li></ul>
+</section>
+<section id='s8'>
+<h2>Sesyon 8 — E-si, senaryo ak Solveur: tès desizyon anvan aji</h2>
+<p style='color:var(--ink-dim)'>⏱ 105 minit · 🎯 Ou pral bati : <strong>modèl senaryo ak desizyon rekòmande ak limit</strong></p>
+<p><em>Ou itilize Excel pou teste ipotèz ak IA pou fòme senaryo ki pi entelijan.</em></p>
+<p><em>Transfòme yon calcul nan yon laboratwa desizyon.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon moun k ap pran desizyon ki dwe teste senaryo yo anvan w chwazi yon opsyon. Pwen an kòmanse se senp: desizyon an depann sou sipozisyon ensèten tankou pri, volim oswa to kwasans. Tèm klasik yo te travay isit la se: tab done, senaryo, Chèche objektif, Solveur, analiz sansiblite. Pwoblèm nan vizib se ke IA a ka bay yon rekòmandasyon san yo pa montre ki jan li reyaji nan chanjman. Pwoblèm kache a se ke yon sèl ipotèz optimis ka fè yon pwojè atifisyèlman solid. Done tipik sanble sa a: pri, depans, benefisyè, bidjè, objektif ak pwen ekilib. Kòmanse ak: Kreye yon modèl senp: Bidjè, Pri_Inite, Benefisyè_Espere, Satisfaksyon_Espere.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li pou pwopoze senaryo, eksplike varyab sansib ak fòmile kesyon sa yo. Èd memwa ki pi itil pou kòmanse gen rapò ak: Imajine senaryo yo. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo dwe gade deyò pou pandan echanj la yo se: analiz e-si, Senaryo, Solveur. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: modèl senaryo ak desizyon rekòmande ak limit. Rezilta sa a ta dwe sèvi yon ekip ki dwe konpare plizyè opsyon anvan yo komèt resous yo. Desizyon imen ou se chwazi sipozisyon reyalis, mete limit ak asime nivo risk. Enpak rechèch la se transfòme yon calcul nan yon laboratwa desizyon. Erè pou evite se yon desizyon ki baze sou yon sèl vèsyon nan tan kap vini an. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Ekri yon rekòmandasyon konsèvatif. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>E-si analiz</strong> — Analiz ki modifye entrées pou obsève efè a sou yon rezilta.</div>
+<div class='callout'><strong>Senaryo</strong> — Konbinezon ipotèz ki reprezante yon avni posib.</div>
+<div class='callout'><strong>Solveur</strong> — Zouti ki chèche yon solisyon optimal anba kontrent.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon modèl senp: Bidjè, Pri_Inite, Benefisyè_Espere, Satisfaksyon_Espere.</li><li>Ajoute twa senaryo: pridan, pwobab, anbisye.</li><li>Kalkile pri pou chak benefisyè ak diferans bidjè.</li><li>Mande IA pou vini ak ipotèz rezonab ak limite.</li><li>Ekri yon rekòmandasyon konsèvatif.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Desizyon pou teste</li><li>Varyab Antre</li><li>Senaryo pridan</li><li>Senaryo pwobab</li><li>Senaryo anbisye</li><li>Rezilta cle</li><li>Limit modèl</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen fè yon sèl prévision.</strong><br>Mwen bay enpresyon sètitid twonpe.</div>
+<div class='callout'>⚠️ <strong>Mwen konpare plizyè senaryo.</strong><br>Mwen prepare desizyon an pi byen.</div>
+<div class='callout'>⚠️ <strong>Mwen chwazi senaryo ki pi optimis.</strong><br>Mwen ka souzèstime risk la.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Imajine senaryo.</strong> Pou modèl Excel sa a [variables], pwopoze twa senaryo: pridan, pwobab, anbisye. Bay sipozisyon yo ak risk.</div>
+<div class='prompt-box'><strong>Kesyon sansiblite.</strong> Ki varyab yo ta dwe teste kòm yon priyorite pou wè enpak yo sou [rezilta]?</div>
+<div class='prompt-box'><strong>Rekòmandasyon pridan.</strong> Baze sou rezilta sa yo [rezime], trase yon rekòmandasyon, fè distenksyon ant desizyon, ipotèz ak limit.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Imajine senaryo</td><td>Pwodiksyon espere: twa seri ipotèz ak jistifikasyon ak risk prensipal.</td></tr><tr><td>Kesyon sansiblite</td><td>Pwodiksyon espere: pri inite tès la, kantite benefisyè yo, to patisipasyon ak bidjè ki disponib.</td></tr><tr><td>Rekòmandasyon pridan</td><td>Pwodiksyon espere: rekòmande senaryo pwobab ak pwoteksyon ak siveyans chak mwa.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Manadjè Senaryo oswa tab done si yo disponib.</li><li>Sèvi ak Chèche Objektif pou atenn yon sib.</li><li>Sèvi ak Solveur pou optimize anba kontrent.</li><li>Dokimante chak ipotèz.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske ipotèz yo vizib?</li><li>Èske modèl la separe opinyon, kalkil ak pwodiksyon?</li><li>Èske mwen teste omwen twa senaryo?</li><li>Èske rekòmandasyon an endike limit yo?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon modèl desizyon ak twa senaryo ak yon rekòmandasyon.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Modèl senaryo.</li><li>Tablo ipotèz yo.</li><li>Pridan rekòmandasyon.</li></ul>
+</section>
+<section id='s9'>
+<h2>Sesyon 9 — Fonksyon finansye ak desizyon responsab</h2>
+<p style='color:var(--ink-dim)'>⏱ 105 minit · 🎯 Ou pral bati : <strong>modèl mini-finansye ak odit IA ak nòt desizyon</strong></p>
+<p><em>Ou itilize fonksyon finansye Excel ak swen ak eksplikasyon.</em></p>
+<p><em>Evite desizyon finansye avèg ki baze sou fòmil yo pa konprann.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon analis finansye ki dwe eksplike nimewo yo, pa sèlman kalkile yo. Pwen an kòmanse se senp: chwa finansye yo enplike tan, risk, ranbousman oswa valè nan lavni. Tèm klasik k ap travay isit la se: peman, prete, envestisman, depresyasyon, NPV, IRR, odit. Pwoblèm vizib la se ke fonksyon finansye yo pwisan men fasil pou misconfigure. Pwoblèm nan kache se ke yon siy envès, yon peryòd mal defini oswa yon pousantaj mal konvèti chanje konklizyon an. Done tipik sanble sa a: peman, pousantaj, dire, valè prezan, valè nan lavni ak koule lajan kach. Kòmanse ak: Kreye yon modèl envestisman fiktif ak pri inisyal ak koule lajan kach 5 ane.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande l pou l eksplike fonksyon yo, konpare ipotèz yo epi ekri yon entèpretasyon klè. Èd memwa ki pi itil pou kòmanse gen rapò ak: Eksplike endikatè. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp ou dwe veye pandan echanj la se: Valè Prezan Net, To Entèn Retounen, Odit Finansye. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: modèl mini-finansye ak odit IA ak nòt desizyon. Rezilta sa a ta dwe sèvi yon moun ki bezwen konprann enpak finansye a san yo pa yon espesyalis Excel. Desizyon imen ou se tcheke pousantaj, peryòd, koule ak enpòtans rekòmandasyon an. Enpak vle a se pou evite avèg desizyon finansye ki baze sou fòmil pa konprann. Erè pou evite se yon konklizyon finansye matematik pwòp men mal kontèkstualize. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Ekri yon nòt desizyon ki pa kache risk yo. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Valè prezan nèt</strong> — Mezi ki estime valè prezan nan koule nan lavni dapre yon pousantaj rabè.</div>
+<div class='callout'><strong>Entèn pousantaj retounen</strong> — To ki fè valè prezan nèt nan yon pwojè tou pre zewo.</div>
+<div class='callout'><strong>Odit finansye</strong> — Verifikasyon ipotèz, fòmil, koule, pousantaj ak entèpretasyon.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon modèl envestisman fiktif ak pri inisyal ak koule lajan kach sou 5 ane.</li><li>Kalkile ranbousman chak mwa pou yon prè ak PMT oswa ekivalan.</li><li>Kalkile NPV ak IRR si disponib.</li><li>Mande IA pou eksplike limit endikatè sa yo.</li><li>Ekri yon nòt desizyon ki pa kache risk yo.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Pwojè analize</li><li>Kout inisyal</li><li>Flux annuels</li><li>Taux itilize</li><li>Endikatè kalkile</li><li>Entèpretasyon</li><li>Risk oswa limit</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen sèlman gade nan rezilta final la.</strong><br>Mwen ka inyore yon ipotèz frajil.</div>
+<div class='callout'>⚠️ <strong>Mwen dokimante ipotèz yo.</strong><br>Desizyon an vin pi defann.</div>
+<div class='callout'>⚠️ <strong>Mwen mande IA a pou limit endikatè yo.</strong><br>Mwen redwi risk pou yon entèpretasyon twò konfyans.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Eksplike endikatè.</strong> Eksplike NPV ak IRR pou yon non-financier, avèk yon egzanp senp ak limit chak indicateur.</div>
+<div class='prompt-box'><strong>Odit modèl.</strong> Men sipozisyon modèl finansye mwen an: [lis]. Ki risk, enkonsistans oswa tès sansiblite mwen ta dwe tcheke?</div>
+<div class='prompt-box'><strong>Nòt desizyon.</strong> Dapre rezilta [rezime] sa yo, ekri yon nòt desizyon pridan ak rekòmandasyon, prèv ak limit.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Eksplike endikatè</td><td>Pwodiksyon espere: NPV endike valè aktyèl la estime; IRR bay yon to retou; tou de depann anpil sou sipozisyon.</td></tr><tr><td>Odit modèl</td><td>Pwodiksyon espere: to tcheke, koule tro optimis, depans bliye, enflasyon, sansiblite revni.</td></tr><tr><td>Nòt desizyon</td><td>Sòti espere: desizyon rekòmande nan kondisyon, ak papòt ak risk yo swiv.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak PMT, NPV, IRR oswa fonksyon ki disponib selon vèsyon an.</li><li>Separe sipozisyon, kalkil ak konklizyon.</li><li>Ajoute yon analiz sansiblite sou pousantaj la.</li><li>Sèvi ak kòmantè oswa nòt pou eksplike chwa yo.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske chak ipotèz finansye vizib?</li><li>Èske mwen ka eksplike endikatè a kalkile?</li><li>Èske mwen te eseye yon senaryo mwens favorab?</li><li>Èske nòt desizyon an evite pwomès twòp?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Bati yon mini modèl finansye ak yon nòt odit.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Modèl finansye.</li><li>Ipotèz dokimante yo.</li><li>Odit IA ak koreksyon.</li></ul>
+</section>
+<section id='s10'>
+<h2>Sesyon 10 — Power Query, modèl done ak IA-asistans BI</h2>
+<p style='color:var(--ink-dim)'>⏱ 120 minit · 🎯 Ou pral bati : <strong>senp tiyo BI ak sous, transfòmasyon, modèl ak insight</strong></p>
+<p><em>Ou konprann koule modèn nan: enpòte, netwaye, modèl, vizyalize ak eksplike.</em></p>
+<p><em>Bati yon analiz repwodiktif olye de kolaj manyèl frajil.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon analis BI ki dwe konekte done epi pwodui yon tras desizyon. Pwen an kòmanse se senp: done yo soti nan diferan sous epi yo dwe transfòme anvan sentèz. Tèm klasik yo te travay isit la se: demann, liy tandans, Power Pivot, modèl done, kat, yerachi. Pwoblèm vizib la se ke IA ka rezime done san yo pa montre etap transfòmasyon yo. Pwoblèm kache a se ke yon relasyon kòrèk ant tab pwodui nimewo ki enposib eksplike. Done tipik sanble sa a: tab lavant, aktivite, bidjè, rejyon, kalandriye ak kategori. Kòmanse ak: Enpòte oswa simulation de tab: Aktivite ak Rejyon.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li bay yon koule nan enpòte, transfòmasyon, relasyon, ak kesyon analyse. Èd memwa ki pi itil pou kòmanse se lye avèk: BI Plan. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo gade pandan echanj la se: Power Query, Data Model, BI. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: senp tiyo BI ak sous, transfòmasyon, modèl ak insight. Rezilta sa a ta dwe sèvi yon òganizasyon ki vle yon analiz repete olye ke yon repons izole. Desizyon imen ou se tcheke kle, rantre, filtè, definisyon ak limit chak sous. Enpak rechèch la se konstwi yon analiz repwodiktif olye de yon kolaj manyèl frajil. Erè pou evite se yon insight enteresan san yon chemen klè pou repwodui li. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Mande IA pou eksplike tiyo a nan lang ki pa teknik. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Pouvwa Rekèt</strong> — Done enpòte ak transfòmasyon zouti.</div>
+<div class='callout'><strong>Modèl done</strong> — Estrikti konekte plizyè tab pou analize done ansanm.</div>
+<div class='callout'><strong>BI</strong> — Entèlijans biznis: transfòme done an endikatè, vizyèl ak desizyon.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Enpòte oswa simulation de tab: Aktivite ak Rejyon.</li><li>Netwaye kolòn yo epi estandadize non yo.</li><li>Lyen tab yo ak yon kle Region_ID.</li><li>Kreye yon endikatè pou chak rejyon.</li><li>Fè IA a eksplike tiyo a nan lang ki pa teknik.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Tablo sous 1</li><li>Tablo sous 2</li><li>Kle relasyon</li><li>Transfòmasyon aplike</li><li>Indicateur BI</li><li>Pwodwi insight</li><li>Limit tiyo</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen kopye epi kole done yo chak mwa.</strong><br>Pwosesis la ralanti epi li difisil pou odit.</div>
+<div class='callout'>⚠️ <strong>Mwen kreye yon rekèt repwodiktif.</strong><br>Mwen ka mete ajou epi kontwole transfòmasyon yo.</div>
+<div class='callout'>⚠️ <strong>Mwen konekte tab san tcheke kle yo.</strong><br>Rezilta yo ka kopi oswa enkonplè.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Plan BI.</strong> Ofri yon tiyo Excel BI pou de tab: Aktivite ak Rejyon. Gen ladan enpòte, netwayaj, relasyon, endikatè ak tablodbò.</div>
+<div class='prompt-box'><strong>Verifikasyon relasyon.</strong> Ki erè mwen ta dwe tcheke lè mwen konekte de tab pa yon kle Region_ID?</div>
+<div class='prompt-box'><strong>Eksplikasyon ki pa teknik.</strong> Esplike yon manadjè BI pipeline sa a nan 150 mo, san jagon teknik.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Plan BI</td><td>Pwodiksyon espere: enpòte, transfòme, tcheke kalite, kreye relasyon, defini endikatè, bati vizyèl.</td></tr><tr><td>Verifikasyon relasyon</td><td>Pwodiksyon espere: kle ki manke, kopi, òtograf enkonsistan, relasyon anpil-a-anpil vle.</td></tr><tr><td>Eksplikasyon ki pa teknik</td><td>Pwodiksyon espere: eksplikasyon sou koule done a ak enpòtans li pou mete ajou serye.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Jwenn Done / Rekèt Pouvwa si sa disponib.</li><li>Tcheke kalite done yo.</li><li>Kreye yon relasyon nan modèl done a si sa disponib.</li><li>Dokimante transfòmasyon yo.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske tiyo a ka mete ajou?</li><li>Èske transfòmasyon yo dokimante?</li><li>Èske relasyon yo kòrèk?</li><li>Èske insight final la depann de yon sous serye?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon senp tiyo BI ak de tab ak yon tablo rezime.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Tablo sous.</li><li>Lis transfòmasyon.</li><li>Modele ou relation documentee.</li><li>Insight final.</li></ul>
+</section>
+<section id='s11'>
+<h2>Sesyon 11 — Tabulasyon kwa avanse, mezi ak naratif analitik</h2>
+<p style='color:var(--ink-dim)'>⏱ 105 minit · 🎯 Ou pral bati : <strong>rapò analyse TCD avanse ak narasyon ak limit</strong></p>
+<p><em>Ou anrichi yon TCD ak kalkil, segmentasyon, gwoupman ak rakonte istwa responsab.</em></p>
+<p><em>Fè yon tab-referans kwa yon rapò analitik ki eksplike sa k ap chanje ak poukisa yo tcheke.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon designer kwaze ki dwe fè eksplorasyon an klè ak pataje. Pwen an kòmanse se senp: kwaze a egziste, men layout li poko gide lekti a. Tèm klasik k ap travay isit la se: TCD konsepsyon, klasman, gwoup, kalkil, mezi, fòma kondisyonèl. Pwoblèm vizib la se ke yon tab ki twò okipe ka dekouraje itilizatè a oswa kache mesaj la. Pwoblèm kache a se ke filtè mal vizib ka mennen de moun li de reyalite diferan. Done tipik sanble sa a: segman, filtè, mezi, total, subtotal, ak konparezon peryòd. Kòmanse ak: Amelyore TCD ou a ak gwoupman pa mwa oswa kategori.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li pou sijere kouman, segman, jaden kalkile ak chwa prezantasyon yo. Èd memwa ki pi itil pou kòmanse gen rapò ak: Mezi itil. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: gwoupman, mezi, naratif analyse. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta espere a se konkrè: rapò analitik TCD avanse ak narasyon ak limit. Rezilta sa a ta dwe sèvi yon lektè ki vle eksplore san yo pa kraze estrikti rapò a. Desizyon imen ou a se senplifye, nonmen, lòd ak verifye ke chak filtè sèvi yon kesyon. Enpak vle a se fè yon kwaze nan yon rapò analyse ki eksplike sa k ap chanje ak poukisa yo tcheke. Erè pou evite se yon crosstab ki pwisan men twò konfizyon pou itilize. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans nan fè aksyon sa a: Ajoute yon seksyon limit ak kesyon pou swiv. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Gwoupman</strong> — Gwoupman nan valè, pa egzanp dat nan mwa oswa kategori nan fanmi yo.</div>
+<div class='callout'><strong>Mesure</strong> — Kalkil analitik defini pou rezime oswa konpare done yo.</div>
+<div class='callout'><strong>Naratif analitik</strong> — Tèks kout ki eksplike obsèvasyon an, entèpretasyon ak pwochen aksyon an.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Amelyore TCD ou ak gwoupman pa mwa oswa kategori.</li><li>Ajoute yon kalkil: pati nan total, diferans oswa mwayèn.</li><li>Ajoute fòma kondisyonèl nan TCD la.</li><li>Mande IA a pou yon naratif analyse atansyon.</li><li>Ajoute yon seksyon limit ak kesyon pou swiv.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Gwoupman itilizasyon</li><li>Mesure ajoutee</li><li>Fòma kondisyonèl</li><li>Prensipal Insight</li><li>Ipotèz</li><li>Kesyon pou swiv</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen miltipliye jaden yo san kesyon.</strong><br>TCD a vin lizib.</div>
+<div class='callout'>⚠️ <strong>Mwen sèlman ajoute mezi ki sèvi insight la.</strong><br>Rapò a rete klè.</div>
+<div class='callout'>⚠️ <strong>Mwen mande yon naratif san limit.</strong><br>Tèks ka over-entèprete done yo.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Mezi itil.</strong> Pou [deskripsyon] TCD sa a, ki mezi ki ta ka ede konpare pèfòmans, pri ak volim?</div>
+<div class='prompt-box'><strong>Pridan naratif.</strong> Ekri yon naratif analitik nan 5 fraz: obsèvasyon, konparezon, ipotèz, limit, pwochen aksyon.</div>
+<div class='prompt-box'><strong>Kesyon pou swiv.</strong> Ki kesyon nou ta dwe poze anvan nou pran yon desizyon ki baze sou TCD sa a?</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Mezi itil</td><td>Pwodiksyon espere: pati nan total, pri mwayèn, varyasyon chak mwa, satisfaksyon mwayèn, ran pa rejyon an.</td></tr><tr><td>Pridan naratif</td><td>Pwodiksyon espere: tèks ki di sa TCD a montre san yo pa pretann pwouve yon kòz.</td></tr><tr><td>Kesyon pou swiv</td><td>Pwodiksyon espere: tcheke kalite done, gwosè gwoup, sezon, chanjman nan kontèks.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Anviwònman Field Valè.</li><li>Sèvi ak Montre valè kòm.</li><li>Ajoute tranche ak delè si itil.</li><li>Kenbe yon paj rapò lizib.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske pwogrè TCD toujou konprann?</li><li>Èske chak mezi gen yon itilizasyon?</li><li>Èske naratif la evite kozalite ki pa pwouve?</li><li>Èske limit yo vizib?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Pwodui yon rapò TCD avanse ak naratif analitik ak kesyon pou swiv.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>TCD ap vanse.</li><li>Mezi dokimante yo.</li><li>Naratif ak limit.</li></ul>
+</section>
+<section id='s12'>
+<h2>Sesyon 12 — Excel mini-aplikasyon: validation, pwoteksyon, makro ak asistan IA</h2>
+<p style='color:var(--ink-dim)'>⏱ 120 minit · 🎯 Ou pral bati : <strong>mini-Excel aplikasyon antre kontwole ak gid itilizatè</strong></p>
+<p><em>Ou transfòme yon liv travay an yon zouti ke lòt moun ka itilize ak kontwòl ak dokiman.</em></p>
+<h3>Kontèks sesyon an</h3>
+<p>Ou antre nan sesyon sa a kòm yon kreyatè aplikasyon Excel ki dwe gide itilizatè a atravè yon pwosesis konplè. Pwen an kòmanse se senp: liv travay la dwe vin yon zouti, pa sèlman yon koleksyon fèy papye. Tèm klasik k ap travay isit la se: validation done, pwoteksyon, makro, VBA, aplikasyon pou antre. Pwoblèm vizib la se ke yon fichye mal pwoteje oswa mal òganize pèmèt itilizatè a modifye selil ki mal yo. Pwoblèm nan kache se ke automatisation ka akselere erè si vwayaj itilizatè a pa klè. Done tipik sanble sa a: fòm opinyon, fèy pwoteje, bouton, kontwòl, tab ak mesaj erè. Kòmanse ak: Kreye yon fèy Form_Input ak jaden kontwole.</p>
+<p>Nan sesyon sa a, IA a jwe wòl yon asistan preparasyon, pa yon otopilòt. Ou ka mande li pou vini ak achitekti liv travay atansyon, kontwòl, mesaj, ak automatisation. Èd memwa ki pi itil pou kòmanse gen rapò ak: Konsepsyon aplikasyon an. IA ka akselere rechèch la pou lide, kontwòl ak fòmilasyon. Li kapab tou vini ak lojik konvenkan si done ou yo move non. Se poutèt sa responsablite w se bay li kolòn klè, objektif ak limit. Konsèp yo pou veye pandan echanj la se: validation done, pwoteksyon Workbook, Macro. Lè yon repons sanble bon, toujou mande poukisa li valab. Lè yon repons sanble rapid, gade pou sa li pa t tcheke. Chak sijesyon IA dwe vin yon aksyon Excel teste anvan yo aksepte.</p>
+<p>Rezilta a espere se konkrè: mini-Excel aplikasyon antre kontwole ak gid itilizatè. Rezilta sa a ta dwe sèvi yon itilizatè final ki vle aji san yo pa konnen tout estrikti teknik la. Desizyon imen ou se chwazi sa ki pral modifye, pwoteje, otomatize, dokimante ak verifye. Enpak rechèch la se deplase soti nan yon dosye pèsonèl nan yon zouti pataje ki pi solid e ki pi responsab. Erè pou evite se yon aplikasyon awizom men ki riske pou itilizatè reyèl. Travay ak done fiktif oswa anonim si dosye a gen enfòmasyon sansib. Sove tès ou yo, envit ou yo, repons IA yo ak koreksyon ou yo. Lè ou modifye yon fòmil, filtre, oswa tablo, sonje sa ki chanje. Konplete sekans lan lè w fè aksyon sa a: Mande IA a korije risk ki genyen nan mini-app ou a. Ou te reyisi si yon lòt moun ka ouvri dosye ou, konprann lojik ou, epi verifye chwa ou.</p>
+<h3>Konpa IA Lojik360</h3>
+<div class='callout'><strong>🤖 Delege.</strong> Mande IA ​​pou yon premye analiz, yon fòmil, yon lis verifikasyon, yon vizyalizasyon oswa yon kritik.<br><strong>🔍 Sipèvize.</strong> Verifye done, fòmil, sous, sipozisyon ak chanjman IA fè.<br><strong>🌱 Ranfòse moun.</strong> Transfòme rezilta Excel la an jijman, desizyon, eksplikasyon ak responsablite.</div>
+<h3>Konsèp kle yo</h3>
+<div class='callout'><strong>Validasyon done</strong> — Règ ki limite sa yon itilizatè ka antre nan yon selil.</div>
+<div class='callout'><strong>Pwoteksyon lyan</strong> — Paramèt ki anpeche sèten modifikasyon vle.</div>
+<div class='callout'><strong>Macro</strong> — Otomatik yon sekans nan aksyon Excel, souvan atravè VBA oswa anrejistreman macro.</div>
+<h3>Kòmanse isit la</h3>
+<p>Louvri Excel oswa yon liv travay pratik. Travay ak done fiktif oswa anonim. Objektif ou se pwodwi yon dosye ke yon lòt moun ka konprann, verifye ak itilize.</p>
+<h3>Fè sa kounye a</h3>
+<ol><li>Kreye yon fèy Form_Input ak jaden kontwole.</li><li>Ajoute lis drop-down pou Rejyon ak Aktivite.</li><li>Pwoteje selil fòmil yo epi kite selil antre yo louvri.</li><li>Ekri yon gid itilizatè yon paj.</li><li>Mande IA ​​reli risk ki genyen nan mini-aplikasyon ou a.</li></ol>
+<h3>Fèy travay</h3>
+<ul><li>Sib itilizatè</li><li>Antre jaden</li><li>Règ validasyon yo</li><li>Selil pwoteje</li><li>Automatisation posib</li><li>Risk pou erè itilizatè</li><li>Message d'aide</li></ul>
+<h3>Chwazi chemen ou</h3>
+<div class='callout'>⚠️ <strong>Mwen bay fichye a san pwoteksyon.</strong><br>Itilizatè yo ka kraze fòmil yo.</div>
+<div class='callout'>⚠️ <strong>Mwen pwoteje zòn ki sansib yo ak itilizasyon dokiman yo.</strong><br>Fichye a vin pi solid.</div>
+<div class='callout'>⚠️ <strong>Mwen mande IA ​​pou macro kòd san konprann li.</strong><br>Mwen kreye yon risk sekirite oswa antretyen.</div>
+<h3>Envit IA pou itilize</h3>
+<p>Enstriksyon: Ranplase parantèz yo ak kolòn ou, objektif oswa rezilta yo. Toujou tcheke anvan ou aplike.</p>
+<div class='prompt-box'><strong>Konsepsyon aplikasyon.</strong> Ede m desine yon aplikasyon pou antre mini Excel pou [itilize]. Lis fèy papye, jaden, validation, kontwòl ak mesaj èd.</div>
+<div class='prompt-box'><strong>Odit risk.</strong> Ki risk mwen ta dwe tcheke anvan pataje liv travay sa a: erè antre, fòmil kase, done sansib, makro, pwoteksyon?</div>
+<div class='prompt-box'><strong>Gid itilizatè.</strong> Redige yon guide utilisateur d'une page pour ce classeur : objectif, etapes, regles de saisie, erreurs courantes, contact support.</div>
+<h3>Egzanp rezilta IA</h3>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Èd memwa / itilizasyon</th><th>Egzanp rezilta espere</th></tr><tr><td>Konsepsyon aplikasyon</td><td>Pwodiksyon espere: fèy opinyon, tab sous, lis drop-down, kontwòl jaden, fèy rapò, dokiman.</td></tr><tr><td>Odit risk</td><td>Sortie attendue : tester validations, protection, cells verrouilles, macros desactives par defaut, sauvegarde avant partage.</td></tr><tr><td>Gid itilizatè</td><td>Pwodiksyon espere: enstriksyon kout, kaptire yo ajoute, erè komen ak règ konfidansyalite.</td></tr></table></div>
+<h3>Pratike Excel</h3>
+<ul><li>Sèvi ak Validasyon Done.</li><li>Fèmen/debloke selil yo anvan Pwoteje Fèy.</li><li>Evite makro si yon solisyon natif natal ap sifi.</li><li>Si w ap itilize VBA, teste nan yon kopi epi dokimante kòd la.</li></ul>
+<h3>Pwen kontwòl</h3>
+<ul><li>Èske itilizatè yo konnen ki kote yo antre?</li><li>Èske fòmil enpòtan yo pwoteje?</li><li>Èske erè komen yo bloke oswa eksplike?</li><li>Èske makro nesesè, dokimante ak teste?</li></ul>
+<h3>Ti pwojè</h3>
+<p>Kreye yon aplikasyon mini Excel pataje ak antre kontwole, pwoteksyon ak gid itilizatè.</p>
+<h3>Prèv pou konsève</h3>
+<ul><li>Mini-aplikasyon.</li><li>Règ validation.</li><li>Gid itilizatè.</li><li>IA audit ak koreksyon moun.</li></ul>
+</section>
+<section id='sources'>
+<h2>Sous ak limit</h2>
+<p>Leson patikilye sa a se yon travay orijinal : ka yo, egzèsis yo ak envit yo te fèt pou Lojik360. Sesyon yo swiv gwo tèm klasik Excel yo (liv travay, fòma, fòmil, grafik, tablo kwaze, Power Query, senaryo, finans). Pou ale pi lwen ak fonksyon IA yo, sèvi ak resous ofisyèl Microsoft ki anba yo.</p>
+<div style='overflow-x:auto'><table class='tbl'><tr><th>Sous ofisyèl Microsoft</th><th>Lien</th></tr><tr><td>Kòmanse ak Copilot nan Excel</td><td><a href='https://support.microsoft.com/en-us/excel/copilot/get-started-with-copilot-in-excel' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/copilot/get-started-with-copilot-in-excel</a></td></tr><tr><td>Jwenn enfòmasyon sou done ak Copilot nan Excel</td><td><a href='https://support.microsoft.com/en-us/excel/copilot/data-insights-with-copilot-in-excel' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/copilot/data-insights-with-copilot-in-excel</a></td></tr><tr><td>Vizyalize done ou ak Copilot nan Excel</td><td><a href='https://support.microsoft.com/en-us/excel/copilot/visualize-your-data-with-copilot-in-excel' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/copilot/visualize-your-data-with-copilot-in-excel</a></td></tr><tr><td>Entwodiksyon nan Python nan Excel</td><td><a href='https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel</a></td></tr><tr><td>Jwenn repons dirèk pou kesyon analiz done ou yo</td><td><a href='https://support.microsoft.com/en-us/excel/get-direct-answers-to-your-data-analysis-questions' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/get-direct-answers-to-your-data-analysis-questions</a></td></tr><tr><td>Konsèy kopilot nan Excel</td><td><a href='https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-tips' target='_blank' rel='noopener'>https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-tips</a></td></tr></table></div>
+</section>
+    <div class="tuto-pager"><a href="../tutoriels.html" class="btn btn-outline">← Tout leson yo</a></div>
+  </main>
+</div>
+<footer><div class="container"><div class="footer-bottom">© 2026 Atmart LLC — Lojik360 se yon mak Atmart LLC.</div></div></footer>
+<script src="../assets/script.js"></script>
+<script src="../assets/chat.js?v=4" data-endpoint="https://atmart-chat.atmartllc.workers.dev"></script>
+</body>
+</html>
