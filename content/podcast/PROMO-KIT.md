@@ -20,7 +20,7 @@ Quand les liens Spotify/Apple/YouTube existent → **me les envoyer** : je rempl
 ## 2. YouTube — épisode 01
 
 - **Titre :** Twa fason pou pwospere ak IA — Lojik360 #01
-- **Description :** Delege 🤖, sipèvize 🔍, ranfòse moun nan 🌱 : manifès Lojik360 a. Yon podkas an kreyòl ki mete done ak lojik sou sijè reyèl yo. ✅ Aksyon semèn nan : ekri lis 20 travay ou fè epi klase yo an 3 gwoup. 📚 Leson gratis : https://lojik360.atmart.ltd · 📬 Abòne w : https://lojik360.atmart.ltd/podcast.html · Yon pwodiksyon Atmart LLC. — En français : premier épisode du podcast Lojik360, le manifeste : trois façons de prospérer à l'ère de l'IA.
+- **Description :** Delege 🤖, sipèvize 🔍, ranfòse konpetans imèn ou 🌱 : manifès Lojik360 a. Yon podkas an kreyòl ki mete done ak lojik sou sijè reyèl yo. ✅ Aksyon semèn nan : ekri lis 20 travay ou fè epi klase yo an 3 gwoup. 📚 Leson gratis : https://lojik360.atmart.ltd · 📬 Abòne w : https://lojik360.atmart.ltd/podcast.html · Yon pwodiksyon Atmart LLC. — En français : premier épisode du podcast Lojik360, le manifeste : trois façons de prospérer à l'ère de l'IA.
 - **Tags :** kreyol, ayiti, entelijans atifisyel, IA, AI, haiti, formation, done, lojik360, atmart, panse kritik
 - **Playlist :** « Sezon 1 — Panse ak done »
 
@@ -43,7 +43,7 @@ Bio TikTok : « Panse ak done · Pwospere ak IA · Leson gratis an kreyòl ⬇�
 
 🎙 PREMYE EPIZÒD LOJIK360 SOTI !
 Gen moun ki di IA pral pran tout travay. Gen lòt ki di se yon mòd k ap pase. Tou de twonpe w.
-Nan 10 minit, n ap montre w twa fason pou w pwospere nan epòk IA a : delege 🤖, sipèvize 🔍, ranfòse moun nan 🌱.
+Nan 10 minit, n ap montre w twa fason pou w pwospere nan epòk IA a : delege 🤖, sipèvize 🔍, ranfòse konpetans imèn ou 🌱.
 ▶️ Koute la : [lien]
 📚 Leson gratis an kreyòl : lojik360.atmart.ltd
 Pataje ak yon moun k ap poze tèt li kesyon sou IA. 🙏
@@ -53,7 +53,7 @@ Groupes où partager (avec accord des admins) : groupes haïtiens d'éducation, 
 
 ## 5. WhatsApp — message canal / statut
 
-🎙 *Lojik360 #01 soti !* Twa fason pou pwospere ak IA : delege 🤖 sipèvize 🔍 ranfòse moun 🌱 (10 minit, an kreyòl). Koute + leson gratis : https://lojik360.atmart.ltd/podcast.html
+🎙 *Lojik360 #01 soti !* Twa fason pou pwospere ak IA : delege 🤖 sipèvize 🔍 ranfòse konpetans imèn ou 🌱 (10 minit, an kreyòl). Koute + leson gratis : https://lojik360.atmart.ltd/podcast.html
 
 ## 6. Calendrier de la semaine de lancement (jour J = jeudi)
 

@@ -13,7 +13,7 @@ Mwen rele Jean Wisner Myril. Sa a se **Lojik360** — podkas kote nou pran yon s
 
 ## Entwodiksyon (1 minit)
 
-Jodi a, premye epizòd la : **twa fason pou pwospere nan epòk IA a.** Se manifès Lojik360 la. Tout sa n ap fè sou sit la, tout leson yo, tout sesyon yo — yo chita sou twa mo sa yo : **delege, sipèvize, ranfòse moun nan.**
+Jodi a, premye epizòd la : **twa fason pou pwospere nan epòk IA a.** Se manifès Lojik360 la. Tout sa n ap fè sou sit la, tout leson yo, tout sesyon yo — yo chita sou twa jès sa yo : **delege, sipèvize, ranfòse konpetans imèn ou.**
 
 Poukisa sa enpòtan pou Ayiti, pou Karayib la, pou Afrik frankofòn ? Paske done Òganizasyon Entènasyonal Travay ak Fowòm Ekonomik Mondyal yo montre yon bagay klè : se pa « travay » IA ap ranplase an premye — se **tach**. E moun ki konprann kiyès tach pou yo lage, kiyès pou yo kontwole, ak kiyès pou yo kenbe — se yo k ap vanse.
 
@@ -33,9 +33,9 @@ Sipèvize vle di : **verifye anvan ou kwè, verifye anvan ou voye.** Ki sous ? K
 
 Kenbe fraz sa a : « IA se yon asistan ki rapid, men ki pa toujou onèt sou sa li pa konnen. » Travay ou se poze l kesyon, teste l, korije l.
 
-## Pati 3 — Ranfòse moun nan 🌱 (2 minit)
+## Pati 3 — Ranfòse konpetans imèn ou 🌱 (2 minit)
 
-Gen bagay IA pa ranplase : **jijman ou, kreyativite ou, relasyon ou ak moun, kapasite ou pou dirije, sans responsablite ou.** Se la avantaj ou ye.
+Ranfòse konpetans imèn ou : tankou kreyativite ou, relasyon ou ak moun, jijman ou, kapasite ou pou dirije, sans responsablite ou, elatriye. **Se bagay IA pa ranplase — se la avantaj ou ye.**
 
 Yon machin ka ekri yon mesaj — men se ou ki konnen si moman an bon pou voye l. Yon machin ka pwopoze senk lide — men se ou ki konnen kominote ou a, kisa k ap mache Pòtoprens, Okap, Miami oswa Dakar.
 
@@ -59,4 +59,4 @@ Premier épisode de Lojik360 : le manifeste. Trois façons de prospérer à l'è
 
 ## Description à coller sur Spotify/YouTube
 
-Twa fason pou pwospere ak IA : delege 🤖, sipèvize 🔍, ranfòse moun nan 🌱. Premye epizòd Lojik360 — podkas an kreyòl ki mete done ak lojik sou sijè reyèl yo. Leson gratis : https://lojik360.atmart.ltd · Yon pwodiksyon Atmart LLC.
+Twa fason pou pwospere ak IA : delege 🤖, sipèvize 🔍, ranfòse konpetans imèn ou 🌱. Premye epizòd Lojik360 — podkas an kreyòl ki mete done ak lojik sou sijè reyèl yo. Leson gratis : https://lojik360.atmart.ltd · Yon pwodiksyon Atmart LLC.
