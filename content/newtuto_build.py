@@ -3,13 +3,137 @@
 Usage: python newtuto_build.py
 Outputs: tutoriels/prompting-ia.html and tutoriels/excel-ia.html in Lojik360_site.
 """
-import zipfile, re, html, io, sys
+import zipfile, re, html, io, sys, unicodedata
+
+def deacc(t):
+    return "".join(c for c in unicodedata.normalize("NFD", t) if unicodedata.category(c) != "Mn").lower()
 
 SITE = r"C:\Users\USUARIO\Power_BI_Claude\Lojik360_site"
 
 def unesc(s):
     return (s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
              .replace("&quot;", '"').replace("&#39;", "'"))
+
+# ---------- restauration des accents (le docx source est en partie sans accents) ----------
+ACCENTS = {
+ "reponse":"réponse","reponses":"réponses","donnee":"donnée","donnees":"données",
+ "resultat":"résultat","resultats":"résultats","verifier":"vérifier","verifie":"vérifie",
+ "verifiez":"vérifiez","verifiee":"vérifiée","verifiees":"vérifiées","verifiable":"vérifiable",
+ "verification":"vérification","verifications":"vérifications",
+ "decision":"décision","decisions":"décisions","decideur":"décideur","decider":"décider","decidez":"décidez",
+ "responsabilite":"responsabilité","premiere":"première","premieres":"premières",
+ "etre":"être","etes":"êtes","modele":"modèle","modeles":"modèles","qualite":"qualité",
+ "cout":"coût","couts":"coûts","tache":"tâche","taches":"tâches",
+ "anonymisee":"anonymisée","anonymisees":"anonymisées","anonymiser":"anonymiser","anonymisez":"anonymisez",
+ "hypothese":"hypothèse","hypotheses":"hypothèses","critere":"critère","criteres":"critères",
+ "competence":"compétence","competences":"compétences","confidentialite":"confidentialité",
+ "probleme":"problème","problemes":"problèmes","beneficiaire":"bénéficiaire","beneficiaires":"bénéficiaires",
+ "element":"élément","elements":"éléments","eviter":"éviter","evitez":"évitez",
+ "nommee":"nommée","nommees":"nommées","interpretation":"interprétation","interpretations":"interprétations",
+ "methode":"méthode","methodes":"méthodes","accelerer":"accélérer","creer":"créer","creez":"créez",
+ "deja":"déjà","controle":"contrôle","controles":"contrôles","controler":"contrôler",
+ "coherence":"cohérence","coherent":"cohérent","coherente":"cohérente",
+ "synthese":"synthèse","depart":"départ","theme":"thème","themes":"thèmes",
+ "reussi":"réussi","reussie":"réussie","reussite":"réussite","executer":"exécuter","executez":"exécutez",
+ "executant":"exécutant","acceptee":"acceptée","definition":"définition","definitions":"définitions",
+ "revision":"révision","revisions":"révisions","scenario":"scénario","scenarios":"scénarios",
+ "numero":"numéro","general":"général","generale":"générale","generique":"générique","generiques":"génériques",
+ "ecrire":"écrire","ecrivez":"écrivez","ecrit":"écrit","ecrite":"écrite","ecrits":"écrits",
+ "etape":"étape","etapes":"étapes","equipe":"équipe","equipes":"équipes","ecran":"écran",
+ "echange":"échange","echanges":"échanges","evaluer":"évaluer","evaluez":"évaluez","evaluation":"évaluation",
+ "etat":"état","etats":"états","egalement":"également","eleve":"élevé","eleves":"élevés",
+ "elevee":"élevée","elevees":"élevées","ete":"été","ecart":"écart","ecarts":"écarts",
+ "enonce":"énoncé","experience":"expérience","experiences":"expériences",
+ "precis":"précis","precise":"précise","precises":"précises","precisez":"précisez","precision":"précision",
+ "prealable":"préalable","preparation":"préparation","preparer":"préparer","preparez":"préparez",
+ "presentation":"présentation","presenter":"présenter","presentez":"présentez",
+ "protegee":"protégée","protegees":"protégées","proteger":"protéger","protegez":"protégez",
+ "realiste":"réaliste","realisez":"réalisez","realiser":"réaliser","realite":"réalité",
+ "recuperer":"récupérer","redaction":"rédaction","reduire":"réduire","reduisez":"réduisez",
+ "reel":"réel","reelle":"réelle","reels":"réels","reelles":"réelles",
+ "reference":"référence","references":"références","reflechir":"réfléchir","reflexe":"réflexe",
+ "reflexion":"réflexion","regle":"règle","regles":"règles","regulier":"régulier","reguliere":"régulière",
+ "repere":"repère","reperer":"repérer","reperez":"repérez","repetez":"répétez","repetition":"répétition",
+ "repondez":"répondez","repondre":"répondre","repond":"répond","resumer":"résumer","resumez":"résumez",
+ "reutilisable":"réutilisable","reutilisables":"réutilisables","revisez":"révisez",
+ "role":"rôle","roles":"rôles","securite":"sécurité","securise":"sécurisé","securisee":"sécurisée",
+ "selection":"sélection","selectionnez":"sélectionnez","separer":"séparer","separez":"séparez",
+ "separation":"séparation","serie":"série","series":"séries","specifique":"spécifique","specifiques":"spécifiques",
+ "strategie":"stratégie","strategies":"stratégies","succes":"succès","systeme":"système","systemes":"systèmes",
+ "tres":"très","verite":"vérité","video":"vidéo","videos":"vidéos","zero":"zéro",
+ "apres":"après","acces":"accès","progres":"progrès","interet":"intérêt","interets":"intérêts",
+ "arret":"arrêt","arreter":"arrêter","arretez":"arrêtez","bibliotheque":"bibliothèque",
+ "caractere":"caractère","caracteres":"caractères","categorie":"catégorie","categories":"catégories",
+ "cle":"clé","cles":"clés","completez":"complétez","complete":"complète","completer":"compléter",
+ "concu":"conçu","concue":"conçue","connaitre":"connaître","considerez":"considérez","cote":"côté",
+ "creativite":"créativité","dediee":"dédiée","dedie":"dédié","defaut":"défaut","defauts":"défauts",
+ "defi":"défi","defis":"défis","definir":"définir","definissez":"définissez","degre":"degré",
+ "derniere":"dernière","dernieres":"dernières","desormais":"désormais","detail":"détail","details":"détails",
+ "detaillee":"détaillée","detecter":"détecter","detectez":"détectez",
+ "developpement":"développement","developper":"développer","developpez":"développez",
+ "difficulte":"difficulté","difficultes":"difficultés","deleguer":"déléguer","deleguez":"déléguez",
+ "delegation":"délégation","deroule":"déroule","deroulement":"déroulement",
+ "deuxieme":"deuxième","troisieme":"troisième","different":"différent","differente":"différente",
+ "differents":"différents","differentes":"différentes","difference":"différence","differences":"différences",
+ "maitriser":"maîtriser","maitrise":"maîtrise","maniere":"manière","frontiere":"frontière",
+ "fiabilite":"fiabilité","facilite":"facilité","fenetre":"fenêtre","genere":"génère","generer":"générer",
+ "generez":"générez","generee":"générée","generees":"générées","grille":"grille",
+ "idee":"idée","idees":"idées","identifie":"identifie","incoherence":"incohérence","incoherences":"incohérences",
+ "independant":"indépendant","independante":"indépendante","integrer":"intégrer","integrez":"intégrez",
+ "interpreter":"interpréter","interpretez":"interprétez","iterez":"itérez","iteration":"itération",
+ "iterations":"itérations","lisibilite":"lisibilité","litteralement":"littéralement",
+ "memoire":"mémoire","metier":"métier","metiers":"métiers","modelisation":"modélisation",
+ "necessaire":"nécessaire","necessaires":"nécessaires","negatif":"négatif","negative":"négative",
+ "operation":"opération","operations":"opérations","organisee":"organisée","parametres":"paramètres",
+ "pedagogique":"pédagogique","penalite":"pénalité","perimetre":"périmètre","periode":"période",
+ "periodes":"périodes","pertinence":"pertinence","possibilite":"possibilité","possibilites":"possibilités",
+ "prevision":"prévision","previsions":"prévisions","prevu":"prévu","prevue":"prévue",
+ "priorite":"priorité","priorites":"priorités","procedure":"procédure","procedures":"procédures",
+ "propriete":"propriété","proprietes":"propriétés","protocole":"protocole",
+ "recette":"recette","recommande":"recommandé","recommandee":"recommandée","recuperation":"récupération",
+ "redige":"rédigé","redigez":"rédigez","rediger":"rédiger","reorganiser":"réorganiser",
+ "requete":"requête","requetes":"requêtes","resilience":"résilience","resoudre":"résoudre",
+ "reviser":"réviser","risquee":"risquée","salarie":"salarié","salaries":"salariés",
+ "schema":"schéma","schemas":"schémas","semantique":"sémantique","severite":"sévérité",
+ "societe":"société","specialiste":"spécialiste","supprimee":"supprimée","surete":"sûreté",
+ "telecharger":"télécharger","telechargez":"téléchargez","temoin":"témoin","traite":"traité",
+ "traitee":"traitée","transferer":"transférer","transferez":"transférez","utilite":"utilité",
+ "variete":"variété","vederifiez":"vérifiez","visibilite":"visibilité","vulnerabilite":"vulnérabilité",
+ "genere":"génère","déja":"déjà","securisez":"sécurisez","identite":"identité","ia":"IA",
+}
+_word_re = re.compile(r"[A-Za-z]+")
+
+def fix_accents(t):
+    # phrases d'abord (cas ambigus)
+    t = re.sub(r"\bjusqu'a\b", "jusqu'à", t)
+    t = re.sub(r"\bGrace a\b", "Grâce à", t); t = re.sub(r"\bgrace a\b", "grâce à", t)
+    t = re.sub(r"\bc'est-a-dire\b", "c'est-à-dire", t)
+    t = re.sub(r"\bbien sur\b", "bien sûr", t)
+    t = re.sub(r"\b(avez|est|ont|sont) cree\b", r"\1 créé", t)
+    t = re.sub(r"\bcree a partir\b", "créé à partir", t)
+    t = re.sub(r"\bcree\b", "crée", t); t = re.sub(r"\bCree\b", "Crée", t)
+    t = re.sub(r"\b(un|le|avec|du) resume\b", r"\1 résumé", t)
+    t = re.sub(r"(: ) ?resume\b", r"\1résumé", t)
+    t = re.sub(r"\b(qui|doit|elle|il) resume\b", r"\1 résume", t)
+    t = re.sub(r" a (l')", r" à \1", t)
+    t = re.sub(r"(?<!region) a la ", " à la ", t)
+    t = re.sub(r" a (utiliser|conserver|faire|eviter|remplir|regarder|maitriser|construire|tester|"
+               r"verifier|proteger|retenir|suivre|jour|nouveau|partir|coller|copier|garder|surveiller|"
+               r"comparer|choisir|expliquer|observer|apprendre|mesurer|documenter|nettoyer|relier|"
+               r"consolider|corriger|demander|comprendre|produire|poser|lire|ecrire|chaque|ce stade|"
+               r"cette etape|votre|vos)\b", r" à \1", t)
+    # mots ensuite
+    def rep(m):
+        w = m.group(0); lw = w.lower()
+        r = ACCENTS.get(lw)
+        if not r:
+            return w
+        if w.isupper():
+            return w
+        if w[0].isupper():
+            return r[0].upper() + r[1:]
+        return r
+    return _word_re.sub(rep, t)
 
 def clean(t):
     t = unesc(t).strip()
@@ -18,7 +142,7 @@ def clean(t):
     # pas de renvoi au manuel PDF local sur le site public
     t = re.sub(r"Votre premier reflexe doit etre d'observer le document source.*?commencez par\s*:",
                "Commencez par :", t)
-    return t
+    return fix_accents(t)
 
 def esc(t):
     return html.escape(clean(t), quote=False)
@@ -79,7 +203,7 @@ def build_model(blocks, drop_source_refs=False):
         elif b[0] == "h2":
             if zone == "session":
                 cur_sec = {"head": b[1], "blocks": []}
-                if drop_source_refs and b[1].startswith("Reference au document source"):
+                if drop_source_refs and deacc(b[1]).startswith("reference au document source"):
                     cur_sec["drop"] = True
                 cur_session["secs"].append(cur_sec)
         else:
@@ -91,10 +215,10 @@ def build_model(blocks, drop_source_refs=False):
                 if cur_sec is None:  # meta paragraphs before first H2
                     if b[0] == "p":
                         t = b[2]
-                        for lab, key in (("Duree estimee:", "duree"),
-                                         ("Produit a construire:", "produit"),
-                                         ("Resultat d'apprentissage:", "resultat")):
-                            if t.startswith(lab):
+                        for lab, key in (("duree estimee:", "duree"),
+                                         ("produit a construire:", "produit"),
+                                         ("resultat d'apprentissage:", "resultat")):
+                            if deacc(t).startswith(lab):
                                 cur_session["meta"][key] = t[len(lab):].strip()
                                 break
                 else:
@@ -124,14 +248,17 @@ HEADMAP = {
     "Small Project / Mini-projet": "Mini-projet",
     "Evidence to Save / Preuves a conserver": "Preuves à conserver",
 }
+HEADMAP_D = None  # rempli apres la definition de HEADMAP
 AX_EMOJI = {"Deleguer": "🤖 Déléguer", "Superviser": "🔍 Superviser",
             "Renforcer l'humain": "🌱 Renforcer l'humain"}
+
+HEADMAP_D = {deacc(k): v for k, v in HEADMAP.items()}
 
 def render_table(rows, headkey):
     out = []
     if not rows:
         return out
-    hk = headkey.lower()
+    hk = deacc(headkey)
     body_rows = rows[1:] if len(rows) > 1 else rows
     if "boussole" in hk:
         lines = []
@@ -223,7 +350,7 @@ def render_session(s):
     for sec in s["secs"]:
         if sec.get("drop"):
             continue
-        h = HEADMAP.get(sec["head"], sec["head"].split("/")[-1].strip())
+        h = HEADMAP_D.get(deacc(sec["head"]), sec["head"].split("/")[-1].strip())
         p.append("<h3>%s</h3>" % html.escape(h, quote=False))
         p.extend(render_blocks(sec))
     p.append("</section>")
@@ -287,7 +414,7 @@ def render_intro(doc, hint):
         if b[0] != "p":
             continue
         tx = b[2]
-        low = tx.lower()
+        low = deacc(tx)
         if ("tutoriel apprenant" in low or "version " in low or "note source" in low
                 or "document source" in low or "mode d'utilisation du document" in low
                 or tx == "Excel a l'ere de l'IA"):
