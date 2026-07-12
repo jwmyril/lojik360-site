@@ -99,7 +99,7 @@ ACCENTS = {
  "telecharger":"télécharger","telechargez":"téléchargez","temoin":"témoin","traite":"traité",
  "traitee":"traitée","transferer":"transférer","transferez":"transférez","utilite":"utilité",
  "variete":"variété","vederifiez":"vérifiez","visibilite":"visibilité","vulnerabilite":"vulnérabilité",
- "genere":"génère","déja":"déjà","securisez":"sécurisez","identite":"identité","ia":"IA",
+ "genere":"génère","déja":"déjà","securisez":"sécurisez","identite":"identité","ia":"IA","assistee":"assistée","empechent":"empêchent","empeche":"empêche",
 }
 _word_re = re.compile(r"[A-Za-z]+")
 
@@ -109,6 +109,9 @@ def fix_accents(t):
     t = re.sub(r"\bGrace a\b", "Grâce à", t); t = re.sub(r"\bgrace a\b", "grâce à", t)
     t = re.sub(r"\bc'est-a-dire\b", "c'est-à-dire", t)
     t = re.sub(r"\bbien sur\b", "bien sûr", t)
+    t = re.sub(r"\baugmente par l'IA\b", "augmenté par l'IA", t)
+    t = re.sub(r"\bExercice complete\b", "Exercice complété", t)
+    t = re.sub(r"\bPlan genere\b", "Plan généré", t)
     t = re.sub(r"\b(avez|est|ont|sont) cree\b", r"\1 créé", t)
     t = re.sub(r"\bcree a partir\b", "créé à partir", t)
     t = re.sub(r"\bcree\b", "crée", t); t = re.sub(r"\bCree\b", "Crée", t)
