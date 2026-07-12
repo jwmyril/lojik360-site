@@ -60,6 +60,20 @@
 
 <section style="padding-top:0.5rem">
   <div class="container">
+    <div class="banner" id="newsletter">
+      <h2 data-i18n="nl.title">📬 Restez connecté</h2>
+      <p data-i18n="nl.desc">Recevez le nouvel épisode, un tutoriel et une activité chaque semaine. Zéro spam.</p>
+      <form class="newsletter-form">
+        <input type="email" data-i18n-ph="nl.ph" placeholder="Votre adresse e-mail" required />
+        <button type="submit" class="btn btn-primary" data-i18n="nl.btn">S'abonner</button>
+      </form>
+      <p class="nl-status" hidden style="margin-top:0.6rem"><span class="nl-ok" data-i18n="nl.ok">✅ Inscription confirmée — à bientôt dans votre boîte mail !</span><span class="nl-err" hidden data-i18n="nl.err">❌ Adresse invalide ou erreur — réessayez dans un instant.</span></p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0.5rem">
+  <div class="container">
     <div class="banner">
       <h2 data-i18n="pod2.listen_t">Où écouter ?</h2>
       <p data-i18n="pod2.listen_d">Dès le lancement, le podcast sera disponible sur Spotify, Apple Podcasts et YouTube, avec des extraits sur TikTok, WhatsApp et Facebook. Revenez ici — cette page listera chaque épisode avec ses liens d'écoute.</p>
@@ -74,7 +88,7 @@
   </div>
 </footer>
 
-<script src="assets/script.js"></script>
+<script src="assets/script.js?v=2"></script>
 <script src="assets/i18n.js?v=1"></script>
 </body>
 </html>

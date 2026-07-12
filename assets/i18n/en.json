@@ -118,5 +118,7 @@
  "pod2.ep_link": "📚 Related content",
  "pod2.listen_t": "Where to listen?",
  "pod2.listen_d": "At launch, the podcast will be available on Spotify, Apple Podcasts and YouTube, with clips on TikTok, WhatsApp and Facebook. Come back here — this page will list every episode with its listening links.",
- "pod2.cta_btn": "Meanwhile: the free tutorials"
+ "pod2.cta_btn": "Meanwhile: the free tutorials",
+ "nl.ok": "✅ Subscribed — see you in your inbox!",
+ "nl.err": "❌ Invalid address or error — try again in a moment."
 }

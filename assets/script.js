@@ -78,12 +78,37 @@ if (toc && tmain) {
   if (toggle) toggle.addEventListener("click", () => toc.classList.toggle("open"));
 }
 
-// Newsletter form (placeholder — replace with your provider, e.g. Substack/Mailchimp embed)
-const form = document.querySelector(".newsletter-form");
-if (form) {
+// Newsletter — inscription reelle (Cloudflare Worker, entrees KV "sub:")
+const NL_ENDPOINT = "https://atmart-chat.atmartllc.workers.dev/subscribe";
+document.querySelectorAll(".newsletter-form").forEach((form) => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const email = form.querySelector("input").value;
-    alert("Mèsi! / Merci " + email + " — votre inscription sera activée dès que le service de newsletter sera connecté.");
+    const input = form.querySelector("input[type=email]");
+    const btn = form.querySelector("button");
+    const status = form.parentElement.querySelector(".nl-status");
+    const show = (cls) => {
+      if (!status) return;
+      status.hidden = false;
+      status.querySelectorAll("span").forEach((s) => { s.hidden = !s.classList.contains(cls); });
+    };
+    const email = (input.value || "").trim();
+    if (!email) return;
+    btn.disabled = true;
+    fetch(NL_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email,
+        lang: (document.documentElement.lang || "fr").slice(0, 2),
+        source: location.pathname,
+      }),
+    })
+      .then((r) => r.json().then((d) => ({ ok: r.ok && d.ok })))
+      .then((res) => {
+        if (res.ok) { show("nl-ok"); form.reset(); }
+        else { show("nl-err"); }
+      })
+      .catch(() => show("nl-err"))
+      .finally(() => { btn.disabled = false; });
   });
-}
+});

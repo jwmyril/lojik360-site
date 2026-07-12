@@ -118,5 +118,7 @@
  "pod2.ep_link": "📚 Contenido vinculado",
  "pod2.listen_t": "¿Dónde escuchar?",
  "pod2.listen_d": "Desde el lanzamiento, el pódcast estará en Spotify, Apple Podcasts y YouTube, con clips en TikTok, WhatsApp y Facebook. Vuelve aquí — esta página listará cada episodio con sus enlaces.",
- "pod2.cta_btn": "Mientras tanto: los tutoriales gratuitos"
+ "pod2.cta_btn": "Mientras tanto: los tutoriales gratuitos",
+ "nl.ok": "✅ Suscripción confirmada — ¡nos vemos en tu correo!",
+ "nl.err": "❌ Dirección inválida o error — inténtalo de nuevo en un momento."
 }

@@ -118,5 +118,7 @@
  "pod2.ep_link": "📚 Kontni ki lye",
  "pod2.listen_t": "Ki kote pou koute?",
  "pod2.listen_d": "Depi lansman an, podkas la ap disponib sou Spotify, Apple Podcasts ak YouTube, ak ekstrè sou TikTok, WhatsApp ak Facebook. Tounen isit la — paj sa a ap montre chak epizòd ak lyen pou koute yo.",
- "pod2.cta_btn": "Annatandan : leson gratis yo"
+ "pod2.cta_btn": "Annatandan : leson gratis yo",
+ "nl.ok": "✅ Enskripsyon ou pase — n a wè nan bwat imel ou!",
+ "nl.err": "❌ Adrès la pa bon oswa gen yon erè — eseye ankò nan yon ti moman."
 }
