@@ -223,13 +223,15 @@
 
   function setLabel(id, main, small) {
     var el = document.getElementById(id);
+    if (!el) return;
     el.innerHTML = main + (small ? "<small>" + small + "</small>" : "");
   }
+  var appliedLang = null;
   function applyLang(code) {
+    if (code === appliedLang) return; // garde-fou : ne jamais ré-appliquer la même langue
+    appliedLang = code;
     var T = L[code] || L.ht;
     MSG = T;
-    document.documentElement.lang = code;
-    setLabel("L-lang", T.lang);
     setLabel("L-work", T.work, T.workS);
     setLabel("L-tasks", T.tasks);
     setLabel("L-strength", T.strength);
