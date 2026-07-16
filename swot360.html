@@ -46,11 +46,11 @@
     <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart · penser à l'ère de l'IA</small></a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="tutoriels.html">Tutoriels</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="tutoriels.html" data-i18n="nav.tutorials">Tutoriels</a></li>
       <li><a href="swot360.html" class="active">SWOT360</a></li>
-      <li><a href="index.html#manifeste">Manifeste</a></li>
-      <li><a href="https://atmart.ltd">Solutions (Atmart)</a></li>
+      <li><a href="index.html#manifeste" data-i18n="nav.manifesto">Manifeste</a></li>
+      <li><a href="https://atmart.ltd" data-i18n="nav.solutions">Solutions (Atmart)</a></li>
     </ul>
   </nav>
 </header>
@@ -60,8 +60,8 @@
   <div class="container">
     <p class="kreyol">6 kesyon, 2 minit — dekouvri plas ou nan epòk IA a.</p>
     <h1>SWOT<em>360</em></h1>
-    <p class="lead">Fòs ou. Feblès ou. Opòtinite yo. Menas yo. Epi 3 aks ou : 🤖 sa pou w <strong>delege</strong> bay IA, 🔍 sa pou w <strong>sipèvize</strong>, 🌱 sa pou w <strong>ranfòse</strong> — paske se sa k fè w moun.<br /><span style="color:#9db2c7;font-size:0.9rem">Votre SWOT personnel à l'ère de l'IA — gratuit, en 4 langues.</span></p>
-    <p style="color:#9db2c7;font-size:0.88rem">Gratis · 3 SWOT pa jou · Nou pa sove okenn repons ou — rezilta a se pou ou sèlman.</p>
+    <p class="lead" data-i18n-html="sw.lead">Vos forces. Vos faiblesses. Vos opportunités. Vos menaces. Et vos 3 axes : 🤖 ce que vous <strong>déléguez</strong> à l'IA, 🔍 ce que vous <strong>supervisez</strong>, 🌱 ce que vous <strong>renforcez</strong> — parce que c'est ce qui vous rend humain.</p>
+    <p style="color:#9db2c7;font-size:0.88rem" data-i18n="sw.note">Gratuit · 5 SWOT par jour · Aucune réponse n'est enregistrée — le résultat n'appartient qu'à vous.</p>
   </div>
 </section>
 
@@ -71,14 +71,6 @@
     <div class="sw-app">
 
       <form class="sw-form" id="sw-form">
-        <label for="sw-lang" id="L-lang">🌍 Chwazi lang ou / Choisissez votre langue</label>
-        <select id="sw-lang">
-          <option value="ht" selected>Kreyòl</option>
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-        </select>
-
         <label for="sw-work" id="L-work">1. Ki travay w ap fè kounye a ?<small>oswa : etidyan, san travay…</small></label>
         <input type="text" id="sw-work" maxlength="140" required placeholder="Ex. : enfimyè, chofè, pwofesè, komèsant, kontab…" />
 
@@ -135,6 +127,7 @@
 </footer>
 
 <script src="assets/script.js"></script>
+<script src="assets/i18n.js"></script>
 <script>
 (function () {
   var ENDPOINT = "https://atmart-chat.atmartllc.workers.dev/swot360";
@@ -257,8 +250,13 @@
     document.getElementById("sw-copy").textContent = T.copy;
     cta.innerHTML = "<p>" + T.cta1 + "</p><p style=\"margin-top:0.4rem\">" + T.cta2 + "</p>";
   }
-  document.getElementById("sw-lang").addEventListener("change", function () { applyLang(this.value); });
-  applyLang("ht");
+  function siteLang() {
+    var l = (localStorage.getItem("atmart_lang") || document.documentElement.lang || "fr").slice(0, 2);
+    return L[l] ? l : "fr";
+  }
+  new MutationObserver(function () { applyLang(siteLang()); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+  applyLang(siteLang());
 
   function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function inline(s){return s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>");}
@@ -285,7 +283,7 @@
       weakness: document.getElementById("sw-weakness").value.trim(),
       aiUse: document.getElementById("sw-aiuse").value,
       goal: document.getElementById("sw-goal").value.trim(),
-      language: document.getElementById("sw-lang").value,
+      language: siteLang(),
     };
     go.disabled = true;
     status.innerHTML = '<span class="sw-spin"></span>' + MSG.gen;
