@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWOT360 — Ki plas ou nan epòk IA a ? | Lojik360</title>
+  <meta name="description" content="SWOT360 Lite (gratis) : reponn 6 kesyon, resevwa fòs ou, feblès ou, opòtinite ou ak menas yo — plis 3 aks ou : sa pou w delege bay IA, sa pou w sipèvize, sa pou w ranfòse. An kreyòl, français, English, español." />
+  <meta property="og:title" content="SWOT360 — Ki plas ou nan epòk IA a ?" />
+  <meta property="og:description" content="6 kesyon, 2 minit — dekouvri fòs ou, menas yo, ak 3 aks ou pou pwospere ak IA. Gratis, an 4 lang." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=1" />
+  <style>
+    .sw-app{display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:1.4rem;align-items:start}
+    @media (max-width:900px){.sw-app{grid-template-columns:1fr}}
+    .sw-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:1.3rem}
+    .sw-form label{display:block;font-weight:600;font-size:0.88rem;margin:0.9rem 0 0.15rem}
+    .sw-form label:first-of-type{margin-top:0}
+    .sw-form label small{display:block;font-weight:400;color:#9db2c7;font-size:0.78rem}
+    .sw-form input,.sw-form select,.sw-form textarea{width:100%;background:#0e2240;color:#eaf2fb;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:0.55rem 0.7rem;font:inherit;font-size:0.92rem;margin-top:0.25rem}
+    .sw-form textarea{min-height:64px;resize:vertical}
+    .sw-result{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:1.5rem;min-height:380px}
+    .sw-placeholder{color:#9db2c7;text-align:center;padding:3rem 1rem}
+    .sw-placeholder .big{font-size:2.4rem;margin-bottom:0.5rem}
+    .sw-status{color:#f4a261;font-size:0.9rem;margin-top:0.7rem;min-height:1.2em}
+    .sw-toolbar{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;padding-bottom:0.9rem;border-bottom:1px solid rgba(255,255,255,0.1)}
+    .sw-toolbar a,.sw-toolbar button{background:#0e2240;color:#eaf2fb;border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:0.4rem 0.8rem;font:inherit;font-size:0.85rem;cursor:pointer;text-decoration:none;display:inline-block}
+    .sw-toolbar a:hover,.sw-toolbar button:hover{border-color:#2ec4b6}
+    .sw-toolbar .wa{background:#128c4a;border-color:#128c4a;font-weight:600}
+    #sw-out h2{font-family:"Space Grotesk",sans-serif;font-size:1.45rem;margin:0 0 0.8rem;color:#fff}
+    #sw-out h3{font-family:"Space Grotesk",sans-serif;font-size:1.05rem;margin:1.2rem 0 0.4rem;color:#2ec4b6}
+    #sw-out p,#sw-out li{font-size:0.95rem;line-height:1.65;color:#d7e3f0}
+    #sw-out ul{padding-left:1.2rem;margin:0.3rem 0 0.7rem}
+    #sw-out li{margin-bottom:0.35rem}
+    .sw-cta{margin-top:1.4rem;padding:1rem;border:1px dashed rgba(46,196,182,0.5);border-radius:10px}
+    .sw-cta a{color:#2ec4b6;font-weight:600}
+    .sw-spin{display:inline-block;width:1em;height:1em;border:2px solid rgba(255,255,255,0.3);border-top-color:#2ec4b6;border-radius:50%;animation:swspin 0.8s linear infinite;vertical-align:-0.15em;margin-right:0.4em}
+    @keyframes swspin{to{transform:rotate(360deg)}}
+    @media print{body *{visibility:hidden}#sw-out,#sw-out *{visibility:visible}#sw-out{position:absolute;inset:0;padding:1cm;background:#fff}#sw-out h2,#sw-out h3,#sw-out p,#sw-out li{color:#000!important}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart · penser à l'ère de l'IA</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="tutoriels.html">Tutoriels</a></li>
+      <li><a href="swot360.html" class="active">SWOT360</a></li>
+      <li><a href="index.html#manifeste">Manifeste</a></li>
+      <li><a href="https://atmart.ltd">Solutions (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:1rem">
+  <div class="container">
+    <p class="kreyol">6 kesyon, 2 minit — dekouvri plas ou nan epòk IA a.</p>
+    <h1>SWOT<em>360</em></h1>
+    <p class="lead">Fòs ou. Feblès ou. Opòtinite yo. Menas yo. Epi 3 aks ou : 🤖 sa pou w <strong>delege</strong> bay IA, 🔍 sa pou w <strong>sipèvize</strong>, 🌱 sa pou w <strong>ranfòse</strong> — paske se sa k fè w moun.<br /><span style="color:#9db2c7;font-size:0.9rem">Votre SWOT personnel à l'ère de l'IA — gratuit, en 4 langues.</span></p>
+    <p style="color:#9db2c7;font-size:0.88rem">Gratis · 3 SWOT pa jou · Nou pa sove okenn repons ou — rezilta a se pou ou sèlman.</p>
+  </div>
+</section>
+
+<!-- APP -->
+<section style="padding-top:0.5rem">
+  <div class="container">
+    <div class="sw-app">
+
+      <form class="sw-form" id="sw-form">
+        <label for="sw-work">1. Ki travay w ap fè kounye a ?<small>Quel est votre travail actuel ? (oswa : etidyan, san travay…)</small></label>
+        <input type="text" id="sw-work" maxlength="140" required placeholder="Ex. : enfimyè, chofè, pwofesè, komèsant, kontab…" />
+
+        <label for="sw-tasks">2. Ki 3 bagay ou fè pi souvan nan travay la ?<small>Les 3 tâches que vous faites le plus souvent</small></label>
+        <textarea id="sw-tasks" maxlength="400" required placeholder="Ex. : m pran swen pasyan, m ranpli fòm rapò, m reponn fanmi yo…"></textarea>
+
+        <label for="sw-strength">3. Nan kisa ou pi fò ?<small>Votre plus grande force</small></label>
+        <input type="text" id="sw-strength" maxlength="250" placeholder="Ex. : moun fè m konfyans fasil ; m pa janm lage yon travay…" />
+
+        <label for="sw-weakness">4. Kisa ki pi difisil pou ou ?<small>Votre plus grande difficulté</small></label>
+        <input type="text" id="sw-weakness" maxlength="250" placeholder="Ex. : anglè, òdinatè, pale an piblik, òganize tan mwen…" />
+
+        <label for="sw-aiuse">5. Èske w konn itilize IA (ChatGPT, elatriye) ?<small>Utilisez-vous déjà l'IA ?</small></label>
+        <select id="sw-aiuse">
+          <option value="none">Non, mwen poko janm sèvi ak li</option>
+          <option value="some">Yon ti kras, tanzantan</option>
+          <option value="often">Wi, mwen sèvi ak li souvan</option>
+        </select>
+
+        <label for="sw-goal">6. Ki objektif ou pou 1–3 lane k ap vini yo ?<small>Votre objectif pour les 1-3 prochaines années</small></label>
+        <input type="text" id="sw-goal" maxlength="250" placeholder="Ex. : jwenn yon pi bon travay, monte biznis mwen, aprann yon metye…" />
+
+        <label for="sw-lang">Nan ki lang ou vle rezilta a ?<small>Langue du résultat</small></label>
+        <select id="sw-lang">
+          <option value="ht" selected>Kreyòl</option>
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+
+        <div style="margin-top:1.1rem">
+          <button type="submit" class="btn btn-primary" id="sw-go">🧭 Fè SWOT360 mwen</button>
+        </div>
+        <p class="sw-status" id="sw-status" aria-live="polite"></p>
+      </form>
+
+      <div class="sw-result">
+        <div class="sw-toolbar" id="sw-toolbar" style="display:none">
+          <a class="wa" id="sw-share" target="_blank" rel="noopener">💬 Pataje sou WhatsApp</a>
+          <button id="sw-print">🖨 Enprime / PDF</button>
+          <button id="sw-copy">📋 Kopye</button>
+        </div>
+        <div id="sw-placeholder" class="sw-placeholder">
+          <div class="big">🧭</div>
+          <p>Rezilta SWOT360 ou a ap parèt isit la.<br />Reponn 6 kesyon yo epi klike « Fè SWOT360 mwen ».</p>
+        </div>
+        <article id="sw-out"></article>
+        <div class="sw-cta" id="sw-cta" style="display:none">
+          <p>📚 <strong>Pwochen etap ou :</strong> li leson gratis la — <a href="tutoriels/management-ia.html">Management &amp; carrière à l'ère de l'IA</a> — pou w aprofondi chak aks.</p>
+          <p style="margin-top:0.4rem">🚀 <strong>SWOT360 Deep</strong> (rapò konplè : klasman tout tach ou yo + plan 90 jou) ap vini. Enskri : <a href="mailto:sales@atmart.ltd?subject=SWOT360%20Deep%20-%20liste%20d'attente">sales@atmart.ltd</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="footer-note">© Atmart LLC — Lojik360. <span style="color:#9db2c7">SWOT360 Lite se yon zouti oryantasyon — se pa yon konsèy pwofesyonèl. Nou pa estoke repons ou yo.</span></p>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>
+(function () {
+  var ENDPOINT = "https://atmart-chat.atmartllc.workers.dev/swot360";
+  var form = document.getElementById("sw-form");
+  var out = document.getElementById("sw-out");
+  var ph = document.getElementById("sw-placeholder");
+  var bar = document.getElementById("sw-toolbar");
+  var cta = document.getElementById("sw-cta");
+  var status = document.getElementById("sw-status");
+  var go = document.getElementById("sw-go");
+  var lastMd = "";
+
+  var MSG = {
+    gen: "N ap prepare SWOT360 ou a… (15–30 segonn)",
+    done: "Men rezilta ou ! Li l, enprime l, pataje l.",
+    err: "Gen yon erè. Eseye ankò nan yon moman.",
+    limit: "Ou fè 3 SWOT jodi a — tounen demen ! 🙂",
+    offline: "Nou pa jwenn sèvè a. Verifye koneksyon ou.",
+    copied: "Kopye ! ✅",
+  };
+
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function inline(s){return s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>");}
+  function render(md){
+    var lines=md.split(/\r?\n/),html=[],inUl=false;
+    for(var i=0;i<lines.length;i++){
+      var l=esc(lines[i].trim()),m;
+      if(!l){if(inUl){html.push("</ul>");inUl=false;}continue;}
+      if((m=l.match(/^##\s+(.*)/))){if(inUl){html.push("</ul>");inUl=false;}html.push("<h3>"+inline(m[1])+"</h3>");}
+      else if((m=l.match(/^#\s+(.*)/))){if(inUl){html.push("</ul>");inUl=false;}html.push("<h2>"+inline(m[1])+"</h2>");}
+      else if((m=l.match(/^[-•]\s+(.*)/))){if(!inUl){html.push("<ul>");inUl=true;}html.push("<li>"+inline(m[1])+"</li>");}
+      else{if(inUl){html.push("</ul>");inUl=false;}html.push("<p>"+inline(l)+"</p>");}
+    }
+    if(inUl)html.push("</ul>");
+    return html.join("\n");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var payload = {
+      work: document.getElementById("sw-work").value.trim(),
+      tasks: document.getElementById("sw-tasks").value.trim(),
+      strength: document.getElementById("sw-strength").value.trim(),
+      weakness: document.getElementById("sw-weakness").value.trim(),
+      aiUse: document.getElementById("sw-aiuse").value,
+      goal: document.getElementById("sw-goal").value.trim(),
+      language: document.getElementById("sw-lang").value,
+    };
+    go.disabled = true;
+    status.innerHTML = '<span class="sw-spin"></span>' + MSG.gen;
+    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+      .then(function (res) {
+        go.disabled = false;
+        if (res.ok && res.body && res.body.swot) {
+          lastMd = res.body.swot;
+          out.innerHTML = render(lastMd);
+          ph.style.display = "none"; bar.style.display = "flex"; cta.style.display = "";
+          status.textContent = MSG.done;
+          var share = "Mwen fèk fè SWOT360 mwen sou Lojik360 — 6 kesyon, 2 minit, gratis. Fè pa w la tou 👉 https://lojik360.atmart.ltd/swot360.html";
+          document.getElementById("sw-share").href = "https://wa.me/?text=" + encodeURIComponent(share);
+          out.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          status.textContent = res.body && res.body.error === "rate_limited" ? MSG.limit : MSG.err;
+        }
+      })
+      .catch(function () { go.disabled = false; status.textContent = MSG.offline; });
+  });
+
+  document.getElementById("sw-print").addEventListener("click", function () { window.print(); });
+  document.getElementById("sw-copy").addEventListener("click", function () {
+    navigator.clipboard.writeText(lastMd).then(function () { status.textContent = MSG.copied; });
+  });
+})();
+</script>
+</body>
+</html>
