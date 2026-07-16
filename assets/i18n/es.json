@@ -123,5 +123,6 @@
   "nl.err": "❌ Dirección inválida o error — inténtalo de nuevo en un momento.",
   "hero.swot": "🧭 Hacer mi SWOT360 (gratis)",
   "sw.lead": "Tus fortalezas. Tus debilidades. Tus oportunidades. Tus amenazas. Y tus 3 ejes: 🤖 lo que <strong>delegas</strong> a la IA, 🔍 lo que <strong>supervisas</strong>, 🌱 lo que <strong>refuerzas</strong> — porque eso es lo que te hace humano.",
-  "sw.note": "Gratis · 5 SWOT al día · No guardamos ninguna respuesta — el resultado es solo tuyo."
+  "sw.note": "Gratis · 5 SWOT al día · No guardamos ninguna respuesta — el resultado es solo tuyo.",
+  "sw.footer": "SWOT360 Lite es una herramienta de orientación — no un consejo profesional. No guardamos tus respuestas."
 }
