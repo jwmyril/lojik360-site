@@ -32,6 +32,18 @@
     #sw-out p,#sw-out li{font-size:0.95rem;line-height:1.65;color:#d7e3f0}
     #sw-out ul{padding-left:1.2rem;margin:0.3rem 0 0.7rem}
     #sw-out li{margin-bottom:0.35rem}
+    .sw-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-left:5px solid #2ec4b6;border-radius:12px;padding:1rem 1.2rem;margin-bottom:0.9rem}
+    .sw-card h3{margin-top:0!important}
+    .sw-card.c-title{background:linear-gradient(135deg,rgba(46,196,182,0.15),rgba(255,255,255,0.03));border-left-color:#2ec4b6;text-align:center}
+    .sw-card.c-title h2{margin:0}
+    .sw-card.c-fos{border-left-color:#2ec4b6}
+    .sw-card.c-febles{border-left-color:#f4a261}
+    .sw-card.c-opo{border-left-color:#6a9fd8}
+    .sw-card.c-menas{border-left-color:#e63946}
+    .sw-card.c-aks{border-left-color:#2ec4b6;background:rgba(46,196,182,0.08)}
+    .sw-card.c-pa{border-left-color:#f4a261}
+    .sw-card.c-lock{border:1px dashed rgba(46,196,182,0.6);border-left:5px dashed #2ec4b6;background:rgba(46,196,182,0.05)}
+    @media print{.sw-card{border-color:#999!important;background:#fff!important;page-break-inside:avoid}}
     .sw-cta{margin-top:1.4rem;padding:1rem;border:1px dashed rgba(46,196,182,0.5);border-radius:10px}
     .sw-cta a{color:#2ec4b6;font-weight:600}
     .sw-spin{display:inline-block;width:1em;height:1em;border:2px solid rgba(255,255,255,0.3);border-top-color:#2ec4b6;border-radius:50%;animation:swspin 0.8s linear infinite;vertical-align:-0.15em;margin-right:0.4em}
@@ -102,6 +114,7 @@
       <div class="sw-result">
         <div class="sw-toolbar" id="sw-toolbar" style="display:none">
           <a class="wa" id="sw-share" target="_blank" rel="noopener">💬 Pataje sou WhatsApp</a>
+          <button id="sw-cardbtn">🖼 Telechaje kat SWOT ou</button>
           <button id="sw-print">🖨 Enprime / PDF</button>
           <button id="sw-copy">📋 Kopye</button>
         </div>
@@ -157,6 +170,7 @@
       cta1: '📚 <strong>Pwochen etap ou :</strong> li leson gratis la — <a href="tutoriels/management-ia.html">Management &amp; carrière à l\'ère de l\'IA</a> — pou w aprofondi chak aks.',
       cta2: '🚀 <strong>SWOT360 Deep</strong> — klasman tout tach ou yo (otomatize · ogmante · prezève), plan 90 jou ou a, ak enventè prèv ou. Enskri : <a href="mailto:sales@atmart.ltd?subject=SWOT360%20Deep">sales@atmart.ltd</a>',
       waTxt: "Mwen fèk fè SWOT360 mwen sou Lojik360 — 6 kesyon, 2 minit, gratis. Fè pa w la tou 👉 https://lojik360.atmart.ltd/swot360.html",
+      card: "🖼 Telechaje kat SWOT ou", cardCta: "Fè pa w la tou:",
       gen: "N ap prepare SWOT360 ou a… (15–30 segonn)", done: "Men rezilta ou ! Li l, enprime l, pataje l.",
       err: "Gen yon erè. Eseye ankò nan yon moman.", limit: "Ou fè 3 SWOT jodi a — tounen demen ! 🙂",
       offline: "Nou pa jwenn sèvè a. Verifye koneksyon ou.", copied: "Kopye ! ✅",
@@ -176,6 +190,7 @@
       cta1: '📚 <strong>Votre prochaine étape :</strong> lisez la leçon gratuite — <a href="tutoriels/management-ia.html">Management &amp; carrière à l\'ère de l\'IA</a> — pour approfondir chaque axe.',
       cta2: '🚀 <strong>SWOT360 Deep</strong> — la classification de toutes vos tâches (automatiser · augmenter · préserver), votre plan 90 jours et votre inventaire de preuves. Inscription : <a href="mailto:sales@atmart.ltd?subject=SWOT360%20Deep">sales@atmart.ltd</a>',
       waTxt: "Je viens de faire mon SWOT360 sur Lojik360 — 6 questions, 2 minutes, gratuit. Faites le vôtre 👉 https://lojik360.atmart.ltd/swot360.html",
+      card: "🖼 Télécharger ma carte SWOT", cardCta: "Faites le vôtre :",
       gen: "Préparation de votre SWOT360… (15–30 secondes)", done: "Voici votre résultat ! Lisez, imprimez, partagez.",
       err: "Une erreur est survenue. Réessayez dans un instant.", limit: "3 SWOT aujourd'hui — revenez demain ! 🙂",
       offline: "Serveur injoignable. Vérifiez votre connexion.", copied: "Copié ! ✅",
@@ -195,6 +210,7 @@
       cta1: '📚 <strong>Your next step:</strong> read the free lesson — <a href="tutoriels/management-ia.en.html">Management &amp; career in the AI era</a> — to go deeper on each axis.',
       cta2: '🚀 <strong>SWOT360 Deep</strong> — the full classification of your tasks (automate · augment · preserve), your 90-day plan and your proof inventory. Sign up: <a href="mailto:sales@atmart.ltd?subject=SWOT360%20Deep">sales@atmart.ltd</a>',
       waTxt: "I just did my SWOT360 on Lojik360 — 6 questions, 2 minutes, free. Do yours 👉 https://lojik360.atmart.ltd/swot360.html",
+      card: "🖼 Download my SWOT card", cardCta: "Do yours too:",
       gen: "Preparing your SWOT360… (15–30 seconds)", done: "Here is your result! Read it, print it, share it.",
       err: "Something went wrong. Try again in a moment.", limit: "3 SWOTs today — come back tomorrow! 🙂",
       offline: "Can't reach the server. Check your connection.", copied: "Copied! ✅",
@@ -214,6 +230,7 @@
       cta1: '📚 <strong>Tu próximo paso:</strong> lee la lección gratuita — <a href="tutoriels/management-ia.en.html">Management &amp; career in the AI era</a> — para profundizar cada eje.',
       cta2: '🚀 <strong>SWOT360 Deep</strong> — la clasificación de todas tus tareas (automatizar · aumentar · preservar), tu plan de 90 días y tu inventario de pruebas. Inscríbete: <a href="mailto:sales@atmart.ltd?subject=SWOT360%20Deep">sales@atmart.ltd</a>',
       waTxt: "Acabo de hacer mi SWOT360 en Lojik360 — 6 preguntas, 2 minutos, gratis. Haz el tuyo 👉 https://lojik360.atmart.ltd/swot360.html",
+      card: "🖼 Descargar mi tarjeta SWOT", cardCta: "Haz el tuyo:",
       gen: "Preparando tu SWOT360… (15–30 segundos)", done: "¡Aquí está tu resultado! Léelo, imprímelo, compártelo.",
       err: "Ocurrió un error. Inténtalo de nuevo en un momento.", limit: "3 SWOT hoy — ¡vuelve mañana! 🙂",
       offline: "No se puede contactar el servidor. Verifica tu conexión.", copied: "¡Copiado! ✅",
@@ -248,6 +265,7 @@
     document.getElementById("sw-go").textContent = T.go;
     document.querySelector("#sw-placeholder p").innerHTML = T.phTxt;
     document.getElementById("sw-share").textContent = T.share;
+    document.getElementById("sw-cardbtn").textContent = T.card;
     document.getElementById("sw-print").textContent = T.print;
     document.getElementById("sw-copy").textContent = T.copy;
     cta.innerHTML = "<p>" + T.cta1 + "</p><p style=\"margin-top:0.4rem\">" + T.cta2 + "</p>";
@@ -276,6 +294,108 @@
     return html.join("\n");
   }
 
+  // ---- rendu en cartes colorees (une carte par section) ----
+  var CARD_CLASSES = ["c-title", "c-fos", "c-febles", "c-opo", "c-menas", "c-aks", "c-pa", "c-lock"];
+  function renderCards(md) {
+    var parts = md.split(/\r?\n(?=## )/);
+    var html = "";
+    for (var i = 0; i < parts.length; i++) {
+      var cls = CARD_CLASSES[i] || "";
+      html += '<div class="sw-card ' + cls + '">' + render(parts[i]) + "</div>";
+    }
+    return html;
+  }
+
+  // ---- carte-image partageable (1080x1080, generee dans le navigateur) ----
+  function stripMd(t) { return t.replace(/\*\*/g, "").replace(/(^|[^*])\*([^*]+)\*/g, "$1$2").trim(); }
+  function parseForCard(md) {
+    var parts = md.split(/\r?\n(?=## )/);
+    var tm = parts[0].match(/^#\s+(.*)/m);
+    var title = (tm ? tm[1] : "SWOT360").replace(/^SWOT360\s*[—-]\s*/, "");
+    function sect(i) {
+      var lines = (parts[i] || "").split(/\r?\n/);
+      var head = stripMd((lines[0] || "").replace(/^##\s+/, ""));
+      var bullets = [];
+      for (var j = 1; j < lines.length && bullets.length < 2; j++) {
+        var m = lines[j].match(/^[-•]\s+(.*)/);
+        if (m) bullets.push(stripMd(m[1]));
+      }
+      return { head: head, bullets: bullets };
+    }
+    var axes = [];
+    (parts[5] || "").split(/\r?\n/).forEach(function (l) {
+      var m = l.match(/^[-•]\s+(.*)/);
+      if (m && axes.length < 3) axes.push(stripMd(m[1]));
+    });
+    return { title: stripMd(title), q: [sect(1), sect(2), sect(3), sect(4)], axes: axes };
+  }
+  function wrapLines(ctx, text, maxW, maxLines) {
+    var words = text.split(" "), lines = [], cur = "";
+    for (var i = 0; i < words.length; i++) {
+      var t = cur ? cur + " " + words[i] : words[i];
+      if (ctx.measureText(t).width > maxW && cur) {
+        lines.push(cur); cur = words[i];
+        if (lines.length === maxLines) { lines[maxLines - 1] = lines[maxLines - 1].replace(/\s*\S*$/, "…"); return lines; }
+      } else cur = t;
+    }
+    if (cur && lines.length < maxLines) lines.push(cur);
+    return lines;
+  }
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+  }
+  function buildShareCard(md) {
+    var d = parseForCard(md);
+    var cv = document.createElement("canvas"); cv.width = 1080; cv.height = 1080;
+    var ctx = cv.getContext("2d");
+    ctx.fillStyle = "#0a1a2f"; ctx.fillRect(0, 0, 1080, 1080);
+    ctx.fillStyle = "#2ec4b6"; ctx.font = "bold 58px Arial"; ctx.fillText("SWOT360", 48, 84);
+    ctx.fillStyle = "#9db2c7"; ctx.font = "26px Arial"; ctx.textAlign = "right";
+    ctx.fillText("Lojik360 · pa Atmart", 1032, 80); ctx.textAlign = "left";
+    ctx.fillStyle = "#ffffff"; ctx.font = "bold 40px Arial";
+    var tl = wrapLines(ctx, d.title, 984, 1); ctx.fillText(tl[0] || "", 48, 150);
+    var colors = ["#2ec4b6", "#f4a261", "#6a9fd8", "#e63946"];
+    var pos = [[48, 190], [564, 190], [48, 530], [564, 530]];
+    for (var i = 0; i < 4; i++) {
+      var x = pos[i][0], y = pos[i][1];
+      ctx.fillStyle = "rgba(255,255,255,0.06)"; roundRect(ctx, x, y, 468, 316, 18); ctx.fill();
+      ctx.strokeStyle = colors[i]; ctx.lineWidth = 3; roundRect(ctx, x, y, 468, 316, 18); ctx.stroke();
+      ctx.fillStyle = colors[i]; ctx.font = "bold 30px Arial";
+      ctx.fillText(wrapLines(ctx, d.q[i].head, 420, 1)[0] || "", x + 22, y + 46);
+      ctx.fillStyle = "#eaf2fb"; ctx.font = "25px Arial";
+      var yy = y + 92;
+      for (var b = 0; b < d.q[i].bullets.length; b++) {
+        var ls = wrapLines(ctx, "• " + d.q[i].bullets[b], 420, 2);
+        for (var k = 0; k < ls.length; k++) { ctx.fillText(ls[k], x + 22, yy); yy += 34; }
+        yy += 10;
+      }
+    }
+    ctx.fillStyle = "rgba(46,196,182,0.10)"; roundRect(ctx, 48, 876, 984, 130, 18); ctx.fill();
+    ctx.fillStyle = "#eaf2fb"; ctx.font = "24px Arial";
+    var ay = 912;
+    for (var a = 0; a < d.axes.length; a++) {
+      ctx.fillText(wrapLines(ctx, d.axes[a], 936, 1)[0] || "", 72, ay); ay += 38;
+    }
+    ctx.fillStyle = "#f4a261"; ctx.font = "bold 27px Arial"; ctx.textAlign = "center";
+    ctx.fillText(MSG.cardCta + " lojik360.atmart.ltd/swot360.html", 540, 1052);
+    ctx.textAlign = "left";
+    return cv;
+  }
+  document.getElementById("sw-cardbtn").addEventListener("click", function () {
+    if (!lastMd) return;
+    var cv = buildShareCard(lastMd);
+    cv.toBlob(function (blob) {
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "swot360-kat.png";
+      a.click();
+      URL.revokeObjectURL(a.href);
+      status.textContent = MSG.done;
+    }, "image/png");
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var payload = {
@@ -295,7 +415,7 @@
         go.disabled = false;
         if (res.ok && res.body && res.body.swot) {
           lastMd = res.body.swot;
-          out.innerHTML = render(lastMd);
+          out.innerHTML = renderCards(lastMd);
           ph.style.display = "none"; bar.style.display = "flex"; cta.style.display = "";
           status.textContent = MSG.done;
           document.getElementById("sw-share").href = "https://wa.me/?text=" + encodeURIComponent(MSG.waTxt);
