@@ -105,6 +105,16 @@
         <label for="sw-goal" id="L-goal">6. Ki objektif ou pou 1–3 lane k ap vini yo ?</label>
         <input type="text" id="sw-goal" maxlength="250" placeholder="Ex. : jwenn yon pi bon travay, monte biznis mwen, aprann yon metye…" />
 
+        <label for="sw-age" id="L-age">7. Ki tranch laj ou ? (si ou vle)</label>
+        <select id="sw-age">
+          <option value="">Mwen pito pa di</option>
+          <option value="16-24">16–24</option>
+          <option value="25-34">25–34</option>
+          <option value="35-44">35–44</option>
+          <option value="45-54">45–54</option>
+          <option value="55+">55+</option>
+        </select>
+
         <div style="margin-top:1.1rem">
           <button type="submit" class="btn btn-primary" id="sw-go">🧭 Fè SWOT360 mwen</button>
         </div>
@@ -164,6 +174,7 @@
       aiuse: "5. Èske w konn itilize IA (ChatGPT, elatriye) ?",
       ai0: "Non, mwen poko janm sèvi ak li", ai1: "Yon ti kras, tanzantan", ai2: "Wi, mwen sèvi ak li souvan",
       goal: "6. Ki objektif ou pou 1–3 lane k ap vini yo ?", goalP: "Ex. : jwenn yon pi bon travay, monte biznis mwen, aprann yon metye…",
+      age: "7. Ki tranch laj ou ? (si ou vle)", age0: "Mwen pito pa di",
       go: "🧭 Fè SWOT360 mwen",
       phTxt: "Rezilta SWOT360 ou a ap parèt isit la.<br />Reponn 6 kesyon yo epi klike « Fè SWOT360 mwen ».",
       share: "💬 Pataje sou WhatsApp", print: "🖨 Enprime / PDF", copy: "📋 Kopye",
@@ -184,6 +195,7 @@
       aiuse: "5. Utilisez-vous déjà l'IA (ChatGPT, etc.) ?",
       ai0: "Non, jamais encore", ai1: "Un peu, de temps en temps", ai2: "Oui, régulièrement",
       goal: "6. Votre objectif pour les 1–3 prochaines années ?", goalP: "Ex. : un meilleur emploi, monter mon business, apprendre un métier…",
+      age: "7. Votre tranche d'âge ? (facultatif)", age0: "Je préfère ne pas dire",
       go: "🧭 Faire mon SWOT360",
       phTxt: "Votre résultat SWOT360 apparaîtra ici.<br />Répondez aux 6 questions puis cliquez « Faire mon SWOT360 ».",
       share: "💬 Partager sur WhatsApp", print: "🖨 Imprimer / PDF", copy: "📋 Copier",
@@ -204,6 +216,7 @@
       aiuse: "5. Do you already use AI (ChatGPT, etc.)?",
       ai0: "No, never yet", ai1: "A little, now and then", ai2: "Yes, regularly",
       goal: "6. Your goal for the next 1–3 years?", goalP: "E.g.: a better job, start my business, learn a trade…",
+      age: "7. Your age range? (optional)", age0: "Prefer not to say",
       go: "🧭 Get my SWOT360",
       phTxt: "Your SWOT360 result will appear here.<br />Answer the 6 questions and click “Get my SWOT360”.",
       share: "💬 Share on WhatsApp", print: "🖨 Print / PDF", copy: "📋 Copy",
@@ -224,6 +237,7 @@
       aiuse: "5. ¿Ya usas IA (ChatGPT, etc.)?",
       ai0: "No, nunca todavía", ai1: "Un poco, de vez en cuando", ai2: "Sí, regularmente",
       goal: "6. ¿Tu objetivo para los próximos 1–3 años?", goalP: "Ej.: un mejor empleo, montar mi negocio, aprender un oficio…",
+      age: "7. ¿Tu rango de edad? (opcional)", age0: "Prefiero no decir",
       go: "🧭 Hacer mi SWOT360",
       phTxt: "Tu resultado SWOT360 aparecerá aquí.<br />Responde las 6 preguntas y haz clic en «Hacer mi SWOT360».",
       share: "💬 Compartir en WhatsApp", print: "🖨 Imprimir / PDF", copy: "📋 Copiar",
@@ -255,6 +269,9 @@
     setLabel("L-weakness", T.weakness);
     setLabel("L-aiuse", T.aiuse);
     setLabel("L-goal", T.goal);
+    setLabel("L-age", T.age);
+    var ageSel = document.getElementById("sw-age");
+    if (ageSel) ageSel.options[0].text = T.age0;
     document.getElementById("sw-work").placeholder = T.workP;
     document.getElementById("sw-tasks").placeholder = T.tasksP;
     document.getElementById("sw-strength").placeholder = T.strengthP;
@@ -405,6 +422,7 @@
       weakness: document.getElementById("sw-weakness").value.trim(),
       aiUse: document.getElementById("sw-aiuse").value,
       goal: document.getElementById("sw-goal").value.trim(),
+      age: document.getElementById("sw-age").value,
       language: siteLang(),
     };
     go.disabled = true;
