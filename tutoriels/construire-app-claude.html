@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Construire une application web avec Claude — le guide complet | Lojik360</title>
+<meta name="description" content="Le processus complet pour construire et publier une application web avec Claude (IA), sans être développeur — illustré étape par étape par un cas réel : le site Lojik360. Idée, architecture, prompts, sécurité, publication." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/style.css?v=6" />
+<style>html{scroll-behavior:smooth}.tuto-main h4{color:var(--ink)}.prompt-box{background:var(--navy-2);border:1px solid var(--border);border-radius:10px;padding:.7rem .9rem;margin:.5rem 0;font-size:.9rem;color:var(--ink)}</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart</small></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../tutoriels.html" class="active">Tutoriels</a></li>
+      <li><a href="../podcast.html">Podcast</a></li>
+      <li><a href="../lojikkid.html">Lojikkid</a></li>
+      <li><a href="https://atmart.ltd">Solutions (Atmart)</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="tuto-shell">
+  <aside class="tuto-sidebar">
+    <div class="tuto-sidebar-head"><span class="ico">🏗️</span><h2>Construire une app web avec Claude</h2><span class="lvl">🤖 Déléguer</span><div class="lang-page-switch"><a href="construire-app-claude.html" class="active">FR</a><span class="lang-soon" title="bientôt">HT</span><span class="lang-soon" title="bientôt">EN</span><span class="lang-soon" title="bientôt">ES</span></div></div>
+    <button class="tuto-toc-toggle">☰ Étapes</button>
+    <ul class="tuto-toc">
+      <li><a href="#intro">À propos de ce guide</a></li>
+      <li class="toc-group">Les 10 étapes</li>
+      <li><a href="#s1">1. Clarifier le problème avant l'outil</a></li>
+      <li><a href="#s2">2. Choisir l'architecture la plus simple</a></li>
+      <li><a href="#s3">3. Préparer les trois comptes</a></li>
+      <li><a href="#s4">4. La première page avec Claude</a></li>
+      <li><a href="#s5">5. Design cohérent et multilingue</a></li>
+      <li><a href="#s6">6. Le contenu à l'échelle</a></li>
+      <li><a href="#s7">7. Du dynamique sans serveur</a></li>
+      <li><a href="#s8">8. Superviser : tester et vérifier</a></li>
+      <li><a href="#s9">9. Sécuriser avant d'ouvrir</a></li>
+      <li><a href="#s10">10. Publier, mesurer, itérer</a></li>
+      <li class="toc-group">Pour finir</li>
+      <li><a href="#fin">Erreurs courantes &amp; ligne d'arrivée</a></li>
+    </ul>
+  </aside>
+  <main class="tuto-main">
+    <p class="breadcrumb"><a href="../tutoriels.html">Tutoriels</a> › 🤖 Déléguer</p>
+    <h1>Construire une application web avec Claude — le guide complet</h1>
+    <p class="lead">Le processus de A à Z pour créer et publier une application web avec une IA comme Claude, sans être développeur — illustré par un cas 100 % réel : le site que vous êtes en train de lire. Chaque étape dit ce que vous déléguez à l'IA, ce que vous supervisez, et ce qui reste votre décision d'humain.</p>
+
+<section id="intro">
+  <h2>À propos de ce guide</h2>
+  <p>On appelle ça le « vibe coding » : vous décrivez ce que vous voulez en langage humain, l'IA écrit le code. C'est vrai — et c'est là que la plupart des gens s'arrêtent, publient une application fragile, et se font pirater ou abandonnent. Ce guide enseigne le vibe coding <strong>avec discipline</strong>, selon les trois gestes Lojik360 : <strong>déléguer</strong> le code à l'IA, <strong>superviser</strong> chaque résultat, <strong>renforcer</strong> ce qui reste à vous — la vision, les décisions, la langue, la relation avec vos utilisateurs.</p>
+  <p>Le fil rouge est un cas réel, vérifiable en ligne : <strong>lojik360.atmart.ltd</strong> — 36 pages en 4 langues, un assistant IA intégré, une newsletter, une interface d'administration, un podcast — construit avec Claude par un analyste de données qui n'est pas développeur web, pour un coût d'hébergement de <strong>0 $/mois</strong> (plus ~12 $/an de nom de domaine).</p>
+  <div class="callout"><strong>Ce qu'il vous faut.</strong> Un ordinateur avec un navigateur, un compte Claude (claude.ai — l'outil Claude Code est encore plus puissant pour ce travail), 2 à 3 heures par étape, et un vrai problème à résoudre. Aucune ligne de code à connaître — mais l'envie de <em>comprendre</em> ce que l'IA produit.</div>
+  <div class="callout warn"><strong>⚠️ La règle d'or du guide.</strong> Ne publiez jamais ce que vous ne comprenez pas au moins dans les grandes lignes. À chaque étape, demandez à Claude : « Explique-moi ce que fait ce code, comme à un débutant. » C'est la différence entre un architecte et quelqu'un qui empile des briques les yeux fermés.</div>
+  <p style="color:var(--ink-dim)">Choisissez une étape dans le menu — une seule s'affiche à la fois.</p>
+</section>
+
+<section id="s1">
+  <h2>Étape 1 — Clarifier le problème avant l'outil</h2>
+  <p style="color:var(--ink-dim)">⏱ 1 à 2 heures · 🎯 Vous allez produire : <strong>une fiche projet d'une page</strong></p>
+  <h3>Le principe</h3>
+  <p>Une idée sans exécution ne vaut rien ; mais une exécution sans problème clair ne vaut pas mieux. Avant d'ouvrir Claude, répondez par écrit à quatre questions : <strong>Qui</strong> a un problème ? <strong>Quel</strong> problème, en une phrase ? <strong>Quelle preuve</strong> avez-vous que ce problème existe (des gens vous le demandent, vous l'avez vécu, un marché mal servi) ? <strong>Quelle est la plus petite version utile</strong> — le MVP — livrable en semaines, pas en mois ?</p>
+  <h3>Le cas Lojik360</h3>
+  <p>Qui : les apprenants haïtiens et francophones. Problème : aucune formation à l'IA, à la pensée critique et aux données n'existe en kreyòl. Preuve : le créateur travaille dans la formation en Haïti et voit le vide chaque semaine ; les contenus français existants (France) ignorent ce public. MVP : un site statique avec UN tutoriel gratuit et une page d'accueil qui pose le manifeste — pas de comptes, pas de paiement, pas d'application mobile.</p>
+  <h3>Déléguer / Superviser</h3>
+  <p>Claude est excellent pour <em>challenger</em> votre idée avant d'écrire du code. Utilisez ce prompt :</p>
+  <div class="prompt-box">Voici mon idée d'application : [décrire en 5 lignes : qui, problème, preuve, MVP]. Joue le rôle d'un investisseur sceptique : pose-moi les 5 questions qui fâchent, identifie ce qui existe déjà sur ce marché, et propose une version PLUS PETITE de mon MVP livrable en 2 semaines.</div>
+  <div class="callout">✅ <strong>Vous avez fini quand</strong> votre fiche projet tient sur une page et qu'une personne extérieure comprend en 30 secondes qui vous servez et pourquoi.</div>
+</section>
+
+<section id="s2">
+  <h2>Étape 2 — Choisir l'architecture la plus simple qui marche</h2>
+  <p style="color:var(--ink-dim)">⏱ 1 heure · 🎯 Vous allez produire : <strong>un schéma de 3 briques et un budget</strong></p>
+  <h3>Le principe</h3>
+  <p>L'erreur classique du débutant conseillé par des vidéos : démarrer avec une « vraie » stack de startup (base de données, framework, serveurs) pour un projet qui n'a encore aucun utilisateur. Chaque brique ajoutée est une chose à sécuriser, payer et maintenir. La règle : <strong>statique d'abord</strong>, dynamique seulement où c'est indispensable.</p>
+  <h3>Les 3 briques de Lojik360 (coût : ~0 $/mois)</h3>
+  <ul>
+    <li><strong>Un site statique sur GitHub Pages</strong> (gratuit) : des fichiers HTML/CSS/JS servis tels quels. Pas de serveur à pirater, pas de base à fuiter, rapidité maximale. C'est suffisant pour 90 % des sites de contenu, vitrines et outils simples.</li>
+    <li><strong>Un nom de domaine</strong> (~12 $/an, ex. Porkbun) : votre adresse à vous, indépendante de tout hébergeur.</li>
+    <li><strong>Un « worker » Cloudflare</strong> (gratuit jusqu'à 100 000 requêtes/jour) : un petit programme serveur pour les RARES choses qui exigent un secret ou un stockage — chez Lojik360 : l'assistant IA (la clé API doit rester cachée) et la newsletter (stocker les e-mails).</li>
+  </ul>
+  <h3>Quand passer à une vraie base de données ?</h3>
+  <p>Seulement quand votre application a des <em>comptes utilisateurs avec des données privées</em> (un SaaS de gestion, par exemple). À ce moment-là, prenez un modèle éprouvé (template Open SaaS, Supabase…) — et lisez d'abord l'étape 9 de ce guide, deux fois.</p>
+  <div class="prompt-box">Voici mon projet : [fiche de l'étape 1]. Propose-moi l'architecture LA PLUS SIMPLE possible, en privilégiant un site statique gratuit. Pour chaque brique, dis-moi : à quoi elle sert, ce qu'elle coûte, et ce qui se passerait si je m'en passais. Ne me propose ni framework ni base de données sauf nécessité absolue — justifie chaque ajout.</div>
+</section>
+
+<section id="s3">
+  <h2>Étape 3 — Préparer les trois comptes</h2>
+  <p style="color:var(--ink-dim)">⏱ 1 heure · 🎯 Vous allez produire : <strong>un dépôt GitHub vivant, prêt à publier</strong></p>
+  <h3>Les comptes</h3>
+  <ol>
+    <li><strong>GitHub</strong> (gratuit) : c'est à la fois votre sauvegarde, votre historique (chaque version est conservée — le filet de sécurité qui permet d'oser), et votre hébergeur via GitHub Pages. Créez un « repository » (dépôt) pour votre projet.</li>
+    <li><strong>Claude</strong> : claude.ai suffit pour commencer (vous copiez-collez les fichiers) ; <strong>Claude Code</strong> est le niveau supérieur — il lit et écrit directement vos fichiers, exécute les commandes et publie pour vous. Lojik360 est entièrement construit ainsi.</li>
+    <li><strong>Cloudflare</strong> (gratuit) : seulement quand vous atteindrez l'étape 7.</li>
+  </ol>
+  <h3>Le geste fondamental : publier = pousser</h3>
+  <p>Avec GitHub Pages activé sur votre dépôt (Settings → Pages → branche main), chaque modification « poussée » est en ligne en une minute. Pas de FTP, pas de panneau d'hébergement : <em>votre historique Git EST votre déploiement</em>. Un domaine personnalisé se branche avec 4 lignes de DNS.</p>
+  <div class="prompt-box">Guide-moi pas à pas, comme un débutant complet sous [Windows/Mac] : créer mon dépôt GitHub « mon-projet », y mettre un fichier index.html minimal, activer GitHub Pages, et vérifier que la page est en ligne. Donne-moi les commandes exactes et dis-moi à quoi ressemble le succès à chaque étape.</div>
+  <div class="callout warn"><strong>⚠️ Dès le premier jour :</strong> activez la double authentification (2FA) sur GitHub. C'est le compte qui contrôle tout le reste.</div>
+</section>
+
+<section id="s4">
+  <h2>Étape 4 — La première page avec Claude : l'art du prompt de construction</h2>
+  <p style="color:var(--ink-dim)">⏱ 2 à 3 heures · 🎯 Vous allez produire : <strong>votre page d'accueil, en ligne</strong></p>
+  <h3>L'anatomie d'un bon prompt de construction</h3>
+  <p>La qualité de ce que Claude produit dépend directement de ce que vous précisez. Un bon prompt de construction contient quatre blocs — exactement comme dans notre <a href="prompting-ia.html">tutoriel Prompting</a> :</p>
+  <ul>
+    <li><strong>Le contexte</strong> : qui vous êtes, pour qui est le site, ce qui existe déjà ;</li>
+    <li><strong>Le résultat attendu</strong> : les sections de la page, dans l'ordre, avec le vrai contenu (pas de « lorem ipsum » — donnez vos vrais textes) ;</li>
+    <li><strong>Les contraintes</strong> : HTML/CSS/JS purs sans framework, couleurs et polices imposées, mobile d'abord, léger ;</li>
+    <li><strong>Le critère de succès</strong> : « je dois pouvoir ouvrir le fichier et voir la page finie ».</li>
+  </ul>
+  <h3>Le prompt qui a lancé Lojik360 (à adapter)</h3>
+  <div class="prompt-box">Crée la page d'accueil statique d'un site éducatif nommé [NOM]. Public : [décrire]. Structure : barre de navigation (Accueil, Tutoriels, Contact), un bandeau principal avec ce slogan : « [slogan] », une section manifeste avec ce texte : [coller], trois cartes présentant [vos 3 piliers], un pied de page. Contraintes : un seul fichier index.html + un fichier assets/style.css, AUCUN framework, couleurs : fond [X], accent [Y], responsive mobile. Écris du HTML propre et commente le CSS pour que je puisse apprendre en le lisant.</div>
+  <h3>Itérer petit, vérifier à chaque pas</h3>
+  <p>Ne demandez jamais « tout le site » d'un coup. Une page, vous regardez dans le navigateur, vous corrigez (« le titre est trop gros sur mobile », « mets le bouton en haut »), puis la suivante. Chaque itération publiée = un commit — si une modification casse tout, l'historique vous ramène en arrière en une commande.</p>
+  <div class="callout">✅ <strong>Vous avez fini quand</strong> votre page d'accueil est en ligne à votre adresse, s'affiche bien sur votre téléphone, et que vous savez expliquer ses 3 fichiers.</div>
+</section>
+
+<section id="s5">
+  <h2>Étape 5 — Un design cohérent… et multilingue si votre public l'exige</h2>
+  <p style="color:var(--ink-dim)">⏱ 2 à 4 heures · 🎯 Vous allez produire : <strong>une feuille de style unique + (option) un site en plusieurs langues</strong></p>
+  <h3>Le design system du pauvre (qui est en fait très riche)</h3>
+  <p>Toute la cohérence visuelle de Lojik360 tient dans une seule feuille CSS avec des <strong>variables</strong> : les couleurs et polices sont définies UNE fois (<code>--navy</code>, <code>--teal</code>, <code>--amber</code>…), toutes les pages les réutilisent. Demandez ça explicitement à Claude — sinon chaque page réinvente ses styles et le site devient un patchwork.</p>
+  <div class="prompt-box">Refactorise mon CSS : extrais toutes les couleurs, polices et arrondis en variables CSS dans :root. Toutes les pages doivent partager assets/style.css. Ajoute les classes réutilisables .card, .btn, .banner avec le même langage visuel. Ne change pas l'apparence actuelle.</div>
+  <h3>Le multilingue à la Lojik360 (4 langues, zéro framework)</h3>
+  <p>Deux mécanismes selon la taille du texte : pour l'<em>interface</em> (menus, boutons, cartes), chaque élément porte un attribut <code>data-i18n="cle"</code> et un petit script charge un dictionnaire JSON par langue ; pour les <em>pages longues</em> (tutoriels), une page complète par langue (<code>page.html</code>, <code>page.ht.html</code>…) avec un sélecteur — jamais de langues mélangées sur une même page.</p>
+  <div class="callout warn"><strong>⚠️ La leçon la plus importante du projet :</strong> l'IA traduit la mécanique, mais PAS l'autorité. Le kreyòl de Lojik360 est validé mot par mot par un locuteur natif, avec un glossaire qui s'enrichit de chaque correction (« prompt » se dit <em>pronpt</em>, jamais de traduction mot à mot…). Si votre langue compte pour votre public, VOUS êtes le contrôle qualité — l'IA propose, vous tranchez.</div>
+</section>
+
+<section id="s6">
+  <h2>Étape 6 — Le contenu à l'échelle : le pipeline documents → pages</h2>
+  <p style="color:var(--ink-dim)">⏱ selon votre contenu · 🎯 Vous allez produire : <strong>vos contenus publiés en série, sans copier-coller</strong></p>
+  <h3>Le principe</h3>
+  <p>Votre valeur est dans vos documents (cours, catalogues, fiches produits) — pas dans le HTML. Plutôt que de copier-coller 50 fois, faites écrire par Claude un <strong>générateur</strong> : un petit script qui lit vos documents Word et fabrique les pages web automatiquement, toujours dans le même gabarit.</p>
+  <h3>Le cas Lojik360 : 27 sessions en une commande</h3>
+  <p>Les 27 sessions de formation existaient en Word. Claude a écrit un script Python qui lit chaque document (titres, tableaux, listes), le transforme en page web avec sommaire interactif, et signale tout ce qui manque. Résultat : 6 pages complètes générées et vérifiées en une session de travail — et quand un document source change, on régénère au lieu de rééditer. Le même pipeline a servi pour les traductions : nouveau document kreyòl → mêmes pages en kreyòl.</p>
+  <div class="prompt-box">Voici un de mes documents Word : [joindre]. Écris un script Python qui le lit et génère une page HTML dans mon gabarit [joindre une page existante], avec : titres → sections, tableaux → tableaux HTML, un sommaire cliquable. Le script doit VÉRIFIER qu'aucune section ne sort vide et me lister les anomalies au lieu de les cacher.</div>
+  <div class="callout">✅ Cette étape est la plus rentable du guide : elle transforme un travail de semaines en un travail d'heures, et c'est elle qui rend votre site vivant (publier du neuf devient trivial).</div>
+</section>
+
+<section id="s7">
+  <h2>Étape 7 — Du dynamique sans serveur : votre premier worker</h2>
+  <p style="color:var(--ink-dim)">⏱ 2 à 3 heures · 🎯 Vous allez produire : <strong>une fonction serveur réelle (formulaire, chat IA…) — sans gérer de serveur</strong></p>
+  <h3>Pourquoi un worker ?</h3>
+  <p>Deux choses sont impossibles dans un site statique : garder un <strong>secret</strong> (une clé API dans votre page serait visible par tous — c'est l'erreur n°1 des débutants) et <strong>stocker</strong> des données (e-mails d'une newsletter). Un worker Cloudflare est un mini-programme qui tourne chez Cloudflare : votre page lui parle, lui seul connaît la clé.</p>
+  <h3>Les deux workers réels de Lojik360</h3>
+  <ul>
+    <li><strong>L'assistant IA « Lojik »</strong> : la page envoie la question au worker → le worker appelle l'API Claude avec la clé (stockée en « secret » Cloudflare, jamais dans le code) → renvoie la réponse. Limité à 15 messages/jour par visiteur pour maîtriser le coût.</li>
+    <li><strong>La newsletter</strong> : le formulaire envoie l'e-mail au worker → il le valide CÔTÉ SERVEUR (format, longueur, 5 inscriptions max/jour/IP) → le stocke. Le HTML valide aussi, mais seulement pour le confort : <em>le serveur ne fait jamais confiance au navigateur</em>.</li>
+  </ul>
+  <div class="prompt-box">Écris un worker Cloudflare en JavaScript pur avec une route POST /subscribe qui : valide un e-mail côté serveur (format + longueur max), limite à 5 requêtes/jour par adresse IP, stocke l'e-mail en KV, restreint le CORS à mon domaine [X]. Puis donne-moi les commandes wrangler pour créer le KV, poser le secret et déployer. Explique chaque protection.</div>
+  <div class="callout warn"><strong>⚠️ Trois règles absolues :</strong> tout secret vit dans les secrets de la plateforme (jamais dans le code, jamais dans Git) ; toute entrée utilisateur est validée côté serveur ; toute route qui coûte de l'argent (IA !) a une limite par visiteur.</div>
+</section>
+
+<section id="s8">
+  <h2>Étape 8 — Superviser : tester et vérifier comme un pro</h2>
+  <p style="color:var(--ink-dim)">⏱ en continu · 🎯 Vous allez produire : <strong>une routine de vérification qui attrape les erreurs avant vos visiteurs</strong></p>
+  <h3>La discipline qui sépare l'amateur du professionnel</h3>
+  <ul>
+    <li><strong>Prévisualiser en local</strong> avant de publier : demandez à Claude de vous installer un petit serveur local (une commande Python suffit) pour voir le site exactement comme en ligne.</li>
+    <li><strong>Tester le parcours réel</strong>, pas juste « ça s'affiche » : cliquer chaque lien, soumettre le formulaire avec une adresse bidon ET une vraie, ouvrir sur téléphone, tester chaque langue.</li>
+    <li><strong>Automatiser la relecture</strong> : pour tout ce qui se vérifie par une règle, faites écrire un vérificateur. Lojik360 a un scanner qui détecte les restes de français dans les pages kreyòl (accents interdits, mots-outils) — 36 pages relues en 2 secondes, l'humain ne relit que les blocs suspects. Cette « relecture par exception » a réduit un travail de jours à une heure.</li>
+    <li><strong>Demander à Claude de vérifier Claude</strong> : « Relis ce que tu viens d'écrire comme un correcteur sévère : liste ce qui peut casser, ce qui manque, ce qui est incohérent. »</li>
+  </ul>
+  <div class="callout">✅ <strong>Le réflexe :</strong> jamais de publication le soir sans avoir cliqué soi-même le parcours principal. Git permet de revenir en arrière, mais vos visiteurs, eux, ont vu la page cassée.</div>
+</section>
+
+<section id="s9">
+  <h2>Étape 9 — Sécuriser avant d'ouvrir : les 5 erreurs qui tuent les apps « vibe codées »</h2>
+  <p style="color:var(--ink-dim)">⏱ une demi-journée · 🎯 Vous allez produire : <strong>un audit écrit de votre app, les 5 cases cochées</strong></p>
+  <h3>Les 5 erreurs (et comment Lojik360 les évite)</h3>
+  <ol>
+    <li><strong>Clés API et secrets exposés.</strong> Tout ce qui atteint le navigateur est public. Vérifiez vos fichiers ET votre historique Git (une clé effacée reste dans l'historique !). Parade : secrets de plateforme + scan de l'historique avant chaque publication.</li>
+    <li><strong>Données non cloisonnées (RLS manquant).</strong> Si votre app a des comptes : l'utilisateur A ne doit JAMAIS pouvoir lire les données de B, même en devinant une adresse. Chaque requête serveur vérifie l'identité PUIS filtre par propriétaire — et un test automatique le prouve. Sans base de données ? Vous êtes protégé par construction : c'est un argument de plus pour l'étape 2.</li>
+    <li><strong>Validation seulement côté navigateur.</strong> Un attaquant n'utilise pas votre formulaire, il parle directement à votre serveur. Toute règle qui compte est appliquée côté serveur.</li>
+    <li><strong>Packages inventés ou obsolètes.</strong> L'IA peut suggérer des librairies qui n'existent pas (et des pirates publient des faux packages à ces noms !). Vérifiez chaque dépendance sur le site officiel — ou mieux : moins de dépendances. Lojik360 en a zéro.</li>
+    <li><strong>Routes sans authentification.</strong> Listez TOUTES vos routes et écrivez à côté de chacune qui y a droit et qu'est-ce qui le vérifie. Une route d'admin « cachée » n'est pas protégée — elle est juste pas encore trouvée.</li>
+  </ol>
+  <div class="prompt-box">Audite mon application contre ces 5 erreurs : secrets exposés (code + historique git), cloisonnement des données, validation serveur, dépendances douteuses, routes sans authentification. Pour chaque point : vérifie dans MON code réel (pas de généralités), montre-moi la preuve, propose le correctif, et classe par gravité.</div>
+  <p>Faites cet audit <strong>avant</strong> le premier utilisateur réel, puis à chaque ajout de fonctionnalité. Les hébergeurs sérieux (Cloudflare, Render, Aiven…) sécurisent la plomberie — ces 5 erreurs, elles, vivent dans votre code : aucun hébergeur ne les corrige à votre place.</p>
+</section>
+
+<section id="s10">
+  <h2>Étape 10 — Publier, mesurer, itérer</h2>
+  <p style="color:var(--ink-dim)">⏱ en continu · 🎯 Vous allez produire : <strong>une boucle d'amélioration hebdomadaire</strong></p>
+  <h3>Le lancement n'est pas la fin — c'est le début de la boucle</h3>
+  <ul>
+    <li><strong>Référencement de base</strong> : un sitemap.xml + robots.txt (Claude les génère en une minute), des titres et descriptions soignés par page. Sur une niche mal servie, c'est déjà décisif.</li>
+    <li><strong>Capturez l'intérêt</strong> : un formulaire e-mail qui marche vraiment (étape 7) — chaque visiteur intéressé qui repart sans laisser de trace est une perte sèche.</li>
+    <li><strong>Outillez les non-codeurs</strong> (vous dans 6 mois !) : Lojik360 a une page d'administration où l'on modifie le texte d'un tutoriel comme dans Word, et chaque « Publier » devient un commit Git. Demandez le même genre d'outil pour ce que vous modifierez souvent.</li>
+    <li><strong>La boucle hebdo</strong> : un contenu ou une amélioration par semaine, poussée le même jour. La régularité bat la perfection — et chaque session avec Claude repart de l'historique Git, donc rien ne se perd entre deux sessions.</li>
+  </ul>
+  <div class="callout">✅ <strong>Vous avez fini le guide quand</strong> : votre app est en ligne sur votre domaine, l'audit de l'étape 9 est écrit, un vrai utilisateur l'a utilisée devant vous, et vous savez publier une amélioration en moins de 15 minutes.</div>
+</section>
+
+<section id="fin">
+  <h2>Erreurs courantes &amp; ligne d'arrivée</h2>
+  <h3>Les pièges vus sur le terrain</h3>
+  <ul>
+    <li>Demander « tout le site » en un prompt — itérez page par page, fonctionnalité par fonctionnalité.</li>
+    <li>Accepter du code qu'on ne comprend pas — exigez l'explication, c'est votre formation gratuite.</li>
+    <li>Commencer par la base de données et les comptes utilisateurs « au cas où » — commencez statique.</li>
+    <li>Payer un abonnement poussé par un parcours d'inscription sans vérifier s'il est nécessaire — lisez ce que vous validez.</li>
+    <li>Croire qu'un hébergeur « sécurisé » dispense de l'audit des 5 erreurs — la sécurité vit dans votre code.</li>
+    <li>Laisser l'IA décider de ce qui touche votre langue, votre culture, votre réputation — elle propose, vous tranchez.</li>
+  </ul>
+  <h3>Et pour un vrai SaaS avec comptes et paiements ?</h3>
+  <p>Le processus reste le même, la barre monte : partez d'un template éprouvé (Open SaaS…), appliquez l'étape 9 comme une loi, ajoutez sauvegardes testées et rôles utilisateurs. C'est exactement le chantier des produits <a href="https://atmart.ltd">Atmart</a> (Arpentaj, Lojik360 Studio) — et le sujet d'un futur guide.</p>
+  <div class="callout"><strong>🏁 Ligne d'arrivée.</strong> Vous n'êtes plus un exécutant qui tape du code, ni un spectateur qui regarde l'IA faire : vous êtes l'architecte. Vous déléguez la construction, vous supervisez chaque brique, et vous renforcez ce que l'IA n'aura jamais — la connaissance de votre public et la responsabilité de ce que vous publiez. Maintenant, construisez le vôtre — et montrez-le nous.</div>
+</section>
+    <div class="tuto-pager"><a href="../tutoriels.html" class="btn btn-outline">← Tous les tutoriels</a></div>
+  </main>
+</div>
+<footer><div class="container"><div class="footer-bottom">© 2026 Atmart LLC — Lojik360 est une marque d'Atmart LLC.</div></div></footer>
+<script src="../assets/script.js?v=2"></script>
+<script src="../assets/chat.js?v=4" data-endpoint="https://atmart-chat.atmartllc.workers.dev"></script>
+</body>
+</html>
