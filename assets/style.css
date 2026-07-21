@@ -48,7 +48,7 @@ header {
   font-family: var(--font-head); font-weight: 700; font-size: 1.35rem; color: var(--ink);
   display: flex; align-items: center;
 }
-.logo-img { width: 42px; height: 42px; flex-shrink: 0; margin-right: 0.6rem; }
+.logo-img { width: 42px; height: 42px; flex-shrink: 0; margin-right: 0.6rem; border-radius: 9px; }
 .logo small { margin-left: 0.6rem; }
 .logo span { color: var(--teal); }
 .logo small { display: block; font-size: 0.62rem; letter-spacing: 0.18em; color: var(--ink-dim); text-transform: uppercase; }
