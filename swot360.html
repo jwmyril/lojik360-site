@@ -53,6 +53,24 @@
     .sw-spin{display:inline-block;width:1em;height:1em;border:2px solid rgba(255,255,255,0.3);border-top-color:#2ec4b6;border-radius:50%;animation:swspin 0.8s linear infinite;vertical-align:-0.15em;margin-right:0.4em}
     @keyframes swspin{to{transform:rotate(360deg)}}
     @media print{body *{visibility:hidden}#sw-out,#sw-out *{visibility:visible}#sw-out{position:absolute;inset:0;padding:1cm;background:#fff}#sw-out h2,#sw-out h3,#sw-out p,#sw-out li{color:#000!important}}
+    /* ---- mòd pratik vokal (entretien à voix haute) ---- */
+    .vw-panel{background:rgba(46,196,182,0.06);border:1px solid rgba(46,196,182,0.4);border-radius:14px;padding:1.1rem 1.2rem;margin-bottom:1rem}
+    .vw-prog{color:#9db2c7;font-size:0.82rem;margin:0 0 0.3rem}
+    .vw-q{font-family:"Space Grotesk",sans-serif;font-size:1.1rem;color:#fff;margin:0 0 0.7rem;line-height:1.5}
+    .vw-note{color:#f4a261;font-size:0.82rem;margin:0 0 0.6rem}
+    .vw-row{display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:0.6rem}
+    .vw-btn{background:#0e2240;color:#eaf2fb;border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:0.45rem 0.9rem;font:inherit;font-size:0.88rem;cursor:pointer}
+    .vw-btn:hover{border-color:#2ec4b6}
+    .vw-btn.mic{background:#2ec4b6;color:#06283d;font-weight:700;border-color:#2ec4b6}
+    .vw-btn.mic.rec{background:#e63946;color:#fff;border-color:#e63946;animation:vwpulse 1.1s ease-in-out infinite}
+    @keyframes vwpulse{0%,100%{box-shadow:0 0 0 0 rgba(230,57,70,0.5)}50%{box-shadow:0 0 0 10px rgba(230,57,70,0)}}
+    .vw-btn.send{background:#128c4a;border-color:#128c4a;color:#fff;font-weight:600}
+    .vw-btn:disabled{opacity:0.6;cursor:wait}
+    .vw-panel textarea{width:100%;background:#0e2240;color:#eaf2fb;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:0.55rem 0.7rem;font:inherit;font-size:0.92rem;min-height:76px;resize:vertical}
+    .vw-hint{color:#9db2c7;font-size:0.78rem;margin:0.25rem 0 0.6rem}
+    .vw-fb{background:rgba(255,255,255,0.05);border-left:4px solid #2ec4b6;border-radius:10px;padding:0.8rem 1rem;margin-top:0.7rem;display:none}
+    .vw-fb p{margin:0.3rem 0;font-size:0.93rem;line-height:1.6;color:#d7e3f0}
+    @media print{.vw-panel{display:none!important}}
   </style>
 </head>
 <body>
@@ -138,9 +156,28 @@
       <div class="sw-result">
         <div class="sw-toolbar" id="sw-toolbar" style="display:none">
           <a class="wa" id="sw-share" target="_blank" rel="noopener">💬 Pataje sou WhatsApp</a>
+          <button id="sw-vwa" style="border-color:rgba(46,196,182,0.8);font-weight:600">🎙 Pratike ak vwa ou</button>
           <button id="sw-cardbtn">🖼 Telechaje kat SWOT ou</button>
           <button id="sw-print">🖨 Enprime / PDF</button>
           <button id="sw-copy">📋 Kopye</button>
+        </div>
+        <div class="vw-panel" id="vw-panel" style="display:none">
+          <p class="vw-prog" id="vw-prog"></p>
+          <p class="vw-q" id="vw-q"></p>
+          <p class="vw-note" id="vw-note" style="display:none"></p>
+          <div class="vw-row">
+            <button type="button" class="vw-btn mic" id="vw-mic">🎙 Peze pou reponn</button>
+            <button type="button" class="vw-btn" id="vw-listen">🔊 Tande kesyon an ankò</button>
+            <button type="button" class="vw-btn" id="vw-close">✖ Fèmen</button>
+          </div>
+          <textarea id="vw-ans"></textarea>
+          <p class="vw-hint" id="vw-hint">Ou ka korije tèks la anvan ou voye l.</p>
+          <div class="vw-row">
+            <button type="button" class="vw-btn send" id="vw-send">📨 Voye repons mwen an</button>
+            <button type="button" class="vw-btn" id="vw-next" style="display:none">➜ Lòt kesyon an</button>
+          </div>
+          <p class="sw-status" id="vw-status" aria-live="polite"></p>
+          <div class="vw-fb" id="vw-fb" aria-live="polite"></div>
         </div>
         <div id="sw-placeholder" class="sw-placeholder">
           <div class="big">🧭</div>
@@ -201,6 +238,20 @@
       gen: "N ap prepare SWOT360 ou a… (15–30 segonn)", done: "Men rezilta ou ! Li l, enprime l, pataje l.",
       err: "Gen yon erè. Eseye ankò nan yon moman.", limit: "Ou fè 3 SWOT jodi a — tounen demen ! 🙂",
       offline: "Nou pa jwenn sèvè a. Verifye koneksyon ou.", copied: "Kopye ! ✅",
+      vwaBtn: "🎙 Pratike ak vwa ou", vwaProg: "Kesyon {i} sou {n}",
+      vwaListen: "🔊 Tande kesyon an ankò", vwaMic: "🎙 Peze pou reponn", vwaStop: "⏹ Mwen fini pale",
+      vwaRecing: "N ap koute w… pale lib, epi peze « ⏹ Mwen fini pale » lè ou fini.",
+      vwaTrans: "N ap ekri sa ou di a…", vwaHint: "Ou ka korije tèks la anvan ou voye l.",
+      vwaSend: "📨 Voye repons mwen an", vwaThink: "Koach la ap gade repons ou a…",
+      vwaNext: "➜ Lòt kesyon an", vwaFinish: "✅ Mwen fini pratike",
+      vwaDone: "🎉 Ou pratike tout kesyon yo ! Refè egzèsis la jouk repons yo soti fasil.",
+      vwaClose: "✖ Fèmen",
+      vwaMicErr: "Nou pa ka jwenn mikwo a. Tcheke si navigatè a gen pèmisyon pou sèvi ak li.",
+      vwaSttErr: "Nou pa t rive ekri sa ou di a. Eseye ankò : pale pi fò, pi dousman.",
+      vwaEmpty: "Anrejistre yon repons anvan, oswa ekri l nan bwat la.",
+      vwaNoQ: "Fè SWOT360 ou a anvan — kesyon pratik yo ap soti nan rezilta a.",
+      vwaLimit: "Ou sèvi ak tout vwa ou pou jodi a — tounen demen ! 🙂",
+      vwaNote: "ℹ️ Vwa AI a poko pale kreyòl. Li kesyon an awotvwa, epi reponn ak vwa PA OU — n ap konprann ou.",
     },
     fr: {
       lang: "🌍 Choisissez votre langue",
@@ -224,6 +275,20 @@
       gen: "Préparation de votre SWOT360… (15–30 secondes)", done: "Voici votre résultat ! Lisez, imprimez, partagez.",
       err: "Une erreur est survenue. Réessayez dans un instant.", limit: "3 SWOT aujourd'hui — revenez demain ! 🙂",
       offline: "Serveur injoignable. Vérifiez votre connexion.", copied: "Copié ! ✅",
+      vwaBtn: "🎙 M'entraîner à voix haute", vwaProg: "Question {i} sur {n}",
+      vwaListen: "🔊 Réécouter la question", vwaMic: "🎙 Appuyer pour répondre", vwaStop: "⏹ J'ai fini de parler",
+      vwaRecing: "On vous écoute… parlez librement, puis appuyez sur « ⏹ J'ai fini de parler ».",
+      vwaTrans: "Transcription de votre réponse…", vwaHint: "Vous pouvez corriger le texte avant de l'envoyer.",
+      vwaSend: "📨 Envoyer ma réponse", vwaThink: "Le coach lit votre réponse…",
+      vwaNext: "➜ Question suivante", vwaFinish: "✅ Terminer l'entraînement",
+      vwaDone: "🎉 Toutes les questions pratiquées ! Recommencez jusqu'à ce que vos réponses viennent naturellement.",
+      vwaClose: "✖ Fermer",
+      vwaMicErr: "Micro inaccessible. Vérifiez que le navigateur a la permission de l'utiliser.",
+      vwaSttErr: "Transcription impossible. Réessayez : parlez plus fort, plus lentement.",
+      vwaEmpty: "Enregistrez d'abord une réponse, ou écrivez-la dans la zone de texte.",
+      vwaNoQ: "Faites d'abord votre SWOT360 — les questions d'entraînement en sortent.",
+      vwaLimit: "Quota vocal du jour atteint — revenez demain ! 🙂",
+      vwaNote: "",
     },
     en: {
       lang: "🌍 Choose your language",
@@ -247,6 +312,20 @@
       gen: "Preparing your SWOT360… (15–30 seconds)", done: "Here is your result! Read it, print it, share it.",
       err: "Something went wrong. Try again in a moment.", limit: "3 SWOTs today — come back tomorrow! 🙂",
       offline: "Can't reach the server. Check your connection.", copied: "Copied! ✅",
+      vwaBtn: "🎙 Practice out loud", vwaProg: "Question {i} of {n}",
+      vwaListen: "🔊 Hear the question again", vwaMic: "🎙 Press to answer", vwaStop: "⏹ I'm done talking",
+      vwaRecing: "We're listening… speak freely, then press “⏹ I'm done talking”.",
+      vwaTrans: "Transcribing your answer…", vwaHint: "You can fix the text before sending it.",
+      vwaSend: "📨 Send my answer", vwaThink: "The coach is reading your answer…",
+      vwaNext: "➜ Next question", vwaFinish: "✅ Finish practice",
+      vwaDone: "🎉 You practiced every question! Repeat until your answers come out naturally.",
+      vwaClose: "✖ Close",
+      vwaMicErr: "Can't access the microphone. Check the browser permission.",
+      vwaSttErr: "Couldn't transcribe. Try again: speak louder and slower.",
+      vwaEmpty: "Record an answer first, or type it in the box.",
+      vwaNoQ: "Get your SWOT360 first — the practice questions come from it.",
+      vwaLimit: "Today's voice quota is used up — come back tomorrow! 🙂",
+      vwaNote: "",
     },
     es: {
       lang: "🌍 Elige tu idioma",
@@ -270,6 +349,20 @@
       gen: "Preparando tu SWOT360… (15–30 segundos)", done: "¡Aquí está tu resultado! Léelo, imprímelo, compártelo.",
       err: "Ocurrió un error. Inténtalo de nuevo en un momento.", limit: "3 SWOT hoy — ¡vuelve mañana! 🙂",
       offline: "No se puede contactar el servidor. Verifica tu conexión.", copied: "¡Copiado! ✅",
+      vwaBtn: "🎙 Practicar en voz alta", vwaProg: "Pregunta {i} de {n}",
+      vwaListen: "🔊 Escuchar la pregunta otra vez", vwaMic: "🎙 Pulsa para responder", vwaStop: "⏹ Terminé de hablar",
+      vwaRecing: "Te escuchamos… habla libremente y pulsa «⏹ Terminé de hablar» al terminar.",
+      vwaTrans: "Transcribiendo tu respuesta…", vwaHint: "Puedes corregir el texto antes de enviarlo.",
+      vwaSend: "📨 Enviar mi respuesta", vwaThink: "El coach está leyendo tu respuesta…",
+      vwaNext: "➜ Siguiente pregunta", vwaFinish: "✅ Terminar la práctica",
+      vwaDone: "🎉 ¡Practicaste todas las preguntas! Repite hasta que tus respuestas salgan con naturalidad.",
+      vwaClose: "✖ Cerrar",
+      vwaMicErr: "No se puede acceder al micrófono. Verifica el permiso del navegador.",
+      vwaSttErr: "No se pudo transcribir. Inténtalo de nuevo: habla más fuerte y despacio.",
+      vwaEmpty: "Graba primero una respuesta, o escríbela en el cuadro.",
+      vwaNoQ: "Haz primero tu SWOT360 — las preguntas de práctica salen de él.",
+      vwaLimit: "Cuota de voz de hoy agotada — ¡vuelve mañana! 🙂",
+      vwaNote: "",
     },
   };
   var MSG = L.ht;
@@ -312,6 +405,7 @@
     document.getElementById("sw-print").textContent = T.print;
     document.getElementById("sw-copy").textContent = T.copy;
     cta.innerHTML = "<p>" + T.cta1 + "</p><p style=\"margin-top:0.4rem\">" + T.cta2 + "</p>";
+    vwSyncLang(T);
   }
   function siteLang() {
     var l = (localStorage.getItem("atmart_lang") || document.documentElement.lang || "fr").slice(0, 2);
@@ -439,6 +533,258 @@
     }, "image/png");
   });
 
+  // ---- Mòd pratik vokal : TTS (Web Speech) + mikwo (Web Speech STT oswa Whisper /vwa) ----
+  var VWA_EP = "https://atmart-chat.atmartllc.workers.dev/vwa";
+  var SRCls = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var SPEECH_LANG = { fr: "fr-FR", en: "en-US", es: "es-ES" };
+  var vwQs = [], vwIdx = 0, vwOn = false, vwRecOn = false, vwBusy = false, vwLast = false;
+  var vwSR = null, vwMedia = null, vwChunks = [], vwTimer = null;
+  var vwPanel = document.getElementById("vw-panel");
+  var vwProg = document.getElementById("vw-prog");
+  var vwQEl = document.getElementById("vw-q");
+  var vwNote = document.getElementById("vw-note");
+  var vwListenB = document.getElementById("vw-listen");
+  var vwMicB = document.getElementById("vw-mic");
+  var vwCloseB = document.getElementById("vw-close");
+  var vwAns = document.getElementById("vw-ans");
+  var vwSendB = document.getElementById("vw-send");
+  var vwNextB = document.getElementById("vw-next");
+  var vwStatusEl = document.getElementById("vw-status");
+  var vwFb = document.getElementById("vw-fb");
+
+  function canTTS() { return siteLang() !== "ht" && "speechSynthesis" in window; }
+  function vwStatus(html) { document.getElementById("vw-status").innerHTML = html || ""; }
+  function vwSyncLang(T) {
+    // Appelée aussi par applyLang AVANT l'init du module : tout passe par getElementById.
+    var $ = function (id) { return document.getElementById(id); };
+    if ($("sw-vwa")) $("sw-vwa").textContent = T.vwaBtn;
+    if (!$("vw-panel")) return;
+    $("vw-listen").textContent = T.vwaListen;
+    $("vw-mic").textContent = vwRecOn ? T.vwaStop : T.vwaMic;
+    $("vw-close").textContent = T.vwaClose;
+    $("vw-hint").textContent = T.vwaHint;
+    $("vw-send").textContent = T.vwaSend;
+    $("vw-next").textContent = vwLast ? T.vwaFinish : T.vwaNext;
+    if (vwOn) {
+      $("vw-prog").textContent = T.vwaProg.replace("{i}", vwIdx + 1).replace("{n}", vwQs.length);
+      $("vw-note").textContent = T.vwaNote || "";
+      $("vw-note").style.display = T.vwaNote ? "" : "none";
+      $("vw-listen").style.display = canTTS() ? "" : "none";
+    }
+  }
+  function vwStripSpoken(t) {
+    return stripMd(t).replace(/[✅🔧💬🎤🔊🎙⏹➜✖📨🎉]/g, "").replace(/\s+/g, " ").trim();
+  }
+  function vwSpeak(txt) {
+    if (!canTTS() || !txt) return;
+    try {
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(vwStripSpoken(txt));
+      var lg = SPEECH_LANG[siteLang()] || "fr-FR";
+      u.lang = lg; u.rate = 0.95;
+      var vs = speechSynthesis.getVoices() || [];
+      for (var i = 0; i < vs.length; i++) {
+        if ((vs[i].lang || "").replace("_", "-").slice(0, 2) === lg.slice(0, 2)) { u.voice = vs[i]; break; }
+      }
+      speechSynthesis.speak(u);
+    } catch (e) {}
+  }
+  if ("speechSynthesis" in window) {
+    try { speechSynthesis.onvoiceschanged = function () {}; speechSynthesis.getVoices(); } catch (e) {}
+  }
+
+  // Les kesyon pratik yo soti nan seksyon « 🎤 » rezilta a (gratis : 3 · Pro : 8-12).
+  function extractQuestions(md) {
+    var parts = md.split(/\r?\n(?=## )/), sect = null;
+    for (var i = 0; i < parts.length; i++) {
+      if (/^##\s*🎤/.test(parts[i].trim())) { sect = parts[i]; break; }
+    }
+    if (!sect) return [];
+    var qs = [];
+    sect.split(/\r?\n/).forEach(function (l) {
+      var m = l.trim().match(/^\d+[\.\)]\s+(.*)/);
+      if (m && m[1].indexOf("**R") !== 0 && m[1].indexOf("R:") !== 0) qs.push(stripMd(m[1]));
+    });
+    return qs;
+  }
+
+  function vwShow() {
+    vwLast = vwIdx >= vwQs.length - 1;
+    vwAns.value = "";
+    vwFb.style.display = "none"; vwFb.innerHTML = "";
+    vwNextB.style.display = "none";
+    vwStatus("");
+    vwQEl.textContent = vwQs[vwIdx];
+    vwSyncLang(MSG);
+    vwSpeak(vwQs[vwIdx]);
+  }
+  function vwEndRecUi() {
+    vwRecOn = false;
+    vwMicB.classList.remove("rec");
+    vwMicB.textContent = MSG.vwaMic;
+    if (vwStatusEl.textContent === MSG.vwaRecing) vwStatus("");
+  }
+  function vwStopRec(silent) {
+    if (vwSR) { try { vwSR.stop(); } catch (e) {} vwSR = null; }
+    if (vwTimer) { clearTimeout(vwTimer); vwTimer = null; }
+    if (vwMedia && vwMedia.state !== "inactive") {
+      if (silent) {
+        var m = vwMedia;
+        m.onstop = function () { try { m.stream.getTracks().forEach(function (t) { t.stop(); }); } catch (e) {} };
+      }
+      try { vwMedia.stop(); } catch (e) {}
+    }
+    vwMedia = null;
+    vwEndRecUi();
+  }
+  function vwStopAll() {
+    if ("speechSynthesis" in window) { try { speechSynthesis.cancel(); } catch (e) {} }
+    if (vwRecOn) vwStopRec(true);
+  }
+  function vwReset() {
+    vwStopAll();
+    vwOn = false;
+    vwPanel.style.display = "none";
+  }
+
+  document.getElementById("sw-vwa").addEventListener("click", function () {
+    if (!lastMd) { status.textContent = MSG.vwaNoQ; return; }
+    vwQs = extractQuestions(lastMd);
+    if (!vwQs.length) { status.textContent = MSG.vwaNoQ; return; }
+    vwOn = true; vwIdx = 0;
+    vwPanel.style.display = "";
+    vwShow();
+    vwPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  vwCloseB.addEventListener("click", vwReset);
+  vwListenB.addEventListener("click", function () { vwSpeak(vwQs[vwIdx] || ""); });
+
+  vwMicB.addEventListener("click", function () {
+    if (vwRecOn) { vwStopRec(false); return; }
+    if ("speechSynthesis" in window) { try { speechSynthesis.cancel(); } catch (e) {} }
+    vwRecOn = true;
+    vwMicB.classList.add("rec");
+    vwMicB.textContent = MSG.vwaStop;
+    vwStatus(MSG.vwaRecing);
+    // Web Speech STT pou fr/en/es ; kreyòl (ak navigatè san Web Speech) → Whisper sou /vwa.
+    if (siteLang() !== "ht" && SRCls) vwStartSR(); else vwStartMedia();
+  });
+
+  function vwStartSR() {
+    try {
+      vwSR = new SRCls();
+      vwSR.lang = SPEECH_LANG[siteLang()] || "fr-FR";
+      vwSR.continuous = true;
+      vwSR.interimResults = true;
+      var base = vwAns.value ? vwAns.value.trim() + " " : "", fin = "";
+      vwSR.onresult = function (ev) {
+        var interim = "";
+        for (var i = ev.resultIndex; i < ev.results.length; i++) {
+          if (ev.results[i].isFinal) fin += ev.results[i][0].transcript + " ";
+          else interim += ev.results[i][0].transcript;
+        }
+        vwAns.value = (base + fin + interim).trim();
+      };
+      vwSR.onerror = function (ev) {
+        var denied = ev && (ev.error === "not-allowed" || ev.error === "service-not-allowed");
+        vwEndRecUi();
+        if (denied) vwStatus(MSG.vwaMicErr);
+      };
+      vwSR.onend = function () { vwEndRecUi(); };
+      vwSR.start();
+    } catch (e) { vwEndRecUi(); vwStatus(MSG.vwaMicErr); }
+  }
+
+  function vwStartMedia() {
+    if (!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder)) {
+      vwEndRecUi(); vwStatus(MSG.vwaMicErr); return;
+    }
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+      if (!vwRecOn) { stream.getTracks().forEach(function (t) { t.stop(); }); return; }
+      var mime = "";
+      if (MediaRecorder.isTypeSupported) {
+        if (MediaRecorder.isTypeSupported("audio/webm;codecs=opus")) mime = "audio/webm;codecs=opus";
+        else if (MediaRecorder.isTypeSupported("audio/mp4")) mime = "audio/mp4";
+      }
+      vwChunks = [];
+      var rec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
+      vwMedia = rec;
+      rec.ondataavailable = function (e) { if (e.data && e.data.size) vwChunks.push(e.data); };
+      rec.onstop = function () {
+        stream.getTracks().forEach(function (t) { t.stop(); });
+        var blob = new Blob(vwChunks, { type: (rec.mimeType || "audio/webm").split(";")[0] });
+        if (blob.size > 200) vwTranscribe(blob);
+      };
+      rec.start();
+      vwTimer = setTimeout(function () { if (vwRecOn) vwStopRec(false); }, 90000); // 90 s maks
+    }).catch(function () { vwEndRecUi(); vwStatus(MSG.vwaMicErr); });
+  }
+
+  function vwTranscribe(blob) {
+    vwStatus('<span class="sw-spin"></span>' + MSG.vwaTrans);
+    var fr = new FileReader();
+    fr.onload = function () {
+      var b64 = String(fr.result).split(",")[1] || "";
+      fetch(VWA_EP, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ audio: b64, language: siteLang() }) })
+        .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+        .then(function (res) {
+          if (res.ok && res.body && typeof res.body.text === "string" && res.body.text.trim()) {
+            vwAns.value = (vwAns.value ? vwAns.value.trim() + " " : "") + res.body.text.trim();
+            vwStatus("");
+          } else if (res.body && res.body.error === "rate_limited") {
+            vwStatus(MSG.vwaLimit);
+          } else {
+            vwStatus(MSG.vwaSttErr);
+          }
+        })
+        .catch(function () { vwStatus(MSG.offline); });
+    };
+    fr.readAsDataURL(blob);
+  }
+
+  vwSendB.addEventListener("click", function () {
+    if (vwBusy) return;
+    var ans = vwAns.value.trim();
+    if (ans.length < 8) { vwStatus(MSG.vwaEmpty); return; }
+    vwStopAll();
+    vwBusy = true; vwSendB.disabled = true;
+    vwStatus('<span class="sw-spin"></span>' + MSG.vwaThink);
+    fetch(ENDPOINT, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "pratik", language: siteLang(),
+        question: vwQs[vwIdx], answer: ans,
+        work: document.getElementById("sw-work").value.trim(),
+        goal: document.getElementById("sw-goal").value.trim(),
+        weakness: document.getElementById("sw-weakness").value.trim(),
+        qIndex: vwIdx + 1, total: vwQs.length,
+      }),
+    })
+      .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+      .then(function (res) {
+        vwBusy = false; vwSendB.disabled = false;
+        if (res.ok && res.body && res.body.feedback) {
+          vwStatus("");
+          vwFb.innerHTML = res.body.feedback.split(/\r?\n/).filter(function (l) { return l.trim(); })
+            .map(function (l) { return "<p>" + inline(esc(l.trim())) + "</p>"; }).join("");
+          vwFb.style.display = "";
+          vwNextB.style.display = "";
+          vwSyncLang(MSG);
+          vwSpeak(res.body.feedback);
+        } else {
+          vwStatus(res.body && res.body.error === "rate_limited" ? MSG.vwaLimit : MSG.err);
+        }
+      })
+      .catch(function () { vwBusy = false; vwSendB.disabled = false; vwStatus(MSG.offline); });
+  });
+
+  vwNextB.addEventListener("click", function () {
+    vwStopAll();
+    if (vwLast) { vwReset(); status.textContent = MSG.vwaDone; return; }
+    vwIdx++;
+    vwShow();
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var payload = {
@@ -461,6 +807,7 @@
         go.disabled = false;
         if (res.ok && res.body && res.body.swot) {
           lastMd = res.body.swot;
+          vwReset();
           out.innerHTML = renderCards(lastMd);
           ph.style.display = "none"; bar.style.display = "flex"; cta.style.display = "";
           status.textContent = MSG.done;
