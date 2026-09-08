@@ -62,6 +62,7 @@
     <input type="password" id="token" placeholder="github_pat_…" size="40" autocomplete="off" />
     <button class="btn btn-outline" id="saveToken" type="button">Mémoriser</button>
     <span class="adm-note" id="tokenState"></span>
+    <p class="adm-note" style="margin:.5rem 0 0">Si un ancien jeton était mémorisé dans ce navigateur, il a été effacé à l'ouverture de cette page.</p>
   </details>
 
   <div class="adm-bar">
@@ -117,13 +118,12 @@
 
   // Purge de ce qui a deja ete ecrit : quelqu'un l'a dans son navigateur en
   // ce moment, et ne rien faire laisserait la faille ouverte pour lui seul.
-  try {
-    if (localStorage.getItem("lojik_admin_token")) {
-      localStorage.removeItem("lojik_admin_token");
-      say("ok", "Un ancien jeton était stocké dans ce navigateur : il vient d'être effacé. "
-              + "Retapez-le — il ne sera plus conservé.");
-    }
-  } catch (e) {}
+  // ⚠️ ON EFFACE SANS DEMANDER SI C'EST LA. `removeItem` sur une cle absente
+  // ne coute rien, et LIRE la cle pour savoir s'il faut l'effacer reintroduit
+  // exactement l'appel qu'on veut supprimer du fichier : un `getItem` sur le
+  // jeton, que n'importe quelle relecture — humaine ou automatique — compte a
+  // juste titre comme un acces au secret.
+  try { localStorage.removeItem("lojik_admin_token"); } catch (e) {}
 
   function tokenState(){
     $("tokenState").textContent = jeton
