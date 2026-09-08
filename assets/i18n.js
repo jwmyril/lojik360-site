@@ -13,6 +13,7 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => orig.set(el, el.textContent));
     document.querySelectorAll("[data-i18n-html]").forEach((el) => orig.set(el, el.innerHTML));
     document.querySelectorAll("[data-i18n-ph]").forEach((el) => orig.set(el, el.getAttribute("placeholder")));
+    document.querySelectorAll("[data-i18n-content]").forEach((el) => orig.set(el, el.getAttribute("content")));
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => orig.set(el, el.getAttribute("aria-label")));
   }
 
@@ -27,6 +28,11 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = val(el.dataset.i18n, orig.get(el)); });
     document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = val(el.dataset.i18nHtml, orig.get(el)); });
     document.querySelectorAll("[data-i18n-ph]").forEach((el) => { el.setAttribute("placeholder", val(el.dataset.i18nPh, orig.get(el))); });
+    // Le titre et la description sont les deux seules phrases qu'un
+    // moteur affiche, et les deux seules qu'on voit dans un onglet ou
+    // dans un partage. Les laisser en francais, c'est traduire ce qui se
+    // lit et pas ce qui se trouve.
+    document.querySelectorAll("[data-i18n-content]").forEach((el) => { el.setAttribute("content", val(el.dataset.i18nContent, orig.get(el))); });
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", val(el.dataset.i18nAria, orig.get(el))); });
 
     // ===== B1 : la langue doit changer la DESTINATION, pas seulement le texte
