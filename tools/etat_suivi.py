@@ -78,7 +78,27 @@ def pages_html():
 
 
 def indexables():
-    return [p for p in pages_html() if os.path.basename(p) not in EXCLUES]
+    """Les pages qu'un moteur a le droit d'indexer.
+
+    ⚠️ ON LIT `noindex` DANS LA PAGE au lieu de tenir une liste de noms. La
+    liste EXCLUES datait du 08/09 au matin : elle connaissait les trois
+    redirections de langue, mais pas `swot360.html` (devenue redirection dans
+    la journée) ni `404.html` (créée le même jour). Une liste de noms se
+    démode en silence ; `noindex` est la déclaration de la page elle-même, et
+    elle reste vraie quoi qu'on renomme.
+
+    Conséquence : exiger un `canonical` vers ce site sur une page qui refuse
+    l'indexation n'a aucun sens — une redirection pointe sa canonique vers sa
+    DESTINATION, et une page d'erreur n'en a pas du tout.
+    """
+    out = []
+    for p in pages_html():
+        if os.path.basename(p) in EXCLUES:
+            continue
+        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', lire(p) or ""):
+            continue
+        out.append(p)
+    return out
 
 
 def dicts():
