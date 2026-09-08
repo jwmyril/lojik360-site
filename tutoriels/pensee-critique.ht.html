@@ -35,13 +35,14 @@
   <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0a1a2f" media="(prefers-color-scheme: dark)" />
   <!-- tete : poser_tete.py -->
+  <link rel="manifest" href="../manifest.webmanifest" />
 </head>
 <body>
 <header>
   <nav class="nav">
     <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>pa Atmart</small></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="../index.html">Akèy</a></li>
       <li><a href="../tutoriels.html" class="active">Leson</a></li>
@@ -110,7 +111,7 @@
   <h3>💬 Diskisyon — Modil 1</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m1" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m1" data-page-title="Panse kritik — Module 1"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m1" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m1" data-page-title="Panse kritik — Module 1"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -138,7 +139,7 @@
   <h3>💬 Diskisyon — Modil 2</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m2" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m2" data-page-title="Panse kritik — Module 2"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m2" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m2" data-page-title="Panse kritik — Module 2"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -166,7 +167,7 @@
   <h3>💬 Diskisyon — Modil 3</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m3" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m3" data-page-title="Panse kritik — Module 3"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m3" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m3" data-page-title="Panse kritik — Module 3"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -194,7 +195,7 @@
   <h3>💬 Diskisyon — Modil 4</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m4" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m4" data-page-title="Panse kritik — Module 4"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m4" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m4" data-page-title="Panse kritik — Module 4"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -222,7 +223,7 @@
   <h3>💬 Diskisyon — Modil 5</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m5" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m5" data-page-title="Panse kritik — Module 5"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m5" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m5" data-page-title="Panse kritik — Module 5"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -250,7 +251,7 @@
   <h3>💬 Diskisyon — Modil 6</h3>
   <p class="disc-intro">Yon kesyon, yon egzanp ou viv, yon dezakò sou modil sa a ? Pataje l isit la, ak respè.</p>
   <button type="button" class="btn btn-outline disc-open" onclick="atmartShowDisc(this)">💬 Montre diskisyon modil sa a</button>
-  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m6" data-page-url="https://atmart.ltd/tutoriels/pensee-critique.ht.html#m6" data-page-title="Panse kritik — Module 6"></div></div>
+  <div class="discussion-embed" style="margin-top:0.8rem;display:none"><div class="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="pensee-critique-ht-m6" data-page-url="https://lojik360.atmart.ltd/tutoriels/pensee-critique.ht.html#m6" data-page-title="Panse kritik — Module 6"></div></div>
   <p class="disc-rules"><strong>Règ kominote a :</strong> nou atake lide yo, jamè moun yo. Site sous ou.</p>
 </section>
 
@@ -329,5 +330,6 @@ function atmartShowDisc(btn){
   });
 })();
 </script><!-- theme clair/sombre -->
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});</script>
 </body>
 </html>

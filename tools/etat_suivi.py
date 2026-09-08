@@ -400,7 +400,12 @@ def m_e1():
     js = lire("assets/script.js") or ""
     if "aria-expanded" not in js:
         return False, "script.js ne bascule pas aria-expanded"
-    return partout(r'class="nav-toggle"[^>]*aria-expanded=', PAGES_I18N + ["swot360.html"], "aria-expanded sur ☰")
+    # ⚠️ `swot360.html` EST SORTIE DE CETTE LISTE le 08/09/2026, et pas pour
+    # se faciliter la vie : elle est devenue une REDIRECTION de quatre lignes
+    # vers Entèvyou360 sur la Suite 360. Elle n'a plus de barre de navigation,
+    # donc plus de bouton ☰ : exiger un `aria-expanded` sur un composant qui
+    # n'existe pas ne mesure rien. Même correction que pour `indexables()`.
+    return partout(r'class="nav-toggle"[^>]*aria-expanded=', PAGES_I18N, "aria-expanded sur ☰")
 
 
 def m_e2():

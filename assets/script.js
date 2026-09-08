@@ -4,7 +4,14 @@
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
 if (toggle && links) {
-  toggle.addEventListener("click", () => links.classList.toggle("open"));
+  // ⚠️ UN MENU QUI S'OUVRE DOIT LE DIRE. Sans `aria-expanded`, un lecteur
+  // d'ecran annonce « bouton » et rien d'autre : la personne ne sait pas si le
+  // menu vient de s'ouvrir sous ses doigts ou s'il ne s'est rien passe. C'est
+  // le seul moyen de navigation sur telephone.
+  toggle.addEventListener("click", () => {
+    const ouvert = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", ouvert ? "true" : "false");
+  });
 }
 
 // Category filters (tutorials + datasets pages)

@@ -30,14 +30,15 @@
   <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0a1a2f" media="(prefers-color-scheme: dark)" />
   <!-- tete : poser_tete.py -->
+  <link rel="manifest" href="../manifest.webmanifest" />
 </head>
 <body>
 
 <header>
   <nav class="nav">
     <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart</small></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="../index.html">Accueil</a></li>
       <li><a href="../tutoriels.html" class="active">Tutoriels</a></li>
@@ -249,7 +250,7 @@
       <h2>💬 Discussion</h2>
       <p class="disc-intro">Une question, un blocage sur une formule, une découverte dans les données ? Partagez-la ici et entraidez-vous avec respect.</p>
       <div class="discussion-embed">
-        <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="excel-premiere-analyse" data-page-url="https://atmart.ltd/tutoriels/excel-premiere-analyse.html" data-page-title="Excel : première analyse"></div>
+        <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="c377bb19-7995-43b4-915c-8ca53f04e387" data-page-id="excel-premiere-analyse" data-page-url="https://lojik360.atmart.ltd/tutoriels/excel-premiere-analyse.html" data-page-title="Excel : première analyse"></div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
       </div>
       <p class="disc-rules"><strong>Règle de la communauté :</strong> on s'entraide, on cite ses sources. <em>Panse pi byen, pale ak respè.</em></p>
@@ -289,5 +290,6 @@
   });
 })();
 </script><!-- theme clair/sombre -->
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});</script>
 </body>
 </html>

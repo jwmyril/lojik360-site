@@ -1,0 +1,16 @@
+{
+  "name": "Lojik360 — penser et créer à l'ère de l'IA",
+  "short_name": "Lojik360",
+  "description": "Tutoriels gratuits pour prospérer avec l'intelligence artificielle : déléguer, superviser, renforcer l'humain. En français, kreyòl, anglais et espagnol.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a1a2f",
+  "theme_color": "#0a1a2f",
+  "icons": [
+    { "src": "assets/brand/logo-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "assets/brand/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

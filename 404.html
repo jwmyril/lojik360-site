@@ -18,28 +18,30 @@
   </script><!-- theme clair/sombre -->
   <link rel="stylesheet" href="assets/style.css?v=14" />
   <!-- tete : poser_tete.py -->
+  <link rel="canonical" href="https://lojik360.atmart.ltd/404.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Lojik360" />
-  <meta property="og:url" content="https://lojik360.atmart.ltd/podcast.html" />
-  <meta property="og:title" content="Podcast — Lojik360" />
-  <meta property="og:description" content="Le podcast Lojik360 : chaque semaine, un sujet réel expliqué avec des données et de la logique, en créole haïtien et en français. Penser et prospérer à l'ère de l'IA." />
+  <meta property="og:url" content="https://lojik360.atmart.ltd/404.html" />
+  <meta property="og:title" content="Page introuvable — Lojik360" />
+  <meta property="og:description" content="Cette page n'existe pas ou plus." />
   <meta property="og:image" content="https://lojik360.atmart.ltd/assets/brand/share-1200x630.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Podcast — Lojik360" />
-  <meta name="twitter:description" content="Le podcast Lojik360 : chaque semaine, un sujet réel expliqué avec des données et de la logique, en créole haïtien et en français. Penser et prospérer à l'ère de l'IA." />
+  <meta name="twitter:title" content="Page introuvable — Lojik360" />
+  <meta name="twitter:description" content="Cette page n'existe pas ou plus." />
   <meta name="twitter:image" content="https://lojik360.atmart.ltd/assets/brand/share-1200x630.jpg" />
   <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0a1a2f" media="(prefers-color-scheme: dark)" />
   <!-- tete : poser_tete.py -->
   <meta name="robots" content="noindex" />
+  <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body>
 
 <header>
   <nav class="nav">
     <a href="index.html" class="logo"><img src="assets/brand/logo-dark-96.png" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small data-i18n="brand.tagline">par Atmart · penser à l'ère de l'IA</small></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
       <li><a href="tutoriels.html" data-i18n="nav.tutorials">Tutoriels</a></li>
@@ -93,5 +95,6 @@
   });
 })();
 </script><!-- theme clair/sombre -->
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});</script>
 </body>
 </html>

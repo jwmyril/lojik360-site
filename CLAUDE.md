@@ -30,8 +30,26 @@ git add -A && git commit -m "..." && git push
 
 `main` → **GitHub Pages** → en ligne en ~1 minute, sur **lojik360.atmart.ltd** (domaine
 personnalisé porté par le fichier `CNAME` — ne pas le supprimer, il se perdrait au prochain
-déploiement). Distant : `github.com/jwmyril/lojik360-site`. Pas de test, pas de compilation :
-ce qui est poussé est ce qui est servi. Relire avant de pousser.
+déploiement). Distant : `github.com/jwmyril/lojik360-site`. Ce qui est poussé est ce qui est
+servi : il n'y a pas d'étape de compilation qui rattraperait une erreur.
+
+**Les contrôles se lancent avant de pousser.** Ils ne compilent rien ; ils vérifient que le
+site tient ses promesses, et ils sortent en code non nul quand ce n'est pas le cas.
+
+```bash
+python tools/etat_suivi.py      # le registre dit-il la vérité ? (dans les DEUX sens)
+python tools/verif_theme.py     # aucune couleur en dur, les 38 pages ont le sélecteur
+python tools/poser_tete.py      # canonical, Open Graph, hreflang, theme-color
+python tools/gen_sitemap.py     # lastmod = dernier commit qui a touché la page
+python tools/version_cache.py   # le nom du cache suit le contenu servi
+```
+
+`.github/workflows/controles.yml` les rejoue à chaque poussée : une régression bloque là
+plutôt que d'arriver en production.
+
+⚠️ **`etat_suivi.py` échoue dans les deux sens.** Il dit « LE REGISTRE MENT » aussi bien
+quand une ligne se déclare faite sans l'être que quand une ligne faite reste ouverte. On ne
+peut donc pas se donner bonne note, ni oublier de consigner un travail réel.
 
 ## Les quatre langues — deux mécanismes, pas un
 
@@ -49,13 +67,19 @@ absente retombe silencieusement en français, ce qui ne se voit pas à la relect
 `nom.html` / `nom.ht.html` / `nom.en.html`. Un tutoriel de plusieurs milliers de mots ne passe
 pas par des clés JSON. Ces pages sont **générées**, voir plus bas.
 
-## Les pages `swot360.{fr,en,es}.html` ne sont pas des traductions
+## Les quatre pages `swot360.*` sont des redirections vers un autre site
 
-Ce sont des **redirections**, et les confondre avec des pages réelles ferait perdre du temps.
-Chacune pose `atmart_lang` dans `localStorage`, redirige vers `swot360.html`, et porte
-`robots: noindex`. Leur seule raison d'être : donner un lien partageable par langue dont
-l'aperçu WhatsApp et les balises `og:` sortent dans la bonne langue. Modifier le produit se
-fait dans `swot360.html` ; ces quatre-là ne portent que des métadonnées.
+**Entèvyou360 ne vit plus ici** (08/09/2026). Le produit est sur la Suite 360, à
+`https://360.atmart.ltd/entevyou.html`. Lojik360 est une marque d'éducation ; héberger le
+diagnostic d'un autre produit dans sa barre de navigation en faisait un catalogue.
+
+Les quatre fichiers `swot360.html`, `.fr`, `.en`, `.es` **redirigent** et portent `noindex`.
+Ils n'ont pas été supprimés parce qu'ils étaient en ligne, dans le sitemap, et partagés :
+effacer le fichier transformerait tout lien déjà envoyé — message, favori, courriel — en 404.
+
+Le lien vers Entèvyou360 subsiste à deux endroits, là où le sujet **est** l'embauche : la
+carte « Renforcer l'humain » de l'accueil, et le passage du tutoriel « Renforcer » qui parle
+du CV et des références.
 
 ## Une adresse ne se renomme pas
 

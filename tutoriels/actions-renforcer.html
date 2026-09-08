@@ -34,13 +34,14 @@
   <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0a1a2f" media="(prefers-color-scheme: dark)" />
   <!-- tete : poser_tete.py -->
+  <link rel="manifest" href="../manifest.webmanifest" />
 </head>
 <body>
 <header>
   <nav class="nav">
     <a href="../index.html" class="logo"><img src="../assets/logo.svg" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small>par Atmart</small></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="../index.html">Accueil</a></li>
       <li><a href="../tutoriels.html" class="active">Tutoriels</a></li>
@@ -768,5 +769,6 @@
   });
 })();
 </script><!-- theme clair/sombre -->
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});</script>
 </body>
 </html>

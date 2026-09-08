@@ -1,0 +1,13 @@
+# ⚠️ FINS DE LIGNE EN LF DANS LE DÉPÔT, quoi que fasse la machine.
+#
+# Le développement se fait sous Windows, qui écrit des CRLF. Sans cette règle,
+# git signalait « LF will be replaced by CRLF » à chaque commit et le moindre
+# passage d'un outil réécrivait des fichiers entiers : des diffs de 900 lignes
+# pour un mot changé, où plus personne ne voit ce qui a bougé.
+* text=auto eol=lf
+
+# Le binaire ne se convertit pas.
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary

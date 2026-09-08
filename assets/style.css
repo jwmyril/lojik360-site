@@ -717,3 +717,22 @@ html.clair {
   --amber-bord: rgba(143,74,8,0.35); --red-bord: rgba(193,18,31,0.4);
   --bleu-bord: rgba(31,92,150,0.45);
 }
+
+/* ⚠️ UN CONTOUR DE FOCUS VISIBLE SUR TOUT CE QUI SE CLIQUE.
+ * Sans lui, qui navigue au clavier ne sait plus ou il est dans la page — et
+ * sur un formulaire d'inscription, c'est bloquant : on ne voit pas quel champ
+ * on remplit. `:focus-visible` plutot que `:focus` : la souris ne declenche
+ * rien, seul le clavier fait apparaitre l'anneau. */
+a:focus-visible {
+  outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px;
+}
+button:focus-visible {
+  outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px;
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible,
+summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px;
+}

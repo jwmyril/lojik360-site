@@ -1,2 +1,10 @@
+# Artefacts de compilation Python — ils n'ont rien à faire dans un dépôt
+# publié tel quel par GitHub Pages : ce qui est ici est SERVI.
 __pycache__/
 *.pyc
+
+# Dépendances installées, jamais versionnées.
+node_modules/
+
+# Fichiers temporaires des outils (ils écrivent .tmp puis renomment).
+*.tmp

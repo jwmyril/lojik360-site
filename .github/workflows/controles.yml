@@ -1,0 +1,41 @@
+# Les contrôles du dépôt, rejoués à chaque poussée.
+#
+# ⚠️ POURQUOI CE FICHIER EXISTE. Les trois outils (registre, thème, en-tête)
+# ne servent que si quelqu'un les lance. Sur une machine, on oublie ; ici,
+# c'est GitHub qui les lance, et une régression bloque la fusion au lieu
+# d'arriver en production.
+name: Contrôles
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  controles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # etat_suivi.py et gen_sitemap.py lisent l'historique git
+          # (F1 regarde l'arbre de travail, lastmod lit le dernier commit).
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Le registre dit-il la vérité ?
+        run: python tools/etat_suivi.py
+
+      - name: Le thème tient-il ?
+        run: python tools/verif_theme.py
+
+      - name: L'en-tête est-elle à jour ?
+        run: python tools/poser_tete.py --verifier
+
+      - name: Le sitemap est-il à jour ?
+        run: python tools/gen_sitemap.py --verifier
+
+      - name: Le cache du service worker suit-il le contenu ?
+        run: python tools/version_cache.py --verifier

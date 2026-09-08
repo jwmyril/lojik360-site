@@ -32,14 +32,15 @@
   <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0a1a2f" media="(prefers-color-scheme: dark)" />
   <!-- tete : poser_tete.py -->
+  <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body>
 
 <header>
   <nav class="nav">
     <a href="index.html" class="logo"><img src="assets/brand/logo-dark-96.png" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small data-i18n="brand.tagline">par Atmart · penser à l'ère de l'IA</small></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
       <li><a href="tutoriels.html" class="active" data-i18n="nav.tutorials">Tutoriels</a></li>
@@ -78,7 +79,6 @@
     <div class="grid grid-3">
       <div class="card"><h3 data-i18n="tut.a_sup">Manager la transformation IA — 9 sessions d'action</h3><p data-i18n="tut.a_sup_d">Doctrine d'usage, pilotes limités, contrôle humain dans la boucle, risques et éthique, conduite du changement. Chaque session produit un livrable réel.</p><a href="tutoriels/actions-superviser.html" class="btn btn-outline" data-i18n="tut.open" data-href-ht="tutoriels/actions-superviser.ht.html" data-href-en="tutoriels/actions-superviser.en.html">Commencer</a> <span class="tag" data-i18n="tut.free">Gratuit</span></div>
       <div class="card"><h3 data-i18n="tut.s_ct">Pensée critique</h3><a href="tutoriels/pensee-critique.html" class="btn btn-outline" data-i18n="tut.open" data-href-ht="tutoriels/pensee-critique.ht.html" data-href-en="tutoriels/pensee-critique.en.html" data-href-es="tutoriels/pensee-critique.es.html">Commencer</a> <span class="tag" data-i18n="tut.free">Gratuit</span></div>
-      <div class="card"><h3 data-i18n="tut.s_sources">Vérifier avant de croire</h3><span class="tag amber" data-i18n="tut.soon">Bientôt</span></div>
     </div>
   </div>
 </section>
@@ -91,7 +91,6 @@
       <div class="card"><h3 data-i18n="tut.a_hum">Renforcer l'humain — 9 sessions d'action</h3><p data-i18n="tut.a_hum_d">Jugement, communication, confiance, créativité sous contraintes, attention, santé et résilience de carrière. Chaque session produit un livrable réel.</p><a href="tutoriels/actions-renforcer.html" class="btn btn-outline" data-i18n="tut.open" data-href-ht="tutoriels/actions-renforcer.ht.html" data-href-en="tutoriels/actions-renforcer.en.html">Commencer</a> <span class="tag" data-i18n="tut.free">Gratuit</span></div>
       <div class="card"><h3 data-i18n="tut.h_mgmt">Management & carrière à l'ère de l'IA</h3><a href="tutoriels/management-ia.html" class="btn btn-outline" data-i18n="tut.open" data-href-en="tutoriels/management-ia.en.html">Commencer</a> <span class="tag" data-i18n="tut.free">Gratuit</span></div>
       <div class="card"><h3 data-i18n="tut.h_rech">Méthodes de recherche qualitative — 14 sessions d'action</h3><p data-i18n="tut.h_rech_d">Pour les chercheurs de terrain : entretiens approfondis, questions ouvertes, groupes de discussion, observation, codage et synthèse QuIP — des compétences que l'IA ne remplace pas.</p><a href="tutoriels/recherche-qualitative.ht.html" class="btn btn-outline" data-i18n="tut.open" data-href-ht="tutoriels/recherche-qualitative.ht.html">Commencer</a> <span class="tag" data-i18n="tut.free_ht">Gratuit · kreyòl</span></div>
-      <div class="card"><h3 data-i18n="tut.h_comm">Communication efficace</h3><span class="tag amber" data-i18n="tut.soon">Bientôt</span></div>
     </div>
     <div class="banner" style="margin-top:1.2rem">
       <h2 data-i18n="tut.facil_t">👩‍🏫 Vous animez un groupe ? Le guide du facilitateur</h2>
@@ -142,5 +141,6 @@
   });
 })();
 </script><!-- theme clair/sombre -->
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").catch(function(){});});</script>
 </body>
 </html>
