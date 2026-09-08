@@ -10,7 +10,12 @@
   <meta name="description" content="Le podcast Lojik360 : chaque semaine, un sujet réel expliqué avec des données et de la logique, en créole haïtien et en français. Penser et prospérer à l'ère de l'IA." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=6" />
+  <!-- theme clair/sombre -->
+  <script>/* fond clair/sombre — AVANT le premier affichage, sinon la page clignote */
+  (function(){var c=null;try{c=localStorage.getItem("atmart_theme")}catch(e){}
+  if(c==="clair"||c==="sombre") document.documentElement.className+=" "+c;})();
+  </script><!-- theme clair/sombre -->
+  <link rel="stylesheet" href="assets/style.css?v=12" />
 </head>
 <body>
 
@@ -19,6 +24,7 @@
     <a href="index.html" class="logo"><img src="assets/brand/logo-dark-96.png" alt="Lojik360" class="logo-img" />Lojik<span>360</span><small data-i18n="brand.tagline">par Atmart · penser à l'ère de l'IA</small></a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
+      <li><button class="theme-btn" id="theme-btn" type="button" aria-live="polite">◐ Auto</button></li>
       <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
       <li><a href="tutoriels.html" data-i18n="nav.tutorials">Tutoriels</a></li>
       <li><a href="podcast.html" class="active" data-i18n="nav.podcast">Podcast</a></li>
@@ -93,5 +99,29 @@
 
 <script src="assets/script.js?v=2"></script>
 <script src="assets/i18n.js?v=1"></script>
+<!-- theme clair/sombre -->
+<script>/* le bouton : clair -> sombre -> automatique -> clair */
+(function(){
+  var b=document.getElementById("theme-btn"); if(!b) return;
+  var LBL={clair:"\u25cb Clair", sombre:"\u25cf Sombre", auto:"\u25d0 Auto"};
+  function lire(){try{return localStorage.getItem("atmart_theme")||"auto"}catch(e){return "auto"}}
+  function peindre(v){
+    var h=document.documentElement;
+    h.classList.remove("clair","sombre");
+    if(v!=="auto") h.classList.add(v);
+    b.textContent=LBL[v];
+    b.setAttribute("aria-label",
+      v==="auto" ? "Fond : automatique, selon votre appareil. Changer."
+                 : "Fond : "+(v==="clair"?"clair":"sombre")+". Changer.");
+  }
+  peindre(lire());
+  b.addEventListener("click",function(){
+    var o=["clair","sombre","auto"], v=o[(o.indexOf(lire())+1)%3];
+    try{ v==="auto" ? localStorage.removeItem("atmart_theme")
+                    : localStorage.setItem("atmart_theme",v); }catch(e){}
+    peindre(v);
+  });
+})();
+</script><!-- theme clair/sombre -->
 </body>
 </html>
