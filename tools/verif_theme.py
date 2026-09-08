@@ -30,8 +30,7 @@ RACINE = os.path.dirname(ICI)
 
 ETAPES = [
     ("jetons_css.py", "aucune couleur en dur dans la feuille"),
-    ("jetons_swot.py", "aucune couleur en dur dans swot360"),
-    ("poser_theme.py", "les 39 pages portent le selecteur"),
+    ("poser_theme.py", "les 38 pages portent le selecteur"),
 ]
 
 

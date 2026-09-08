@@ -430,10 +430,17 @@ def m_f1():
                              text=True, encoding="utf-8", errors="replace").stdout
     except Exception as e:                                   # noqa: BLE001
         return False, "git indisponible : %s" % e
-    modifs = [l for l in out.splitlines() if l[:2].strip() in ("M", "MM", "AM", "D")]
+    # F1 regarde ce qui est SERVI. Le registre, les outils et les fabriques
+    # (docs/, tools/, content/, CLAUDE.md, README.md) ne changent rien à ce
+    # que voit un visiteur — et le registre se modifie précisément en fermant
+    # une ligne : il ne peut pas être ce qui rouvre F1.
+    hors = ("docs/", "tools/", "content/", "CLAUDE.md", "README.md")
+    modifs = [l for l in out.splitlines()
+              if l[:2].strip() in ("M", "MM", "AM", "D") and not l[3:].startswith(hors)]
     if modifs:
-        return False, "%d fichier(s) suivis modifiés non commités" % len(modifs)
-    return True, "arbre de travail propre (fichiers suivis)"
+        return False, "%d fichier(s) servis modifiés non commités : %s" % (
+            len(modifs), " ".join(l[3:] for l in modifs[:6]))
+    return True, "arbre de travail propre sur les fichiers servis (docs/, tools/, content/ exclus)"
 
 
 def m_f2():

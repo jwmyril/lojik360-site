@@ -42,12 +42,15 @@ except Exception:                                            # noqa: BLE001
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Les redirections de langue ne portent aucun style : elles partent aussitôt.
-IGNORER = {"swot360.en.html", "swot360.es.html", "swot360.fr.html"}
+# Les quatre pages swot360 sont devenues des REDIRECTIONS vers le vrai
+# Entevyou360, sur la Suite 360 : elles partent avant d'etre peintes, un
+# selecteur de fond n'y a aucun sens.
+IGNORER = {"swot360.html", "swot360.en.html", "swot360.es.html", "swot360.fr.html"}
 
 MARQUE = "<!-- theme clair/sombre -->"
 
 # La feuille a change : une cle neuve, la meme pour toutes les pages.
-VERSION_CSS = 13
+VERSION_CSS = 14
 
 BASCULE = MARQUE + """
   <script>/* fond clair/sombre — AVANT le premier affichage, sinon la page clignote */
