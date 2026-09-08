@@ -67,11 +67,22 @@ TRANSLUCIDES = [
 ]
 
 # Les définitions de jetons, les ombres noires et les couleurs de série.
+#
+# ⚠️ LES COMMENTAIRES AUSSI. Un commentaire n'est pas du style : il cite des
+# valeurs pour expliquer une mesure — « fond #116d64, texte #4a5f77 -> 1,06:1 ».
+# Les convertir remplacerait la trace de la mesure par un jeton, et la note
+# perdrait exactement ce qu'elle documente. C'est arrivé la première fois que
+# j'ai écrit une note chiffrée dans cette feuille.
 GARDE = re.compile(
-    r"(?::root|html\.clair|html\.sombre|html:not\(\.sombre\))[^{]*\{[^}]*\}"
+    r"/\*.*?\*/"
+    r"|(?::root|html\.clair|html\.sombre|html:not\(\.sombre\))[^{]*\{[^}]*\}"
     r"|@media[^{]*\{(?:[^{}]|\{[^{}]*\})*\}"
     r"|rgba\(\s*0\s*,\s*0\s*,\s*0\s*,[^)]*\)"
-    r"|#2fd573|#4dabf7|#b197fc|#3b82f6")
+    r"|#2fd573|#4dabf7|#b197fc|#3b82f6",
+    # ⚠️ re.S : sans lui, `/\*.*?\*/` s'arrête au premier saut de ligne
+    # et ne protège que les commentaires d'une seule ligne. Les notes de
+    # mesure, elles, font toujours plusieurs lignes.
+    re.S)
 
 RESTE = re.compile(r"#[0-9a-fA-F]{3,6}\b|rgba?\([0-9]")
 

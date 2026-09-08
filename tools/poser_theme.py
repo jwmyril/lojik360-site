@@ -47,7 +47,7 @@ IGNORER = {"swot360.en.html", "swot360.es.html", "swot360.fr.html"}
 MARQUE = "<!-- theme clair/sombre -->"
 
 # La feuille a change : une cle neuve, la meme pour toutes les pages.
-VERSION_CSS = 12
+VERSION_CSS = 13
 
 BASCULE = MARQUE + """
   <script>/* fond clair/sombre — AVANT le premier affichage, sinon la page clignote */

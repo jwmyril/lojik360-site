@@ -63,6 +63,20 @@ header {
 .btn-primary:hover { background: var(--amber); color: var(--navy); transform: translateY(-2px); }
 .btn-outline { border: 1.5px solid var(--teal); color: var(--teal); }
 .btn-outline:hover { background: var(--teal); color: var(--navy); }
+
+/* ⚠️ LE BOUTON D'APPEL A L'ACTION DE L'EN-TETE PERDAIT SA COULEUR.
+ * `.nav-links a` (specificite 0-1-1) bat `.btn-primary` (0-1-0), quel que
+ * soit l'ordre des regles. Le bouton « Commencer » heritait donc de
+ * `--ink-dim` — la couleur des liens de menu — sur un fond `--teal`.
+ * Mesure au navigateur, en production, avant correction :
+ *     fond #116d64, texte #4a5f77  ->  1,06:1 en clair
+ *     fond #2ec4b6, texte #9fb3c8  ->  1,01:1 en sombre
+ * C'est-a-dire illisible dans LES DEUX fonds, y compris le sombre d'origine :
+ * le defaut precede le theme clair, il a seulement ete revele par la mesure.
+ * Et c'est le bouton principal du site. */
+.nav-links a.btn-primary, .nav-links a.btn-primary:hover { color: var(--navy); }
+.nav-links a.btn-outline { color: var(--teal); }
+.nav-links a.btn-outline:hover { color: var(--navy); }
 .nav-toggle { display: none; background: none; border: none; color: var(--ink); font-size: 1.6rem; cursor: pointer; }
 
 /* Sélecteur de langue 4 langues (dropdown 🌐) */
