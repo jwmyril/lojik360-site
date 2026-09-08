@@ -128,5 +128,21 @@
   "sw.interview": "💼 Rive nan entèvyou a ak fòs ou, prèv ou ak plan ou — se sa k fè diferans lan.",
   "tut.d_build": "Konstwi yon aplikasyon wèb ak Claude — gid konplè a",
   "tut.d_build_d": "Tout pwosesis la, ak yon ka reyèl kòm egzanp : sit sa a menm. Lide, achitekti, pronpt konstriksyon, plizyè lang, worker IA, sekirite, piblikasyon — san ou pa yon devlopè.",
-  "ax.a3_job": "Yon <strong>entèvyou travay</strong> se kote tout sa jije nan trant minit. Pou prepare l : <a href=\"https://360.atmart.ltd/entevyou.html\" target=\"_blank\" rel=\"noopener\">Entèvyou360</a>, sou Suite 360 la."
+  "ax.a3_job": "Yon <strong>entèvyou travay</strong> se kote tout sa jije nan trant minit. Pou prepare l : <a href=\"https://360.atmart.ltd/entevyou.html\" target=\"_blank\" rel=\"noopener\">Entèvyou360</a>, sou Suite 360 la.",
+  "priv.titre": "Konfidansyalite",
+  "priv.maj": "Dènye mizajou : 8 septanm 2026",
+  "priv.p1": "Paj sa a di sa Lojik360 fè ak done w yo. Li kout paske pa gen anpil pou di : sit la prèske konplètman estatik, li pa mete <strong>okenn cookie</strong> epi li pa sèvi ak <strong>okenn zouti mezi odyans</strong>.",
+  "priv.h2a": "Sa ki kite navigatè w",
+  "priv.p2": "<strong>Adrès imel ou</strong>, si w abòne w nan bilten an. Li ale sou yon sèvè Atmart LLC (yon Cloudflare Worker) epi li anrejistre la ak dat la, lang lan ak paj kote w soti a. <strong>Nou kenbe l jiskaske ou mande pou efase l</strong> — nou pa mete yon delè otomatik, epi nou pito di sa pase anonse yon delè anyen pa ta fè respekte.",
+  "priv.p3": "<strong>Sa w ekri asistan an</strong> (bul chat la, sou 24 paj). Mesaj ou yo ale nan yon modèl entèlijans atifisyèl pou bay repons lan. <strong>Yo pa anrejistre okenn kote</strong> : sèvè nou an pase yo bay modèl la epi li pa kenbe okenn kopi.",
+  "priv.p4": "<strong>Adrès IP ou</strong>, kenbe apeprè 25 èdtan nan yon kontè ki limite abi (enskripsyon an mas, demann otomatik). Li pa mare ni ak imel ou ni ak mesaj ou yo, epi li disparèt pou kont li.",
+  "priv.p5": "<strong>Kòmantè ou yo</strong>, sou senk paj tityoryèl ki gen yo. Se <a href=\"https://cusdis.com/doc#/privacy\" target=\"_blank\" rel=\"noopener\">Cusdis</a> ki jere yo, yon sèvis twazyèm pati : sa w ekri la swiv règleman pa yo, se pa pa nou.",
+  "priv.h2b": "Sa ki rete nan navigatè w",
+  "priv.p6": "Twa bagay, epi yo pa janm soti : <strong>lang</strong> ou chwazi a, <strong>fon klè oswa fonse</strong> a, ak <strong>quiz ou fin fè yo</strong>. Yo rete nan depo lokal aparèy ou. Si w efase done sit la, yo efase, epi anyen pa kase.",
+  "priv.h2c": "Timoun yo",
+  "priv.p7": "Paj <strong>Lojikkid</strong> yo ekri pou timoun. Yo pa gen ni asistan an ni kòmantè yo, epi yo pa ranmase anyen. Bilten an se pou granmoun : pa sèvi avè l pou enskri yon timoun.",
+  "priv.h2d": "Dwa w yo, ak kijan pou sèvi ak yo",
+  "priv.p8": "Ekri <a href=\"mailto:sales@atmart.ltd\">sales@atmart.ltd</a> pou konnen sa nou genyen sou ou, korije l, oswa fè efase l. Yon demann pou retire w nan bilten an aplike san diskisyon epi san kesyon. Nou pa vann anyen, nou pa pataje anyen pou piblisite, epi nou pa gen piblisite.",
+  "priv.p9": "Editè : <strong>Atmart LLC</strong>, yon konpayi a responsablite limite nan Wyoming — adès anrejistre : 30 N Gould St Ste R, Sheridan, WY 82801, Etazini. Lojik360 se yon mak Atmart LLC.",
+  "foot.privacy": "Konfidansyalite"
 }

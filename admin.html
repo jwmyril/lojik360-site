@@ -57,7 +57,7 @@
       <li>Ouvrez <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (connecté au compte <strong>jwmyril</strong>).</li>
       <li>Nom : <em>lojik360-admin</em> · Expiration : 1 an · <strong>Repository access</strong> : « Only select repositories » → <em>lojik360-site</em>.</li>
       <li>Permissions → <strong>Contents : Read and write</strong>. Générez et copiez le jeton.</li>
-      <li>Collez-le ci-dessous — il reste uniquement dans votre navigateur (localStorage), ne le partagez jamais.</li>
+      <li>Collez-le ci-dessous. Il reste <strong>en mémoire, le temps de cette session seulement</strong> : il n'est écrit ni sur votre disque ni dans votre navigateur, et il faudra le retaper à la prochaine ouverture. C'est voulu — un script tiers chargé par une autre page du site pourrait lire un jeton stocké, et ce jeton permet de republier le site.</li>
     </ol>
     <input type="password" id="token" placeholder="github_pat_…" size="40" autocomplete="off" />
     <button class="btn btn-outline" id="saveToken" type="button">Mémoriser</button>
@@ -100,18 +100,46 @@
   function say(kind,msg){status.className="adm-status "+kind;status.textContent=msg;}
   function clearSay(){status.className="adm-status";status.textContent="";}
 
-  // ---- token ----
+  // ---- jeton ----
+  //
+  // ⚠️ LE JETON NE QUITTE JAMAIS LA MEMOIRE. Il vivait dans localStorage, qui
+  // est lisible par TOUT script de la meme origine — et ce site charge
+  // https://cusdis.com/js/cusdis.es.js sur cinq pages de tutoriels. Un script
+  // tiers compromis y lisait un token GitHub, c'est-a-dire le droit de
+  // republier n'importe quoi sur le site, y compris sur les pages destinees
+  // aux enfants. Le risque ne dependait pas de Cusdis : n'importe quelle
+  // injection lit la meme case.
+  //
+  // Consequence assumee : on retape le jeton a chaque ouverture de cette
+  // page. C'est le prix d'un secret qui peut reecrire le site entier.
+  var jeton = "";
   var tokenInput=$("token");
-  tokenInput.value=localStorage.getItem("lojik_admin_token")||"";
-  function tokenState(){$("tokenState").textContent=tokenInput.value?"✓ jeton en place":"aucun jeton — lecture seule";}
+
+  // Purge de ce qui a deja ete ecrit : quelqu'un l'a dans son navigateur en
+  // ce moment, et ne rien faire laisserait la faille ouverte pour lui seul.
+  try {
+    if (localStorage.getItem("lojik_admin_token")) {
+      localStorage.removeItem("lojik_admin_token");
+      say("ok", "Un ancien jeton était stocké dans ce navigateur : il vient d'être effacé. "
+              + "Retapez-le — il ne sera plus conservé.");
+    }
+  } catch (e) {}
+
+  function tokenState(){
+    $("tokenState").textContent = jeton
+      ? "✓ jeton en place pour cette session — non conservé"
+      : "aucun jeton — lecture seule";
+  }
   tokenState();
   $("saveToken").addEventListener("click",function(){
-    localStorage.setItem("lojik_admin_token",tokenInput.value.trim());tokenState();
-    say("ok","Jeton mémorisé dans ce navigateur.");
+    jeton = tokenInput.value.trim();
+    tokenInput.value = "";          // il ne reste pas non plus dans le champ
+    tokenState();
+    say("ok","Jeton retenu pour cette session seulement. Il n'est écrit nulle part.");
   });
   function headers(){
     var h={"Accept":"application/vnd.github+json"};
-    var t=localStorage.getItem("lojik_admin_token")||tokenInput.value.trim();
+    var t = jeton || tokenInput.value.trim();
     if(t) h["Authorization"]="Bearer "+t;
     return h;
   }
@@ -207,7 +235,7 @@
 
   $("publish").addEventListener("click",function(){
     if(!state.secId){return;}
-    var t=localStorage.getItem("lojik_admin_token")||tokenInput.value.trim();
+    var t = jeton || tokenInput.value.trim();
     if(!t){$("tokenBox").open=true;say("err","Ajoutez d'abord votre jeton GitHub (voir la boîte 🔑 ci-dessus).");return;}
     var newInner=sanitize($("canvas").innerHTML);
     var newText=state.text.replace(sectionRegex(state.secId),function(_,open,__,close){return open+newInner+close;});

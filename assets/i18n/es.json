@@ -128,5 +128,21 @@
   "sw.interview": "💼 Llega a la entrevista con tus fortalezas, tus pruebas y tu plan — eso marca la diferencia.",
   "tut.d_build": "Construir una aplicación web con Claude — la guía completa",
   "tut.d_build_d": "El proceso de la A a la Z, ilustrado con un caso real: este mismo sitio. Idea, arquitectura, prompts de construcción, multilingüe, worker de IA, seguridad, publicación — sin ser desarrollador.",
-  "ax.a3_job": "Una <strong>entrevista de trabajo</strong> es donde todo esto se juzga en treinta minutos. Para prepararla: <a href=\"https://360.atmart.ltd/entevyou.html\" target=\"_blank\" rel=\"noopener\">Entèvyou360</a>, en la Suite 360."
+  "ax.a3_job": "Una <strong>entrevista de trabajo</strong> es donde todo esto se juzga en treinta minutos. Para prepararla: <a href=\"https://360.atmart.ltd/entevyou.html\" target=\"_blank\" rel=\"noopener\">Entèvyou360</a>, en la Suite 360.",
+  "priv.titre": "Privacidad",
+  "priv.maj": "Última actualización: 8 de septiembre de 2026",
+  "priv.p1": "Esta página dice qué hace Lojik360 con tus datos. Es corta porque hay poco que decir: el sitio es casi totalmente estático, no pone <strong>ninguna cookie</strong> y no usa <strong>ninguna herramienta de analítica</strong>.",
+  "priv.h2a": "Lo que sale de tu navegador",
+  "priv.p2": "<strong>Tu correo electrónico</strong>, si te suscribes al boletín. Va a un servidor de Atmart LLC (un Cloudflare Worker) y se guarda con la fecha, el idioma y la página de origen. <strong>Se conserva hasta que pidas su borrado</strong> — no fijamos un plazo automático, y preferimos decirlo antes que anunciar un plazo que nada haría cumplir.",
+  "priv.p3": "<strong>Lo que escribes al asistente</strong> (la burbuja de chat, en 24 páginas). Tus mensajes se transmiten a un modelo de IA para generar la respuesta. <strong>No se guardan en ninguna parte</strong>: nuestro servidor los pasa al modelo y no conserva ninguna copia.",
+  "priv.p4": "<strong>Tu dirección IP</strong>, guardada unas 25 horas en un contador que limita abusos (altas masivas, peticiones automatizadas). No se vincula ni a tu correo ni a tus mensajes, y caduca sola.",
+  "priv.p5": "<strong>Tus comentarios</strong>, en las cinco páginas de tutoriales que los ofrecen. Los gestiona <a href=\"https://cusdis.com/doc#/privacy\" target=\"_blank\" rel=\"noopener\">Cusdis</a>, un servicio de terceros: lo que escribas allí sigue su política, no la nuestra.",
+  "priv.h2b": "Lo que se queda en tu navegador",
+  "priv.p6": "Tres cosas, y nunca salen: el <strong>idioma</strong> que elegiste, el <strong>fondo claro u oscuro</strong> y los <strong>cuestionarios que completaste</strong>. Viven en el almacenamiento local de tu dispositivo. Borrar los datos del sitio los elimina, sin romper nada.",
+  "priv.h2c": "Los niños",
+  "priv.p7": "Las páginas <strong>Lojikkid</strong> están escritas para niños. No llevan ni el asistente ni los comentarios, y no recogen nada. El boletín es para adultos: no lo uses para inscribir a un niño.",
+  "priv.h2d": "Tus derechos y cómo ejercerlos",
+  "priv.p8": "Escribe a <a href=\"mailto:sales@atmart.ltd\">sales@atmart.ltd</a> para saber qué tenemos sobre ti, corregirlo o borrarlo. Una solicitud de baja del boletín se aplica sin discusión y sin preguntas. No vendemos nada, no compartimos nada con fines publicitarios y no tenemos publicidad.",
+  "priv.p9": "Editor: <strong>Atmart LLC</strong>, sociedad de responsabilidad limitada de Wyoming — dirección registrada: 30 N Gould St Ste R, Sheridan, WY 82801, Estados Unidos. Lojik360 es una marca de Atmart LLC.",
+  "foot.privacy": "Privacidad"
 }
