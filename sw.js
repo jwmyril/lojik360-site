@@ -18,7 +18,7 @@
 // depuis le contenu réellement servi. Le changer à la main a déjà été oublié
 // deux fois sur un autre site de la maison : oublier, c'est publier pour
 // personne, sans message d'erreur.
-const CACHE = "lojik360-7866bcc1";
+const CACHE = "lojik360-b32058e7";
 
 const CORE = [
   "/", "/index.html", "/404.html", "/tutoriels.html", "/podcast.html",
